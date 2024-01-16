@@ -1,0 +1,29 @@
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\bin\Debug\net8.0\Batalla Naval-2.exe
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\bin\Debug\net8.0\Batalla Naval-2.deps.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\bin\Debug\net8.0\Batalla Naval-2.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\bin\Debug\net8.0\Batalla Naval-2.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\bin\Debug\net8.0\Batalla Naval-2.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\refint\Batalla Naval-2.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\ref\Batalla Naval-2.dll
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\bin\Debug\net8.0\Batalla Naval-2.exe
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\bin\Debug\net8.0\Batalla Naval-2.deps.json
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\bin\Debug\net8.0\Batalla Naval-2.runtimeconfig.json
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\bin\Debug\net8.0\Batalla Naval-2.dll
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\bin\Debug\net8.0\Batalla Naval-2.pdb
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.AssemblyInfo.cs
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.sourcelink.json
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.dll
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\refint\Batalla Naval-2.dll
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.pdb
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\Batalla Naval-2.genruntimeconfig.cache
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\obj\Debug\net8.0\ref\Batalla Naval-2.dll

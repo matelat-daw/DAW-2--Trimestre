@@ -1,0 +1,15 @@
+C:\xampp\htdocs\Programacion\C#\Contando Items\bin\Debug\net8.0\Contando Items.exe
+C:\xampp\htdocs\Programacion\C#\Contando Items\bin\Debug\net8.0\Contando Items.deps.json
+C:\xampp\htdocs\Programacion\C#\Contando Items\bin\Debug\net8.0\Contando Items.runtimeconfig.json
+C:\xampp\htdocs\Programacion\C#\Contando Items\bin\Debug\net8.0\Contando Items.dll
+C:\xampp\htdocs\Programacion\C#\Contando Items\bin\Debug\net8.0\Contando Items.pdb
+C:\xampp\htdocs\Programacion\C#\Contando Items\obj\Debug\net8.0\Contando Items.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Programacion\C#\Contando Items\obj\Debug\net8.0\Contando Items.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Programacion\C#\Contando Items\obj\Debug\net8.0\Contando Items.AssemblyInfo.cs
+C:\xampp\htdocs\Programacion\C#\Contando Items\obj\Debug\net8.0\Contando Items.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Programacion\C#\Contando Items\obj\Debug\net8.0\Contando Items.sourcelink.json
+C:\xampp\htdocs\Programacion\C#\Contando Items\obj\Debug\net8.0\Contando Items.dll
+C:\xampp\htdocs\Programacion\C#\Contando Items\obj\Debug\net8.0\refint\Contando Items.dll
+C:\xampp\htdocs\Programacion\C#\Contando Items\obj\Debug\net8.0\Contando Items.pdb
+C:\xampp\htdocs\Programacion\C#\Contando Items\obj\Debug\net8.0\Contando Items.genruntimeconfig.cache
+C:\xampp\htdocs\Programacion\C#\Contando Items\obj\Debug\net8.0\ref\Contando Items.dll

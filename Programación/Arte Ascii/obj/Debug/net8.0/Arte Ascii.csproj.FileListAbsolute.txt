@@ -1,0 +1,39 @@
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\bin\Debug\net8.0\Arte Ascii.exe
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\bin\Debug\net8.0\Arte Ascii.deps.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\bin\Debug\net8.0\Arte Ascii.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\bin\Debug\net8.0\Arte Ascii.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\bin\Debug\net8.0\Arte Ascii.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\obj\Debug\net8.0\refint\Arte Ascii.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\obj\Debug\net8.0\ref\Arte Ascii.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.csproj.AssemblyReference.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.csproj.CopyComplete
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\bin\Debug\net8.0\Arte Ascii.exe
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\bin\Debug\net8.0\Arte Ascii.deps.json
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\bin\Debug\net8.0\Arte Ascii.runtimeconfig.json
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\bin\Debug\net8.0\Arte Ascii.dll
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\bin\Debug\net8.0\Arte Ascii.pdb
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.csproj.AssemblyReference.cache
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.AssemblyInfo.cs
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.sourcelink.json
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.csproj.CopyComplete
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.dll
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\obj\Debug\net8.0\refint\Arte Ascii.dll
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.pdb
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\obj\Debug\net8.0\Arte Ascii.genruntimeconfig.cache
+C:\xampp\htdocs\Programacion\C#\Arte Ascii\obj\Debug\net8.0\ref\Arte Ascii.dll

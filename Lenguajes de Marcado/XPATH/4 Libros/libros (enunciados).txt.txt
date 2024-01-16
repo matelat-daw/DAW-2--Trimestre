@@ -1,0 +1,30 @@
+﻿Ejercicios de Xpath 
+1.-  Autores cuyo apellido sea DATE
+          
+
+ 2.- Libros con mas de un autor
+           
+
+ 4.- Todos los autores
+          
+
+ 3.- Libros editados en 1998 y en 2005
+              
+
+5.- Todos los valores del atributo id
+
+
+ 6.- Libro que ocupa la tercera posicion
+
+
+ 7.- Penuntimo autor del tercer libro
+
+
+ 8.- Los dos primeros autores del tercer libro
+
+
+ 9.- Libros que tienen en atributo id mayor que 2.
+
+
+
+ 10.- Libros editados entre 1998 y 2005

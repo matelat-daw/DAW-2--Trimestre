@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Arbol de Navidad/1.0.0": {
+        "runtime": {
+          "Arbol de Navidad.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Arbol de Navidad/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

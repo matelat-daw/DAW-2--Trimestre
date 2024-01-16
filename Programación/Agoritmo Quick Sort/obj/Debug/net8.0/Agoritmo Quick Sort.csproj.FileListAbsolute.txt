@@ -1,0 +1,15 @@
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\bin\Debug\net8.0\Agoritmo Quick Sort.exe
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\bin\Debug\net8.0\Agoritmo Quick Sort.deps.json
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\bin\Debug\net8.0\Agoritmo Quick Sort.runtimeconfig.json
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\bin\Debug\net8.0\Agoritmo Quick Sort.dll
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\bin\Debug\net8.0\Agoritmo Quick Sort.pdb
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\obj\Debug\net8.0\Agoritmo Quick Sort.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\obj\Debug\net8.0\Agoritmo Quick Sort.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\obj\Debug\net8.0\Agoritmo Quick Sort.AssemblyInfo.cs
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\obj\Debug\net8.0\Agoritmo Quick Sort.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\obj\Debug\net8.0\Agoritmo Quick Sort.sourcelink.json
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\obj\Debug\net8.0\Agoritmo Quick Sort.dll
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\obj\Debug\net8.0\refint\Agoritmo Quick Sort.dll
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\obj\Debug\net8.0\Agoritmo Quick Sort.pdb
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\obj\Debug\net8.0\Agoritmo Quick Sort.genruntimeconfig.cache
+C:\xampp\htdocs\Programacion\C#\Agoritmo Quick Sort\obj\Debug\net8.0\ref\Agoritmo Quick Sort.dll

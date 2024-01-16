@@ -1,0 +1,15 @@
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\bin\Debug\net8.0\Inc-Dec.exe
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\bin\Debug\net8.0\Inc-Dec.deps.json
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\bin\Debug\net8.0\Inc-Dec.runtimeconfig.json
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\bin\Debug\net8.0\Inc-Dec.dll
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\bin\Debug\net8.0\Inc-Dec.pdb
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\obj\Debug\net8.0\Inc-Dec.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\obj\Debug\net8.0\Inc-Dec.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\obj\Debug\net8.0\Inc-Dec.AssemblyInfo.cs
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\obj\Debug\net8.0\Inc-Dec.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\obj\Debug\net8.0\Inc-Dec.sourcelink.json
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\obj\Debug\net8.0\Inc-Dec.dll
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\obj\Debug\net8.0\refint\Inc-Dec.dll
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\obj\Debug\net8.0\Inc-Dec.pdb
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\obj\Debug\net8.0\Inc-Dec.genruntimeconfig.cache
+C:\xampp\htdocs\Programacion\C#\Inc-Dec\obj\Debug\net8.0\ref\Inc-Dec.dll

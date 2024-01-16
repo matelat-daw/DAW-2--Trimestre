@@ -1,0 +1,15 @@
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\bin\Debug\net8.0\Burbuja.exe
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\bin\Debug\net8.0\Burbuja.deps.json
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\bin\Debug\net8.0\Burbuja.runtimeconfig.json
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\bin\Debug\net8.0\Burbuja.dll
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\bin\Debug\net8.0\Burbuja.pdb
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Burbuja.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Burbuja.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Burbuja.AssemblyInfo.cs
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Burbuja.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Burbuja.sourcelink.json
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Burbuja.dll
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\refint\Burbuja.dll
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Burbuja.pdb
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Burbuja.genruntimeconfig.cache
+C:\xampp\htdocs\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\ref\Burbuja.dll

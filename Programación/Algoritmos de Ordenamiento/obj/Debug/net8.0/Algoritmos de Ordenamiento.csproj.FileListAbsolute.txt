@@ -1,0 +1,14 @@
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\bin\Debug\net8.0\Algoritmos de Ordenamiento.exe
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\bin\Debug\net8.0\Algoritmos de Ordenamiento.deps.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\bin\Debug\net8.0\Algoritmos de Ordenamiento.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\bin\Debug\net8.0\Algoritmos de Ordenamiento.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\bin\Debug\net8.0\Algoritmos de Ordenamiento.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Algoritmos de Ordenamiento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Algoritmos de Ordenamiento.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Algoritmos de Ordenamiento.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Algoritmos de Ordenamiento.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Algoritmos de Ordenamiento.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\refint\Algoritmos de Ordenamiento.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Algoritmos de Ordenamiento.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\Algoritmos de Ordenamiento.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos de Ordenamiento\obj\Debug\net8.0\ref\Algoritmos de Ordenamiento.dll

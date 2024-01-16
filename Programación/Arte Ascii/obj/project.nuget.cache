@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AXhxKOzqA1mU4hxuK+S5D9VVH42x6G1Z/b0K6vL5Sfd76UxxDyXTUmzJ3Qgu4bGejpAa6cGmQs1u2otQClErKg==",
+  "success": true,
+  "projectFilePath": "C:\\xampp\\htdocs\\Programacion\\C#\\Arte Ascii\\Arte Ascii.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\orion\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\orion\\.nuget\\packages\\system.drawing.common\\8.0.0\\system.drawing.common.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

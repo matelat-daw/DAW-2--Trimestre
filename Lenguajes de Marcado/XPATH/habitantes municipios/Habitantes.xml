@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<poblacion>
+<habitante id="h01" sexo="hombre">
+<nombre>Perico</nombre>
+<apellidos>de los Palotes</apellidos>
+<direccion>c/ Callo, 5</direccion>
+<tlfo>953123456</tlfo>
+<nacimiento>Úbeda</nacimiento>
+</habitante>
+<habitante id="h02" sexo="mujer">
+<nombre>María</nombre>
+<apellidos>Lagartona</apellidos>
+<direccion>c/ Callo, 5</direccion>
+<tlfo>953123456</tlfo>
+<nacimiento>Marmolejo</nacimiento>
+</habitante>
+<habitante id="h03" sexo="hombre" padre="h01" madre="h02">
+<nombre>Felipe</nombre>
+<apellidos>el Hermoso</apellidos>
+<direccion>c/ Callo, 5</direccion>
+<tlfo>953123456</tlfo>
+<nacimiento>Cazorla</nacimiento>
+</habitante>
+<!-- Resto de habitantes -->
+</poblacion>
+

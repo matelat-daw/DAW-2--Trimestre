@@ -1,0 +1,15 @@
+C:\xampp\htdocs\Programacion\C#\Pila\bin\Debug\net8.0\Pila.exe
+C:\xampp\htdocs\Programacion\C#\Pila\bin\Debug\net8.0\Pila.deps.json
+C:\xampp\htdocs\Programacion\C#\Pila\bin\Debug\net8.0\Pila.runtimeconfig.json
+C:\xampp\htdocs\Programacion\C#\Pila\bin\Debug\net8.0\Pila.dll
+C:\xampp\htdocs\Programacion\C#\Pila\bin\Debug\net8.0\Pila.pdb
+C:\xampp\htdocs\Programacion\C#\Pila\obj\Debug\net8.0\Pila.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Programacion\C#\Pila\obj\Debug\net8.0\Pila.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Programacion\C#\Pila\obj\Debug\net8.0\Pila.AssemblyInfo.cs
+C:\xampp\htdocs\Programacion\C#\Pila\obj\Debug\net8.0\Pila.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Programacion\C#\Pila\obj\Debug\net8.0\Pila.sourcelink.json
+C:\xampp\htdocs\Programacion\C#\Pila\obj\Debug\net8.0\Pila.dll
+C:\xampp\htdocs\Programacion\C#\Pila\obj\Debug\net8.0\refint\Pila.dll
+C:\xampp\htdocs\Programacion\C#\Pila\obj\Debug\net8.0\Pila.pdb
+C:\xampp\htdocs\Programacion\C#\Pila\obj\Debug\net8.0\Pila.genruntimeconfig.cache
+C:\xampp\htdocs\Programacion\C#\Pila\obj\Debug\net8.0\ref\Pila.dll

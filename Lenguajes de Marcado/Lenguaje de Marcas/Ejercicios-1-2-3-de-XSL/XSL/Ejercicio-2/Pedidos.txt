@@ -1,0 +1,160 @@
+﻿
+A) Convertir las etiquetas en atributos:
+<?xml version="1.0" encoding="UTF-8"?>
+<museos>
+<museo nombre="Museo del Prado" ciudad="Madrid" pais="España"/>
+<museo nombre="British Museum" ciudad="Londres" pais="Reino Unido"/>
+<museo nombre="National Gallery" ciudad="Londres" pais="Reino Unido"/>
+</museos>
+B) Convertir alguna etiquetas en atributos
+<?xml version="1.0" encoding="UTF-8"?>
+<museos>
+<museo>
+<nombre>Museo del Prado</nombre>
+<ubicacion ciudad="Madrid" pais="España"/>
+</museo>
+<museo>
+<nombre>British Museum</nombre>
+<ubicacion ciudad="Londres" pais="Reino Unido"/>
+</museo>
+<museo>
+<nombre>National Gallery</nombre>
+<ubicacion ciudad="Londres" pais="Reino Unido"/>
+</museo>
+</museos>
+C) Cambiar la estructura del documento:
+<?xml version="1.0" encoding="UTF-8"?>
+<ciudades>
+<ciudad>
+<nombre>Madrid</nombre>
+<pais>España</pais>
+<museo>Museo del Prado</museo>
+</ciudad>
+<ciudad>
+<nombre>Londres</nombre>
+<pais>Reino Unido</pais>
+<museo>British Museum</museo>
+</ciudad>
+<ciudad>
+<nombre>Londres</nombre>
+<pais>Reino Unido</pais>
+<museo>National Gallery</museo>
+</ciudad>
+</ciudades>
+D) Cambiar la estructura del documento y algunas etiquetas en
+atributos:
+<?xml version="1.0" encoding="UTF-8"?>
+<ciudades>
+<ciudad nombre="Madrid" pais="España">
+<museo>Museo del Prado</museo>
+</ciudad>
+<ciudad nombre="Londres" pais="Reino Unido">
+<museo>British Museum</museo>
+</ciudad>
+<ciudad nombre="Londres" pais="Reino Unido">
+<museo>National Gallery</museo>
+</ciudad>
+</ciudades>
+E) Cambiar la estructura del documento y algunas etiquetas en
+atributos:
+<?xml version="1.0" encoding="UTF-8"?>
+<paises>
+<pais nombre="España">
+<museo museo="Museo del Prado" ciudad="Madrid"/>
+</pais>
+<pais nombre="Reino Unido">
+<museo museo="British Museum" ciudad="Londres"/>
+</pais>
+<pais nombre="Reino Unido">
+<museo museo="National Gallery" ciudad="Londres"/>
+</pais>
+</paises>
+2.- Dado el siguiente documento XML, escriba las hojas de estilo XSLT que
+devuelvan la respuesta deseada
+<?xml version="1.0" encoding="UTF-8"?>
+<museos>
+<museo nombre="Museo del Prado" ciudad="Madrid" pais="España"/>
+<museo nombre="British Museum" ciudad="Londres" pais="Reino Unido"/>
+<museo nombre="National Gallery" ciudad="Londres" pais="Reino Unido"/>
+</museos>
+A) Convertir los atributos en etiquetas:
+<?xml version="1.0" encoding="UTF-8"?>
+<museos>
+<museo>
+<nombre>Museo del Prado</nombre>
+<ciudad>Madrid</ciudad>
+<pais>España</pais>
+</museo>
+<museo>
+<nombre>British Museum</nombre>
+<ciudad>Londres</ciudad>
+<pais>Reino Unido</pais>
+</museo>
+<museo>
+<nombre>National Gallery</nombre>
+<ciudad>Londres</ciudad>
+<pais>Reino Unido</pais>
+</museo>
+</museos>
+B) Convertir algunos atributos en etiquetas:
+<?xml version="1.0" encoding="UTF-8"?>
+<museos>
+<museo ubicacion="Madrid (España)">Museo del Prado</museo>
+<museo ubicacion="Londres (Reino Unido)">British Museum</museo>
+<museo ubicacion="Londres (Reino Unido)">National Gallery</museo>
+</museos>
+C) Cambiar la estructura del documento y convertir algunos
+atributos en etiquetas:
+<?xml version="1.0" encoding="UTF-8"?>
+<ciudades>
+<ciudad nombre="Madrid">
+<pais>España</pais>
+<museo>Museo del Prado</museo>
+</ciudad>
+<ciudad nombre="Londres">
+<pais>Reino Unido</pais>
+<museo>British Museum</museo>
+</ciudad>
+<ciudad nombre="Londres">
+<pais>Reino Unido</pais>
+<museo>National Gallery</museo>
+</ciudad>
+</ciudades>
+D) Cambiar la estructura del documento
+<?xml version="1.0" encoding="UTF-8"?>
+<paises>
+<pais nombre="España">
+<ciudad nombre="Madrid">
+<museo nombre="Museo del Prado"/>
+</ciudad>
+</pais>
+<pais nombre="Reino Unido">
+<ciudad nombre="Londres">
+<museo nombre="British Museum"/>
+</ciudad>
+</pais>
+<pais nombre="Reino Unido">
+<ciudad nombre="Londres">
+<museo nombre="National Gallery"/>
+</ciudad>
+</pais>
+</paises>
+E) Cambiar la estructura del documento
+<?xml version="1.0" encoding="UTF-8"?>
+<lugares>
+<lugar tipo="museo">
+<ubicacion nombre="ciudad">Madrid</ubicacion>
+<ubicacion nombre="pais">España</ubicacion>
+<nombre>Museo del Prado</nombre>
+</lugar>
+<lugar tipo="museo">
+<ubicacion nombre="ciudad">Londres</ubicacion>
+<ubicacion nombre="pais">Reino Unido</ubicacion>
+<nombre>British Museum</nombre>
+</lugar>
+<lugar tipo="museo">
+<ubicacion nombre="ciudad">Londres</ubicacion>
+<ubicacion nombre="pais">Reino Unido</ubicacion>
+<nombre>National Gallery</nombre>
+</lugar>
+</lugares>

@@ -1,0 +1,86 @@
+﻿1.- Dado el siguiente documento XML, escriba las hojas de estilo XSLT que
+devuelvan la respuesta deseada.
+
+A )
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<html>
+<head>
+<title>Biblioteca</title>
+</head>
+<body>
+<h1>Listado Libros</h1>
+<ul>
+<li> Título - La vida está en otra parte</li>
+<li> Título - Pantaleón y las visitadoras</li>
+<li> Título - Conversación en la catedral</li>
+<li> Título - Reina Roja</li>
+<li> Título - Loba Negra</li>
+<li> Título - Rey Blanco</li>
+</ul>
+</body>
+</html>
+B)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<html>
+<head>
+<title>Biblioteca</title>
+</head>
+<body>
+<h1>Listado Libros</h1>
+<ul>
+<li>Título - La vida está en otra parte( Milan Kundera - 1973)</li>
+<li>Título - Pantaleón y las visitadoras( Mario Vargas Llosa - 1973) </li>
+<li>Título - Conversación en la catedral( Mario Vargas Llosa - 1969) </li>
+<li>Título - Reina Roja( Juan Gómez Jurado - 2010) </li>
+<li>Título - Loba Negra( Juan Gómez Jurado - 2014) </li>
+<li>Título - Rey Blanco( Juan Gómez Jurado - 2018) </li>
+</ul>
+</body>
+</html>
+C)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<html>
+<head>
+<title>Biblioteca</title>
+</head>
+<body>
+<h1>Lbros con puntuación</h1>
+<table>
+<tr>
+<th>Posición</th>
+<th>Título</th>
+<th>Puntos</th>
+</tr>
+<tr>
+<td>1</td>
+<td>La vida está en otra parte</td>
+<td>5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Pantaleón y las visitadoras</td>
+<td>3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Conversación en la catedral</td>
+<td>4</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Reina Roja</td>
+<td>5</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Loba Negra</td>
+<td>4</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Rey Blanco</td>
+<td>4.5</td>
+</tr>
+</table>
+</body>
+</html>

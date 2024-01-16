@@ -1,0 +1,15 @@
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\bin\Debug\net8.0\Arbol de Navidad.exe
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\bin\Debug\net8.0\Arbol de Navidad.deps.json
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\bin\Debug\net8.0\Arbol de Navidad.runtimeconfig.json
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\bin\Debug\net8.0\Arbol de Navidad.dll
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\bin\Debug\net8.0\Arbol de Navidad.pdb
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\obj\Debug\net8.0\Arbol de Navidad.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\obj\Debug\net8.0\Arbol de Navidad.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\obj\Debug\net8.0\Arbol de Navidad.AssemblyInfo.cs
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\obj\Debug\net8.0\Arbol de Navidad.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\obj\Debug\net8.0\Arbol de Navidad.sourcelink.json
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\obj\Debug\net8.0\Arbol de Navidad.dll
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\obj\Debug\net8.0\refint\Arbol de Navidad.dll
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\obj\Debug\net8.0\Arbol de Navidad.pdb
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\obj\Debug\net8.0\Arbol de Navidad.genruntimeconfig.cache
+C:\xampp\htdocs\Programacion\C#\Arbol de Navidad\obj\Debug\net8.0\ref\Arbol de Navidad.dll

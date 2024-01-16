@@ -1,0 +1,30 @@
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\obj\Debug\net6.0\Ejercicio2.csproj.AssemblyReference.cache
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\obj\Debug\net6.0\Ejercicio2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\obj\Debug\net6.0\Ejercicio2.AssemblyInfoInputs.cache
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\obj\Debug\net6.0\Ejercicio2.AssemblyInfo.cs
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\obj\Debug\net6.0\Ejercicio2.csproj.CoreCompileInputs.cache
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\bin\Debug\net6.0\Ejercicio2.exe
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\bin\Debug\net6.0\Ejercicio2.deps.json
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\bin\Debug\net6.0\Ejercicio2.runtimeconfig.json
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\bin\Debug\net6.0\Ejercicio2.dll
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\bin\Debug\net6.0\Ejercicio2.pdb
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\obj\Debug\net6.0\Ejercicio2.dll
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\obj\Debug\net6.0\refint\Ejercicio2.dll
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\obj\Debug\net6.0\Ejercicio2.pdb
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\obj\Debug\net6.0\Ejercicio2.genruntimeconfig.cache
+C:\Users\aleja\source\practicaIV\PracticaIV\Ejercicio2\obj\Debug\net6.0\ref\Ejercicio2.dll
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\bin\Debug\net6.0\Ejercicio2.exe
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\bin\Debug\net6.0\Ejercicio2.deps.json
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\bin\Debug\net6.0\Ejercicio2.runtimeconfig.json
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\bin\Debug\net6.0\Ejercicio2.dll
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\bin\Debug\net6.0\Ejercicio2.pdb
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\obj\Debug\net6.0\Ejercicio2.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\obj\Debug\net6.0\Ejercicio2.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\obj\Debug\net6.0\Ejercicio2.AssemblyInfo.cs
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\obj\Debug\net6.0\Ejercicio2.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\obj\Debug\net6.0\Ejercicio2.sourcelink.json
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\obj\Debug\net6.0\Ejercicio2.dll
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\obj\Debug\net6.0\refint\Ejercicio2.dll
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\obj\Debug\net6.0\Ejercicio2.pdb
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\obj\Debug\net6.0\Ejercicio2.genruntimeconfig.cache
+C:\xampp\htdocs\Entornos de Desarrollo\C#\Ejercicios Tema 4\Ejercicio2\obj\Debug\net6.0\ref\Ejercicio2.dll

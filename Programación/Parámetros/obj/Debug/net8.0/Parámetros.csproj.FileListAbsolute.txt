@@ -1,0 +1,15 @@
+C:\xampp\htdocs\Programacion\C#\Parámetros\bin\Debug\net8.0\Parámetros.exe
+C:\xampp\htdocs\Programacion\C#\Parámetros\bin\Debug\net8.0\Parámetros.deps.json
+C:\xampp\htdocs\Programacion\C#\Parámetros\bin\Debug\net8.0\Parámetros.runtimeconfig.json
+C:\xampp\htdocs\Programacion\C#\Parámetros\bin\Debug\net8.0\Parámetros.dll
+C:\xampp\htdocs\Programacion\C#\Parámetros\bin\Debug\net8.0\Parámetros.pdb
+C:\xampp\htdocs\Programacion\C#\Parámetros\obj\Debug\net8.0\Parámetros.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Programacion\C#\Parámetros\obj\Debug\net8.0\Parámetros.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Programacion\C#\Parámetros\obj\Debug\net8.0\Parámetros.AssemblyInfo.cs
+C:\xampp\htdocs\Programacion\C#\Parámetros\obj\Debug\net8.0\Parámetros.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Programacion\C#\Parámetros\obj\Debug\net8.0\Parámetros.sourcelink.json
+C:\xampp\htdocs\Programacion\C#\Parámetros\obj\Debug\net8.0\Parámetros.dll
+C:\xampp\htdocs\Programacion\C#\Parámetros\obj\Debug\net8.0\refint\Parámetros.dll
+C:\xampp\htdocs\Programacion\C#\Parámetros\obj\Debug\net8.0\Parámetros.pdb
+C:\xampp\htdocs\Programacion\C#\Parámetros\obj\Debug\net8.0\Parámetros.genruntimeconfig.cache
+C:\xampp\htdocs\Programacion\C#\Parámetros\obj\Debug\net8.0\ref\Parámetros.dll

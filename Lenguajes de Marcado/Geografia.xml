@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<geografia>
+  <continentes>
+        <continente nombre="Europa">
+              <pais>España</pais>
+              <pais>Francia</pais>
+              <pais>Suiza</pais>
+               <pais>Italia</pais>
+              <pais>Austria</pais>
+              <pais>Portugal</pais>
+        </continente>
+        <continente nombre="América">
+              <pais>Argentina</pais>
+              <pais>Chile</pais>
+              <pais>Perú</pais>    
+              <pais>Venezuela</pais> 
+        </continente>
+  </continentes>
+
+<paises>
+        <pais nombre="Argentina">
+            <sistema>república</sistema>
+            <superficie>2780400</superficie>
+            <moneda>peso argentino</moneda>
+            <idioma>español</idioma>
+    </pais>  
+      <pais nombre="España">
+            <sistema>monarquía</sistema>
+            <superficie>504645</superficie>
+            <moneda>euro</moneda>
+            <moneda antigua="antigua">peseta</moneda>
+            <idioma>español</idioma>
+    </pais>
+    <pais nombre="Francia">
+            <sistema>república</sistema>
+            <superficie>675417</superficie>
+            <moneda>euro</moneda>
+            <moneda antigua="antigua">franco francés</moneda>
+            <idioma>francés</idioma>
+    </pais>
+    <pais nombre="Suiza">
+            <sistema>república</sistema>
+            <superficie>41290</superficie>
+            <moneda>franco suizo</moneda>
+            <idioma>francés</idioma>
+    </pais>    
+    <pais nombre="Italia"> 
+            <sistema>república</sistema>
+            <superficie>301340</superficie>
+            <moneda>euro</moneda>
+            <moneda antigua="antigua">lira</moneda>
+            <idioma>italiano </idioma>
+    </pais>
+
+    <pais nombre="Austria"> 
+            <sistema>república</sistema>
+            <superficie>83871</superficie>
+            <moneda>euro</moneda>
+            <idioma>aleman</idioma>
+    </pais>
+    <pais nombre="Portugal"> 
+            <sistema>república</sistema>
+            <superficie>92212</superficie>
+            <moneda>euro</moneda>
+            <moneda antigua="antigua">escudo</moneda>
+            <idioma>portugues</idioma>
+    </pais>
+        <pais nombre="Chile">
+            <sistema>república</sistema>
+            <superficie>756102</superficie>
+            <moneda>peso chileno</moneda>
+            <idioma>español</idioma>
+    </pais>
+     <pais nombre="Perú">
+            <sistema>república</sistema>
+            <superficie>1285215</superficie>
+            <moneda>sol peruano</moneda>
+            <idioma>español</idioma>
+    </pais>
+    <pais nombre="Venezuela"> 
+            <sistema>república</sistema>
+            <superficie>916445</superficie>
+            <moneda>Bolívar venezolano</moneda>
+            <idioma>español</idioma>
+    </pais>
+  </paises>
+<sistemas_montañosos>
+        <sistema_montañoso>
+              <nombre>Los Andes</nombre>
+              <pais>Argentina</pais>
+              <pais> Chile</pais>
+              <pais> Perú</pais>
+              <pais>Venezuela</pais>
+       </sistema_montañoso> 
+        <sistema_montañoso>
+              <nombre>Los Alpes</nombre>
+              <pais>Suiza</pais>
+              <pais>Francia</pais>
+              <pais>Italia</pais>
+              <pais>Austria</pais>     
+        </sistema_montañoso>
+       <sistema_montañoso>
+              <nombre>Los Pirineos</nombre>
+              <pais>España</pais>
+              <pais>Francia</pais>
+        </sistema_montañoso>
+          <sistema_montañoso>
+              <nombre>Sistema Central</nombre>
+              <pais>España</pais>
+              <pais>Portugal</pais>
+        </sistema_montañoso>
+  </sistemas_montañosos>
+</geografia>
+

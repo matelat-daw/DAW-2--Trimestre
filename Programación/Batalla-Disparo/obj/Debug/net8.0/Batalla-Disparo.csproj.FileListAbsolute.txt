@@ -1,0 +1,30 @@
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\bin\Debug\net8.0\Batalla-Disparo.exe
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\bin\Debug\net8.0\Batalla-Disparo.deps.json
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\bin\Debug\net8.0\Batalla-Disparo.runtimeconfig.json
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\bin\Debug\net8.0\Batalla-Disparo.dll
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\bin\Debug\net8.0\Batalla-Disparo.pdb
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.AssemblyInfo.cs
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.sourcelink.json
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.dll
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\obj\Debug\net8.0\refint\Batalla-Disparo.dll
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.pdb
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.genruntimeconfig.cache
+C:\xampp\htdocs\Programacion\C#\Batalla Naval-2\Batalla-Disparo\obj\Debug\net8.0\ref\Batalla-Disparo.dll
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\bin\Debug\net8.0\Batalla-Disparo.exe
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\bin\Debug\net8.0\Batalla-Disparo.deps.json
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\bin\Debug\net8.0\Batalla-Disparo.runtimeconfig.json
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\bin\Debug\net8.0\Batalla-Disparo.dll
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\bin\Debug\net8.0\Batalla-Disparo.pdb
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.AssemblyInfo.cs
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.sourcelink.json
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.dll
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\obj\Debug\net8.0\refint\Batalla-Disparo.dll
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.pdb
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\obj\Debug\net8.0\Batalla-Disparo.genruntimeconfig.cache
+C:\xampp\htdocs\Programacion\C#\Batalla-Disparo\obj\Debug\net8.0\ref\Batalla-Disparo.dll
