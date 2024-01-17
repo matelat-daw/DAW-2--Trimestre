@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Contando Items")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adb8424dc2cab93d18e5acf0ac78a79185334401")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4118f01f9f9f7ecb4d2ac295491aa7ce21ff005")]
 [assembly: System.Reflection.AssemblyProductAttribute("Contando Items")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Contando Items")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
