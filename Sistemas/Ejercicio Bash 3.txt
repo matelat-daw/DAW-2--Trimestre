@@ -1,0 +1,57 @@
+1-. Activa el bit setgid para el fichero uno.
+
+chmod g+s uno
+
+
+2-. Activa el bit setid para el fichero uno.
+
+chmod u+s uno // Pone el setuid en Mayusculas(S) quiere decir que el usuario no tiene permiso de ejecución, para dar permiso de ejecución chmod u+x uno
+
+
+3-. Activa el bit stickybit para el directorio unidad2.
+
+chmod -t unidad2
+
+
+4-.Asegurate que cuando crees un fichero tendrá los permisos --------- y cuando crees un directorio tiene --x--x--x.
+
+umask 666
+
+
+5-. Crea en la carpeta unidad1 el fichero uno, en la carpeta unidad2 el fichero dos y en la carpeta unidad3 el fichero tres.
+
+touch unidad1/uno unidad2/dos unidad3/tres
+
+
+6-. Crea una carpeta llamada activo y dentro de ella las carpetas llamadas unidad1 unidad2 unidad3.
+
+mkdir -p activo/{unidad1,unidad2,unidad3}
+
+
+7-. Haz que los permisos de dos sean lectura-escritura para el dueño, lectura para el grupo y los otros. Hazlo con formao numérico.
+
+chmod 644 dos
+
+
+8-. Modifica los permisos para que el grupo pueda borrar el ficherro dos.
+
+chmod g+w dos
+
+chmod 664 dos
+
+
+9-. Modifica los permisos para que el grupo pueda cambiar el nombre de uno.
+
+chmod g+w uno
+
+chmos 664 uno
+
+
+10-. Modifca los permisos para que el propietario pueda modificar uno pero no borrarlo.
+
+chmod u-w uno // Así pide confirmación pero se puede borrar.
+
+
+11-. Modifica los permisos para que los otros puedan modificar el fichero tres.
+
+chmod o+w tres

@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Ejercicio1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Ejercicio1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ejercicio1.dll": {}
+        }
+      },
+      "Ejercicio3/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Ejercicio1": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ejercicio3.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ejercicio3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ejercicio1/1.0.0": {
+      "type": "project",
+      "path": "../Ejercicio1/Ejercicio1.csproj",
+      "msbuildProject": "../Ejercicio1/Ejercicio1.csproj"
+    },
+    "Ejercicio3/1.0.0": {
+      "type": "project",
+      "path": "../Ejercicio3/Ejercicio3.csproj",
+      "msbuildProject": "../Ejercicio3/Ejercicio3.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Ejercicio3 >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Orion\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio6\\Ejercicio6.csproj",
+      "projectName": "Ejercicio6",
+      "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio6\\Ejercicio6.csproj",
+      "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio6\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio3\\Ejercicio3.csproj": {
+              "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio3\\Ejercicio3.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

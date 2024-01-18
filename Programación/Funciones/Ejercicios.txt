@@ -1,0 +1,17 @@
+Ejercicios de Programación.
+
+1-. Realizar una función a la que se le pasa un vector de números enteros (positivos y/o negativos), y devuelve el valor del número de menor valor de todos los incluidos.
+
+2-. Realizar una función a la que se le pasa un vector de números enteros (positivos y/o negativos), y devuelve la posición del número de menor valor de todos los incluidos.
+
+3-. Realizar una función a la que se le pasa el número de elementos con el que se rellena un vector con números aleatorios entre el 1 y el 99.
+
+4-. Crear una función a la que se le pasa un número que representa el año, y devuelve true si se trata de una año bisiesto y false si no lo es.
+
+5-. Realizar una función a la que dado un número entero (este numero no podrá ser menor o igual que 0),  determine el número de cifras que tiene. Por ejemplo, si introduzco un 253, me devuelva un 3.
+
+6-. Realizar una función que, pasado un vector del que desconocemos su longitud, calcule la media de sus valores (no se utilizan funciones de cálculo). Utilizar la función del ejercicio 3 para rellenar los valores.
+
+7-. Realizar una función a la que, dado un string y una letra, devuelve la cantidad de veces que aparece esa letra en el string.
+
+8-. Realizar una función a la que, dado un string y una letra, devuelve las posiciones en las que se encuentra.

@@ -1,0 +1,14 @@
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\bin\Debug\net8.0\Ejercicio5.exe
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\bin\Debug\net8.0\Ejercicio5.deps.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\bin\Debug\net8.0\Ejercicio5.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\bin\Debug\net8.0\Ejercicio5.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\bin\Debug\net8.0\Ejercicio5.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\obj\Debug\net8.0\Ejercicio5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\obj\Debug\net8.0\Ejercicio5.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\obj\Debug\net8.0\Ejercicio5.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\obj\Debug\net8.0\Ejercicio5.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\obj\Debug\net8.0\Ejercicio5.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\obj\Debug\net8.0\refint\Ejercicio5.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\obj\Debug\net8.0\Ejercicio5.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\obj\Debug\net8.0\Ejercicio5.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Ejercicio5\obj\Debug\net8.0\ref\Ejercicio5.dll

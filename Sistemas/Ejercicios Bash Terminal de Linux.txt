@@ -1,0 +1,58 @@
+1-. Crea en tu directorio de trabajo un directorio llamado sistemas y dentro de él otros dos llamados linux y ubuntu.
+
+mkdir -p sistemas/{linux,ubuntu}
+
+
+2-. Averigua cuantas entradas existen en el directorio sistemas.
+
+ls -a1 sistemas | wc -l
+
+
+3-. Borra los ficheros cuyo nombre termine con una vocal del subdirectorio linux solicitando confirmación, los errores deben quedar registrados en el fichero errores.txt en /tmp
+
+rm -Ri sistemas/linux/*[a,e,i,o,u] > /tmp/errores.txt
+
+
+4-. Copia del subdirectorio /tmp las entradas que empiecen por M a la ruta actual, usa ruta absoluta para /tmp y relativa para la actual.
+
+cp /tmp/M* ./
+
+
+5-. Crea con cat el fichero iPoco1 dentro de la carpeta linux, usa ruta relativa.
+
+cat > sistemas/linux/iPoco1
+
+
+6-. Desde tu home renombra el fichero iPoco1 por linX20, usa rutas relativas.
+
+mv sistemas/linux/iPoco1 sistemas/linux/linX20
+
+
+7-. Eliminar el Subdirectorio linux usando rutas absolutas
+
+rm -r /home/$USER/sistemas/linux
+
+
+8-. Posicionate en el directorio linux mediante ruta absoluta.
+
+cd /home/$USER/sistemas/linux
+
+
+9-. Suponiendo que no sabes en que directorio estás sitúate en tu directorio home.
+
+cd
+
+
+10-. Usando rutas relativas copia todas la entradas del directorio /tmp que empiecen por vocal al subdirectorio linux.
+
+cp /tmp/[a,e,i,o,u]* sistemas/linux
+
+
+11-. Visualiza el contenido del directorio /etc con formato largo y recursivo usando ruta absoluta.
+
+ls -Rl /etc
+
+
+12-. Visualiza los archivos ocultos del directorio actual.
+
+ls -a

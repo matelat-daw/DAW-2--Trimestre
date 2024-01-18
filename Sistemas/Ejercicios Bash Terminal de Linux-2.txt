@@ -1,0 +1,43 @@
+1-. Asegurate de que tienes actualizada la lista depaquetes para tu sistema en los repositorios.
+
+sudo apt update
+
+2-. Averigua de que paquetes depende nano.
+
+apt-cache depends nano
+
+3-. Averigua que paquetes dependen de nano.
+
+apt-cache rdepends nano
+
+4-. Comprueba de que ficheros se compone el paquete.
+
+dpkg -L nano
+
+5-. Comprueba que no hay dependencias por cumplir en el software de tu sistema.
+
+sudo apt -f install
+
+6-. Comprueba si el paquete nano-tiny está instalado en tu sistema.
+
+apt -q list nano-tiny
+
+7-. Desinstala el paquete nano-tiny y elimina sus ficheros de configuración.
+
+sudo apt purge nano-tiny
+
+8-. Instala el paquete nano-tiny.
+
+sudo apt install nano-tiny
+
+9-. Limpia la lista de paquetes instalados de entradas que ya no son útiles.
+
+sudo apt autoremove
+
+10-. Reinstrala el paquete nano-tiny.
+
+sudo apt reinstall nano-tiny
+
+11-. Simula la instalación del paquete nano-tiny para ver qué cambios habría.
+
+sudo apt -s install nano-tiny
