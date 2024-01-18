@@ -46,22 +46,38 @@ WHERE (SELECT l.Editorial FROM libro l GROUP BY l.Editorial) AND (SELECT a.Nombr
 
 -- 8. Listar los nombres de los estudiantes a los que se les prestaron libros de base de datos.
 
-
+SELECT e.Nombre, e.Apellido
+FROM estudiante e INNER JOIN prestamo p ON e.Id_Lector=p.Id_Lector INNER JOIN libro l ON p.id_libro=l.Id_Libro
+WHERE l.Id_Libro=6;
 
 
 -- 9. Listar el nombre del estudiante de menor edad.
 
 
+SELECT e.Nombre, e.Apellido, e.Edad
+FROM estudiante e
+WHERE e.Edad=(SELECT MIN(Edad) FROM estudiante);	-- Con Esta Consulta y Subconsulta Obtengo las Edades más Bajas de todos los Estudiantes que tengan la misma edad.
+
+SELECT e.Nombre, e.Apellido, MIN(e.Edad)
+FROM estudiante e;									-- Con esta Consulta se Obtiene el Primer Resultado que Encuentra.
+
+SELECT e.Nombre, e.Apellido
+FROM estudiante e
+WHERE e.Edad < 18;									-- Esta Consulta Obtiene Todos los Estudiantes Menores de 18 Años.
 
 
 -- 10. Que libros se prestó al lector “Raúl Valdez Alanes”.
 
-
+SELECT l.Titulo
+FROM estudiante e INNER JOIN prestamo p ON e.Id_Lector=p.Id_Lector INNER JOIN libro l ON l.Id_Libro=p.id_libro
+WHERE e.Apellido LIKE "Valdez Alanes";
 
 
 -- 11. Que libros son del área de internet.
 
-
+SELECT l.Titulo
+FROM libro l
+WHERE l.Area LIKE "Internet";
 
 
 -- 12. Que autores son de nacionalidad Usa o Francia
