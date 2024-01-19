@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Orion\\.nuget\\packages\\": {}
+    "C:\\Users\\orion\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio2\\Ejercicio2.csproj",
+      "projectUniqueName": "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Ejercicio2\\Ejercicio2.csproj",
       "projectName": "Ejercicio2",
-      "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio2\\Ejercicio2.csproj",
-      "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio2\\obj\\",
+      "projectPath": "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Ejercicio2\\Ejercicio2.csproj",
+      "packagesPath": "C:\\Users\\orion\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Ejercicio2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio1\\Ejercicio1.csproj": {
-              "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio1\\Ejercicio1.csproj"
+            "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Ejercicio1\\Ejercicio1.csproj": {
+              "projectPath": "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Ejercicio1\\Ejercicio1.csproj"
             }
           }
         }

@@ -8,7 +8,7 @@
 
         Console.WriteLine("La Palabra Es: Caballariza y la Letra a Buscar Es: a");
 
-        positions = Funciones8.positions("bbbabbb", 'a'); // Asigno a position el Resultado de la Llamada a la Función positions("Hola", 'a') a la que le paso como Parámetros una String y una Letra.
+        positions = Funciones8.positions("Caballariza", 'a'); // Asigno a position el Resultado de la Llamada a la Función positions("Hola", 'a') a la que le paso como Parámetros una String y una Letra.
 
         Funciones8.showPositions(positions); // Llamo a la Función showPositions(positions) Pasándole como Parámetro el Array positions.
     }

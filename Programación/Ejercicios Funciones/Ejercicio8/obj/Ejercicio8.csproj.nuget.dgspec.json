@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio8\\Ejercicio8.csproj": {}
+    "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Ejercicio8\\Ejercicio8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio8\\Ejercicio8.csproj": {
+    "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Ejercicio8\\Ejercicio8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio8\\Ejercicio8.csproj",
+        "projectUniqueName": "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Ejercicio8\\Ejercicio8.csproj",
         "projectName": "Ejercicio8",
-        "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio8\\Ejercicio8.csproj",
-        "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\Ejercicios Funciones\\Ejercicio8\\obj\\",
+        "projectPath": "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Ejercicio8\\Ejercicio8.csproj",
+        "packagesPath": "C:\\Users\\orion\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Ejercicio8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
