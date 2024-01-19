@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Arte Ascii")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edf0845af6192420455afa49198eaa2730aa940a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43979a56518f68d7604ceff3d6c5e369a7973898")]
 [assembly: System.Reflection.AssemblyProductAttribute("Arte Ascii")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Arte Ascii")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
