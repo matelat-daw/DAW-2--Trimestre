@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Determinante", "Determinante\Determinante.csproj", "{FF348D23-3C2E-4136-8214-7763D6BA2F85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sarrus Rule", "Sarrus Rule\Sarrus Rule.csproj", "{1CD440BC-E089-45C4-B068-83EAC95D7C0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF348D23-3C2E-4136-8214-7763D6BA2F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF348D23-3C2E-4136-8214-7763D6BA2F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF348D23-3C2E-4136-8214-7763D6BA2F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF348D23-3C2E-4136-8214-7763D6BA2F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD440BC-E089-45C4-B068-83EAC95D7C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD440BC-E089-45C4-B068-83EAC95D7C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD440BC-E089-45C4-B068-83EAC95D7C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD440BC-E089-45C4-B068-83EAC95D7C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02633FC3-6C11-456E-9AEC-8A06D6F5BB16}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\bin\Debug\net8.0\Sarrus Rule.exe
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\bin\Debug\net8.0\Sarrus Rule.deps.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\bin\Debug\net8.0\Sarrus Rule.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\bin\Debug\net8.0\Sarrus Rule.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\bin\Debug\net8.0\Sarrus Rule.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\obj\Debug\net8.0\Sarrus Rule.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\obj\Debug\net8.0\Sarrus Rule.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\obj\Debug\net8.0\Sarrus Rule.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\obj\Debug\net8.0\Sarrus Rule.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\obj\Debug\net8.0\Sarrus Rule.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\obj\Debug\net8.0\refint\Sarrus Rule.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\obj\Debug\net8.0\Sarrus Rule.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\obj\Debug\net8.0\Sarrus Rule.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Sarrus Rule\obj\Debug\net8.0\ref\Sarrus Rule.dll

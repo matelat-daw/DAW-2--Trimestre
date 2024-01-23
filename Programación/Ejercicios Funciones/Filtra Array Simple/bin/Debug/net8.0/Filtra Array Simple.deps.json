@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Filtra Array Simple/1.0.0": {
+        "runtime": {
+          "Filtra Array Simple.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Filtra Array Simple/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

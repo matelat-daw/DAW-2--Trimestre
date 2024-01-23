@@ -1,26 +1,38 @@
-﻿
-using System;
-
-public class Funciones8
+﻿public class Funciones8
 {
     public static int[] positions(string frase, char letter) // La Función positions(string frase, char letter), Recibe una String y una Letra y Busca las Posiciones donde están las Coincidencias con la Letra Buscada, en la String.
     {
-        int[] positions = new int[frase.Length]; // Por si Acaso Hay que Crear el Array positions al Tamaño Máximo de la String.
-        for (int i = 0; i < positions.Length; i++) // Bucle al Tamaño del Array positions.
-        {
-            positions[i] = -1; // Relleno el Array con -1 Para Poder Controlar Cuando no Hay Más Coincidencias.
-        }
+        int size = Funciones7.count(frase, letter); // Obtengo las coincidencias de la letra en la frase de la Función count deel ejercicio 7(Funciones7).
+        int[] positions = new int[size]; // Creo el array positions del tamao de la cantidad de coincidencias(size).
+
         int index = 0; // Declaro index y le Asigno el Valor 0.
 
         for (int i = 0; i < frase.Length; i++) // Bucle al Tamaño de la String.
         {
             if (letter == frase[i]) // Si la Letra Está en la Posición i en la String.
             {
-                positions[index] = i; // Asigno a la Posición index del Array positions el Valor de i.
-                index++; // Incremento index.
+                positions[index++] = i; // Asigno a la Posición index del Array positions el Valor de i y  post incremento index.
+                // index++; // Incremento index.
             }
         }
         return positions; // Devuelvo el Array positions.
+    }
+
+    public static int size(string frase, char letter, out int[] positions)
+    {
+        List<int> lista = new List<int>();
+
+        int i = 0;
+        for (i = 0; i < frase.Length; i++)
+        {
+            if (frase[i] == letter)
+            {
+                lista.Add(i);
+            }
+        }
+
+        positions = lista.ToArray();
+        return positions.Length;
     }
 
     public static void showPositions(int[] positions) // Función showPositions(int[] positions), Recibe un Array y Muestra por Pantalla las Posiciones de las Letras Encontradas en la String.

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Busca Valor/1.0.0": {
+        "runtime": {
+          "Busca Valor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Busca Valor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

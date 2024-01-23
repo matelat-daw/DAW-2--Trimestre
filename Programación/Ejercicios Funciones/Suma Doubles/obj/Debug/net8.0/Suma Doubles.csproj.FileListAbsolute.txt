@@ -1,0 +1,15 @@
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\bin\Debug\net8.0\Suma Doubles.exe
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\bin\Debug\net8.0\Suma Doubles.deps.json
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\bin\Debug\net8.0\Suma Doubles.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\bin\Debug\net8.0\Suma Doubles.dll
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\bin\Debug\net8.0\Suma Doubles.pdb
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\obj\Debug\net8.0\Suma Doubles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\obj\Debug\net8.0\Suma Doubles.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\obj\Debug\net8.0\Suma Doubles.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\obj\Debug\net8.0\Suma Doubles.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\obj\Debug\net8.0\Suma Doubles.sourcelink.json
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\obj\Debug\net8.0\Suma Doubles.dll
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\obj\Debug\net8.0\refint\Suma Doubles.dll
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\obj\Debug\net8.0\Suma Doubles.pdb
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\obj\Debug\net8.0\Suma Doubles.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º Trimestre\Programación\Ejercicios Funciones\Suma Doubles\obj\Debug\net8.0\ref\Suma Doubles.dll

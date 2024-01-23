@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Promedio de Doubles\\Promedio de Doubles.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Promedio de Doubles\\Promedio de Doubles.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Promedio de Doubles\\Promedio de Doubles.csproj",
+        "projectName": "Promedio de Doubles",
+        "projectPath": "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Promedio de Doubles\\Promedio de Doubles.csproj",
+        "packagesPath": "C:\\Users\\orion\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\orion\\Documents\\DAW-2º Trimestre\\Programación\\Ejercicios Funciones\\Promedio de Doubles\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

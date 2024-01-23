@@ -1,0 +1,14 @@
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\bin\Debug\net8.0\Promedio de Doubles.exe
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\bin\Debug\net8.0\Promedio de Doubles.deps.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\bin\Debug\net8.0\Promedio de Doubles.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\bin\Debug\net8.0\Promedio de Doubles.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\bin\Debug\net8.0\Promedio de Doubles.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\obj\Debug\net8.0\Promedio de Doubles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\obj\Debug\net8.0\Promedio de Doubles.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\obj\Debug\net8.0\Promedio de Doubles.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\obj\Debug\net8.0\Promedio de Doubles.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\obj\Debug\net8.0\Promedio de Doubles.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\obj\Debug\net8.0\refint\Promedio de Doubles.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\obj\Debug\net8.0\Promedio de Doubles.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\obj\Debug\net8.0\Promedio de Doubles.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Ejercicios Funciones\Promedio de Doubles\obj\Debug\net8.0\ref\Promedio de Doubles.dll

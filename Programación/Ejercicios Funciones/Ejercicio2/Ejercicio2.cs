@@ -2,7 +2,7 @@
 {
     static void Main(string[] args)
     {
-        int[] array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1];
+        int[] array = [1, 2, 3, 4, -20, 6, 7, 8, 9, 10, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1];
 
         Console.WriteLine("Este Programa Llama a una Función que le Pasa un Array con Números Enteros Positivos y Negativos y Retorna la Posición del valor Mínimo del Array.\n");
 

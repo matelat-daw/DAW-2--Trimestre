@@ -1,0 +1,14 @@
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\bin\Debug\net8.0\Determinante.exe
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\bin\Debug\net8.0\Determinante.deps.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\bin\Debug\net8.0\Determinante.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\bin\Debug\net8.0\Determinante.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\bin\Debug\net8.0\Determinante.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\obj\Debug\net8.0\Determinante.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\obj\Debug\net8.0\Determinante.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\obj\Debug\net8.0\Determinante.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\obj\Debug\net8.0\Determinante.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\obj\Debug\net8.0\Determinante.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\obj\Debug\net8.0\refint\Determinante.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\obj\Debug\net8.0\Determinante.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\obj\Debug\net8.0\Determinante.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\Algoritmos Raros\Determinante\obj\Debug\net8.0\ref\Determinante.dll
