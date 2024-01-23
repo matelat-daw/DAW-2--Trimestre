@@ -3,28 +3,14 @@
     public static double[,] orlaMatriz(double[,] array, int startrow, int startcol, int rows, int cols)
     {
         double[,] nuevoArray = new double[rows + 2, cols + 2];
-        int i = 0;
-        int j = 0;
+        int f;
+        int c;
 
-        for (i = 0; i < rows + 2; i++)
+        for (f = 1; f < nuevoArray.GetLength(0) - 1; f++)
         {
-            for (j = 0; j < cols + 2; j++)
+            for (c = 1; c < nuevoArray.GetLength(1) - 1; c++)
             {
-                if (i < 1 || i > rows)
-                {
-                    nuevoArray[i, j] = 0.0;
-                }
-                else
-                {
-                    if (j < 1 || j > cols)
-                    {
-                        nuevoArray[i, j] = 0.0;
-                    }
-                    else
-                    {
-                        nuevoArray[i, j] = array[startrow + i - 1, startcol + j - 1];
-                    }
-                }
+                nuevoArray[f, c] = array[startrow + f - 1, startcol + c - 1];
             }
         }
         return nuevoArray;

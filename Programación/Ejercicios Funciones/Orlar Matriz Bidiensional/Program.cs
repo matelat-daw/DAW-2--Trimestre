@@ -18,7 +18,7 @@
 
         try
         {
-            nuevoArray = Funciones.orlaMatriz(array, 2, 2, 4, 3);
+            nuevoArray = Funciones.orlaMatriz(array, 1, 1, 4, 4);
             FuncionesRecorte.show(nuevoArray);
         }
         catch (Exception ex)
