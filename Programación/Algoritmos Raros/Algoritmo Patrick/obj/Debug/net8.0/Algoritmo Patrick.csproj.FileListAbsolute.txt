@@ -1,0 +1,14 @@
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\obj\Debug\net8.0\Algoritmo Patrick.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\obj\Debug\net8.0\Algoritmo Patrick.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\obj\Debug\net8.0\Algoritmo Patrick.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\obj\Debug\net8.0\Algoritmo Patrick.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\bin\Debug\net8.0\Algoritmo Patrick.exe
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\bin\Debug\net8.0\Algoritmo Patrick.deps.json
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\bin\Debug\net8.0\Algoritmo Patrick.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\bin\Debug\net8.0\Algoritmo Patrick.dll
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\bin\Debug\net8.0\Algoritmo Patrick.pdb
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\obj\Debug\net8.0\Algoritmo Patrick.dll
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\obj\Debug\net8.0\refint\Algoritmo Patrick.dll
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\obj\Debug\net8.0\Algoritmo Patrick.pdb
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\obj\Debug\net8.0\Algoritmo Patrick.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\DAW-2º\Programacion\C#\Algoritmos Raros\Algoritmo Patrick\obj\Debug\net8.0\ref\Algoritmo Patrick.dll
