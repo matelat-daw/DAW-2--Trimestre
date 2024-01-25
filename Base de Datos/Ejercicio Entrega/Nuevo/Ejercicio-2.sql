@@ -80,12 +80,12 @@ ALTER TABLE profesores
   
 ALTER TABLE alumnos
     ADD CONSTRAINT sexo CHECK (sexo LIKE "H" OR sexo LIKE "M"),
-	ADD CONSTRAINT FK_cod_curso FOREIGN KEY (curso) REFERENCES cursos (cod_curso);
+	ADD CONSTRAINT FK_cod_curso FOREIGN KEY (curso) REFERENCES cursos (cod_curso) ON DELETE CASCADE ON UPDATE CASCADE;
 
 
 ALTER TABLE cursos
 	ADD CONSTRAINT fechas CHECK (fecha_inicio < fecha_fin),
-	ADD CONSTRAINT FK_dni_profesor FOREIGN KEY (dni_profesor) REFERENCES profesores (dni);
+	ADD CONSTRAINT FK_dni_profesor FOREIGN KEY (dni_profesor) REFERENCES profesores (dni) ON DELETE NO ACTION ON UPDATE CASCADE;
 	
 
 -- 2-. Insertando los Datos en la Tablas, Hay que Insertarlos en ese Orden Debido a las Restrcciones de las FOREIGN KEY, Para Crear la Tabla cursos Debe Existir la Tabla Profesores y Para Crear la Tabla alumnos Debe Existir la Tabla cursos.
