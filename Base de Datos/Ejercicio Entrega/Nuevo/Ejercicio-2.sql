@@ -12,7 +12,7 @@ USE academia;
 
 -- Crear la Tabla Alumnos con sexo tipo de dato enum("H", "M").
 
-CREATE TABLE alumnos (
+/* CREATE TABLE alumnos (
 	Nombre varchar(20) NOT NULL,
     Apellido1 varchar(20) NOT NULL,
     Apellido2 varchar(20),
@@ -21,7 +21,7 @@ CREATE TABLE alumnos (
     sexo enum("H", "M"),
     fecha_nacimiento date,
     curso int NOT NULL
-);
+); */
 
 -- sexo tipo de dato char.
 
