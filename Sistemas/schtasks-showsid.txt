@@ -1,0 +1,18 @@
+C:\>schtasks /showsid /?
+
+SCHTASKS /ShowSid /TN taskname [/HRESULT] [/?]
+
+Description:
+    Shows the SID for the task's dedicated user.
+
+Parameter List:
+    /TN  taskname    Specifies the path\name of the scheduled task.
+
+    /HRESULT         For better diagnosability, the process exit code
+                     will be in the HRESULT format.
+
+    /?               Displays this help message.
+
+Examples:
+    SCHTASKS /ShowSid /?
+    SCHTASKS /ShowSid /TN "\Backup\Start Backup"
