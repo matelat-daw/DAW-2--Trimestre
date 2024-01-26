@@ -80,12 +80,12 @@ ALTER TABLE profesores
   
 ALTER TABLE alumnos
     ADD CONSTRAINT sexo CHECK (sexo LIKE "H" OR sexo LIKE "M"),
-	ADD CONSTRAINT FK_cod_curso FOREIGN KEY (curso) REFERENCES cursos (cod_curso);
+	ADD CONSTRAINT FK_cod_curso FOREIGN KEY (curso) REFERENCES cursos (cod_curso) ON DELETE CASCADE ON UPDATE CASCADE;
 
 
 ALTER TABLE cursos
 	ADD CONSTRAINT fechas CHECK (fecha_inicio < fecha_fin),
-	ADD CONSTRAINT FK_dni_profesor FOREIGN KEY (dni_profesor) REFERENCES profesores (dni);
+	ADD CONSTRAINT FK_dni_profesor FOREIGN KEY (dni_profesor) REFERENCES profesores (dni) ON DELETE NO ACTION ON UPDATE CASCADE;
 	
 
 -- 2-. Insertando los Datos en la Tablas, Hay que Insertarlos en ese Orden Debido a las Restrcciones de las FOREIGN KEY, Para Crear la Tabla cursos Debe Existir la Tabla Profesores y Para Crear la Tabla alumnos Debe Existir la Tabla cursos.
@@ -236,18 +236,27 @@ DELETE FROM profesores WHERE Nombre LIKE "Laura" AND Apellido1 LIKE "Jiménez";
 
 -- 15-. Creando una Tabla de Uso Temporal nombre_de_alumnos, con el Atributo Nombre_Completo de Tipo Cadena de Caracteres y con el Contenido de la Tabla alumnos en Esos Campos, Sin PRIMARY KEY.
 
-CREATE TABLE nombre_de_alumnos(
-	Nombre_Completo varchar(60)
-);
+CREATE TEMPORARY TABLE nombre_de_alumnos(Nombre_Completo varchar(60)); INSERT INTO nombre_de_alumnos SELECT CONCAT(Nombre, " ", Apellido1, " ", Apellido2) FROM alumnos;
 
-INSERT INTO nombre_de_alumnos SELECT CONCAT(Nombre, " ", Apellido1, " ", Apellido2) FROM alumnos;
+/* Para Obtener el Resultado Eperado Hay que Crear la Tabla Primero con su Atributo y Hacer el INSERT al Mismo Tiempo de los Datos Concatenados(Nombre, Apellido1, Apellido2) de la Tabla alumnos en PHPmyadmin. En la Consola de MySQL se Hace así:
 
--- Para Obtener el Resultado Eperado Hay que Crear la Tabla Primero con su Atributo y Después Hacer el INSERT de los Datos Concatenados(Nombre, Apellido1, Apellido2) de la Tabla alumnos.
+   MariaDB [academia]> */ CREATE TEMPORARY TABLE nombre_de_alumnos(Nombre_Completo varchar(60));
+/* Query OK, 0 rows affected (0.005 sec) */
+
+/* MariaDB [academia]> */ INSERT INTO nombre_de_alumnos SELECT CONCAT(Nombre, " ", Apellido1, " ", Apellido2) FROM alumnos;
+/* Query OK, 1 row affected (0.003 sec) */
+/* Records: 1  Duplicates: 0  Warnings: 0 */
+
+/* MariaDB [academia]> */ SELECT * FROM nombre_de_alumnos;
+/* +--------------------------+
+ | Nombre_Completo          |
+ +--------------------------+
+ | Alumno-1 Primero Segundo |
+ +--------------------------+
+ 1 row in set (0.000 sec) */
 
 
 -- 16-. Borrando Todas las Tablas.
-
-DROP TABLE nombre_de_alumnos;
 
 DROP TABLE profesores;
 
@@ -255,4 +264,4 @@ DROP TABLE alumnos;
 
 DROP TABLE cursos;
 
--- Se Pueden Eliminar las Tablas en ese Orden y Hay que Eliminar la Tabla alumnos Antes que la Tabla cursos. Debido a las Restricciones de las FOREIGN KEY, no se puede Eliminar la Tabla cursos Antes ya que la PRIMARY KEY de la Tabla cursos (cod_curso) Está Relacionada con la FOREIGN KEY curso de la Tabla alumnos. Aclaración, En Este Caso, se Puede Eliminar la Tabla profesores Antes que la Tabla cursos, ya que se Cambió la PRIMARY KEY de la Tabla profesores, Antes era dni y Estaba Relacionada con la FOREIGN KEY dni_profesor de la Tabla cursos si Aun Estuviera así Habría que Borar Primero alumnos, Luego cursos y por Último profesores.
+-- Se Pueden Eliminar las Tablas en ese Orden y Hay que Eliminar la Tabla alumnos Antes que la Tabla cursos. Debido a las Restricciones de las FOREIGN KEY, no se puede Eliminar la Tabla cursos Antes ya que la PRIMARY KEY de la Tabla cursos (cod_curso) Está Relacionada con la FOREIGN KEY curso de la Tabla alumnos. Aclaración, En Este Caso, se Puede Eliminar la Tabla profesores Antes que la Tabla cursos, ya que se Cambió la PRIMARY KEY de la Tabla profesores, Antes era dni y Estaba Relacionada con la FOREIGN KEY dni_profesor de la Tabla cursos si Aun Estuviera así Habría que Borrar Primero alumnos, Luego cursos y por Último profesores. La Tabla Temporal nombre_de_alumnos no Hace Falta Eliminarla ya que Solo Existe Provisionalmente.

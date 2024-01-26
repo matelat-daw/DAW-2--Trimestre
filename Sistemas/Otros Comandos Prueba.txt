@@ -1,0 +1,74 @@
+mkdir -p Main/{Marte/{Deimos,Fobos},Neptuno/{Nereida/{Galatea,Larisa,Proteo},Tritón/{Despina,Talasa}}} // Crea los Directorios a Partir de la Posición Actual.
+
+
+ls -a /etc/[^aeiouAEIOU]* --block-size=30 | wc -l // Muestra la Cantidad de Ficheros que hay en el Directorio /etc Cuyo Nombre no Empieza por Vocal y que ocupan 30 bloques con el Modificador wc -l.
+
+
+umask -S 137 // Pone la Mascara 640, lectura/escritura Usuario, lectura Grupo.
+
+
+cat > ../../../Marte/Fobos/prueba.txt // Crea un Fichero Llamado prueba.txt, CTRL+D para salir.
+uno
+dos
+tres
+Ctrl+d
+
+
+chmod o+w ../../../Marte/Fobos/prueba.txt // Agrega el permiso de Escritura para otros.
+
+
+ln ../../../Marte/Fobos/prueba.txt ../../Tritón/Talasa/hard.txt // Enlace Duro.
+
+
+ln -s /etc/passwd ../../../slinke.txt // Enlace Blando -s.
+
+
+# Copiar el enlace duro hard.txt a Galatea
+cp -l ../../Tritón/Talasa/hard.txt ../Galatea
+
+
+# Copiar el enlace simbólico slinke.txt a Galatea
+cp -P ../../../slinke.txt ../Galatea
+
+
+
+ls -d ./[0-9]*[aeiouAEIOU]*????.{jpg,gif} // Esto Muestra los ficheros tipo jpg o gif que tengan 6 caracteres y que empiecen por digito y contengan una vocal(En la Segunda Posición).
+
+rm [0-9]*[aeiouAEIOU]*????.{jpg,gif} 2> /tmp/salerror.txt // Borra todos los ficheros que lista ls pero si su nombre tiene 6 o más caracteres.
+
+
+
+result=$(grep "^[aeiouAEIOU].*bash" /etc/passwd | wc -l); echo "There are $result coincidences." // Encuentra las frases que empiezan por vocal y contienen bash en el fichero /etc/passwd y muestra un mensaje diciendo cuantas coincidencias hay.
+
+
+
+apt search gnome-backgrounds
+apt -s install gnome-backgrounds
+sudo apt install gnome-backgrounds
+sudo apt remove gnome-backgrounds
+
+
+
+sudo poweroff
+sudo halt
+
+
+
+lsblk # para ver los discos del sistema
+
+sdb      8:16   0    30G  0 disk 
+├─sdb1   8:17   0     5G  0 part 
+├─sdb2   8:18   0     5G  0 part 
+├─sdb3   8:19   0     5G  0 part 
+└─sdb4   8:20   0     5G  0 part 
+
+sudo mkfs.ext4 /dev/sdb1
+
+
+
+sudo mount -o rw,sync,noexec,nosuid,nodev,nofollow /dev/sdb5 /media // Se Supone que esto monta la unidad /dev/sdb5 en el directorio /media con sincronización pero sin uso de buffers, no funciona el suid, no funciona como dispositivo, y no sigue lo senlaces.
+
+
+
+
+

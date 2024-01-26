@@ -1,0 +1,41 @@
+C:\>tasklist /?
+
+TASKLIST [/S system [/U username [/P [password]]]]								Description:
+         [/M [module] | /SVC | /V] [/FI filter] [/FO format] [/NH]					This tool displays a list of currently running processes on
+																					either a local or remote machine.
+Parameter List:
+   /S     system           Specifies the remote system to connect to.				/U     [domain\]user    Specifies the user context under which
+																											the command should execute.
+   /P     [password]       Specifies the password for the given
+                           user context. Prompts for input if omitted.				/SVC                    Displays services hosted in each process.
+
+   /M     [module]         Lists all tasks currently using the given				/APPS                   Displays Store Apps and their associated processes.
+                           exe/dll name. If the module name is not
+                           specified all loaded modules are displayed.				/V                      Displays verbose task information.
+
+   /FI    filter           Displays a set of tasks that match a						/NH                     Specifies that the "Column Header" should
+                           given criteria specified by the filter.											not be displayed in the output.
+
+   /FO    format           Specifies the output format.								/?                      Displays this help message.
+                           Valid values: "TABLE", "LIST", "CSV".
+                           Valid only for "TABLE" and "CSV" formats.
+
+Filters:
+    Filter Name     Valid Operators           Valid Value(s)
+    -----------     ---------------           --------------------------			NOTE: "WINDOWTITLE" and "STATUS" filters are not supported when querying
+    STATUS          eq, ne                    RUNNING | SUSPENDED							a remote machine.
+                                              NOT RESPONDING | UNKNOWN
+    IMAGENAME       eq, ne                    Image name							Examples:
+    PID             eq, ne, gt, lt, ge, le    PID value										TASKLIST
+    SESSION         eq, ne, gt, lt, ge, le    Session number								TASKLIST /M
+    SESSIONNAME     eq, ne                    Session name									TASKLIST /V /FO CSV
+    CPUTIME         eq, ne, gt, lt, ge, le    CPU time in the format						TASKLIST /SVC /FO LIST
+                                              of hh:mm:ss.									TASKLIST /APPS /FI "STATUS eq RUNNING"
+                                              hh - hours,									TASKLIST /M wbem*
+                                              mm - minutes, ss - seconds					TASKLIST /S system /FO LIST
+    MEMUSAGE        eq, ne, gt, lt, ge, le    Memory usage in KB							TASKLIST /S system /U domain\username /FO CSV /NH
+    USERNAME        eq, ne                    User name in [domain\]user					TASKLIST /S system /U username /P password /FO TABLE /NH
+                                              format										TASKLIST /FI "USERNAME ne NT AUTHORITY\SYSTEM" /FI "STATUS eq running"
+    SERVICES        eq, ne                    Service name
+    WINDOWTITLE     eq, ne                    Window title
+    MODULES         eq, ne                    DLL name

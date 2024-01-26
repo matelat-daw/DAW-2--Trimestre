@@ -1,0 +1,76 @@
+1-. A un disco de 30 GB dale una tabla de particiones GPT.
+
+sudo gdisk /dev/sdb
+
+o
+w
+Y
+q
+
+
+2-. En el disco creado crea 5 particiones de 5 GB cada una.
+
+sudo gdisk /dev/sdb
+
+n
+1
+Enter
++5G
+n
+2
+Enter
++5G
+n
+3
+Enter
++5G
+n
+4
+Enter
++5G
+n
+5
+Enter
+Enter
+w
+Y
+q
+
+
+3-. Da a la primera partición el FS ext3
+
+sudo mkfs.ext3 /dev/sdb1
+
+
+4-. Da a la segunda partición el FS ext4
+
+sudo mkfs.ext4 /dev/sdb2
+
+
+5-. Monta la primera partición en /mnt en modo solo lectura
+sudo mount -o ro /dev/sdb1 /mnt
+
+
+6-. Monta la segunda partición en /media en modo lectura escritura
+
+sudo mount /dev/sdb2 /media // Por defecto se monta en modo lectura/escritura.
+
+
+7-. Cambia el modo de la particion montada en /mnt a lectura escritura, sin desmontarla.
+
+sudo mount -o remount,rw /dev/sdb1 /mntexit
+
+
+8-. Comprueba que particiones del nuevo disco están montadas en el sistema.
+
+mount -v | grep "/dev/sdb*"
+
+
+
+Para remontar un dispositivo solo lectura se usa:
+
+sudo mount -o remount,ro /dev/sdb1 /media/disk-1
+
+Para volver a montarlo con lectura escritura:
+
+sudo mount -o remount,rw /dev/sdb1 /media/disk-1
