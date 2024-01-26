@@ -236,13 +236,24 @@ DELETE FROM profesores WHERE Nombre LIKE "Laura" AND Apellido1 LIKE "Jiménez";
 
 -- 15-. Creando una Tabla de Uso Temporal nombre_de_alumnos, con el Atributo Nombre_Completo de Tipo Cadena de Caracteres y con el Contenido de la Tabla alumnos en Esos Campos, Sin PRIMARY KEY.
 
-CREATE TABLE nombre_de_alumnos(
-	Nombre_Completo varchar(60)
-);
+CREATE TABLE nombre_de_alumnos(Nombre_Completo varchar(60)); INSERT INTO nombre_de_alumnos SELECT CONCAT(Nombre, " ", Apellido1, " ", Apellido2) FROM alumnos;
 
-INSERT INTO nombre_de_alumnos SELECT CONCAT(Nombre, " ", Apellido1, " ", Apellido2) FROM alumnos;
+/* Para Obtener el Resultado Eperado Hay que Crear la Tabla Primero con su Atributo y Hacer el INSERT al Mismo Tiempo de los Datos Concatenados(Nombre, Apellido1, Apellido2) de la Tabla alumnos en PHPmyadmin. En la Consola de MySQL se Hace así:
 
--- Para Obtener el Resultado Eperado Hay que Crear la Tabla Primero con su Atributo y Después Hacer el INSERT de los Datos Concatenados(Nombre, Apellido1, Apellido2) de la Tabla alumnos.
+   MariaDB [academia]> */ CREATE TEMPORARY TABLE nombre_de_alumnos(Nombre_Completo varchar(60));
+/* Query OK, 0 rows affected (0.005 sec) */
+
+/* MariaDB [academia]> */ INSERT INTO nombre_de_alumnos SELECT CONCAT(Nombre, " ", Apellido1, " ", Apellido2) FROM alumnos;
+/* Query OK, 1 row affected (0.003 sec) */
+/* Records: 1  Duplicates: 0  Warnings: 0 */
+
+/* MariaDB [academia]> */ SELECT * FROM nombre_de_alumnos;
+/* +--------------------------+
+ | Nombre_Completo          |
+ +--------------------------+
+ | Alumno-1 Primero Segundo |
+ +--------------------------+
+ 1 row in set (0.000 sec) */
 
 
 -- 16-. Borrando Todas las Tablas.
