@@ -236,7 +236,7 @@ DELETE FROM profesores WHERE Nombre LIKE "Laura" AND Apellido1 LIKE "Jiménez";
 
 -- 15-. Creando una Tabla de Uso Temporal nombre_de_alumnos, con el Atributo Nombre_Completo de Tipo Cadena de Caracteres y con el Contenido de la Tabla alumnos en Esos Campos, Sin PRIMARY KEY.
 
-CREATE TABLE nombre_de_alumnos(Nombre_Completo varchar(60)); INSERT INTO nombre_de_alumnos SELECT CONCAT(Nombre, " ", Apellido1, " ", Apellido2) FROM alumnos;
+CREATE TEMPORARY TABLE nombre_de_alumnos(Nombre_Completo varchar(60)); INSERT INTO nombre_de_alumnos SELECT CONCAT(Nombre, " ", Apellido1, " ", Apellido2) FROM alumnos;
 
 /* Para Obtener el Resultado Eperado Hay que Crear la Tabla Primero con su Atributo y Hacer el INSERT al Mismo Tiempo de los Datos Concatenados(Nombre, Apellido1, Apellido2) de la Tabla alumnos en PHPmyadmin. En la Consola de MySQL se Hace así:
 
@@ -258,12 +258,10 @@ CREATE TABLE nombre_de_alumnos(Nombre_Completo varchar(60)); INSERT INTO nombre_
 
 -- 16-. Borrando Todas las Tablas.
 
-DROP TABLE nombre_de_alumnos;
-
 DROP TABLE profesores;
 
 DROP TABLE alumnos;
 
 DROP TABLE cursos;
 
--- Se Pueden Eliminar las Tablas en ese Orden y Hay que Eliminar la Tabla alumnos Antes que la Tabla cursos. Debido a las Restricciones de las FOREIGN KEY, no se puede Eliminar la Tabla cursos Antes ya que la PRIMARY KEY de la Tabla cursos (cod_curso) Está Relacionada con la FOREIGN KEY curso de la Tabla alumnos. Aclaración, En Este Caso, se Puede Eliminar la Tabla profesores Antes que la Tabla cursos, ya que se Cambió la PRIMARY KEY de la Tabla profesores, Antes era dni y Estaba Relacionada con la FOREIGN KEY dni_profesor de la Tabla cursos si Aun Estuviera así Habría que Borrar Primero alumnos, Luego cursos y por Último profesores.
+-- Se Pueden Eliminar las Tablas en ese Orden y Hay que Eliminar la Tabla alumnos Antes que la Tabla cursos. Debido a las Restricciones de las FOREIGN KEY, no se puede Eliminar la Tabla cursos Antes ya que la PRIMARY KEY de la Tabla cursos (cod_curso) Está Relacionada con la FOREIGN KEY curso de la Tabla alumnos. Aclaración, En Este Caso, se Puede Eliminar la Tabla profesores Antes que la Tabla cursos, ya que se Cambió la PRIMARY KEY de la Tabla profesores, Antes era dni y Estaba Relacionada con la FOREIGN KEY dni_profesor de la Tabla cursos si Aun Estuviera así Habría que Borrar Primero alumnos, Luego cursos y por Último profesores. La Tabla Temporal nombre_de_alumnos no Hace Falta Eliminarla ya que Solo Existe Provisionalmente.
