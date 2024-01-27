@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Algoritmo Patrick")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d277d2e587e6cee86c943ec3f0c2a24cb9201c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98c2e496670cafda3cda07fc9331443772da10f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Algoritmo Patrick")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Algoritmo Patrick")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
