@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pila")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40e6d04eff8aae21c41557f739cb1c2492215b69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef418dda467cfd5f46e49c887da6e7cb7253aa3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pila")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pila")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
