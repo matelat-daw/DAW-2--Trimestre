@@ -1,0 +1,36 @@
+#btn1
+{
+    background-color: aqua;
+    width: 20%;
+    height: 40px;
+}
+
+.giant
+{
+    font-size: 16em;
+}
+
+.blue
+{
+    color: blue;
+}
+
+.red
+{
+    color: red;
+}
+
+.green
+{
+    color: green;
+}
+
+.yellow
+{
+    color: yellow;
+}
+
+span:hover
+{
+    transform: rotate(-45deg) scale(1);
+}
