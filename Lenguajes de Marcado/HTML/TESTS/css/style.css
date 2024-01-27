@@ -8,6 +8,7 @@
 .giant
 {
     font-size: 16em;
+    text-align: center;
 }
 
 .blue
@@ -20,6 +21,11 @@
     color: red;
 }
 
+.orange
+{
+    color: orange;
+}
+
 .green
 {
     color: green;
@@ -30,7 +36,13 @@
     color: yellow;
 }
 
-span:hover
+.rotate
 {
-    transform: rotate(-45deg) scale(1);
+    animation: move 60s infinite;
+    text-shadow: -2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000; 
+}
+
+@keyframes move
+{
+    100% {transform: rotate(360deg);}
 }
