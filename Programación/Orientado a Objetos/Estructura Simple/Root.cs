@@ -1,16 +1,7 @@
-﻿public class Program
+﻿public class Root
 {
     static void Main(string[] args)
     {
-        // Coordenada[] puntos = new Coordenada[3];
-        // puntos[0] = new Coordenada();
-        // puntos[1] = new Coordenada();
-        // puntos[2] = new Coordenada();
-        // puntos[0].x = 5;
-        // puntos[0].y = 15;
-
-        // Console.WriteLine("Este Programa Crea una Estructura de Datos int, que Contendrá Coordenadas.\n");
-
         Pila p;
         p = new Pila();
         p.desapilar();
@@ -35,12 +26,6 @@
 
     }
 }
-
-// class Coordenada()
-// {
-//     public int x;
-//     public int y;
-// }
 
 class Pila()
 {

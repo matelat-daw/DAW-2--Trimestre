@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Estructura Simple\\Estructura Simple.csproj",
-      "projectName": "Estructura Simple",
-      "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Estructura Simple\\Estructura Simple.csproj",
+      "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Coordenadas\\Coordenadas.csproj",
+      "projectName": "Coordenadas",
+      "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Coordenadas\\Coordenadas.csproj",
       "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Estructura Simple\\obj\\",
+      "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Coordenadas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
