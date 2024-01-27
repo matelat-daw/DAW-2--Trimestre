@@ -66,12 +66,12 @@ CREATE TABLE profesores (
 ALTER TABLE cursos
   MODIFY cod_curso int AUTO_INCREMENT PRIMARY KEY,
   ADD UNIQUE KEY Nombre_curso (Nombre_curso),
-  ADD KEY `Hace Referencia a dni de la Tabla profesores` (dni_profesor);
+  ADD KEY `Hace Referencia a dni de la Tabla profesores` (dni_profesor); -- Esto solo se hace si quiero poner de nombre a la Clave Foránea: Hace Referencia a dni de la Tabla profesores, Tiene que Estar Entre Estas Comillas `.
   
   
 ALTER TABLE alumnos
   ADD PRIMARY KEY (dni),
-  ADD KEY `Hace Referencia a cod_curso de la Tabla cursos` (curso);
+  ADD KEY `Hace Referencia a cod_curso de la Tabla cursos` (curso); -- Lo Mismo en Este Caso.
   
   
 ALTER TABLE profesores
@@ -79,7 +79,7 @@ ALTER TABLE profesores
   
   
 ALTER TABLE alumnos
-    ADD CONSTRAINT sexo CHECK (sexo LIKE "H" OR sexo LIKE "M"),
+    ADD CONSTRAINT sexo CHECK (BINARY sexo = UPPER("H") OR BINARY sexo = UPPER("M")),
 	ADD CONSTRAINT FK_cod_curso FOREIGN KEY (curso) REFERENCES cursos (cod_curso) ON DELETE CASCADE ON UPDATE CASCADE;
 
 
