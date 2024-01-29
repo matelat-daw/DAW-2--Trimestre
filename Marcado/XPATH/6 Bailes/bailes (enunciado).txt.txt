@@ -1,0 +1,22 @@
+﻿1. Muestra el nombre de todos los bailes.
+
+
+2. Muestra el nombre y precio de todos los bailes.
+
+
+3. Muestra el nombre y precio de todos los bailes donde su precio es mayor que 40
+
+
+4. Mostrar los nombres de los bailes que contienen una a.
+
+
+5. Mostrar el nombre de los bailes donde el apellido del profesor sea Lozano.
+ 
+
+6. Mostrar todos los bailes, excepto el 3 y 5.
+
+
+7. Mostrar profesores que den clases de bailes por una cuota mensual.
+
+
+8. Mostrar el nombre de los bailes de la sala 1, que se pague con euros y el precio sea menor a 35.

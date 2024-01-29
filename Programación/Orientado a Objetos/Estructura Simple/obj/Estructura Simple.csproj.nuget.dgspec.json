@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xampp\\htdocs\\Programacion\\C#\\Orientado a Objetos\\Estructura Simple\\Estructura Simple.csproj": {}
+    "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Estructura Simple\\Estructura Simple.csproj": {}
   },
   "projects": {
-    "C:\\xampp\\htdocs\\Programacion\\C#\\Orientado a Objetos\\Estructura Simple\\Estructura Simple.csproj": {
+    "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Estructura Simple\\Estructura Simple.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\Programacion\\C#\\Orientado a Objetos\\Estructura Simple\\Estructura Simple.csproj",
+        "projectUniqueName": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Estructura Simple\\Estructura Simple.csproj",
         "projectName": "Estructura Simple",
-        "projectPath": "C:\\xampp\\htdocs\\Programacion\\C#\\Orientado a Objetos\\Estructura Simple\\Estructura Simple.csproj",
+        "projectPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Estructura Simple\\Estructura Simple.csproj",
         "packagesPath": "C:\\Users\\orion\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\Programacion\\C#\\Orientado a Objetos\\Estructura Simple\\obj\\",
+        "outputPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Estructura Simple\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\orion\\AppData\\Roaming\\NuGet\\NuGet.Config",

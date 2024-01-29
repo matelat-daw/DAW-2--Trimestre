@@ -1,0 +1,48 @@
+﻿A) Párrafos:
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<h1>CIFP Cesar Manrique</h1>
+<p>Administración de Sistemas Informáticos en Red</p>
+<p>Desarrollo de Aplicaciones Web</p>
+<p>Sistemas Microinformáticos y Redes</p>
+</html>
+B) Lista:
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<h1>Ciclos formativos del CIFP Cesar Manrique</h1>
+<ul>
+<li>ASIR<br/>Administración de Sistemas Informáticos en Red, Ciclo Formativo
+de Grado Superior creado en 2009</li>
+<li>DAW<br/>Desarrollo de Aplicaciones Web, Ciclo Formativo de Grado Superior
+creado en 2010</li>
+<li>SMR<br/>Sistemas Microinformáticos y Redes, Ciclo Formativo de Grado
+Medio creado en 2008</li>
+</ul>
+</html>
+C) Tabla:
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<h1>CIFP Cesar Manrique</h1>
+<table border="1">
+<tr>
+<th>Nombre del ciclo</th>
+<th>Grado</th>
+<th>Año del título</th>
+</tr>
+<tr>
+<td>Administración de Sistemas Informáticos en Red</td>
+<td>Superior</td>
+<td>2009</td>
+</tr>
+<tr>
+<td>Desarrollo de Aplicaciones Web</td>
+<td>Superior</td>
+<td>2010</td>
+</tr>
+<tr>
+<td>Sistemas Microinformáticos y Redes</td>
+<td>Medio</td>
+<td>2008</td>
+</tr>
+</table>
+</html>

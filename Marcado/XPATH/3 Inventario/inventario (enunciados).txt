@@ -1,0 +1,15 @@
+﻿Cantidades de todos los elementos peso.
+
+El peso del ultimo elemento.
+
+Las distintas unidades en las que se han almacenado los pesos.
+
+El penúltimo codigo.
+
+El peso del elemento cuyo codigo sea AAA-111.
+
+El nombre de los productos que hayan puesto el peso en gramos.
+
+El codigo de los productos cuyo nombre sea Monitor.
+
+El codigo de los productos que pesen mas de un cuarto de kilo.

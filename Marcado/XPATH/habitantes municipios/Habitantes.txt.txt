@@ -1,0 +1,35 @@
+1.- El número de habitantes del municipio
+                     
+
+2.- Los varones del municipio
+
+             
+3.- Las mujeres del municipio
+
+             
+
+4.- El número de habitantes de los que se tiene registrado el padre.
+              
+             
+
+5.- El número de habitantes de los que se tienen registrados padre y madre
+              
+               
+
+
+6.- Los habitantes que se llaman Perico
+               
+               
+
+7.- El listado de identificadores de personas que son padre.
+
+
+8.- El listado de identificadores de personas que son madre.
+
+
+
+9.-Los habitantes de padre conocido que han nacido en Cazorla.
+
+
+
+10.-Los datos de los habitantes cuyo padre tienen identificador "h01"

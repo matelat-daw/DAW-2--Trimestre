@@ -1,0 +1,19 @@
+﻿1- //sistema_montañoso/nombre
+
+2- //pais[sistema="monarquía"]/idioma
+
+3- //pais[idioma="español"]
+
+4- 
+
+5- //sistemas_montañosos/sistema_montañoso/pais/../../..//continente[@nombre="Europa"]
+
+6- //pais[moneda != "euro"]
+
+7- count(//pais[moneda != "euro" and idioma = "español"])
+
+8- //sistema_montañoso[count(pais) > 1]/nombre
+
+9- 
+
+10- count(//sistema_montañoso[nombre="Sistema Central"]/pais)

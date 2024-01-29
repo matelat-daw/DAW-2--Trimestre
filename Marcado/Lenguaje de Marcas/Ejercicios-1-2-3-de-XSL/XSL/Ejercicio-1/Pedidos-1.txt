@@ -1,0 +1,38 @@
+﻿Resultados Ejercicio - 1
+
+A ) Sin etiquetas:
+<?xml version="1.0" encoding="UTF-8"?>
+Administración de Sistemas Informáticos en Red
+Desarrollo de Aplicaciones Web
+Sistemas Microinformáticos y Redes
+B) Párrafos:
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<p>Administración de Sistemas Informáticos en Red</p>
+<p>Desarrollo de Aplicaciones Web</p>
+<p>Sistemas Microinformáticos y Redes</p>
+</html>
+C) Lista:
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<ul>
+<li>Administración de Sistemas Informáticos en Red</li>
+<li>Desarrollo de Aplicaciones Web</li>
+<li>Sistemas Microinformáticos y Redes</li>
+</ul>
+</html>
+D) Tabla:
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<table border="1">
+<tr>
+<td>Administración de Sistemas Informáticos en Red</td>
+</tr>
+<tr>
+<td>Desarrollo de Aplicaciones Web</td>
+</tr>
+<tr>
+<td>Sistemas Microinformáticos y Redes</td>
+</tr>
+</table>
+</html>

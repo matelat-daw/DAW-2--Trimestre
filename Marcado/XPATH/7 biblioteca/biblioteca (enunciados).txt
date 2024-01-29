@@ -1,0 +1,68 @@
+﻿1.- El identificador de socios de la biblioteca
+       
+    
+2.- La dirección del socio que se llama "Alvaro Marrero".
+        
+
+3.- Los libros cuyo año de edición sea 2010
+
+
+4.- Los libros de la editorial Alfaguara.
+
+
+5.- El número total de ejemplares que hay en la biblioteca.
+        
+
+6.- Todos los libros cuyo autor sea "Miguel De Cervantes".
+       
+     
+7.- El número de ejemplares del libro con identificador L1.
+         
+
+8.- El número total de ejemplares prestados.
+
+     
+9.- El número total de ejemplares no prestados.
+       
+
+10.- El número de ejemplares prestados al socio "s1".
+          
+
+11.- Nombre de los libros que se han prestado al socio "s1".
+
+
+12.- Los libros que no están prestados al socio "s1".
+
+
+13.- Los libros que se han prestado al socio "s1", pero no al socio "s2".
+
+
+14.- El número de ejemplares de libros de la editorial Castalia
+         
+
+15.- Los identificadores de los socios que tiene algún libro en préstamo.
+     
+	
+16.- Los ejemplares aún disponibles (no prestados) de "Don Quijote de La Mancha".
+
+       
+17.- Los libros de los que quedan menos de tres ejemplares en la biblioteca.
+
+            
+18.- libros que tienen algun ejemplar sin prestar
+ 
+
+19.- libros que tienen solo 1 ejemplar sin prestar
+          
+   
+20.- Los libros de los que no se ha prestado ningún ejemplar.
+          
+
+21.- Los libros que tiene todos los ejemplares prestados
+          
+
+22.- Titulo de los libros que se le prestaron a Alvaro Marrero
+      
+
+       
+

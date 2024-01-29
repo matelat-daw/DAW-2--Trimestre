@@ -1,0 +1,9 @@
+- Cantidad depositada en la cuenta 20-A
+             
+- Todas las monedas usadas por los distintos fondos
+           
+- DNI de las cuentas que usen dolares como moneda de base
+             
+- Toda la información de los fondos que usen «euros» por un valor inferior a 25000
+           
+ 

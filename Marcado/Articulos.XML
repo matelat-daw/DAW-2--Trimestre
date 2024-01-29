@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Articulos>
+      <Articulo>
+              <nombre>La participación en la planificación territorial de la formación profesional del sistema educativo: la percepción de los agentes sociales</nombre>
+              <issn>0211-819X</issn>
+              <fecha>2017</fecha>
+              <editor>Universitat Autònoma de Barcelona</editor>
+              <autor>Laura Rego-Agraso</autor>
+              <autor>Eva María Barreira Cerqueiras</autor>
+      </Articulo>
+      <Articulo>
+              <nombre>Cronología relativa en grabados rupestres de Arona</nombre>
+              <issn>0570-4065</issn>
+              <fecha>2019</fecha>
+              <editor>Cabildo de Gran Canaria</editor>
+              <autor>Juan Francisco Navarro Mederos</autor>
+              <autor>Sandra J. Cancel</autor>
+      </Articulo>
+      <Articulo>
+              <nombre>¿Pueden los patios escolares hacer ciudad? </nombre>
+             <issn>2171-6897</issn>
+             <fecha>2017</fecha>
+              <editor>Universidad de Sevilla</editor>
+              <autor>María Pía Fontana</autor>
+              <autor>Miguel  Mayorga Cárdenas</autor>
+      </Articulo>
+      <Articulo>
+             <nombre>Valoración psicométrica de la versión española del SLIM (Serious Leisure Inventory and Measure) en contextos deportivos</nombre>
+             <issn>1132-239X</issn>   
+             <fecha>2017</fecha>
+             <editor>Universitat de les Illes Balears</editor>
+             <autor>Sheila Romero</autor>
+             <autor>Ioseba Iraurgi</autor>
+             <autor>Aurora Madariaga</autor>
+      </Articulo>
+
+</Articulos>

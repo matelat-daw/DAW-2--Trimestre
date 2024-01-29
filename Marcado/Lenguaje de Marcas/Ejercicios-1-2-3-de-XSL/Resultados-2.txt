@@ -1,0 +1,53 @@
+﻿Resultados 2:
+
+A) Párrafos:
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<h1>CIFP Cesar Manrique</h1>
+<p>Administración de Sistemas Informáticos en Red</p>
+<p>Desarrollo de Aplicaciones Web</p>
+<p>Sistemas Microinformáticos y Redes</p>
+</html>
+
+B) Lista:
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<h1>CIFP Cesar Manrique</h1>
+<p>Página web: <a href="http://www.cifpcesarmanrique.es/">
+http://www.cifpcesarmanrique.es/ </a> </p>
+<ul>
+<li>Administración de Sistemas Informáticos en Red</li>
+<li>Desarrollo de Aplicaciones Web</li>
+<li>Sistemas Microinformáticos y Redes</li>
+</ul>
+</html>
+
+C) Tabla:
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<h1>CIFP Cesar Manrique</h1>
+<p>Página web: <a href= "https://www.cifpcesarmanrique.es/">
+https://www.cifpcesarmanrique.es/ </a></p>
+<table border="1">
+<tr>
+<th>Nombre del ciclo</th>
+<th>Grado</th>
+<th>Año del título</th>
+</tr>
+<tr>
+<td>Administración de Sistemas Informáticos en Red</td>
+<td>Superior</td>
+<td>2009</td>
+</tr>
+<tr>
+<td>Desarrollo de Aplicaciones Web</td>
+<td>Superior</td>
+<td>2010</td>
+</tr>
+<tr>
+<td>Sistemas Microinformáticos y Redes</td>
+<td>Medio</td>
+<td>2008</td>
+</tr>
+</table>
+</html>
