@@ -13,3 +13,18 @@ C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Prog
 C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\Coordenadas.pdb
 C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\Coordenadas.genruntimeconfig.cache
 C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\ref\Coordenadas.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\bin\Debug\net8.0\Coordenadas.exe
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\bin\Debug\net8.0\Coordenadas.deps.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\bin\Debug\net8.0\Coordenadas.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\bin\Debug\net8.0\Coordenadas.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\bin\Debug\net8.0\Coordenadas.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\Coordenadas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\Coordenadas.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\Coordenadas.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\Coordenadas.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\Coordenadas.sourcelink.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\Coordenadas.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\refint\Coordenadas.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\Coordenadas.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\Coordenadas.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Coordenadas\obj\Debug\net8.0\ref\Coordenadas.dll
