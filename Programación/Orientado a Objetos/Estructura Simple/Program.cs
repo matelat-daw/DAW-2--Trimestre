@@ -1,4 +1,4 @@
-﻿public class Root
+﻿public class Program
 {
     static void Main(string[] args)
     {
@@ -27,7 +27,7 @@
     }
 }
 
-class Pila()
+class Pila
 {
     public string[] datosPila = new string[100];
     public int cima = -1;
