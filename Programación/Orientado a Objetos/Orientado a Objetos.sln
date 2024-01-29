@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estructura Simple", "Estructura Simple\Estructura Simple.csproj", "{68AC655C-0578-4D73-ADED-B69A85EA740B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estructura Simple", "Estructura Simple\Estructura Simple.csproj", "{68AC655C-0578-4D73-ADED-B69A85EA740B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coordenadas", "Coordenadas\Coordenadas.csproj", "{2C0F2FFB-2F3C-44F2-ADAD-54459B470ABB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{68AC655C-0578-4D73-ADED-B69A85EA740B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68AC655C-0578-4D73-ADED-B69A85EA740B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68AC655C-0578-4D73-ADED-B69A85EA740B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0F2FFB-2F3C-44F2-ADAD-54459B470ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0F2FFB-2F3C-44F2-ADAD-54459B470ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0F2FFB-2F3C-44F2-ADAD-54459B470ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0F2FFB-2F3C-44F2-ADAD-54459B470ABB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

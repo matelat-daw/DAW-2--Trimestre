@@ -1,0 +1,48 @@
+#btn1
+{
+    background-color: aqua;
+    width: 20%;
+    height: 40px;
+}
+
+.giant
+{
+    font-size: 16em;
+    text-align: center;
+}
+
+.blue
+{
+    color: blue;
+}
+
+.red
+{
+    color: red;
+}
+
+.orange
+{
+    color: orange;
+}
+
+.green
+{
+    color: green;
+}
+
+.yellow
+{
+    color: yellow;
+}
+
+.rotate
+{
+    animation: move 60s infinite;
+    text-shadow: -2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000; 
+}
+
+@keyframes move
+{
+    100% {transform: rotate(360deg);}
+}
