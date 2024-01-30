@@ -1,0 +1,30 @@
+C:\Windows\system32>schtasks /run /?
+
+SCHTASKS /Run [/S system [/U username [/P [password]]]] [/I]
+         /TN taskname [/HRESULT] [/?]
+
+Description:
+    Runs a scheduled task on demand.
+
+Parameter List:
+    /S     system        Specifies the remote system to connect to.
+
+    /U     username      Specifies the user context under
+                         which the schtasks.exe should execute.
+
+    /P     [password]    Specifies the password for the given
+                         user context. Prompts for input if omitted.
+
+    /I                   Runs the task immediately by ignoring any constraint.
+
+    /TN    taskname      Specifies the path\name of the task to run now.
+
+    /HRESULT             For better diagnosability, the process exit code
+                         will be in the HRESULT format.
+
+    /?                   Displays this help message.
+
+Examples:
+    SCHTASKS /Run /?
+    SCHTASKS /Run /TN "\Backup\Start Backup"
+    SCHTASKS /Run /S system /U user /P password /I /TN "\Backup\Backup and Restore"
