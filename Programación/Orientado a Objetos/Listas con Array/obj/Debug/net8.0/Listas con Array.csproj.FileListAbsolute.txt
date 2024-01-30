@@ -13,3 +13,18 @@ C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lis
 C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\Listas con Array.pdb
 C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\Listas con Array.genruntimeconfig.cache
 C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\ref\Listas con Array.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\bin\Debug\net8.0\Listas con Array.exe
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\bin\Debug\net8.0\Listas con Array.deps.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\bin\Debug\net8.0\Listas con Array.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\bin\Debug\net8.0\Listas con Array.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\bin\Debug\net8.0\Listas con Array.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\Listas con Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\Listas con Array.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\Listas con Array.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\Listas con Array.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\Listas con Array.sourcelink.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\Listas con Array.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\refint\Listas con Array.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\Listas con Array.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\Listas con Array.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Listas con Array\obj\Debug\net8.0\ref\Listas con Array.dll

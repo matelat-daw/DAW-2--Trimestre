@@ -2,10 +2,10 @@
 {
     static void Main(string[] args)
     {
-        int[] array = new int[10];
+        int[] array = [22, 33, 44, 55, 66, 77, 0, 0, 0, 0];
         int num;
         int position;
-        int size;
+        int qtty = 6;
 
         Console.WriteLine("Este Programa Mueve los Datos de un Array a un Posición Determinada.\n");
         do
@@ -16,9 +16,7 @@
             {
                 Console.Write("Ingresa la Posición del Número en el Array: ");
                 position = int.Parse(Console.ReadLine());
-                Console.Write("Ingresa el Tamaño del Array: ");
-                size = int.Parse(Console.ReadLine());
-                Funciones.insertar(array, size, position, num);
+                Funciones.insertar(array, ref qtty, position, num);
                 Funciones.mostrar(array);
             }
         } while (num != 0);

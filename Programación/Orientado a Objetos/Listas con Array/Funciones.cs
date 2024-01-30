@@ -1,19 +1,16 @@
 ﻿
 public class Funciones
 {
-    public static void insertar(int[] array, int size, int position, int num)
+    public static void insertar(int[] array, ref int qtty, int position, int num)
     {
         if (position < array.Length)
         {
-            if (array[position] == 0)
+            for (int i = array.Length - 1; i > position; i--)
             {
-                array[position] = num;
+                array[i] = array[i - 1];
             }
-            else
-            {
-                array[position + 1] = array[position];
-                array[position] = num;
-            }
+            array[position] = num;
+            qtty++;
         }
         else
         {
