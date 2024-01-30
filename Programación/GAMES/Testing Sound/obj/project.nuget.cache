@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lBiBhDgzl49SQrcaJpX9YRX1kMA2vmvlLMZuLC39YPj4m+sqJyi/hafwuurW7NAf99UL86o13RlER3vX7ssCtQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\GAMES\\Testing Sound\\Testing Sound.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Orion\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
