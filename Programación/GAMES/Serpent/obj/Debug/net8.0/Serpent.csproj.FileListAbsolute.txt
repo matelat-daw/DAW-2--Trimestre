@@ -1,0 +1,14 @@
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\bin\Debug\net8.0\Serpent.exe
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\bin\Debug\net8.0\Serpent.deps.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\bin\Debug\net8.0\Serpent.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\bin\Debug\net8.0\Serpent.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\bin\Debug\net8.0\Serpent.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\obj\Debug\net8.0\Serpent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\obj\Debug\net8.0\Serpent.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\obj\Debug\net8.0\Serpent.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\obj\Debug\net8.0\Serpent.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\obj\Debug\net8.0\Serpent.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\obj\Debug\net8.0\refint\Serpent.dll
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\obj\Debug\net8.0\Serpent.pdb
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\obj\Debug\net8.0\Serpent.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Serpent\obj\Debug\net8.0\ref\Serpent.dll

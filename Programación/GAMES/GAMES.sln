@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serpent", "Serpent\Serpent.csproj", "{58491606-4AB8-4517-BF2F-3B4509A2F3FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58491606-4AB8-4517-BF2F-3B4509A2F3FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58491606-4AB8-4517-BF2F-3B4509A2F3FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58491606-4AB8-4517-BF2F-3B4509A2F3FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58491606-4AB8-4517-BF2F-3B4509A2F3FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C560F4D-21C1-4C5F-B30C-B5B29AA3A01D}
+	EndGlobalSection
+EndGlobal
