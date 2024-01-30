@@ -1,0 +1,148 @@
+Con órdenes del entorno de texto CMD realiza lo siguiente:
+•Lanza un proceso a partir del Comprobador de NTFS (chkntfs.exe) y crea un fichero llamado
+procesos.txt que contenga el máximo de información posible sobre dicho proceso exclusivamente (ten
+en cuenta que puede haber otras sesiones suspendidas pero sin cerrar en el sistema) utilizando un
+formato Lista que contenga únicamente datos de ese proceso.
+
+tasklist /FI "imagename eq chkntfs.exe" /V /fo list > procesos.txt
+
+•Comprueba cuál es el estado de los procesos en estado suspendido que hayan sido creados por tu
+usuario.
+
+tasklist /FI "username eq %username%" /fi "status eq running"
+
+•Haz que todos los procesos del sistema que hayan sido creados a partir del chkntfs.exe dejen de
+ejecutarse.
+
+taskkill /IM "*chkntfs.exe" /F
+
+Ajusta la seguridad del sistema:
+• Haciendo que las claves (con órdenes del entorno de texto CMD):
+•tengan una duración máxima de 31 días,
+•una longitud mínima de 3 caracteres,
+•que el usuario no pueda repetir ninguna de las últimas 2 claves usadas.
+
+net accounts /maxpwage:31 /minpwlen:3 /uniquepw:2
+
+
+•haciendo que la cuenta (usando la herramienta apropiada del entorno gráfico):
+•se bloquee después de cuatro intentos fallidos de login,
+•el bloqueo de cuenta dure 15 minutos,
+•reiniciar el conteo de intentos fallidos después de 20 minutos.
+Accedemos a directiva de seguridad local como administrador, entramos en Directiva de cuenta → Directiva de
+bloqueo de cuenta → Umbral de bloqueo de cuenta. Y hacemos que se bloquee después de 4 intentos.
+
+
+Luego que el bloqueo de la cuenta dure 15 minutos
+Y ahora aplicamos el reinicio de conteo de intentos después de 20 minutos.
+
+
+Con órdenes del entorno de texto CMD de Windows 10 Pro realiza lo siguiente:
+• Crea un grupo llamado gPartner.
+
+net localgroup gPartner /add
+
+• Crea una cuenta de usuario del sistema con las siguientes características:
+•nombre de login: uMadness
+•clave inicial: LM9@nupe
+•debe cambiar su clave en el próximo inicio de sesión.
+
+net user uMadness LM9@nupe /add /logonpasswordchg:yes
+
+•Modifica dicha cuenta de usuario para:
+•unirla al grupo Grillness:
+
+net localgroup GRillness uMadness /add
+
+•y después sacarla del grupo gPartner:
+
+net localgroup gPartner uMadness /delete
+
+•Elimina completamente la cuenta y el grupo. Lo eliminamos con los comandos: 
+
+
+net user uMadness /delete
+net localgroup gPartner /delete
+
+Para el servicio Xbox Accessory Management Service realiza las siguientes acciones:
+•Con órdenes del entorno de texto CMD:
+•Arranca el servicio.
+•Reinicia el servicio.
+•Consulta:
+•de qué servicios o componentes depende este servicio,
+•qué componentes o servicios dependen de este servicio,
+•cómo se inicia el servicio,
+•cuál es el estado actual del servicio,
+•cuál es el ejecutable que se ejecuta cuando se inicia el servicio,
+•con qué cuenta se inicia el servicio.
+
+
+Para realizar las acciones sobre el servicio "Xbox Accessory Management Service" desde la línea de comandos
+(CMD) en Windows, utilizamos los siguientes comandos:
+· Arrancar el servicio.
+
+net start "Xbox Accessory Management Service"
+
+
+· Reiniciar el servicio.
+
+Con la Orden: net continue "Xbox Accessory Management Service" Se Puede reiniciar el servicio que previamente haya sido pausado con: net pause "Xbox Accessory Management Service"
+
+Si no ha sido pausado el servicio hay que usar stop y start
+
+net stop "Xbox Accessory Management Service"
+net start "Xbox Accessory Management Service"
+
+
+· Consultar información sobre el servicio:
+
+Para Obtener el Nombre del servicio se puede usar en PowerShell el comando:
+
+get-service -DisplayName "Xbox Accessory Management Service"
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Stopped  XboxGipSvc         Xbox Accessory Management Service
+
+
+sc qc XboxGipSvc
+
+
+· Dependencias del servicio:
+· Componentes o servicios que dependen de este servicio:
+
+sc enumdepend XboxGipSvc
+
+
+· Cómo se inicia el servicio:
+
+sc start XboxGipSvc
+o
+net start XboxGipSvc
+
+
+· Estado actual del servicio:
+
+sc query XboxGipSvc | findstr "STATE"
+
+
+· Ejecutable que se ejecuta cuando se inicia el servicio:
+
+sc qc XboxGipSvc | findstr "BINARY_PATH_NAME"
+
+
+· Con qué cuenta se inicia el servicio:
+
+sc qc XboxGipSvc | findstr "SERVICE_START_NAME"
+
+
+•Con la herramienta gráfica configura el servicio para que realice las siguientes tareas en caso de error:
+•Primer error: Reiniciar el servicio en 1 minuto.
+•Segundo error: Reiniciar el sistema en 3 minutos.
+•Siguientes errores: nada.
+•Se restablece el recuento de errores cada 7 días.
+Entnoces para hacer esto con GUI entramos a Servicios como adminstrador y vamos al servicio "Xbox Accessory Management Service"
+
+
+En la ventana de Recuperación, configuramos los errores para reiniciar servicio, el segundo error reinicar el
+equipo. Y en la tercera nada.
