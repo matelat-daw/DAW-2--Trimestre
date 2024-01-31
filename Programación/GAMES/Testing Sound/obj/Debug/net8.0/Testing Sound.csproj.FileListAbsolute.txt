@@ -16,3 +16,22 @@ C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Testing Sound
 C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Testing Sound\obj\Debug\net8.0\Testing Sound.pdb
 C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Testing Sound\obj\Debug\net8.0\Testing Sound.genruntimeconfig.cache
 C:\Users\Orion\Documents\César Manrique\DAW\Programacion\C#\GAMES\Testing Sound\obj\Debug\net8.0\ref\Testing Sound.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\bin\Debug\net8.0\Testing Sound.exe
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\bin\Debug\net8.0\Testing Sound.deps.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\bin\Debug\net8.0\Testing Sound.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\bin\Debug\net8.0\Testing Sound.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\bin\Debug\net8.0\Testing Sound.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\obj\Debug\net8.0\Testing Sound.csproj.AssemblyReference.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\obj\Debug\net8.0\Testing Sound.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\obj\Debug\net8.0\Testing Sound.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\obj\Debug\net8.0\Testing Sound.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\obj\Debug\net8.0\Testing Sound.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\obj\Debug\net8.0\Testing Sound.sourcelink.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\obj\Debug\net8.0\Testing Sound.csproj.CopyComplete
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\obj\Debug\net8.0\Testing Sound.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\obj\Debug\net8.0\refint\Testing Sound.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\obj\Debug\net8.0\Testing Sound.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\obj\Debug\net8.0\Testing Sound.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Testing Sound\obj\Debug\net8.0\ref\Testing Sound.dll

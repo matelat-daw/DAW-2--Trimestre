@@ -7,7 +7,7 @@
         int position = -1;
         int qtty = 6;
 
-        Console.WriteLine("Este Programa Pone un Dato en un Array en la Posición Seleccionada por el Usuario, Moviendo los demás Datos Hacia el Fondo de Array.\n");
+        Console.WriteLine("Este Programa Pone o Quita un Dato en un Array en la Posición Seleccionada por el Usuario, Moviendo los demás Datos del Array.\n");
         do
         {
             Console.Write("Ingresa el Número a Introducir en el Array: ");
@@ -26,7 +26,7 @@
                         Console.WriteLine("Eso no Parece una Posición Valida. Intentalo de Nuevo.");
                     }
                     Funciones.insertar(array, ref qtty, position, num); // Si toda ha ido Bien Llama a la Función insertar de la Clase Funciones, Pasándole los Parámetros.
-                    Funciones.mostrar(array); // Llama a la Función Mostrar de la lase Funciones.
+                    Funciones.mostrar(array, qtty); // Llama a la Función Mostrar de la lase Funciones.
                 }
             }
             catch (Exception e) // Si no se Puede Convertir.
@@ -43,5 +43,22 @@
                 }
             }
         } while (num != 0);
+        do
+        {
+            Console.Write("Ingresa la Posición a Eliminar del Array: ");
+            try
+            {
+                position = int.Parse(Console.ReadLine());
+                if (position != -1)
+                {
+                    Console.WriteLine("El Número en la Posición Seleccioanda era: {0}", Funciones.extraer(array, ref qtty, position));
+                    Funciones.mostrar(array, qtty); // Llama a la Función Mostrar de la lase Funciones.
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Eso no Parece una Posición Valida. Intentalo de Nuevo.");
+            }
+        } while (position != -1);
     }
 }
