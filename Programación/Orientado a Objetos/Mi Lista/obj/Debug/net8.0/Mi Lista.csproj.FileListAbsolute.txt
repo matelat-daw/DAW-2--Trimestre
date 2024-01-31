@@ -1,0 +1,15 @@
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\bin\Debug\net8.0\Mi Lista.exe
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\bin\Debug\net8.0\Mi Lista.deps.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\bin\Debug\net8.0\Mi Lista.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\bin\Debug\net8.0\Mi Lista.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\bin\Debug\net8.0\Mi Lista.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\obj\Debug\net8.0\Mi Lista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\obj\Debug\net8.0\Mi Lista.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\obj\Debug\net8.0\Mi Lista.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\obj\Debug\net8.0\Mi Lista.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\obj\Debug\net8.0\Mi Lista.sourcelink.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\obj\Debug\net8.0\Mi Lista.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\obj\Debug\net8.0\refint\Mi Lista.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\obj\Debug\net8.0\Mi Lista.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\obj\Debug\net8.0\Mi Lista.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Mi Lista\obj\Debug\net8.0\ref\Mi Lista.dll
