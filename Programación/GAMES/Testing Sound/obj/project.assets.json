@@ -63,11 +63,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\GAMES\\Testing Sound\\Testing Sound.csproj",
+      "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Testing Sound\\Testing Sound.csproj",
       "projectName": "Testing Sound",
-      "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\GAMES\\Testing Sound\\Testing Sound.csproj",
+      "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Testing Sound\\Testing Sound.csproj",
       "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\GAMES\\Testing Sound\\obj\\",
+      "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Testing Sound\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",

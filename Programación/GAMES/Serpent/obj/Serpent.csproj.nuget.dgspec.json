@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\GAMES\\Serpent\\Serpent.csproj": {}
+    "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Serpent\\Serpent.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\GAMES\\Serpent\\Serpent.csproj": {
+    "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Serpent\\Serpent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\GAMES\\Serpent\\Serpent.csproj",
+        "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Serpent\\Serpent.csproj",
         "projectName": "Serpent",
-        "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\GAMES\\Serpent\\Serpent.csproj",
+        "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Serpent\\Serpent.csproj",
         "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\GAMES\\Serpent\\obj\\",
+        "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Serpent\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lBiBhDgzl49SQrcaJpX9YRX1kMA2vmvlLMZuLC39YPj4m+sqJyi/hafwuurW7NAf99UL86o13RlER3vX7ssCtQ==",
+  "dgSpecHash": "7uBRSs5QpT5O7P/E/HgIEyU1GLYkBNIUids+njTki9wcC1NSEj+LA+Y1O2cLxJb1azGQFK/14BZO0QXN09fy/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Orion\\Documents\\César Manrique\\DAW\\Programacion\\C#\\GAMES\\Testing Sound\\Testing Sound.csproj",
+  "projectFilePath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Testing Sound\\Testing Sound.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Orion\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
   ],
