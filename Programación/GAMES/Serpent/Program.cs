@@ -79,8 +79,13 @@ public class Serpent
     int body = 4;
     int cont = 0;
     bool starting;
+    bool up;
+    bool down;
+    bool left;
+    bool rigth;
+    int speed = 300;
 
-    public async void move(int x, int y)
+    public async void move(int x, int y, int direction)
     {
         if (starting)
         {
@@ -95,7 +100,21 @@ public class Serpent
                     Console.SetCursorPosition(x - body, y);
                     Console.Write(' ');
                     cont++;
-                    move(x + 1, y);
+                    switch (direction)
+                    {
+                        case 1:
+                            move(x, y - 1, 1);
+                            break;
+                        case 2:
+                            move(x, y + 1, 2);
+                            break;
+                        case 3:
+                            move(x - 1, y, 3);
+                            break;
+                        case 4:
+                            move(x + 1, y, 4);
+                            break;
+                    }
                 }
                 else
                 {
@@ -115,7 +134,7 @@ public class Serpent
                     Console.WriteLine("Has Perdido un Vida, te quedan: {0} Oportunidades.", lifes);
                     Console.WriteLine("Presiona una Tecla Para Continuar.");
                     Console.ReadKey();
-                    move(62, 13);
+                    move(62, 13, 4);
                 }
             }
             if (cont == 5)
@@ -147,7 +166,8 @@ public class Serpent
                     if (!starting)
                     {
                         starting = true;
-                        move(62, 13);
+                        show(62, 13);
+                        play(key);
                     }
                     break;
                 case ConsoleKey.D2:
@@ -157,7 +177,7 @@ public class Serpent
                     if (!starting)
                     {
                         starting = true;
-                        move(x, y);
+                        show(x, y);
                     }
                     break;
                 case ConsoleKey.D4:
@@ -165,6 +185,28 @@ public class Serpent
                     break;
                 case ConsoleKey.D5:
                     Console.WriteLine("Estás Seguro que Quierres Salir?. Presiona ESC para Continua, Cualquier Otra Tecla Para Seguir.");
+                    break;
+            }
+        }
+    }
+
+    private void play(ConsoleKeyInfo key)
+    {
+        while ((key = Console.ReadKey(true)).Key != ConsoleKey.Escape)
+        {
+            switch (key.Key)
+            {
+                case ConsoleKey.UpArrow:
+                    move(x, y, 1);
+                    break;
+                case ConsoleKey.DownArrow:
+                    move(x, y, 2);
+                    break;
+                case ConsoleKey.LeftArrow:
+                    move(x, y, 3);
+                    break;
+                case ConsoleKey.RightArrow:
+                    move(x, y, 4);
                     break;
             }
         }
