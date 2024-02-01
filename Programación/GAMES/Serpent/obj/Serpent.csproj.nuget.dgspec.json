@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\GAMES\\Serpent\\Serpent.csproj": {}
+    "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Serpent\\Serpent.csproj": {}
   },
   "projects": {
-    "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\GAMES\\Serpent\\Serpent.csproj": {
+    "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Serpent\\Serpent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\GAMES\\Serpent\\Serpent.csproj",
+        "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Serpent\\Serpent.csproj",
         "projectName": "Serpent",
-        "projectPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\GAMES\\Serpent\\Serpent.csproj",
-        "packagesPath": "C:\\Users\\orion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\GAMES\\Serpent\\obj\\",
+        "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Serpent\\Serpent.csproj",
+        "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Serpent\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Windows.Extensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

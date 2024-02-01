@@ -26,11 +26,26 @@
         milista.insertar(0, 5);
         milista.insertar(2, 88);
         milista.insertar(0, 999);
+        milista.insertar(0, 3);
+        milista.insertar(0, 4);
+        milista.insertar(0, 5);
+        milista.insertar(2, 88);
+        milista.insertar(0, 3);
+        milista.insertar(0, 4);
+        milista.insertar(28, 777);
+        milista.insertar(29, 888);
+        milista.insertar(30, 999);
         milista.mostrar();
-        //milista.extraer(1);
-        //milista.mostrar();
-        //milista.extraer(3);
-        //milista.mostrar();
+
+        Console.WriteLine("\nEl Tamaño del Array es: {0}", milista.Qtty);
+
+        while (milista.Qtty > 5) // Uso el Valor de qtty, la Cantidad de Datos que Hay en el Array.
+        {
+            milista.extraer(0);
+        }
+
+        milista.mostrar();
+        Console.WriteLine("Extrayendo.\n\nEl Tamaño del Array es: {0}", milista.Qtty);
     }
 
     public class Milista
@@ -38,22 +53,18 @@
         private int[] array = new int[10];
         private int qtty = 0;
 
+        public int Qtty // Getter de la Variable Privada qtty.
+        {
+            get { return qtty; }
+        }
+
         public void insertar(int position, int num)
         {
             if (position < 0 || position > qtty)
                 throw new Exception("ERROR");
             if (array.Length == qtty)
             {
-                int[] array_aux = new int[array.Length + 10];
-                for (int i = 0; i < array.Length; i++)
-                {
-                    array_aux[i] = array[i];
-                }
-                array = new int[array_aux.Length];
-                for (int i = 0; i < array.Length; i++)
-                {
-                    array[i] = array_aux[i];
-                }
+                expand();
             }
             for (int i = qtty; i > position; i--) // Bucle desde la Última Posición del Array, Hasta la posición + 1, Decrementando el Índice.
             {
@@ -64,18 +75,36 @@
 
         }
 
+        private void expand()
+        {
+            int[] array_aux = new int[array.Length + 10];
+            for (int i = 0; i < array.Length; i++)
+            {
+                array_aux[i] = array[i];
+            }
+            array = new int[array_aux.Length];
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = array_aux[i];
+            }
+        }
+
         public int extraer(int position)
         {
             int aux;
 
-            if (position < 0 || position >= qtty)
+            if (position < 0 || position > qtty)
                 throw new Exception();
             aux = array[position];
             for (int i = position + 1; i < qtty; i++) // Bucle desde la Posición Siguiente a la Posición Pasada del Array, Hasta la Última Posición del Array Incrementando el Índice.
             {
                 array[i - 1] = array[i]; // Muevo los Elementos del Array de Delante Para atrás.
             }
-            qtty--; // Incremento la Cantidad de Datos en el Array.
+            qtty--; // Decremento la Cantidad de Datos en el Array.
+            if (qtty < 0)
+            {
+                qtty = 0;
+            }
             return aux;
         }
 
