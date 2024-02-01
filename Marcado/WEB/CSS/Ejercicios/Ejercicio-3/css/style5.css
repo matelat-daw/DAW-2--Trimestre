@@ -1,0 +1,27 @@
+body
+{
+    background-color: yellow;
+}
+
+h1
+{
+    background-color: blue;
+}
+
+h2
+{
+    background-color: red;
+}
+
+ul
+{
+    background-color: lightblue;
+}
+
+li
+{
+    border: dashed 1px blue;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+}
