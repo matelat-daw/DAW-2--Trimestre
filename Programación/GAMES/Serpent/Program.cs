@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Media;
 
 public class Program
 {
@@ -71,52 +72,62 @@ public class Serpent()
     private bool starting;
     private int speed;
     private int fast = 0;
-    private int direction = 4;
+    private int direction = 3;
+    private int score = 0;
+    private bool sound = false;
 
     public async void move()
     {
         if (starting)
         {
-            try
+            Console.SetCursorPosition(x, y);
+            if (!sound)
+            { 
+                SoundPlayer voice = new SoundPlayer(Environment.CurrentDirectory + "/audio/voice.wav");
+                voice.Play();
+                sound = true;
+                await Task.Delay(3000);
+            }
+            if (x >= x_start && x <= x_limit && y >= y_start && y <= y_limit)
             {
-                if (x >= x_start && x < x_limit && y >= y_start && y < y_limit)
+                show();
+                await Task.Delay(speed);
+                switch (direction)
                 {
-                    show();
-                    await Task.Delay(speed);
-                    switch (direction)
-                    {
-                        case 0:
-                            y--;
-                            speed = 600 - fast;
-                            break;
-                        case 1:
-                            y++;
-                            speed = 600 - fast;
-                            break;
-                        case 2:
-                            speed = 300 - fast;
-                            x--;
-                            break;
-                        case 3:
-                            speed = 300 - fast;
-                            x++;
-                            break;
-                    }
-                    move();
-                    if (x == appleX && y == appleY)
-                    {
-                        body++;
-                        fast -= 50;
-                    }
+                    case 0:
+                        y--;
+                        speed = 600 - fast;
+                        break;
+                    case 1:
+                        y++;
+                        speed = 600 - fast;
+                        break;
+                    case 2:
+                        speed = 300 - fast;
+                        x--;
+                        break;
+                    case 3:
+                        speed = 300 - fast;
+                        x++;
+                        break;
                 }
-                else
+                move();
+                if (x == appleX && y == appleY)
                 {
-                    throw new Exception();
+                    body++;
+                    fast -= 50;
+                    load();
+                    score += 100;
+                    if (score % 100 == 0)
+                    {
+                        lifes++;
+                    }
                 }
             }
-            catch (Exception e)
+            else
             {
                 lifes--;
+                sound = false;
                 if (lifes == 0)
                 {
                     start();
@@ -129,7 +140,7 @@ public class Serpent()
                     Console.ReadKey();
                     x = 62;
                     y = 15;
-                    move();
+                    play();
                 }
             }
         }
@@ -137,6 +148,7 @@ public class Serpent()
 
     public void start()
     {
+        Console.Clear();
         int selection;
         Board board = new Board();
         board.show();
@@ -188,16 +200,20 @@ public class Serpent()
             switch (key.Key)
             {
                 case ConsoleKey.UpArrow:
-                    direction = 0;
+                    if (direction != 1)
+                        direction = 0;
                     break;
                 case ConsoleKey.DownArrow:
-                    direction = 1;
+                    if (direction != 0)
+                        direction = 1;
                     break;
                 case ConsoleKey.LeftArrow:
-                    direction = 2;
+                    if (direction != 3)
+                        direction = 2;
                     break;
                 case ConsoleKey.RightArrow:
-                    direction = 3;
+                    if (direction != 2)
+                        direction = 3;
                     break;
             }
             move();
@@ -215,22 +231,22 @@ public class Serpent()
         switch (direction)
         {
             case 0:
-                Console.SetCursorPosition(x, y + body);
-                for (i = y; i < y + body; i++)
+                for (i = y + body; i < y; i--)
                 {
+                    Console.SetCursorPosition(x, i);
                     Console.Write("*");
                 }
                 break;
             case 1:
-                Console.SetCursorPosition(x, y - body);
-                for (i = y; i < y - body; i++)
+                for (i = y - 1; i <= y - body - 1; i--)
                 {
+                    Console.SetCursorPosition(x, i);
                     Console.Write("*");
                 }
                 break;
             case 2:
                 Console.SetCursorPosition(x + body, y);
-                for (i = x + body; i < x; i++)
+                for (i = x + body; i < x; i--)
                 {
                     Console.Write("*");
                 }
