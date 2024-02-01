@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.Design;
+﻿using System.ComponentModel;
 
 public class Program
 {
@@ -12,39 +11,28 @@ public class Program
 
 public class Board
 {
-    int x = 29;
-    int y = 3;
-    const int x_limit = 89;
-    const int y_limit = 23;
+    int x = 19;
+    int y = 4;
+    const int x_limit = 101;
+    const int y_limit = 26;
 
     public void show()
     {
-        for (int i = x; i < x + 89; i++)
+        for (int i = x; i < x_limit; i++)
         {
             Console.SetCursorPosition(i, y);
-            Console.Write('-');
-            Console.SetCursorPosition(i, y + y_limit);
-            Console.Write('-');
+            Console.Write('O');
+            Console.SetCursorPosition(i, y_limit);
+            Console.Write('O');
         }
 
-        for (int i = y; i < y + 23; i++)
+        for (int i = y; i < y_limit; i++)
         {
             Console.SetCursorPosition(x, i);
-            Console.Write('-');
-            Console.SetCursorPosition(x + x_limit, i);
-            Console.Write('-');
+            Console.Write('O');
+            Console.SetCursorPosition(x_limit, i);
+            Console.Write('O');
         }
-    }
-
-    public void load()
-    {
-        Random rnd = new Random();
-        int x = rnd.Next(30, x_limit);
-        int y = rnd.Next(4, y_limit);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.SetCursorPosition(x, y);
-        Console.Write("Ó");
-        Console.ForegroundColor = ConsoleColor.Gray;
     }
 }
 
@@ -59,6 +47,7 @@ public class Menu
         list.Add("4)-. Me Rindo");
         list.Add("5)-. Salgo del Juego");
 
+        Console.SetCursorPosition(0, 30);
         for (int i = 0; i < list.Count; i++)
         {
             Console.WriteLine("\n{0}", list[i]);
@@ -67,53 +56,57 @@ public class Menu
     }
 }
 
-public class Serpent
+public class Serpent()
 {
-    int lifes = 3;
-    int x;
-    int y;
-    int x_start = 30;
-    int y_start = 4;
-    const int x_limit = 118;
-    const int y_limit = 22;
-    int body = 4;
-    int cont = 0;
-    bool starting;
-    bool up;
-    bool down;
-    bool left;
-    bool rigth;
-    int speed = 300;
+    private int lifes = 3;
+    private int x = 62;
+    private int y = 15;
+    private int appleX;
+    private int appleY;
+    private int x_start = 20;
+    private int y_start = 5;
+    private const int x_limit = 100;
+    private const int y_limit = 25;
+    private int body = 4;
+    private bool starting;
+    private int speed;
+    private int fast = 0;
+    private int direction = 4;
 
-    public async void move(int x, int y, int direction)
+    public async void move()
     {
         if (starting)
         {
-            this.x = x;
-            this.y = y;
             try
             {
-                if (x > x_start && x < x_limit && y > y_start && y < y_limit)
+                if (x >= x_start && x < x_limit && y >= y_start && y < y_limit)
                 {
-                    show(x, y);
-                    await Task.Delay(300);
-                    Console.SetCursorPosition(x - body, y);
-                    Console.Write(' ');
-                    cont++;
+                    show();
+                    await Task.Delay(speed);
                     switch (direction)
                     {
+                        case 0:
+                            y--;
+                            speed = 600 - fast;
+                            break;
                         case 1:
-                            move(x, y - 1, 1);
+                            y++;
+                            speed = 600 - fast;
                             break;
                         case 2:
-                            move(x, y + 1, 2);
+                            speed = 300 - fast;
+                            x--;
                             break;
                         case 3:
-                            move(x - 1, y, 3);
+                            speed = 300 - fast;
+                            x++;
                             break;
-                        case 4:
-                            move(x + 1, y, 4);
-                            break;
+                    }
+                    move();
+                    if (x == appleX && y == appleY)
+                    {
+                        body++;
+                        fast -= 50;
                     }
                 }
                 else
@@ -130,17 +123,14 @@ public class Serpent
                 }
                 else
                 {
-                    Console.SetCursorPosition(60, 15);
+                    Console.SetCursorPosition(60, 35);
                     Console.WriteLine("Has Perdido un Vida, te quedan: {0} Oportunidades.", lifes);
                     Console.WriteLine("Presiona una Tecla Para Continuar.");
                     Console.ReadKey();
-                    move(62, 13, 4);
+                    x = 62;
+                    y = 15;
+                    move();
                 }
-            }
-            if (cont == 5)
-            {
-                body++;
-                cont = 0;
             }
         }
     }
@@ -150,14 +140,14 @@ public class Serpent
         int selection;
         Board board = new Board();
         board.show();
-        board.load();
+        load();
         Menu menu = new Menu();
         ConsoleKeyInfo key;
-
-        Console.WriteLine("\n\n\nJuego de la Serpiente.\n");
+        Console.SetCursorPosition(20, 1);
+        Console.WriteLine("Juego de la Serpiente.\n");
         menu.show();
         Console.Write("\nSelecciona una Opción del Menú(ESC to Exit): ");
-        show(62, 13);
+        show();
         while ((key = Console.ReadKey(true)).Key != ConsoleKey.Escape)
         {
             switch (key.Key)
@@ -166,8 +156,8 @@ public class Serpent
                     if (!starting)
                     {
                         starting = true;
-                        show(62, 13);
-                        play(key);
+                        show();
+                        play();
                     }
                     break;
                 case ConsoleKey.D2:
@@ -177,51 +167,92 @@ public class Serpent
                     if (!starting)
                     {
                         starting = true;
-                        show(x, y);
+                        play();
                     }
                     break;
                 case ConsoleKey.D4:
                     start();
                     break;
                 case ConsoleKey.D5:
-                    Console.WriteLine("Estás Seguro que Quierres Salir?. Presiona ESC para Continua, Cualquier Otra Tecla Para Seguir.");
+                    Console.WriteLine("Estás Seguro que Quierres Salir?. Presiona ESC para Abandonar el Juego, Cualquier Otra Tecla Para Seguir.");
                     break;
             }
         }
     }
 
-    private void play(ConsoleKeyInfo key)
+    private void play()
     {
+        ConsoleKeyInfo key;
         while ((key = Console.ReadKey(true)).Key != ConsoleKey.Escape)
         {
             switch (key.Key)
             {
                 case ConsoleKey.UpArrow:
-                    move(x, y, 1);
+                    direction = 0;
                     break;
                 case ConsoleKey.DownArrow:
-                    move(x, y, 2);
+                    direction = 1;
                     break;
                 case ConsoleKey.LeftArrow:
-                    move(x, y, 3);
+                    direction = 2;
                     break;
                 case ConsoleKey.RightArrow:
-                    move(x, y, 4);
+                    direction = 3;
                     break;
             }
+            move();
         }
     }
 
-    public void show(int x, int y)
+    public void show()
     {
+        int i;
+
         Console.SetCursorPosition(x, y);
         Console.ForegroundColor = ConsoleColor.Green;
         Console.Write("@");
         Console.ForegroundColor = ConsoleColor.White;
-        Console.SetCursorPosition(x - body, y);
-        for (int i = x - body; i < x; i++)
+        switch (direction)
         {
-            Console.Write("*");
+            case 0:
+                Console.SetCursorPosition(x, y + body);
+                for (i = y; i < y + body; i++)
+                {
+                    Console.Write("*");
+                }
+                break;
+            case 1:
+                Console.SetCursorPosition(x, y - body);
+                for (i = y; i < y - body; i++)
+                {
+                    Console.Write("*");
+                }
+                break;
+            case 2:
+                Console.SetCursorPosition(x + body, y);
+                for (i = x + body; i < x; i++)
+                {
+                    Console.Write("*");
+                }
+                break;
+            case 3:
+                Console.SetCursorPosition(x - body, y);
+                for (i = x - body; i < x; i++)
+                {
+                    Console.Write("*");
+                }
+                break;
         }
+    }
+
+    public void load()
+    {
+        Random rnd = new Random();
+        appleX = rnd.Next(20, x_limit);
+        appleY = rnd.Next(5, y_limit);
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.SetCursorPosition(appleX, appleY);
+        Console.Write("Ó");
+        Console.ForegroundColor = ConsoleColor.Gray;
     }
 }
