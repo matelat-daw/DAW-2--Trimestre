@@ -42,7 +42,7 @@ CREATE TABLE alumno (
 	curso int NOT NULL
 );
 
--- CREATE INDEX FK_cod_curso ON alumno (curso); -- Esta Línea no es Necesaria Para Relacionar las Tablas.
+-- CREATE INDEX FK_cod_curso ON alumno (curso); -- Esta LÃ­nea no es Necesaria Para Relacionar las Tablas.
 
 ALTER TABLE alumno ADD FOREIGN KEY (curso) REFERENCES curso (cod_curso) ON DELETE CASCADE ON UPDATE CASCADE;
 
@@ -58,8 +58,8 @@ ALTER TABLE profesor ADD PRIMARY KEY (dni);
 
 
 
-INSERT INTO profesor VALUES ('12345678Z', 'Fulano', 'García', 'Gracía', 'Maestro Chocolatero', 20.25),
-							('25775147J', 'Mengano', 'Rodríguez', NULL, 'Profesor HTML', 40.50);
+INSERT INTO profesor VALUES ('12345678Z', 'Fulano', 'GarcÃ­a', 'GracÃ­a', 'Maestro Chocolatero', 20.25),
+							('25775147J', 'Mengano', 'RodrÃ­guez', NULL, 'Profesor HTML', 40.50);
 
 
 
@@ -72,9 +72,9 @@ ALTER TABLE curso ADD FOREIGN KEY (dni_profe) REFERENCES profesor(dni) ON DELETE
 
 
 
-INSERT INTO curso VALUES ('Maquetación HTML, CSS y JAVASCRIPT', 16, 600, '2024-02-05', '2024-08-30', '25775147J');
+INSERT INTO curso VALUES ('MaquetaciÃ³n HTML, CSS y JAVASCRIPT', 16, 600, '2024-02-05', '2024-08-30', '25775147J');
 
 
-INSERT INTO alumno VALUES ('42268151Q', 'César Osvaldo', 'Matelat', 'Borneo', 'Mi Casa, Como E.T.', '664774821', 'cesarmatelat@gmail.com', '1968-04-05', 1);
+INSERT INTO alumno VALUES ('42268151Q', 'CÃ©sar Osvaldo', 'Matelat', 'Borneo', 'Mi Casa, Como E.T.', '664774821', 'cesarmatelat@gmail.com', '1968-04-05', 1);
 
 SELECT * FROM alumno;
