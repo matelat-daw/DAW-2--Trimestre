@@ -39,7 +39,7 @@
 .rotate
 {
     animation: move 60s infinite;
-    text-shadow: -2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000; 
+    text-shadow: -1px 1px 10px #000, 5px 5px 10px #444, 1px -1px 10px #888, -1px -1px 10px #ccc; 
 }
 
 @keyframes move

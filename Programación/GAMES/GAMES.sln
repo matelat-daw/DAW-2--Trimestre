@@ -5,7 +5,15 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serpent", "Serpent\Serpent.csproj", "{58491606-4AB8-4517-BF2F-3B4509A2F3FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing Sound", "Testing Sound\Testing Sound.csproj", "{CE72595A-874B-4B8D-A683-43374BC2465E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testing Sound", "Testing Sound\Testing Sound.csproj", "{CE72595A-874B-4B8D-A683-43374BC2465E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample Snake", "Sample Snake\Sample Snake.csproj", "{F1F665D6-4662-498B-B18E-48996A11AE7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test Movement", "Test Movement\Test Movement.csproj", "{DA635353-6355-4043-8851-243D8E527F85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serpent-v0.2", "Serpent-v0.2\Serpent-v0.2.csproj", "{C9B18821-1F17-4F07-92CC-86E0AC28CA8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake-Sample-2", "Snake-Sample-2\Snake-Sample-2.csproj", "{21AF3E50-008D-4C15-A6D6-3A1FB41DEB0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{CE72595A-874B-4B8D-A683-43374BC2465E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE72595A-874B-4B8D-A683-43374BC2465E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE72595A-874B-4B8D-A683-43374BC2465E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F665D6-4662-498B-B18E-48996A11AE7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F665D6-4662-498B-B18E-48996A11AE7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F665D6-4662-498B-B18E-48996A11AE7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F665D6-4662-498B-B18E-48996A11AE7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA635353-6355-4043-8851-243D8E527F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA635353-6355-4043-8851-243D8E527F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA635353-6355-4043-8851-243D8E527F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA635353-6355-4043-8851-243D8E527F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B18821-1F17-4F07-92CC-86E0AC28CA8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B18821-1F17-4F07-92CC-86E0AC28CA8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B18821-1F17-4F07-92CC-86E0AC28CA8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B18821-1F17-4F07-92CC-86E0AC28CA8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21AF3E50-008D-4C15-A6D6-3A1FB41DEB0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21AF3E50-008D-4C15-A6D6-3A1FB41DEB0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21AF3E50-008D-4C15-A6D6-3A1FB41DEB0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21AF3E50-008D-4C15-A6D6-3A1FB41DEB0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
