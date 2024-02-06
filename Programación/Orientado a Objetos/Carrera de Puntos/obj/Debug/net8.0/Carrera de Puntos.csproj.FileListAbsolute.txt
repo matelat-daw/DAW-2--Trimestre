@@ -13,3 +13,18 @@ C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Car
 C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\Carrera de Puntos.pdb
 C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\Carrera de Puntos.genruntimeconfig.cache
 C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\ref\Carrera de Puntos.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\bin\Debug\net8.0\Carrera de Puntos.exe
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\bin\Debug\net8.0\Carrera de Puntos.deps.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\bin\Debug\net8.0\Carrera de Puntos.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\bin\Debug\net8.0\Carrera de Puntos.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\bin\Debug\net8.0\Carrera de Puntos.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\Carrera de Puntos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\Carrera de Puntos.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\Carrera de Puntos.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\Carrera de Puntos.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\Carrera de Puntos.sourcelink.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\Carrera de Puntos.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\refint\Carrera de Puntos.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\Carrera de Puntos.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\Carrera de Puntos.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Carrera de Puntos\obj\Debug\net8.0\ref\Carrera de Puntos.dll
