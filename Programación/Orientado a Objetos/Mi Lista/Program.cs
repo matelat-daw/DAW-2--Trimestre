@@ -41,7 +41,13 @@
 
         while (milista.Qtty > 5) // Uso el Valor de qtty, la Cantidad de Datos que Hay en el Array.
         {
+<<<<<<< HEAD
             Console.WriteLine("Se Exatrjo el Valor:{0} de la posición: {1}", milista.extraer(0), milista.Qtty);
+=======
+            milista.mostrar();
+            Console.WriteLine("\n");
+            milista.extraer(0);
+>>>>>>> 77d23b99fae60fdb5bc2f31965fcbe6f978a4e8d
         }
 
         milista.mostrar();
@@ -49,6 +55,7 @@
 
         // Console.WriteLine("{0}", Milista.TAM_INI); // Para Acceder a un atributo de otra clase que sea const o static además tiene que ser public.
     }
+<<<<<<< HEAD
 
     public class Milista
     {
@@ -118,4 +125,6 @@
             Console.WriteLine();
         }
     }
+=======
+>>>>>>> 77d23b99fae60fdb5bc2f31965fcbe6f978a4e8d
 }

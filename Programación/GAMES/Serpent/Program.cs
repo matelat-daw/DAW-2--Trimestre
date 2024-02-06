@@ -1,10 +1,10 @@
-﻿using System.ComponentModel;
-using System.Media;
+﻿using System.Media;
 
 public class Program
 {
     static void Main(string[] args)
     {
+        Console.CursorVisible = false;
         Serpent serpent = new Serpent();
         serpent.start();
     }
@@ -19,7 +19,7 @@ public class Board
 
     public void show()
     {
-        for (int i = x; i < x_limit; i++)
+        for (int i = x; i <= x_limit; i++)
         {
             Console.SetCursorPosition(i, y);
             Console.Write('O');
@@ -27,7 +27,7 @@ public class Board
             Console.Write('O');
         }
 
-        for (int i = y; i < y_limit; i++)
+        for (int i = y; i <= y_limit; i++)
         {
             Console.SetCursorPosition(x, i);
             Console.Write('O');
@@ -59,6 +59,7 @@ public class Menu
 
 public class Serpent()
 {
+    private int i;
     private int lifes = 3;
     private int x = 62;
     private int y = 15;
@@ -70,8 +71,8 @@ public class Serpent()
     private const int y_limit = 25;
     private int body = 4;
     private bool starting;
-    private int speed;
-    private int fast = 0;
+    private int velocity = 300;
+    private int speed = 0;
     private int direction = 3;
     private int score = 0;
     private bool sound = false;
@@ -80,49 +81,74 @@ public class Serpent()
     {
         if (starting)
         {
-            Console.SetCursorPosition(x, y);
             if (!sound)
             { 
-                SoundPlayer voice = new SoundPlayer(Environment.CurrentDirectory + "/audio/voice.wav");
-                voice.Play();
+                SoundPlayer voice = new SoundPlayer(Environment.CurrentDirectory + "/audio/voice1.wav");
+                // voice.Play();
                 sound = true;
-                await Task.Delay(3000);
+                // await Task.Delay(4000);
             }
             if (x >= x_start && x <= x_limit && y >= y_start && y <= y_limit)
             {
-                show();
-                await Task.Delay(speed);
+                await Task.Delay(velocity);
+                clean();
+                Console.SetCursorPosition(x, y);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("@");
+                Console.ForegroundColor = ConsoleColor.White;
                 switch (direction)
                 {
                     case 0:
+                        for (i = y + 1; i < y + body; i++)
+                        {
+                            Console.SetCursorPosition(x, i);
+                            Console.Write("*");
+                        }
                         y--;
-                        speed = 600 - fast;
+                        verticalSpeed();
                         break;
                     case 1:
+                        for (i = y - 1; i > y - body; i--)
+                        {
+                            Console.SetCursorPosition(x, i);
+                            Console.Write("*");
+                        }
                         y++;
-                        speed = 600 - fast;
+                        verticalSpeed();
                         break;
                     case 2:
-                        speed = 300 - fast;
+                        for (i = x + body; i > x; i--)
+                        {
+                            Console.SetCursorPosition(i, y);
+                            Console.Write("*");
+                        }
                         x--;
+                        horizontalSpeed();
                         break;
                     case 3:
-                        speed = 300 - fast;
+                        for (i = x - body; i < x; i++)
+                        {
+                            Console.SetCursorPosition(i, y);
+                            Console.Write("*");
+                        }
                         x++;
+                        horizontalSpeed();
                         break;
                 }
-                move();
                 if (x == appleX && y == appleY)
                 {
-                    body++;
-                    fast -= 50;
-                    load();
-                    score += 100;
+                    score += 10;
                     if (score % 100 == 0)
                     {
                         lifes++;
                     }
+                    Console.SetCursorPosition(60, 30);
+                    Console.WriteLine("Comí Manzana: {0}", score);
+                    body++;
+                    speed += 50;
+                    load();
                 }
+                move();
             }
             else
             {
@@ -130,17 +156,65 @@ public class Serpent()
                 sound = false;
                 if (lifes == 0)
                 {
-                    start();
+                    loose();
                 }
                 else
                 {
+                    clean();
                     Console.SetCursorPosition(60, 35);
                     Console.WriteLine("Has Perdido un Vida, te quedan: {0} Oportunidades.", lifes);
+                    Console.SetCursorPosition(60, 37);
                     Console.WriteLine("Presiona una Tecla Para Continuar.");
                     Console.ReadKey();
                     x = 62;
                     y = 15;
-                    play();
+                    direction = 3;
+                    move();
+                }
+            }
+        }
+    }
+
+    private void loose()
+    {
+        Console.Clear();
+        Console.WriteLine("Lo Siento Haz Perdido.\n");
+        Console.WriteLine("Presiona 1 Para Volver a Jugar o ESC para Cerrar el Programa.");
+        ConsoleKeyInfo key;
+        while ((key = Console.ReadKey(true)).Key != ConsoleKey.Escape)
+        {
+            if (key.Key == ConsoleKey.D1)
+            {
+                start();
+            }
+        }
+        System.Environment.Exit(0);
+    }
+
+    private void verticalSpeed()
+    {
+        velocity = 600 - speed;
+        if (velocity < 0)
+            velocity = 0;
+    }
+
+    private void horizontalSpeed()
+    {
+        velocity = 300 - speed;
+        if (velocity < 0)
+            velocity = 0;
+    }
+
+    private void clean()
+    {
+        for (int i = y_start; i <= y_limit; i++)
+        {
+            for (int j = x_start; j <= x_limit; j++)
+            {
+                if (i != appleY && j != appleX)
+                {
+                    Console.SetCursorPosition(j, i);
+                    Console.Write(' ');
                 }
             }
         }
@@ -149,17 +223,16 @@ public class Serpent()
     public void start()
     {
         Console.Clear();
-        int selection;
         Board board = new Board();
         board.show();
+        show();
         load();
         Menu menu = new Menu();
-        ConsoleKeyInfo key;
         Console.SetCursorPosition(20, 1);
         Console.WriteLine("Juego de la Serpiente.\n");
         menu.show();
         Console.Write("\nSelecciona una Opción del Menú(ESC to Exit): ");
-        show();
+        ConsoleKeyInfo key;
         while ((key = Console.ReadKey(true)).Key != ConsoleKey.Escape)
         {
             switch (key.Key)
@@ -168,7 +241,6 @@ public class Serpent()
                     if (!starting)
                     {
                         starting = true;
-                        show();
                         play();
                     }
                     break;
@@ -189,6 +261,19 @@ public class Serpent()
                     Console.WriteLine("Estás Seguro que Quierres Salir?. Presiona ESC para Abandonar el Juego, Cualquier Otra Tecla Para Seguir.");
                     break;
             }
+        }
+    }
+
+    private void show()
+    {
+        Console.SetCursorPosition(x, y);
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.Write("@");
+        Console.ForegroundColor = ConsoleColor.White;
+        for (i = x - body; i < x; i++)
+        {
+            Console.SetCursorPosition(i, y);
+            Console.Write("*");
         }
     }
 
@@ -217,47 +302,6 @@ public class Serpent()
                     break;
             }
             move();
-        }
-    }
-
-    public void show()
-    {
-        int i;
-
-        Console.SetCursorPosition(x, y);
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.Write("@");
-        Console.ForegroundColor = ConsoleColor.White;
-        switch (direction)
-        {
-            case 0:
-                for (i = y + body; i < y; i--)
-                {
-                    Console.SetCursorPosition(x, i);
-                    Console.Write("*");
-                }
-                break;
-            case 1:
-                for (i = y - 1; i <= y - body - 1; i--)
-                {
-                    Console.SetCursorPosition(x, i);
-                    Console.Write("*");
-                }
-                break;
-            case 2:
-                Console.SetCursorPosition(x + body, y);
-                for (i = x + body; i < x; i--)
-                {
-                    Console.Write("*");
-                }
-                break;
-            case 3:
-                Console.SetCursorPosition(x - body, y);
-                for (i = x - body; i < x; i++)
-                {
-                    Console.Write("*");
-                }
-                break;
         }
     }
 

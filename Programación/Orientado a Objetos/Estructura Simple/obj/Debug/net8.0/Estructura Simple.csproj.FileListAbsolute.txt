@@ -13,3 +13,18 @@ C:\xampp\htdocs\Programacion\C#\Orientado a Objetos\Estructura Simple\obj\Debug\
 C:\xampp\htdocs\Programacion\C#\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\Estructura Simple.pdb
 C:\xampp\htdocs\Programacion\C#\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\Estructura Simple.genruntimeconfig.cache
 C:\xampp\htdocs\Programacion\C#\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\ref\Estructura Simple.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\bin\Debug\net8.0\Estructura Simple.exe
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\bin\Debug\net8.0\Estructura Simple.deps.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\bin\Debug\net8.0\Estructura Simple.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\bin\Debug\net8.0\Estructura Simple.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\bin\Debug\net8.0\Estructura Simple.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\Estructura Simple.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\Estructura Simple.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\Estructura Simple.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\Estructura Simple.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\Estructura Simple.sourcelink.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\Estructura Simple.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\refint\Estructura Simple.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\Estructura Simple.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\Estructura Simple.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Estructura Simple\obj\Debug\net8.0\ref\Estructura Simple.dll

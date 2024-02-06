@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Serpent")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26fc17665f4c7fb66299f102c39ad1b102540b2e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1dd0d8a56f8020609117bc42ca36ce1c3b438eb5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Serpent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Serpent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
