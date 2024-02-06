@@ -41,16 +41,21 @@
 
         while (milista.Qtty > 5) // Uso el Valor de qtty, la Cantidad de Datos que Hay en el Array.
         {
-            milista.extraer(0);
+            Console.WriteLine("Se Exatrjo el Valor:{0} de la posición: {1}", milista.extraer(0), milista.Qtty);
         }
 
         milista.mostrar();
         Console.WriteLine("Extrayendo.\n\nEl Tamaño del Array es: {0}", milista.Qtty);
+
+        // Console.WriteLine("{0}", Milista.TAM_INI); // Para Acceder a un atributo de otra clase que sea const o static además tiene que ser public.
     }
 
     public class Milista
     {
-        private int[] array = new int[10];
+        // private const int TAM_INI = 10;
+        public const int TAM_INI = 10;
+        private const int TAM_CREC = 10;
+        private int[] array = new int[TAM_INI];
         private int qtty = 0;
 
         public int Qtty // Getter de la Variable Privada qtty.
@@ -75,21 +80,17 @@
 
         }
 
-        private void expand()
+        private void expand() // Expande el Array Original.
         {
-            int[] array_aux = new int[array.Length + 10];
-            for (int i = 0; i < array.Length; i++)
+            int[] array_aux = new int[array.Length + TAM_CREC]; // Primero creo un array auxiliar con 10 datos más que el original.
+            for (int i = 0; i < array.Length; i++) // Hago un bucle hasta el tamaño del array original.
             {
-                array_aux[i] = array[i];
+                array_aux[i] = array[i]; // Paso los valores del array original al auxiliar.
             }
-            array = new int[array_aux.Length];
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = array_aux[i];
-            }
+            array = array_aux; // Así se asigna el array nuevo(auxiliar) al original, no hace falta crear el original de nuevo con el tamaño del auxiliar y pasarle los datos en un bucle.
         }
 
-        public int extraer(int position)
+        public int extraer(int position) // Extrae el valor en la posición pasada por parametro(Lo quita del array y reordena).
         {
             int aux;
 

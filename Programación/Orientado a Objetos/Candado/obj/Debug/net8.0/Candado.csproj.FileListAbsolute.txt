@@ -1,0 +1,15 @@
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\bin\Debug\net8.0\Candado.exe
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\bin\Debug\net8.0\Candado.deps.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\bin\Debug\net8.0\Candado.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\bin\Debug\net8.0\Candado.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\bin\Debug\net8.0\Candado.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\obj\Debug\net8.0\Candado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\obj\Debug\net8.0\Candado.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\obj\Debug\net8.0\Candado.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\obj\Debug\net8.0\Candado.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\obj\Debug\net8.0\Candado.sourcelink.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\obj\Debug\net8.0\Candado.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\obj\Debug\net8.0\refint\Candado.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\obj\Debug\net8.0\Candado.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\obj\Debug\net8.0\Candado.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Candado\obj\Debug\net8.0\ref\Candado.dll
