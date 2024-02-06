@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Select Menu\\Select Menu.csproj": {}
+    "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Select Menu\\Select Menu.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Select Menu\\Select Menu.csproj": {
+    "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Select Menu\\Select Menu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Select Menu\\Select Menu.csproj",
+        "projectUniqueName": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Select Menu\\Select Menu.csproj",
         "projectName": "Select Menu",
-        "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Select Menu\\Select Menu.csproj",
-        "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Select Menu\\obj\\",
+        "projectPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Select Menu\\Select Menu.csproj",
+        "packagesPath": "C:\\Users\\orion\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Select Menu\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
