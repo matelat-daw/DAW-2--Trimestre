@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mi Lista", "Mi Lista\Mi Lis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Candado", "Candado\Candado.csproj", "{BE512FE1-B7CE-4FD8-9349-F6DC672DE942}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carrera de Puntos", "Carrera de Puntos\Carrera de Puntos.csproj", "{399B02C3-919D-4BFC-98FD-7A5D9DD0E84D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Carrera de Puntos", "Carrera de Puntos\Carrera de Puntos.csproj", "{399B02C3-919D-4BFC-98FD-7A5D9DD0E84D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
