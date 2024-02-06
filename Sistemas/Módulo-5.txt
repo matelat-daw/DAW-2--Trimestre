@@ -29,7 +29,7 @@ net accounts /maxpwage:31 /minpwlen:3 /uniquepw:2
 •se bloquee después de cuatro intentos fallidos de login,
 •el bloqueo de cuenta dure 15 minutos,
 •reiniciar el conteo de intentos fallidos después de 20 minutos.
-Accedemos a directiva de seguridad local como administrador, entramos en Directiva de cuenta → Directiva de
+Accedemos a directiva de seguridad local como administrador (Secpol.msc), entramos en Directiva de cuenta → Directiva de
 bloqueo de cuenta → Umbral de bloqueo de cuenta. Y hacemos que se bloquee después de 4 intentos.
 
 
@@ -52,9 +52,9 @@ net user uMadness LM9@nupe /add /logonpasswordchg:yes
 •Modifica dicha cuenta de usuario para:
 •unirla al grupo Grillness:
 
-net localgroup GRillness uMadness /add
+net localgroup Grillness uMadness /add
 
-•y después sacarla del grupo gPartner:
+•y después sacala del grupo gPartner:
 
 net localgroup gPartner uMadness /delete
 
