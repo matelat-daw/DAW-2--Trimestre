@@ -98,7 +98,7 @@ net start "Xbox Accessory Management Service"
 
 Para Obtener el Nombre del servicio se puede usar en PowerShell el comando:
 
-get-service -DisplayName "Xbox Accessory Management Service"
+get-service -DisplayName "Xbox Accessory Management Service" o en el entorno gráfico con la herramienta services.msc doble click en el DisplayName y en las propiedades se ve: XboxGipSvc
 
 Status   Name               DisplayName                           
 ------   ----               -----------                           
