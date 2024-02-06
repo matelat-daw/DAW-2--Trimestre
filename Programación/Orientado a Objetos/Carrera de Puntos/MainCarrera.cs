@@ -1,4 +1,4 @@
-﻿public class MainCarrera
+public class MainCarrera
 {
     static void Main(string[] args)
     {

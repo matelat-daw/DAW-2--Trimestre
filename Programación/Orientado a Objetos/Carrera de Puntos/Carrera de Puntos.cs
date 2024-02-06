@@ -1,4 +1,4 @@
-﻿public class Carrera_de_Puntos
+public class Carrera_de_Puntos
 {
     private int x;
     private int pre_x;
