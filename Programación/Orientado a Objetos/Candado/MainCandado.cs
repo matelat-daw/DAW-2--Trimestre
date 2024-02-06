@@ -1,4 +1,4 @@
-﻿public class MainClass
+﻿public class MainCandado
 {
     static void Main(string[] args)
     {

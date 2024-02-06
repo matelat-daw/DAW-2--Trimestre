@@ -1,5 +1,4 @@
-﻿public class MainClass
-{
+﻿public class MainPila{
     static void Main(string[] args)
     {
         Pila p;

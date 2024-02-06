@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Listas con Array", "Listas 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mi Lista", "Mi Lista\Mi Lista.csproj", "{366E8B31-3341-454E-802F-1B733094451A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candado", "Candado\Candado.csproj", "{BE512FE1-B7CE-4FD8-9349-F6DC672DE942}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Candado", "Candado\Candado.csproj", "{BE512FE1-B7CE-4FD8-9349-F6DC672DE942}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carrera de Puntos", "Carrera de Puntos\Carrera de Puntos.csproj", "{399B02C3-919D-4BFC-98FD-7A5D9DD0E84D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{BE512FE1-B7CE-4FD8-9349-F6DC672DE942}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE512FE1-B7CE-4FD8-9349-F6DC672DE942}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE512FE1-B7CE-4FD8-9349-F6DC672DE942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{399B02C3-919D-4BFC-98FD-7A5D9DD0E84D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{399B02C3-919D-4BFC-98FD-7A5D9DD0E84D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{399B02C3-919D-4BFC-98FD-7A5D9DD0E84D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{399B02C3-919D-4BFC-98FD-7A5D9DD0E84D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

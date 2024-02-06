@@ -1,4 +1,4 @@
-﻿public class Program
+﻿public class ListaArray
 {
     static void Main(string[] args)
     {

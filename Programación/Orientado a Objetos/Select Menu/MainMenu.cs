@@ -1,4 +1,4 @@
-﻿public class Program
+﻿public class MainMenu
 {
     static void Main(string[] args)
     {
