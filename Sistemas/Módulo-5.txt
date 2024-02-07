@@ -9,6 +9,9 @@ tasklist /FI "imagename eq chkntfs.exe" /V /fo list > procesos.txt
 •Comprueba cuál es el estado de los procesos en estado suspendido que hayan sido creados por tu
 usuario.
 
+Para Obtener el Usuario de la sesión actual se usa: query session
+O se puede Usar %username%
+
 tasklist /FI "username eq %username%" /fi "status eq running"
 
 •Haz que todos los procesos del sistema que hayan sido creados a partir del chkntfs.exe dejen de
@@ -82,13 +85,20 @@ Para realizar las acciones sobre el servicio "Xbox Accessory Management Service"
 · Arrancar el servicio.
 
 net start "Xbox Accessory Management Service"
+o Mirando en la Apliccaión Services.msc Doble click sobre el Servicio service name o Nombre del servicio.
+sc start XboxGipSvc
+o
+net start XboxGipSvc es mejor con net start se ve mejor como se inicia y muestra que se ha iniciado correctamente y se pude iniciar con el windowtitle o nombre largo, OJO el Nombre Largo hay que ponerlo entre comillas.
 
 
 · Reiniciar el servicio.
 
-Con la Orden: net continue "Xbox Accessory Management Service" Se Puede reiniciar el servicio que previamente haya sido pausado con: net pause "Xbox Accessory Management Service"
+Cuando se crea un servicio, se completa una estructura SERVICE_STATUS. Uno de los campos de la estructura se llama dwControlsAccepted. Una de las opciones para dwControlsAccepted es SERVICE_ACCEPT_PAUSE_CONTINUE. Si no se dice que admite pausar/continuar, El comando net pause o net continue informará que no admite pausar/continuar.
 
-Si no ha sido pausado el servicio hay que usar stop y start
+Con la Orden: net continue "Xbox Accessory Management Service" Se Puede reiniciar el servicio que previamente haya sido pausado con: net pause "Xbox Accessory Management Service"
+en el caso de "Xbox Accessory Management Service" no admite pausa/continuación.
+
+Si no se puede pausar el servicio hay que usar stop y start
 
 net stop "Xbox Accessory Management Service"
 net start "Xbox Accessory Management Service"
@@ -98,7 +108,7 @@ net start "Xbox Accessory Management Service"
 
 Para Obtener el Nombre del servicio se puede usar en PowerShell el comando:
 
-get-service -DisplayName "Xbox Accessory Management Service"
+get-service -DisplayName "Xbox Accessory Management Service" o en el entorno gráfico con la herramienta services.msc doble click en el DisplayName y en las propiedades se ve: XboxGipSvc
 
 Status   Name               DisplayName                           
 ------   ----               -----------                           
@@ -119,6 +129,8 @@ sc enumdepend XboxGipSvc
 sc start XboxGipSvc
 o
 net start XboxGipSvc
+o
+net start "Xbox Accessory Management Service" // Muestra como se inicia el servicio.
 
 
 · Estado actual del servicio:
