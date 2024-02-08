@@ -4,8 +4,8 @@ public class Carrera_de_Puntos
     private int pre_x;
     private int y;
     private char player;
-    private static int llegada;
-    private Random velocity = new Random();
+    private static int meta;
+    private static Random velocity = new Random();
     private bool result = false;
 
     public Carrera_de_Puntos(int x, int y, char player)
@@ -17,19 +17,22 @@ public class Carrera_de_Puntos
 
     public bool avanzar(int power)
     {
-        pre_x = x;
-        x += velocity.Next(power);
-        if (x >= llegada)
+        if (meta != 0)
         {
-            x = llegada;
-            result = true;
+            pre_x = x;
+            x += velocity.Next(power + 1);
+            if (x >= meta)
+            {
+                x = meta;
+                result = true;
+            }
         }
         return result;
     }
 
     public static void fijar_meta(int meta)
     {
-        llegada = meta;
+        Carrera_de_Puntos.meta = meta;
         Console.SetCursorPosition(meta, 10);
         Console.Write("| L");
         Console.SetCursorPosition(meta, 11);
@@ -48,9 +51,14 @@ public class Carrera_de_Puntos
 
     public void mostrar()
     {
-        Console.SetCursorPosition(pre_x, y);
-        Console.Write(" ");
+        ocultar();
         Console.SetCursorPosition(x, y);
         Console.Write(player);
+    }
+
+    private void ocultar()
+    {
+        Console.SetCursorPosition(pre_x, y);
+        Console.Write(" ");
     }
 }

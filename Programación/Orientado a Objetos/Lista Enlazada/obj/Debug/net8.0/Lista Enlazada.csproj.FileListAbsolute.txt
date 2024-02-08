@@ -1,0 +1,15 @@
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\bin\Debug\net8.0\Lista Enlazada.exe
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\bin\Debug\net8.0\Lista Enlazada.deps.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\bin\Debug\net8.0\Lista Enlazada.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\bin\Debug\net8.0\Lista Enlazada.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\bin\Debug\net8.0\Lista Enlazada.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\obj\Debug\net8.0\Lista Enlazada.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\obj\Debug\net8.0\Lista Enlazada.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\obj\Debug\net8.0\Lista Enlazada.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\obj\Debug\net8.0\Lista Enlazada.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\obj\Debug\net8.0\Lista Enlazada.sourcelink.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\obj\Debug\net8.0\Lista Enlazada.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\obj\Debug\net8.0\refint\Lista Enlazada.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\obj\Debug\net8.0\Lista Enlazada.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\obj\Debug\net8.0\Lista Enlazada.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Lista Enlazada\obj\Debug\net8.0\ref\Lista Enlazada.dll

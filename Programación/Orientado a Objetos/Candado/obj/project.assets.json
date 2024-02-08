@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Orion\\.nuget\\packages\\": {}
+    "C:\\Users\\orion\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Candado\\Candado.csproj",
+      "projectUniqueName": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Candado\\Candado.csproj",
       "projectName": "Candado",
-      "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Candado\\Candado.csproj",
-      "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Candado\\obj\\",
+      "projectPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Candado\\Candado.csproj",
+      "packagesPath": "C:\\Users\\orion\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Candado\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
