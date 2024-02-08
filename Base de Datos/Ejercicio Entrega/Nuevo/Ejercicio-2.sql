@@ -58,12 +58,17 @@ ALTER TABLE cursos
     ADD UNIQUE KEY Nombre_curso (Nombre_curso),
     ADD CONSTRAINT fechas CHECK (fecha_inicio < fecha_fin),
     ADD CONSTRAINT `Hace Referencia a din de la Tabla profesores.` FOREIGN KEY (dni_profesor) REFERENCES profesores (dni) ON DELETE NO ACTION ON UPDATE CASCADE; -- Esto se hace si quiero poner de nombre a la Clave Foránea: Hace Referencia a dni de la Tabla profesores., Tiene que Estar Entre Estas Comillas `.
+	
+	-- La Clave Foránea También puede ser:
+	ALTER TABLE  profesores ADD CONSTRAINT FK_curso_profe FOREIGN KEY (dni_profesor) REFERENCES profesores (dni) ON DELETE NO ACTION ON UPDATE CASCADE; -- El COnstraint se pone para darle el nombre a la clave foránea, si no se hace con constraint le pone un nombre automáticamente y hay que buscarlo con: 
 
 ALTER TABLE alumnos
     ADD PRIMARY KEY (dni),
     ADD CONSTRAINT sexo CHECK (BINARY sexo = UPPER("H") OR BINARY sexo = UPPER("M")),
 	ADD CONSTRAINT `Hace Referencia a cod_curso de la Tabla cursos.` FOREIGN KEY (curso) REFERENCES cursos (cod_curso) ON DELETE CASCADE ON UPDATE CASCADE; -- Lo Mismo en Este Caso.
 
+-- Tambien se puede modificar la tabla alumnos así:
+ALTER TABLE alumnos ADD CONSTRAINT FK_alumno_curso FOREIGN KEY (curso) REFERENCES cursos (cod_curso) ON DELETE CASCADE ON UPDATE CASCADE;
 
 SHOW INDEXES FROM cursos; -- Muestra los Nombres de los Índices de la Tabla Solicitada.
 	

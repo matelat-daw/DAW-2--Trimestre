@@ -142,7 +142,7 @@ WHERE a.Municipio LIKE "EL SAUZAL" AND p.Nombre LIKE "PRIETO , RAMON";
 
 SELECT COUNT(a.Codigo)
 FROM alumno a
-WHERE a.CodigoGrupo LIKE "913NMA";
+WHERE a.CodigoGrupo = "913NMA";
 
 -- 24-. Número de grupos que hay en este centro.
 
@@ -240,7 +240,7 @@ WHERE a.Nombre LIKE "PEPA" AND a.Apellidos LIKE "CHAVEZ DOMINGUEZ";
 
 SELECT a.Nombre, a.Apellidos
 FROM alumno a INNER JOIN grupo g ON a.CodigoGrupo=g.Codigo INNER JOIN alumnos_de_baja ab ON a.Telefono=ab.Telefono
-WHERE g.Codigo LIKE "913NMB";
+WHERE g.Codigo LIKE "913NMB"; -- LIKE se Usa cuando se necesitan usar Comodines (%), si no se Usa =.
 
 
 --							GROUP BY
