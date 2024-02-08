@@ -44,7 +44,7 @@ CREATE TABLE alumno (
 
 -- CREATE INDEX FK_cod_curso ON alumno (curso); -- Esta Línea no es Necesaria Para Relacionar las Tablas.
 
-ALTER TABLE alumno ADD FOREIGN KEY (curso) REFERENCES curso (cod_curso) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE alumno ADD CONSTRAINT FK_alumno_curso FOREIGN KEY (curso) REFERENCES curso (cod_curso) ON DELETE CASCADE ON UPDATE CASCADE;
 
 
 
@@ -68,7 +68,7 @@ DROP INDEX FK_dni_profe ON curso;
 
 ALTER TABLE curso ALTER COLUMN dni_profe varchar(9);
 
-ALTER TABLE curso ADD FOREIGN KEY (dni_profe) REFERENCES profesor(dni) ON DELETE NO ACTION ON UPDATE CASCADE;
+ALTER TABLE curso ADD CONSTRAINT FK_curso_profe FOREIGN KEY (dni_profe) REFERENCES profesor(dni) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 
 

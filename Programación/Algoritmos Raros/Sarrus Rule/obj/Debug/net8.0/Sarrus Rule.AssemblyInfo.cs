@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sarrus Rule")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c28f291220b81485f88e958f8204c99578d5d00")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b4f87117bfeb795481d6a2afc2ce33d50a90f1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sarrus Rule")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sarrus Rule")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

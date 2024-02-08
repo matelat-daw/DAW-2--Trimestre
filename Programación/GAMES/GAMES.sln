@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test Movement", "Test Movem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serpent-v0.2", "Serpent-v0.2\Serpent-v0.2.csproj", "{C9B18821-1F17-4F07-92CC-86E0AC28CA8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake-Sample-2", "Snake-Sample-2\Snake-Sample-2.csproj", "{21AF3E50-008D-4C15-A6D6-3A1FB41DEB0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snake-Sample-2", "Snake-Sample-2\Snake-Sample-2.csproj", "{21AF3E50-008D-4C15-A6D6-3A1FB41DEB0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serpent-v0.3", "Serpent-v0.3\Serpent-v0.3.csproj", "{1DA414D7-38CA-40F6-8862-0081488240B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{21AF3E50-008D-4C15-A6D6-3A1FB41DEB0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21AF3E50-008D-4C15-A6D6-3A1FB41DEB0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21AF3E50-008D-4C15-A6D6-3A1FB41DEB0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA414D7-38CA-40F6-8862-0081488240B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA414D7-38CA-40F6-8862-0081488240B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA414D7-38CA-40F6-8862-0081488240B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA414D7-38CA-40F6-8862-0081488240B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
