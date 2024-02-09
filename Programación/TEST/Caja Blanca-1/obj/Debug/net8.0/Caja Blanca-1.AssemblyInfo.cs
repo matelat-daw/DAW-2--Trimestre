@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Caja Blanca-1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c82eade8a6beb908ef9fb2c83705218a9442b2b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2eba24a6da7f80e57048df9958a006054d04993e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Caja Blanca-1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Caja Blanca-1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
