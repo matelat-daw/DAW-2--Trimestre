@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Listas con Array")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18940ef726ec48413496f5806c39e22e4355105a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c49977accd41a77f991e7ebd6fe88202f135f958")]
 [assembly: System.Reflection.AssemblyProductAttribute("Listas con Array")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Listas con Array")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
