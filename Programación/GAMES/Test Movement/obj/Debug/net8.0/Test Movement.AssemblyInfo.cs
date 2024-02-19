@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Test Movement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed73e19958e9ebdecb88557ce941fcdd0ca7a797")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8eeb672323919e22df05cc5f1e4d5a3362497b89")]
 [assembly: System.Reflection.AssemblyProductAttribute("Test Movement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Test Movement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
