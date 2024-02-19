@@ -21,6 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serpent-v0.4", "Serpent-v0.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serpent-v0.31", "Serpent-v0.31\Serpent-v0.31.csproj", "{795B84E3-9964-4B1E-AEEB-4CC2AE88D8F4}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serpiente", "Serpiente\Serpiente.csproj", "{D7F0762E-7858-4BDC-8F8F-D374A9A93733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rectangle and Point", "Rectangle and Point\Rectangle and Point.csproj", "{C95CB683-AAA0-4BF2-81D4-644843B7B78C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{795B84E3-9964-4B1E-AEEB-4CC2AE88D8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{795B84E3-9964-4B1E-AEEB-4CC2AE88D8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{795B84E3-9964-4B1E-AEEB-4CC2AE88D8F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F0762E-7858-4BDC-8F8F-D374A9A93733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F0762E-7858-4BDC-8F8F-D374A9A93733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F0762E-7858-4BDC-8F8F-D374A9A93733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F0762E-7858-4BDC-8F8F-D374A9A93733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C95CB683-AAA0-4BF2-81D4-644843B7B78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C95CB683-AAA0-4BF2-81D4-644843B7B78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C95CB683-AAA0-4BF2-81D4-644843B7B78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C95CB683-AAA0-4BF2-81D4-644843B7B78C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

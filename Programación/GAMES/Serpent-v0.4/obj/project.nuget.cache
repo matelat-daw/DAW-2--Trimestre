@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ypz723lEDgbmo3cpnOqFZ3EmbqQms4U2vPRs2bzU/eCrYhROWiCK905x0OoEv/l2VzxmBsD/P22fjgmamzvR+g==",
+  "dgSpecHash": "pn5yVaNXupSCqtiUYVT0kY8UuiF9VgRxV9dRyyS879S/ty/q2YDejfPRr+NP3BpZsR0lLA827kg85ly7ydpI4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Serpent-v0.4\\Serpent-v0.4.csproj",
+  "projectFilePath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\GAMES\\Serpent-v0.4\\Serpent-v0.4.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Orion\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
+    "C:\\Users\\orion\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

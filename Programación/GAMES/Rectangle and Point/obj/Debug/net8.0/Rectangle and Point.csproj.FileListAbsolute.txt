@@ -1,0 +1,15 @@
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\bin\Debug\net8.0\Rectangle and Point.exe
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\bin\Debug\net8.0\Rectangle and Point.deps.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\bin\Debug\net8.0\Rectangle and Point.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\bin\Debug\net8.0\Rectangle and Point.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\bin\Debug\net8.0\Rectangle and Point.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\obj\Debug\net8.0\Rectangle and Point.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\obj\Debug\net8.0\Rectangle and Point.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\obj\Debug\net8.0\Rectangle and Point.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\obj\Debug\net8.0\Rectangle and Point.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\obj\Debug\net8.0\Rectangle and Point.sourcelink.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\obj\Debug\net8.0\Rectangle and Point.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\obj\Debug\net8.0\refint\Rectangle and Point.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\obj\Debug\net8.0\Rectangle and Point.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\obj\Debug\net8.0\Rectangle and Point.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Rectangle and Point\obj\Debug\net8.0\ref\Rectangle and Point.dll

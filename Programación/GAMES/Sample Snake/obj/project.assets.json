@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Orion\\.nuget\\packages\\": {}
+    "C:\\Users\\orion\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Sample Snake\\Sample Snake.csproj",
+      "projectUniqueName": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\GAMES\\Sample Snake\\Sample Snake.csproj",
       "projectName": "Sample Snake",
-      "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Sample Snake\\Sample Snake.csproj",
-      "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\GAMES\\Sample Snake\\obj\\",
+      "projectPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\GAMES\\Sample Snake\\Sample Snake.csproj",
+      "packagesPath": "C:\\Users\\orion\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\GAMES\\Sample Snake\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -40,6 +40,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -61,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

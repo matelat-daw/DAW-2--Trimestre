@@ -1,0 +1,43 @@
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.AssemblyInfoInputs.cache
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.AssemblyInfo.cs
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.csproj.CoreCompileInputs.cache
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\bin\Debug\net7.0\Serpiente.exe
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\bin\Debug\net7.0\Serpiente.deps.json
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\bin\Debug\net7.0\Serpiente.runtimeconfig.json
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\bin\Debug\net7.0\Serpiente.dll
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\bin\Debug\net7.0\Serpiente.pdb
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.dll
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\refint\Serpiente.dll
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.pdb
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.genruntimeconfig.cache
+C:\Users\ftoblare\Mi unidad\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\ref\Serpiente.dll
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\bin\Debug\net7.0\Serpiente.exe
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\bin\Debug\net7.0\Serpiente.deps.json
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\bin\Debug\net7.0\Serpiente.runtimeconfig.json
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\bin\Debug\net7.0\Serpiente.dll
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\bin\Debug\net7.0\Serpiente.pdb
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.AssemblyInfoInputs.cache
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.AssemblyInfo.cs
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.csproj.CoreCompileInputs.cache
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.dll
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\refint\Serpiente.dll
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.pdb
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\Serpiente.genruntimeconfig.cache
+C:\Users\Profesor\ftoblare\Curso_2023_24\PRO\CompartidoConAlumnos\Trimestre_2_Obj\Serpiente\obj\Debug\net7.0\ref\Serpiente.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\obj\Debug\net7.0\Serpiente.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\obj\Debug\net7.0\Serpiente.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\obj\Debug\net7.0\Serpiente.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\obj\Debug\net7.0\Serpiente.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\obj\Debug\net7.0\Serpiente.sourcelink.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\obj\Debug\net7.0\Serpiente.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\obj\Debug\net7.0\refint\Serpiente.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\obj\Debug\net7.0\Serpiente.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\bin\Debug\net7.0\Serpiente.exe
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\bin\Debug\net7.0\Serpiente.deps.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\bin\Debug\net7.0\Serpiente.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\bin\Debug\net7.0\Serpiente.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\bin\Debug\net7.0\Serpiente.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\obj\Debug\net7.0\Serpiente.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\GAMES\Serpiente\obj\Debug\net7.0\ref\Serpiente.dll
