@@ -13,3 +13,7 @@ C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Prog
 C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Serpent-v0.3\obj\Debug\net8.0\Serpent-v0.3.pdb
 C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Serpent-v0.3\obj\Debug\net8.0\Serpent-v0.3.genruntimeconfig.cache
 C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Serpent-v0.3\obj\Debug\net8.0\ref\Serpent-v0.3.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Serpent-v0.3\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Serpent-v0.3\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Serpent-v0.3\obj\Debug\net8.0\Serpent-v0.3.csproj.AssemblyReference.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Serpent-v0.3\obj\Debug\net8.0\Serpent-v0.3.csproj.CopyComplete

@@ -1,0 +1,56 @@
+table
+{
+    border:  10px solid darkblue;
+    empty-cells: hide;
+}
+
+td
+{
+    border:  1px solid darkblue;
+    width: 48px;
+    height: 48px;
+}
+
+.yellow
+{
+    background-color: yellow;
+}
+
+.yellow1
+{
+    border: none;
+    background-color: yellow;
+}
+
+.green
+{
+    background-color: green;
+}
+
+.green1
+{
+    border: none;
+    background-color: green;
+}
+
+.blue
+{
+    background-color: blue;
+}
+
+.blue1
+{
+    border: none;
+    background-color: blue;
+}
+
+.red
+{
+    background-color: red;
+}
+
+.red1
+{
+    border: none;
+    background-color: red;
+}

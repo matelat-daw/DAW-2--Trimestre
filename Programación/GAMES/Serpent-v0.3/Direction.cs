@@ -1,6 +1,6 @@
-﻿public enum Direction
+﻿public enum Direction // Enumeración de las Direcciones North = Arriba, South = Abajo, etc.
 {
-    North = 0,
+    North,
     South,
     East,
     West
