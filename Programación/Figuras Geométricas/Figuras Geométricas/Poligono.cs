@@ -34,13 +34,14 @@
 
     public void mostrar()
     {
+        Console.ForegroundColor = ConsoleColor.White;
         Console.SetCursorPosition(30, 85);
         horizontal();
         Console.SetCursorPosition(30, size / 2 + (int)getApotema() + 85);
         horizontal();
         vertical();
         diagonal();
-
+        Console.ForegroundColor = ConsoleColor.Gray;
     }
 
     private void diagonal()

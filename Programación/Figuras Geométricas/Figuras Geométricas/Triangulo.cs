@@ -36,7 +36,9 @@
 
     public void mostrar()
     {
+        Console.ForegroundColor = ConsoleColor.Blue;
         Render(Draw('*', altura)); // Llama al Método Render que llama al Método Draw y le Pasa el Caracter a Dibujar y la Altura.
+        Console.ForegroundColor = ConsoleColor.Gray;
     }
 
     public char[,] Draw(char sym, int height) // Chorizeado de Internet, Recibe el Caracter y la Altura.

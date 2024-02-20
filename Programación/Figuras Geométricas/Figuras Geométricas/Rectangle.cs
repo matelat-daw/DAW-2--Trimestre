@@ -28,12 +28,17 @@ public class Rectangle
     {
         int area_total;
         Rectangle[] array = [
-            new Rectangle(0, 0, 10, 10),
-            new Rectangle(5, 5, 15, 15),
-            new Rectangle(10, 10, 20, 20)
+            new Rectangle(80, 5, 10, 10),
+            new Rectangle(95, 5, 15, 15),
+            new Rectangle(115, 5, 20, 20)
             ];
         area_total = areas(array);
-        Console.WriteLine("\nEl Area de Todos Los Rectángulos es: {0}\n", area_total);
+        Console.SetCursorPosition(76, 25);
+        Console.WriteLine("El Area de Todos Los Cuadrados es: {0}", area_total);
+        Console.SetCursorPosition(76, 27);
+        Console.WriteLine("El Perimetro Individual es: {0}, {1} y {2}", array[0].perimetro(), array[1].perimetro(), array[2].perimetro());
+        Console.SetCursorPosition(76, 29);
+        Console.WriteLine("Y el Área Individual es: {0}, {1} y {2}", array[0].area(), array[1].area(), array[2].area());
     }
 
     private static int areas(Rectangle[] array)
@@ -43,12 +48,14 @@ public class Rectangle
         for (int i = 0; i < array.Length; i++)
         {
             result += array[i].area();
+            array[i].mostrar();
         }
         return result;
     }
 
     public void mostrar()
     {
+        Console.ForegroundColor = ConsoleColor.Red;
         for (int i = posicion.getX(); i <= ancho + posicion.getX(); i++)
         {
             Console.SetCursorPosition(i, 0 + posicion.getY());
@@ -64,6 +71,7 @@ public class Rectangle
             Console.SetCursorPosition(ancho + posicion.getX(), j);
             Console.Write("*");
         }
+        Console.ForegroundColor = ConsoleColor.Gray;
         Console.WriteLine("\n");
     }
 
