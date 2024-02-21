@@ -32,7 +32,13 @@ td
 
 .num
 {
+    border: hidden;
     width: 41px;
     text-align: center;
     font-weight: bold;
+}
+
+.upsidedown
+{
+    transform: scale(-1, -1);
 }
