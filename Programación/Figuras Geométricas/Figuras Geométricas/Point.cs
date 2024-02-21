@@ -1,4 +1,4 @@
-﻿public class Point
+﻿public class Point // Coordenadas de las Figuras.
 {
     private int x;
     private int y;

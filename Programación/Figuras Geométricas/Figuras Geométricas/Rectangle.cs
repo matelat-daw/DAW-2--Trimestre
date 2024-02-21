@@ -1,5 +1,4 @@
-﻿
-public class Rectangle
+﻿public class Rectangle // Rectángulos y Cuadrados.
 {
     private int ancho;
     private int alto;
@@ -55,24 +54,7 @@ public class Rectangle
 
     public void mostrar()
     {
-        Console.ForegroundColor = ConsoleColor.Red;
-        for (int i = posicion.getX(); i <= ancho + posicion.getX(); i++)
-        {
-            Console.SetCursorPosition(i, 0 + posicion.getY());
-            Console.Write("*");
-            Console.SetCursorPosition(i, alto + posicion.getY());
-            Console.Write("*");
-        }
-
-        for (int j = posicion.getY(); j < alto + posicion.getY(); j++)
-        {
-            Console.SetCursorPosition(posicion.getX(), j);
-            Console.Write("*");
-            Console.SetCursorPosition(ancho + posicion.getX(), j);
-            Console.Write("*");
-        }
-        Console.ForegroundColor = ConsoleColor.Gray;
-        Console.WriteLine("\n");
+        Drawing.showRectangle(posicion.getX(), posicion.getY(), ancho, alto);
     }
 
     public int perimetro()

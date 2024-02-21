@@ -13,3 +13,18 @@ C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Prog
 C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\Figuras Geométricas.pdb
 C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\Figuras Geométricas.genruntimeconfig.cache
 C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\ref\Figuras Geométricas.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\bin\Debug\net8.0\Figuras Geométricas.exe
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\bin\Debug\net8.0\Figuras Geométricas.deps.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\bin\Debug\net8.0\Figuras Geométricas.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\bin\Debug\net8.0\Figuras Geométricas.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\bin\Debug\net8.0\Figuras Geométricas.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\Figuras Geométricas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\Figuras Geométricas.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\Figuras Geométricas.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\Figuras Geométricas.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\Figuras Geométricas.sourcelink.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\Figuras Geométricas.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\refint\Figuras Geométricas.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\Figuras Geométricas.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\Figuras Geométricas.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Figuras Geométricas\Figuras Geométricas\obj\Debug\net8.0\ref\Figuras Geométricas.dll
