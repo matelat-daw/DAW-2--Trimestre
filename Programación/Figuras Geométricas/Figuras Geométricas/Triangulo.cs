@@ -25,7 +25,7 @@
 
     public int perimetro()
     {
-        double hipo = Math.Sqrt(_base * _base + altura * altura);
+        double hipo = Math.Sqrt(_base / 2.0 * _base / 2.0 + altura * altura);
         return (int)(hipo * 2 + _base);
     }
 
@@ -36,8 +36,6 @@
 
     public void mostrar()
     {
-        Console.ForegroundColor = ConsoleColor.Blue;
         Drawing.showTriangle('*', altura);
-        Console.ForegroundColor = ConsoleColor.Gray;
     }
 }

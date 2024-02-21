@@ -24,7 +24,9 @@
 
     public static void showTriangle(char c, int altura)
     {
+        Console.ForegroundColor = ConsoleColor.Blue;
         Render(Draw(c, altura)); // Llama al Método Render que llama al Método Draw y le Pasa el Caracter a Dibujar y la Altura.
+        Console.ForegroundColor = ConsoleColor.Gray;
     }
 
     public static void Render(char[,] map) // Chorizeado de Internet, recibe el Array Bidimensional map.

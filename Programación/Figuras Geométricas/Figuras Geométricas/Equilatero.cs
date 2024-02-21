@@ -1,37 +1,39 @@
 ﻿public class Equilatero // Triángulo Equilatero.
 {
-    private int _base;
+    private int lado;
     private Point vertice;
 
-    public Equilatero (int x, int y, int _base)
+    public Equilatero (int x, int y, int lado)
     {
-        vertice = new Point (x, y);
+        vertice = new Point ();
         vertice.setX(x);
         vertice.setY(y);
-        this._base = _base;
+        this.lado = lado;
     }
 
     public int getBase()
     {
-        return _base;
+        return lado;
+    }
+
+    public double getAltura()
+    {
+        int base2 = lado * lado;
+        return Math.Sqrt(base2 - (lado / 2) * (lado / 2));
     }
 
     public int perimetro()
     {
-        return _base * 3;
+        return lado * 3;
     }
 
     public double area()
     {
-        int base2 = _base * _base;
-        double altura = Math.Sqrt(base2 - (_base / 2) * (_base / 2));
-        return (_base * altura) / 2;
+        return (lado * getAltura()) / 2;
     }
 
     public void mostrar()
     {
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Drawing.showTriangle('*', (int)Math.Sqrt(_base * _base - (_base / 2) * (_base / 2)));
-        Console.ForegroundColor = ConsoleColor.Gray;
+        Drawing.showTriangle('*', (int)Math.Sqrt(lado * lado - (lado / 2) * (lado / 2)));
     }
 }
