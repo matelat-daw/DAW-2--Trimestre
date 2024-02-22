@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Carrera de Puntos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd0ca1ddd77bee3ad5491bc946d1a780d990ce13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0703611e96ac46c6c487fa19cc3c19d6cca8b94")]
 [assembly: System.Reflection.AssemblyProductAttribute("Carrera de Puntos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Carrera de Puntos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
