@@ -22,7 +22,7 @@
         Console.WriteLine("\n");
     }
 
-    public static void showTriangle(int altura)
+    public static void showTriangle(double altura)
     {
         Console.ForegroundColor = ConsoleColor.Blue;
         Render(Draw(altura)); // Llama al Método Render que llama al Método Draw y le Pasa la Altura del Triángulo.
@@ -50,13 +50,13 @@
         Console.WriteLine(); // Hace un Salto de Línea
     }
 
-    public static char[,] Draw(int height) // Chorizeado de Internet, Recibe el Caracter y la Altura.
+    public static char[,] Draw(double height) // Chorizeado de Internet, Recibe el Caracter y la Altura.
     {
         char sym = '*';
-        int width = height * 2 - 1; // El Ancho es igual al alto * 2 - 1.
-        char[,] map = new char[height, width]; // Crea un Array Bidimensional de Caracteres Llamado map con la Altura y el Ancho.
-        int x = width - 1; // Asigna a x el Ancho - 1.
-        int y = height - 1; // Asigna a y el Alto - 1.
+        double width = height * 2.0 - 1; // El Ancho es igual al alto * 2 - 1.
+        char[,] map = new char[(int)height, (int)width]; // Crea un Array Bidimensional de Caracteres Llamado map con la Altura y el Ancho.
+        int x = (int)width - 1; // Asigna a x el Ancho - 1.
+        int y = (int)height - 1; // Asigna a y el Alto - 1.
 
         for (int i = 0; i < height; i++) // Hace un Bucle Desde 0 a la Altura.
         {

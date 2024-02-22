@@ -9,19 +9,14 @@
         vertice = new Punto();
         vertice.setX(x);
         vertice.setY(y);
-        this._base = ancho;
+        // this._base = ancho; // Valen las Dos Formas.
+        _base = ancho;
         this.altura = altura;
     }
 
-    public int getAncho()
-    {
-        return _base;
-    }
+    public int getAncho() { return _base; }
 
-    public int getAlto()
-    {
-        return altura;
-    }
+    public int getAlto() { return altura; }
 
     public int perimetro()
     {

@@ -15,20 +15,11 @@
         this.radio = radio;
     }
 
-    public int getSize()
-    {
-        return size;
-    }
+    public int getSize() { return size; } // Getter de los Atributos del Objeto.
 
-    public int getQtty()
-    {
-        return number;
-    }
+    public int getQtty() { return number; }
 
-    public int getRadio()
-    {
-        return radio;
-    }
+    public int getRadio() { return radio; }
 
     public void mostrar()
     {

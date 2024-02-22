@@ -45,17 +45,17 @@
         //Console.WriteLine("\nEl Área del Triángulo Equilátero de Base={0} es: {1}\n", equilatero.getBase(), equilatero.area());
 
 
-        string[,] datos;
-        datos = HojaCalculo.datos("Figuras.csv");
-        Console.WriteLine("Los Datos a Mostrar Son: ");
-        Tablas.mostrar(datos, 15);
+        string[,] datos; // Declaro el Array Bidimensional de Strings datos.
+        datos = HojaCalculo.datos("Figuras.csv"); // Asigno a datos el Resultado de Leer el Fichero Figuras.csv del que se Encarga el Método datos("x.x") la clase HojaCalculo.
+        Console.WriteLine("Los Datos a Mostrar Son: "); // Mensaje en Pantalla.
+        Tablas.mostrar(datos, 15); // Llamo al Método mostrar de la Clase Tablas, le paso el Array Bidimensional datos y la Separación Entre Palabras, Lo Muestra en Pantalla.
 
 
-        for (int i = 0; i < datos.GetLength(0); i++)
+        for (int i = 0; i < datos.GetLength(0); i++) // Bucle al tamaño del Array.
         {
-            switch (datos[i, 0])
+            switch (datos[i, 0]) // Cambia a la String Contenida en la Posición 0 del Índice i.
             {
-                case "Rectangulo":
+                case "Rectangulo": // Si está la Palabra Rectangulo, Instancia un Objeto de la Clase Rectangulo, Pasa los Datos del Array Bidimensional y Muestra el Rectángulo.
                     Rectangulo rect_csv = new Rectangulo(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]), int.Parse(datos[i, 4]));
                     Console.WriteLine("\n\nEl Perimetro del Rectángulo de base={0} x altura={1} es: {2}\n", rect_csv.getAncho(), rect_csv.getAlto(), rect_csv.perimetro());
                     Console.WriteLine("\nEl Área del Rectángulo de base={0} x altura={1} es: {2}\n", rect_csv.getAncho(), rect_csv.getAlto(), rect_csv.area());

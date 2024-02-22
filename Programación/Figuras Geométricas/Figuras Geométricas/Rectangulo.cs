@@ -9,19 +9,16 @@
         posicion = new Punto();
         posicion.setX(x);
         posicion.setY(y);
-        this.ancho = ancho;
-        this.alto = alto;
+        this.ancho = Math.Abs(ancho);
+        this.alto = Math.Abs(alto);
     }
 
-    public int getAncho()
-    {
-        return ancho;
-    }
+    public int getAncho() { return ancho; }
 
-    public int getAlto()
-    {
-        return alto;
-    }
+    public int getAlto() { return alto; }
+
+    public int getX() { return posicion.getX(); }
+    public int getY() { return posicion.getY(); }
 
     public static void pruebaRectangulo()
     {
@@ -54,7 +51,8 @@
 
     public void mostrar()
     {
-        Drawing.showRectangle(posicion.getX(), posicion.getY(), ancho, alto);
+        //Drawing.showRectangle(posicion.getX(), posicion.getY(), ancho, alto); // Para Mi la Forma Correcta.
+        Drawing.showRectangle(getX(), getY(), getAncho(), getAlto());
     }
 
     public int perimetro()

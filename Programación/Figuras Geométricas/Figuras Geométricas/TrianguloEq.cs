@@ -11,10 +11,7 @@
         this.lado = lado;
     }
 
-    public int getBase()
-    {
-        return lado;
-    }
+    public int getBase() { return lado; }
 
     public double getAltura()
     {
@@ -29,7 +26,7 @@
 
     public double area()
     {
-        return (lado * getAltura()) / 2.0;
+        return lado * getAltura() / 2.0;
     }
 
     public void mostrar()

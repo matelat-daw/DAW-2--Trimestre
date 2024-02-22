@@ -13,15 +13,9 @@
         this.radio2 = radio2;
     }
 
-    public int getRadio1()
-    {
-        return radio1;
-    }
+    public int getRadio1() { return radio1; }
 
-    public int getRadio2()
-    {
-        return radio2;
-    }
+    public int getRadio2() { return radio2; }
 
     public double perimetro() // Formula Para Calcular el Perímetro de la Elipse.
     {

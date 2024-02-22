@@ -11,10 +11,7 @@
         this.radio = radio;
     }
 
-    public int getRadio()
-    {
-        return radio;
-    }
+    public int getRadio() { return radio; }
 
     public double perimetro()
     {
