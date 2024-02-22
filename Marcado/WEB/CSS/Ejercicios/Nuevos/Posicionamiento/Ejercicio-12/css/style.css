@@ -1,0 +1,54 @@
+body
+{
+    background-color: #b0a0a0;
+}
+
+div
+{
+    float: left;
+    margin: 0px 10px;
+}
+
+h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: silver;
+    text-align: center;
+}
+
+h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background-color: rgb(161, 139, 139);
+    color: white;
+    width: 132px;
+    position: relative;
+    left: 21px;
+    top: 15px;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+p
+{
+    margin: 0px;
+    background-color: rgb(177, 165, 158);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 10px;
+    font-style: italic;
+    font-size: .8em;
+    border: 2px dotted rgb(161, 139, 139);
+    width: 160px;
+    height: 160px;
+    text-align: justify;
+}
+
+p::first-letter
+{
+    font-style: normal;
+    color: burlywood;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    vertical-align: middle;
+}
