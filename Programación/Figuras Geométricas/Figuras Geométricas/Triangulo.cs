@@ -36,6 +36,6 @@
 
     public void mostrar()
     {
-        Drawing.showTriangle('*', altura);
+        Drawing.showTriangle(altura);
     }
 }

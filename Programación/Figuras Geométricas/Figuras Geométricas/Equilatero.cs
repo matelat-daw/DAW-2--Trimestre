@@ -19,7 +19,7 @@
     public double getAltura()
     {
         int base2 = lado * lado;
-        return Math.Sqrt(base2 - (lado / 2) * (lado / 2));
+        return Math.Sqrt(base2 - lado / 2.0 * lado / 2.0);
     }
 
     public int perimetro()
@@ -29,11 +29,11 @@
 
     public double area()
     {
-        return (lado * getAltura()) / 2;
+        return (lado * getAltura()) / 2.0;
     }
 
     public void mostrar()
     {
-        Drawing.showTriangle('*', (int)Math.Sqrt(lado * lado - (lado / 2) * (lado / 2)));
+        Drawing.showTriangle((int)getAltura());
     }
 }
