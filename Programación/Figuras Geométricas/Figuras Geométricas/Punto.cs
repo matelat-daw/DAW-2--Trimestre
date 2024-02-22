@@ -1,15 +1,15 @@
-﻿public class Point // Coordenadas de las Figuras.
+﻿public class Punto // Coordenadas de las Figuras.
 {
     private int x;
     private int y;
 
-    public Point() { }
+    public Punto() { }
 
-    public Point (int x, int y)
-    {
-        this.x = x;
-        this.y = y;
-    }
+    //public Punto (int x, int y)
+    //{
+    //    this.x = x;
+    //    this.y = y;
+    //}
 
     public int getX()
     {

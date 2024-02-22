@@ -1,12 +1,12 @@
-﻿public class Triangulo // Triángulo Isósceles.
+﻿public class TrianguloIso // Triángulo Isósceles.
 {
     private int _base;
     private int altura;
-    private Point vertice;
+    private Punto vertice;
 
-    public Triangulo (int x, int y, int ancho, int altura)
+    public TrianguloIso (int x, int y, int ancho, int altura)
     {
-        vertice = new Point();
+        vertice = new Punto();
         vertice.setX(x);
         vertice.setY(y);
         this._base = ancho;

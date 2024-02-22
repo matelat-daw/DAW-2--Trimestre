@@ -1,12 +1,12 @@
-﻿public class Rectangle // Rectángulos y Cuadrados.
+﻿public class Rectangulo // Rectángulos y Cuadrados.
 {
     private int ancho;
     private int alto;
-    private Point posicion;
+    private Punto posicion;
 
-    public Rectangle (int x, int y, int ancho, int alto)
+    public Rectangulo (int x, int y, int ancho, int alto)
     {
-        posicion = new Point();
+        posicion = new Punto();
         posicion.setX(x);
         posicion.setY(y);
         this.ancho = ancho;
@@ -26,10 +26,10 @@
     public static void pruebaRectangulo()
     {
         int area_total;
-        Rectangle[] array = [
-            new Rectangle(80, 5, 10, 10),
-            new Rectangle(95, 5, 15, 15),
-            new Rectangle(115, 5, 20, 20)
+        Rectangulo[] array = [
+            new Rectangulo(80, 5, 10, 10),
+            new Rectangulo(95, 5, 15, 15),
+            new Rectangulo(115, 5, 20, 20)
             ];
         area_total = areas(array);
         Console.SetCursorPosition(76, 25);
@@ -40,7 +40,7 @@
         Console.WriteLine("Y el Área Individual es: {0}, {1} y {2}", array[0].area(), array[1].area(), array[2].area());
     }
 
-    private static int areas(Rectangle[] array)
+    private static int areas(Rectangulo[] array)
     {
         int result = 0;
 

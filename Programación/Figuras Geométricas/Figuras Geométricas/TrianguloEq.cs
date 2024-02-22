@@ -1,11 +1,11 @@
-﻿public class Equilatero // Triángulo Equilatero.
+﻿public class TrianguloEq // Triángulo Equilatero.
 {
     private int lado;
-    private Point vertice;
+    private Punto vertice;
 
-    public Equilatero (int x, int y, int lado)
+    public TrianguloEq (int x, int y, int lado)
     {
-        vertice = new Point ();
+        vertice = new Punto ();
         vertice.setX(x);
         vertice.setY(y);
         this.lado = lado;

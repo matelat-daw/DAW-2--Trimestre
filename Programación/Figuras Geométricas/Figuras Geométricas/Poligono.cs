@@ -1,13 +1,13 @@
 ﻿public class Poligono
 {
-    private Point centro;
+    private Punto centro;
     private int size;
     private int number;
     private int radio;
 
     public Poligono (int x, int y, int size, int number, int radio)
     {
-        centro = new Point();
+        centro = new Punto();
         centro.setX(x);
         centro.setY(y);
         this.size = size;

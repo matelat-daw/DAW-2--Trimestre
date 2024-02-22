@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\figuras geom\u00E9tricas\\figuras geom\u00E9tricas\\triangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|solutionrelative:figuras geom\u00E9tricas\\triangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\figuras geom\u00E9tricas\\figuras geom\u00E9tricas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|solutionrelative:figuras geom\u00E9tricas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +11,32 @@
       "RelativeMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|solutionrelative:figuras geom\u00E9tricas\\drawing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\figuras geom\u00E9tricas\\figuras geom\u00E9tricas\\elipse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|solutionrelative:figuras geom\u00E9tricas\\elipse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\figuras geom\u00E9tricas\\figuras geom\u00E9tricas\\circulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|solutionrelative:figuras geom\u00E9tricas\\circulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\figuras geom\u00E9tricas\\figuras geom\u00E9tricas\\poligono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|solutionrelative:figuras geom\u00E9tricas\\poligono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\figuras geom\u00E9tricas\\figuras geom\u00E9tricas\\equilatero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|solutionrelative:figuras geom\u00E9tricas\\equilatero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\figuras geom\u00E9tricas\\figuras geom\u00E9tricas\\trianguloeq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|solutionrelative:figuras geom\u00E9tricas\\trianguloeq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\figuras geom\u00E9tricas\\figuras geom\u00E9tricas\\trianguloiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|solutionrelative:figuras geom\u00E9tricas\\trianguloiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\figuras geom\u00E9tricas\\figuras geom\u00E9tricas\\rectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|solutionrelative:figuras geom\u00E9tricas\\rectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\figuras geom\u00E9tricas\\figuras geom\u00E9tricas\\punto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F99F2A05-69FE-4C4D-8F79-818EA68249B1}|Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas.csproj|solutionrelative:figuras geom\u00E9tricas\\punto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,65 +54,117 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Triangulo.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Triangulo.cs",
-              "RelativeDocumentMoniker": "Figuras Geom\u00E9tricas\\Triangulo.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Triangulo.cs",
-              "RelativeToolTip": "Figuras Geom\u00E9tricas\\Triangulo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAdAAAA",
+              "DocumentIndex": 2,
+              "Title": "Elipse.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Elipse.cs",
+              "RelativeDocumentMoniker": "Figuras Geom\u00E9tricas\\Elipse.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Elipse.cs",
+              "RelativeToolTip": "Figuras Geom\u00E9tricas\\Elipse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T19:56:35.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Circulo.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Circulo.cs",
+              "RelativeDocumentMoniker": "Figuras Geom\u00E9tricas\\Circulo.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Circulo.cs",
+              "RelativeToolTip": "Figuras Geom\u00E9tricas\\Circulo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T19:56:30.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Punto.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Punto.cs",
+              "RelativeDocumentMoniker": "Figuras Geom\u00E9tricas\\Punto.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Punto.cs",
+              "RelativeToolTip": "Figuras Geom\u00E9tricas\\Punto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T19:55:10.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Rectangulo.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Rectangulo.cs",
+              "RelativeDocumentMoniker": "Figuras Geom\u00E9tricas\\Rectangulo.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Rectangulo.cs",
+              "RelativeToolTip": "Figuras Geom\u00E9tricas\\Rectangulo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T19:53:17.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TrianguloIso.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\TrianguloIso.cs",
+              "RelativeDocumentMoniker": "Figuras Geom\u00E9tricas\\TrianguloIso.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\TrianguloIso.cs",
+              "RelativeToolTip": "Figuras Geom\u00E9tricas\\TrianguloIso.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T23:46:24.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Equilatero.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Equilatero.cs",
-              "RelativeDocumentMoniker": "Figuras Geom\u00E9tricas\\Equilatero.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Equilatero.cs",
-              "RelativeToolTip": "Figuras Geom\u00E9tricas\\Equilatero.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAvAAAA",
+              "DocumentIndex": 5,
+              "Title": "TrianguloEq.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\TrianguloEq.cs",
+              "RelativeDocumentMoniker": "Figuras Geom\u00E9tricas\\TrianguloEq.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\TrianguloEq.cs",
+              "RelativeToolTip": "Figuras Geom\u00E9tricas\\TrianguloEq.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T23:46:21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Drawing.cs",
               "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Drawing.cs",
               "RelativeDocumentMoniker": "Figuras Geom\u00E9tricas\\Drawing.cs",
               "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Drawing.cs",
               "RelativeToolTip": "Figuras Geom\u00E9tricas\\Drawing.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAAAHUAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAACFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T23:44:50.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Poligono.cs",
               "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Poligono.cs",
               "RelativeDocumentMoniker": "Figuras Geom\u00E9tricas\\Poligono.cs",
               "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Poligono.cs",
               "RelativeToolTip": "Figuras Geom\u00E9tricas\\Poligono.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAA4AAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T23:35:50.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Program.cs",
               "RelativeDocumentMoniker": "Figuras Geom\u00E9tricas\\Program.cs",
               "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Figuras Geom\u00E9tricas\\Figuras Geom\u00E9tricas\\Program.cs",
               "RelativeToolTip": "Figuras Geom\u00E9tricas\\Program.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAAAD4AAAApAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAAADAAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T23:24:11.783Z",
               "EditorCaption": ""

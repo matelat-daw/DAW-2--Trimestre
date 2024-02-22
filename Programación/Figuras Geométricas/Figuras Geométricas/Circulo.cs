@@ -1,11 +1,11 @@
 ﻿public class Circulo // Círculos.
 {
-    private Point centro;
+    private Punto centro;
     private int radio;
 
     public Circulo (int x, int y, int radio)
     {
-        centro = new Point();
+        centro = new Punto();
         centro.setX(x);
         centro.setY(y);
         this.radio = radio;
