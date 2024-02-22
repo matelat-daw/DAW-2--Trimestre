@@ -22,10 +22,10 @@
         Console.WriteLine("\n");
     }
 
-    public static void showTriangle(char c, int altura)
+    public static void showTriangle(int altura)
     {
         Console.ForegroundColor = ConsoleColor.Blue;
-        Render(Draw(c, altura)); // Llama al Método Render que llama al Método Draw y le Pasa el Caracter a Dibujar y la Altura.
+        Render(Draw(altura)); // Llama al Método Render que llama al Método Draw y le Pasa el Caracter a Dibujar y la Altura.
         Console.ForegroundColor = ConsoleColor.Gray;
     }
 
@@ -50,8 +50,9 @@
         Console.WriteLine(); // Hace un Salto de Línea
     }
 
-    public static char[,] Draw(char sym, int height) // Chorizeado de Internet, Recibe el Caracter y la Altura.
+    public static char[,] Draw(int height) // Chorizeado de Internet, Recibe el Caracter y la Altura.
     {
+        char sym = '*';
         int width = height * 2 - 1; // El Ancho es igual al alto * 2 - 1.
         char[,] map = new char[height, width]; // Crea un Array Bidimensional de Caracteres Llamado map con la Altura y el Ancho.
         int x = width - 1; // Asigna a x el Ancho - 1.
@@ -98,9 +99,9 @@
     public static void showOctogon(int size, double apotema)
     {
         Console.ForegroundColor = ConsoleColor.White;
-        Console.SetCursorPosition(30, 85);
+        Console.SetCursorPosition(137, 75);
         horizontal(size);
-        Console.SetCursorPosition(30, size / 2 + (int)apotema + 85);
+        Console.SetCursorPosition(137, size / 2 + (int)apotema + 75);
         horizontal(size);
         vertical(size, apotema);
         diagonal(size, apotema);
@@ -112,13 +113,13 @@
         int j = 0;
         for (int i = 1; i <= size / 2 - 1; i++)
         {
-            Console.SetCursorPosition(30 - (int)apotema - 1 + i + j, 85 + (int)apotema / 2 - i + 1);
+            Console.SetCursorPosition(137 - (int)apotema - 1 + i + j, 75 + (int)apotema / 2 - i + 1);
             Console.Write('*');
-            Console.SetCursorPosition(30 + size + i - 1 + j, size / 2 + (int)apotema + 85 - j);
+            Console.SetCursorPosition(137 + size + i - 1 + j, size / 2 + (int)apotema + 75 - j);
             Console.Write('*');
-            Console.SetCursorPosition(30 + size + i + j - 1, 85 + j);
+            Console.SetCursorPosition(137 + size + i + j - 1, 75 + j);
             Console.Write('*');
-            Console.SetCursorPosition(30 - (int)apotema - 1 + i + j, 85 + size + j - 1);
+            Console.SetCursorPosition(137 - (int)apotema - 1 + i + j, 75 + size + j - 1);
             Console.Write('*');
             j++;
         }
@@ -136,9 +137,9 @@
     {
         for (int i = 0; i < size / 2 + 1; i++)
         {
-            Console.SetCursorPosition(30 - (int)apotema, i + 85 + (int)apotema / 2);
+            Console.SetCursorPosition(137 - (int)apotema, i + 75 + (int)apotema / 2);
             Console.Write("*");
-            Console.SetCursorPosition(30 + size + (int)apotema - 1, i + 85 + (int)apotema / 2);
+            Console.SetCursorPosition(137 + size + (int)apotema - 1, i + 75 + (int)apotema / 2);
             Console.Write("*");
         }
     }

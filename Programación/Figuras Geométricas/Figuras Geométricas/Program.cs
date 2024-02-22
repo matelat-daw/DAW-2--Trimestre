@@ -45,7 +45,6 @@
         //Console.WriteLine("\nEl Área del Triángulo Equilátero de Base={0} es: {1}\n", equilatero.getBase(), equilatero.area());
 
         string[,] datos;
-        // datos = HojaCalculo.datos("Figuras.csv");
         datos = HojaCalculo.datos("Figuras.csv");
 
 
@@ -58,28 +57,35 @@
             switch (datos[i, 0])
             {
                 case "Rectangulo":
-                    Rectangle rectangulo = new Rectangle(int.Parse(datos[0, 1]), int.Parse(datos[0, 2]), int.Parse(datos[0, 3]), int.Parse(datos[0, 4]));
+                    Rectangle rectangulo = new Rectangle(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]), int.Parse(datos[i, 4]));
                     Console.WriteLine("\n\nEl Perimetro del Rectángulo de base={0} x altura={1} es: {2}\n", rectangulo.getAncho(), rectangulo.getAlto(), rectangulo.perimetro());
                     Console.WriteLine("\nEl Área del Rectángulo de base={0} x altura={1} es: {2}\n", rectangulo.getAncho(), rectangulo.getAlto(), rectangulo.area());
-                    Drawing.showRectangle(0, 0, int.Parse(datos[0, 3]), int.Parse(datos[0, 4]));
+                    rectangulo.mostrar();
                     break;
                 case "Circulo":
-                    Circulo circulo = new Circulo(int.Parse(datos[1, 1]), int.Parse(datos[1, 2]), int.Parse(datos[1, 3]));
+                    Circulo circulo = new Circulo(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]));
                     Console.WriteLine("\n\nEl Perimetro del Circulo de Radio={0} es: {1}\n", circulo.getRadio(), circulo.perimetro());
                     Console.WriteLine("\nEl Área del Circulo de Radio={0} es: {1}\n", circulo.getRadio(), circulo.area());
-                    Drawing.showCircle(int.Parse(datos[1, 3]));
+                    circulo.mostrar();
                     break;
                 case "Triangulo":
-                    Triangulo triangulo = new Triangulo(int.Parse(datos[2, 1]), int.Parse(datos[2, 2]), int.Parse(datos[2, 3]), int.Parse(datos[2, 4]));
+                    Triangulo triangulo = new Triangulo(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]), int.Parse(datos[i, 4]));
                     Console.WriteLine("\n\nEl Perimetro del Triángulo Isósceles de base={0} x altura={1} es: {2}\n", triangulo.getAncho(), triangulo.getAlto(), triangulo.perimetro());
                     Console.WriteLine("\nEl Área del Triángulo Isósceles de base={0} x altura={1} es: {2}\n", triangulo.getAncho(), triangulo.getAlto(), triangulo.area());
-                    Drawing.showTriangle('*', int.Parse(datos[2, 4]));
+                    triangulo.mostrar();
+                    break;
+                case "Poligono":
+                    Poligono poligono = new Poligono(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]), int.Parse(datos[i, 4]), int.Parse(datos[i, 5]));
+                    Console.WriteLine("\n\n");
+                    Console.WriteLine("\nEl Perimetro del Polígono Regular (Octógono) de lado={0} x número de lados={1} y radio={2} es: {3}\n", poligono.getSize(), poligono.getQtty(), poligono.getRadio(), poligono.perimetro());
+                    Console.WriteLine("\nEl Área del Polígono Regular (Octógono) de lado={0} x número de lados={1} y radio={2} es: {3}\n", poligono.getSize(), poligono.getQtty(), poligono.getRadio(), poligono.area());
+                    poligono.mostrar();
                     break;
                 case "Equilatero":
-                    Equilatero equilatero = new Equilatero(int.Parse(datos[3, 1]), int.Parse(datos[3, 2]), int.Parse(datos[3, 3]));
+                    Equilatero equilatero = new Equilatero(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]));
                     Console.WriteLine("\n\nEl Perímetro del Triángulo Equilátero de Base={0} es: {1}\n", equilatero.getBase(), equilatero.perimetro());
                     Console.WriteLine("\nEl Área del Triángulo Equilátero de Base={0} es: {1}\n", equilatero.getBase(), equilatero.area());
-                    Drawing.showTriangle('*', int.Parse(datos[2, 4]));
+                    equilatero.mostrar();
                     break;
             }
         }
