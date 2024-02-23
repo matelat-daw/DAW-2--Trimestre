@@ -1,0 +1,66 @@
+h1, h2, h3, h4, p
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    background-color: #bbbbbb;
+    margin: 0;
+    padding-left: 10px;
+}
+
+h2
+{
+    margin: 0;
+    margin-bottom: 10px;
+    background-color: #dddddd;
+    text-align: right;
+    border-bottom: 2px dashed #bbbbbb;
+    padding-right: 10px;
+}
+
+h3
+{
+    margin: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #eeeeee;
+    height: 35px;
+    padding-top: 10px;
+}
+
+h4
+{
+    margin: 0;
+    background-color: #bbbbbb;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+}
+
+div
+{
+    border: 1px solid;
+    float: left;
+    margin-bottom: 5px;
+}
+
+p
+{
+    margin: 0;
+    width: 135px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.bloque
+{
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 160px;
+    border: dashed #aaaaaa;
+    border-width: 0 2px;
+}
