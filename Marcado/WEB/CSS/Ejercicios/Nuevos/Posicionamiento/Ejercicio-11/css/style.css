@@ -1,6 +1,6 @@
 body
 {
-    background-color: #b0a0a0;
+    background-color: #fddbbd;
 }
 
 h1
@@ -11,13 +11,13 @@ h1
 
 p
 {
-    background-color: rgb(177, 165, 158);
+    background-color: #f2d0ab;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 10px;
     margin: 10px;
     font-style: italic;
     font-size: .9em;
-    border: 1px dotted lightgray;
+    border: 2px dotted #cfac72;
     width: 185px;
     height: 220px;
     float: left;

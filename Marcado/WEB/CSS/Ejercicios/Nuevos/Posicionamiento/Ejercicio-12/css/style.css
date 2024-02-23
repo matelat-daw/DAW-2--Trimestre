@@ -1,6 +1,6 @@
 body
 {
-    background-color: #b0a0a0;
+    background-color: #fddbbd;
 }
 
 div
@@ -20,8 +20,8 @@ h2
 {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    background-color: rgb(161, 139, 139);
-    color: white;
+    background-color: #c9a568;
+    color: #dddddd;
     width: 132px;
     position: relative;
     left: 21px;
@@ -33,12 +33,12 @@ h2
 p
 {
     margin: 0px;
-    background-color: rgb(177, 165, 158);
+    background-color: #f2d0ab;
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px 10px;
     font-style: italic;
     font-size: .8em;
-    border: 2px dotted rgb(161, 139, 139);
+    border: 2px dotted #cca96e;
     width: 160px;
     height: 160px;
     text-align: justify;
