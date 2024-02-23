@@ -1,6 +1,6 @@
 ﻿public class Drawing
 {
-    public static void showRectangle(int x, int y, int ancho, int alto)
+    public static void showRectangle(int x, int y, int ancho, int alto) // Respeta las coordenadas del Punto para Mostrar el Rectángulo/Cuadrado en Pantalla.
     {
         Console.ForegroundColor = ConsoleColor.Red;
         for (int i = x; i <= ancho + x; i++)
@@ -22,10 +22,10 @@
         Console.WriteLine("\n");
     }
 
-    public static void showTriangle(int altura)
+    public static void showTriangle(double altura)
     {
         Console.ForegroundColor = ConsoleColor.Blue;
-        Render(Draw(altura)); // Llama al Método Render que llama al Método Draw y le Pasa el Caracter a Dibujar y la Altura.
+        Render(Draw(altura)); // Llama al Método Render que llama al Método Draw y le Pasa la Altura del Triángulo.
         Console.ForegroundColor = ConsoleColor.Gray;
     }
 
@@ -50,13 +50,13 @@
         Console.WriteLine(); // Hace un Salto de Línea
     }
 
-    public static char[,] Draw(int height) // Chorizeado de Internet, Recibe el Caracter y la Altura.
+    public static char[,] Draw(double height) // Chorizeado de Internet, Recibe el Caracter y la Altura.
     {
         char sym = '*';
-        int width = height * 2 - 1; // El Ancho es igual al alto * 2 - 1.
-        char[,] map = new char[height, width]; // Crea un Array Bidimensional de Caracteres Llamado map con la Altura y el Ancho.
-        int x = width - 1; // Asigna a x el Ancho - 1.
-        int y = height - 1; // Asigna a y el Alto - 1.
+        double width = height * 2.0 - 1; // El Ancho es igual al alto * 2 - 1.
+        char[,] map = new char[(int)height, (int)width]; // Crea un Array Bidimensional de Caracteres Llamado map con la Altura y el Ancho.
+        int x = (int)width - 1; // Asigna a x el Ancho - 1.
+        int y = (int)height - 1; // Asigna a y el Alto - 1.
 
         for (int i = 0; i < height; i++) // Hace un Bucle Desde 0 a la Altura.
         {
@@ -77,12 +77,12 @@
         double rIn = radio - thickness, rOut = radio + thickness; // Al Borde del Radio Interno se le resta el Espesor y al Externo de le Suma.
 
         Console.ForegroundColor = ConsoleColor.Green; // Cambio el color del Pincel a Verde.
-        for (double y = radio; y >= -radio; --y) // Bucle Desde el radio Hasta el radio Negativo Predecrementando y la Vertical.
+        for (double y = radio; y >= -radio; --y) // Bucle Desde el radio Hasta el radio Negativo Predecrementando Y, la Vertical.
         {
-            for (double x = -radio; x < rOut; x += 0.5) // Bucle Desde el Radio Negativo Hasta el radio + el Espesor Post Incrementando en .5.
+            for (double x = -radio; x < rOut; x += 0.5) // Bucle Desde el Radio Negativo Hasta el radio + el Espesor Post Incrementando X, la Horizontal en .5.
             {
-                double value = x * x + y * y; // Asigno a la Variable value la Suma de x al Cuadrado + y al Cuadrado.
-                if (value >= rIn * rIn && value <= rOut * rOut) // Si value es Mayor o Igual que el Radio Interno al Cuadrado Y es Menor o Igual que el Radio Externo al Caudrado.
+                double value = x * x + y * y; // Asigno a la Variable value la Suma de X al Cuadrado + Y al Cuadrado.
+                if (value >= rIn * rIn && value <= rOut * rOut) // Si value es Mayor o Igual que el Radio Interno al Cuadrado y value es Menor o Igual que el Radio Externo al Caudrado.
                 {
                     Console.Write('*'); // Pinto el Asterisco, Cuerpo de la Circunferencia.
                 }
