@@ -1,0 +1,10 @@
+table
+{
+    border-collapse: unset; /* Esta linea rompe el control del estilo de Bootstrap. */
+    border: 1px solid red;
+}
+
+th, td
+{
+    border: 1px solid blue;
+}
