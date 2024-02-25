@@ -18,17 +18,33 @@
             tabla_ramdoms[i] = random.Next(1, 100);
         return tabla_ramdoms;
     }
+
     public static void mostrar(String[,] datos, int anchoCampo)
     {
         int fila, col;
         for (fila = 0; fila < datos.GetLength(0); fila++)
         {
             // Datos de cada columna de la fila actual
-            for (col = 0; col < datos.GetLength(1); col++)
+             for (col = 0; col < datos.GetLength(1); col++)
                 Console.Write("{0," + anchoCampo + "}", datos[fila, col]);
             Console.WriteLine();
         }
     }
+
+    public static void showCSV(List<string> datos, int anchoCampo)
+    {
+        int fila;
+
+        for (fila = 0; fila < datos.Count; fila += 6)
+        {
+            for (int i = fila; i < fila + 6; i++)
+            {
+                Console.Write("{0," + anchoCampo + "}", datos[i]);
+            }
+            Console.WriteLine();
+        }
+    }
+
     public static void mostrar(double[,] datos, int anchoCampo)
     {
         int fila, col;

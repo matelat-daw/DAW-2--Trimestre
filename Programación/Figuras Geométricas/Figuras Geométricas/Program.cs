@@ -45,43 +45,60 @@
         //Console.WriteLine("\nEl Área del Triángulo Equilátero de Base={0} es: {1}\n", equilatero.getBase(), equilatero.area());
 
 
-        string[,] datos; // Declaro el Array Bidimensional de Strings datos.
+        // string[,] datos; // Declaro el Array Bidimensional de Strings datos.
+        List<string> datos;
         datos = HojaCalculo.datos("Figuras.csv"); // Asigno a datos el Resultado de Leer el Fichero Figuras.csv del que se Encarga el Método datos("x.x") la clase HojaCalculo.
         Console.WriteLine("Los Datos a Mostrar Son: "); // Mensaje en Pantalla.
-        Tablas.mostrar(datos, 15); // Llamo al Método mostrar de la Clase Tablas, le paso el Array Bidimensional datos y la Separación Entre Palabras, Lo Muestra en Pantalla.
+        Tablas.showCSV(datos, 15); // Llamo al Método mostrar de la Clase Tablas, le paso el Array Bidimensional datos y la Separación Entre Palabras, Lo Muestra en Pantalla.
 
 
-        for (int i = 0; i < datos.GetLength(0); i++) // Bucle al tamaño del Array.
+        // for (int i = 0; i < datos.GetLength(0); i++) // Bucle al tamaño del Array.
+        for (int i = 0; i < datos.Count; i+=6) // Bucle al tamaño del Array.
         {
-            switch (datos[i, 0]) // Cambia a la String Contenida en la Posición 0 del Índice i.
+            // switch (datos[i, 0]) // Cambia a la String Contenida en la Posición 0 del Índice i.
+            switch (datos[i])
             {
                 case "Rectangulo": // Si está la Palabra Rectangulo, Instancia un Objeto de la Clase Rectangulo, Pasa los Datos del Array Bidimensional y Muestra el Rectángulo.
-                    Rectangulo rect_csv = new Rectangulo(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]), int.Parse(datos[i, 4]));
-                    Console.WriteLine("\n\nEl Perimetro del Rectángulo de base={0} x altura={1} es: {2}\n", rect_csv.getAncho(), rect_csv.getAlto(), rect_csv.perimetro());
-                    Console.WriteLine("\nEl Área del Rectángulo de base={0} x altura={1} es: {2}\n", rect_csv.getAncho(), rect_csv.getAlto(), rect_csv.area());
+                    string figure;
+                    // Rectangulo rect_csv = new Rectangulo(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]), int.Parse(datos[i, 4]));
+                    Rectangulo rect_csv = new Rectangulo(int.Parse(datos[i + 1]), int.Parse(datos[i + 2]), int.Parse(datos[i + 3]), int.Parse(datos[i + 4]));
+                    if (datos[i + 3] != datos[i + 4])
+                    {
+                        figure = "Rectángulo";
+                    }
+                    else
+                    {
+                        figure = "Cuadrado";
+                    }
+                    Console.WriteLine("\n\nEl Perimetro del {0} de base={1} x altura={2} es: {3}\n", figure, rect_csv.getAncho(), rect_csv.getAlto(), rect_csv.perimetro());
+                    Console.WriteLine("\nEl Área del {0} de base={1} x altura={2} es: {3}\n", figure, rect_csv.getAncho(), rect_csv.getAlto(), rect_csv.area());
                     rect_csv.mostrar();
                     break;
                 case "Circulo":
-                    Circulo circl_csv = new Circulo(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]));
+                    // Circulo circl_csv = new Circulo(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]));
+                    Circulo circl_csv = new Circulo(int.Parse(datos[i + 1]), int.Parse(datos[i + 2]), int.Parse(datos[i + 3]));
                     Console.WriteLine("\n\nEl Perimetro del Circulo de Radio={0} es: {1}\n", circl_csv.getRadio(), circl_csv.perimetro());
                     Console.WriteLine("\nEl Área del Circulo de Radio={0} es: {1}\n", circl_csv.getRadio(), circl_csv.area());
                     circl_csv.mostrar();
                     break;
                 case "Triangulo":
-                    TrianguloIso iso_csv = new TrianguloIso(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]), int.Parse(datos[i, 4]));
+                    // TrianguloIso iso_csv = new TrianguloIso(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]), int.Parse(datos[i, 4]));
+                    TrianguloIso iso_csv = new TrianguloIso(int.Parse(datos[i + 1]), int.Parse(datos[i + 2]), int.Parse(datos[i + 3]), int.Parse(datos[i + 4]));
                     Console.WriteLine("\n\nEl Perimetro del Triángulo Isósceles de base={0} x altura={1} es: {2}\n", iso_csv.getAncho(), iso_csv.getAlto(), iso_csv.perimetro());
                     Console.WriteLine("\nEl Área del Triángulo Isósceles de base={0} x altura={1} es: {2}\n", iso_csv.getAncho(), iso_csv.getAlto(), iso_csv.area());
                     iso_csv.mostrar();
                     break;
                 case "Poligono":
-                    Poligono poli_csv = new Poligono(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]), int.Parse(datos[i, 4]), int.Parse(datos[i, 5]));
+                    // Poligono poli_csv = new Poligono(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]), int.Parse(datos[i, 4]), int.Parse(datos[i, 5]));
+                    Poligono poli_csv = new Poligono(int.Parse(datos[i + 1]), int.Parse(datos[i + 2]), int.Parse(datos[i + 3]), int.Parse(datos[i + 4]), int.Parse(datos[i + 5]));
                     Console.WriteLine("\n\n");
                     Console.WriteLine("\nEl Perimetro del Polígono Regular (Octógono) de lado={0} x número de lados={1} y radio={2} es: {3}\n", poli_csv.getSize(), poli_csv.getQtty(), poli_csv.getRadio(), poli_csv.perimetro());
                     Console.WriteLine("\nEl Área del Polígono Regular (Octógono) de lado={0} x número de lados={1} y radio={2} es: {3}\n", poli_csv.getSize(), poli_csv.getQtty(), poli_csv.getRadio(), poli_csv.area());
                     poli_csv.mostrar();
                     break;
                 case "Equilatero":
-                    TrianguloEq equi_csv = new TrianguloEq(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]));
+                    // TrianguloEq equi_csv = new TrianguloEq(int.Parse(datos[i, 1]), int.Parse(datos[i, 2]), int.Parse(datos[i, 3]));
+                    TrianguloEq equi_csv = new TrianguloEq(int.Parse(datos[i + 1]), int.Parse(datos[i + 2]), int.Parse(datos[i + 3]));
                     Console.WriteLine("\n\nEl Perímetro del Triángulo Equilátero de Base={0} es: {1}\n", equi_csv.getBase(), equi_csv.perimetro());
                     Console.WriteLine("\nEl Área del Triángulo Equilátero de Base={0} es: {1}\n", equi_csv.getBase(), equi_csv.area());
                     equi_csv.mostrar();
