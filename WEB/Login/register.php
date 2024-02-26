@@ -5,7 +5,7 @@ if (isset($_POST["username"]))
 {
     $ok = false;
     $user = $_POST["username"];
-    $surname1 = $_POST["surname"];
+    $surname = $_POST["surname"];
     $surname2 = $_POST["surname2"];
     if ($surname2 == "")
     {
@@ -38,9 +38,9 @@ if ($ok)
     $title = "Registro de Usuario";
     include "includes/header.php";
 
-    $sql = "INSERT INTO user VALUES(:id, :dni, :name, :surname, :surname2, :phone, :email, :pass, :bday, :hash, :path, :active)";
+    $sql = "INSERT INTO user VALUES(:dni, :name, :surname, :surname2, :phone, :email, :pass, :bday, :path, :hash, :active)";
     $stmt = $conn->prepare($sql);
-    $stmt->execute(array(':id' => NULL, ':dni' => $dni, ':name' => $user, ':surname' => $surname1, ':surname2' => $surname2, ':phone' => $phone, ':email' => $email, ':pass' => $encrypted, ':bday' => $bday, ':hash' => $hash, ':path' => $path, ':active' => false));
+    $stmt->execute([':dni' => $dni, ':name' => $user, ':surname' => $surname, ':surname2' => $surname2, ':phone' => $phone, ':email' => $email, ':pass' => $encrypted, ':bday' => $bday, ':path' => $path, ':hash' => $hash, ':active' => false]);
     $id = $conn->lastInsertId(); // Asigno a la variable $id la última id guardada en la tabla.
 
     $subject = "Por Favor Contactame en Esta Dirección";
