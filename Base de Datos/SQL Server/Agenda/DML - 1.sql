@@ -84,9 +84,13 @@ SELECT * FROM consultas WHERE (DATEPART(yy, fechayhora) = 2024 AND DATEPART(mm, 
 
 -- 6- Mostrar varias consultas para diferentes médicos en la misma fecha y hora.
 
+SELECT * FROM consultas
+WHERE fechayhora IN (
+SELECT fechayhora FROM consultas GROUP BY fechayhora HAVING COUNT(fechayhora) > 1); -- Forma Correcta Comprueba que haya más de una fecha y hora identicas.
+
 SELECT *
 FROM consultas
-WHERE fechayhora=(SELECT TOP 1 fechayhora FROM consultas GROUP BY fechayhora ORDER BY COUNT(fechayhora) DESC);
+WHERE fechayhora=(SELECT TOP 1 fechayhora FROM consultas GROUP BY fechayhora ORDER BY COUNT(fechayhora) DESC); -- Mi Aproach, no tiene en cuenta que se repitan fecha y hora.
 
 -- 7- Insertar una consulta para un mismo médico en la misma hora el mismo día.
 
@@ -99,7 +103,7 @@ SELECT * FROM consultas;
 
 DECLARE @num int;
 
-SELECT @num = COUNT(*) FROM empleados;
+SELECT @num = COUNT(*) FROM empleado;
 
 PRINT CONCAT('Hay ', @num) + ' Empleados';
 
