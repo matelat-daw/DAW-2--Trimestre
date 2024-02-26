@@ -6,8 +6,8 @@ h1, h2, h3, h4, p
 h1
 {
     background-color: #bbbbbb;
-    margin: 0;
-    padding-left: 10px;
+    margin: 0; /* Quita el Margen a h1. */
+    padding-left: 10px; /* Da un Padding de 10px a la Izquierda para Hacer el Texto Más Legible. */
 }
 
 h2
@@ -17,14 +17,14 @@ h2
     background-color: #dddddd;
     text-align: right;
     border-bottom: 2px dashed #bbbbbb;
-    padding-right: 10px;
+    padding-right: 10px; /* Da un Padding de 10px a la Derecha para Hacer el Texto Más Legible. */
 }
 
-h3
+h3 /* Títulos de los Avisos. */
 {
     margin: 0;
     margin-bottom: 5px;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Pone Todas las Letras a Mayúsculas. */
     text-align: center;
     background-color: #eeeeee;
     height: 35px;
@@ -43,24 +43,23 @@ h4
 div
 {
     border: 1px solid;
-    float: left;
+    float: left; /* Flota los dov a la Izquierda. Hace que se Acomoden en la Pantalla Uno al Lado del Otro. */
     margin-bottom: 5px;
 }
 
 p
 {
-    margin: 0;
-    width: 135px;
-    overflow: auto;
-    padding: 10px;
+    margin: 0; /* Quita el Margen a los p. */
+    width: 135px; /* Da un Ancho de 135px. */
+    overflow: auto; /* Hace que aparezca la Barra de Scroll Donde es Necesario, en este Caso en ref EM002, el Aviso que no le Funciona la Barra Espaciadora. */
+    padding: 10px; /* Da un Padding de 10px para Hacer Mejor Legible el Texto. */
 }
 
-.bloque
+.bloque /* Es la CLase de Varios div que Contienen los p con los Avisos. */
 {
-    padding: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 160px;
     border: dashed #aaaaaa;
-    border-width: 0 2px;
+    border-width: 0 2px; /* Pone Borde 0 Arriba y Abajo y 2px a Izquierda y Derecha. */
+    padding: 0 10px; /* Pone Padding 0 Arriba y Abajo y 10px a Izquierda y Derecha. */ 
+    margin: 0 5px; /* Pone Margen 0 Arriba y Abajo y 5px a Izquierda y Derecha. */
+    width: 160px;
 }

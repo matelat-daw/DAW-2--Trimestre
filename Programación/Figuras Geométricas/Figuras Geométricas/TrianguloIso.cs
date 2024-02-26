@@ -24,9 +24,9 @@
         return (int)(hipo * 2 + _base);
     }
 
-    public int area()
+    public double area()
     {
-        return (_base * altura) / 2;
+        return (_base * altura) / 2.0;
     }
 
     public void mostrar()
