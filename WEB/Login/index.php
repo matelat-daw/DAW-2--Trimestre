@@ -1,7 +1,7 @@
 <?php
 $title = "Bienvenido Registarte para Usar el Sitio";
 include "includes/header.php";
-include "includes/modal-index.html";
+include "includes/modal.html";
 ?>
 <section class="container-fluid pt-3">
     <div class="row">

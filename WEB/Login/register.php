@@ -5,7 +5,7 @@ if (isset($_POST["username"]))
 {
     $ok = false;
     $user = $_POST["username"];
-    $surname1 = $_POST["surname"];
+    $surname = $_POST["surname"];
     $surname2 = $_POST["surname2"];
     if ($surname2 == "")
     {
@@ -38,13 +38,13 @@ if ($ok)
     $title = "Registro de Usuario";
     include "includes/header.php";
 
-    $sql = "INSERT INTO user VALUES(:id, :dni, :name, :surname, :surname2, :phone, :email, :pass, :bday, :hash, :path, :active)";
+    $sql = "INSERT INTO user VALUES(:dni, :name, :surname, :surname2, :phone, :email, :pass, :bday, :path, :hash, :active)";
     $stmt = $conn->prepare($sql);
-    $stmt->execute(array(':id' => NULL, ':dni' => $dni, ':name' => $user, ':surname' => $surname1, ':surname2' => $surname2, ':phone' => $phone, ':email' => $email, ':pass' => $encrypted, ':bday' => $bday, ':hash' => $hash, ':path' => $path, ':active' => false));
-    $id = $conn->lastInsertId(); // Asigno a la variable $id la última id guardada en la tabla.
+    $stmt->execute([':dni' => $dni, ':name' => $user, ':surname' => $surname, ':surname2' => $surname2, ':phone' => $phone, ':email' => $email, ':pass' => $encrypted, ':bday' => $bday, ':path' => $path, ':hash' => $hash, ':active' => false]);
+    // $id = $conn->lastInsertId(); // Asigno a la variable $id la última id guardada en la tabla.
 
     $subject = "Por Favor Contactame en Esta Dirección";
-    $message = "<h3>Gracias por registrarte</h3><p>Por Favor haz Click en el Botón Activar mi Cuenta para Empezar a Usar el Sitio.</p><a href='http://" . $_SERVER['SERVER_NAME'] . "/Login/activate.php/" . $hash . "/" . $id . "'><div style='background-color:aquamarine; border:thin; width:120px; height:60px; text-align:center;'>Activar mi Cuenta</div></a><br><br><small>Copyright © 2021 César Matelat <a href='mailto:matelat@gmail.com'>matelat@gmail.com</a></small>";
+    $message = "<h3>Gracias por registrarte</h3><p>Por Favor haz Click en el Botón Activar mi Cuenta para Empezar a Usar el Sitio.</p><a href='http://" . $_SERVER['SERVER_NAME'] . "/Login/activate.php/" . $hash . "/" . $dni . "'><div style='background-color:aquamarine; border:thin; width:120px; height:60px; text-align:center;'>Activar mi Cuenta</div></a><br><br><small>Copyright © 2021 César Matelat <a href='mailto:matelat@gmail.com'>matelat@gmail.com</a></small>";
     $server_email = "matelat@gmail.com";
     $headers  = "From: $server_email" . "\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion(). "\r\n";
@@ -53,16 +53,20 @@ if ($ok)
     if(mail($email, $subject, $message, $headers))
     {
         echo 'Se ha enviado un mensaje a tu cuenta de E-mail.';
+        if (!file_exists("users"))
+        {
+            mkdir("users", 0777, true);
+        }
         chdir ("users");
         if ($img != "")
         {
-            if (!file_exists($id))
+            if (!file_exists($dni))
             {
-                mkdir($id . "/pic", 0777, true);
+                mkdir($dni . "/pic", 0777, true);
             }
-            $path = $id . "/pic/" . basename($img);
+            $path = $dni . "/pic/" . basename($img);
             move_uploaded_file($tmp, $path);
-            $stmt = $conn->prepare("UPDATE user SET path='$path' WHERE id=$id;"); // Preparo una consulta para Actualizar la tabla.
+            $stmt = $conn->prepare("UPDATE user SET path='$path' WHERE dni='$dni';"); // Preparo una consulta para Actualizar la tabla.
             $stmt->execute(); // La Ejecuto.
         }
     }
