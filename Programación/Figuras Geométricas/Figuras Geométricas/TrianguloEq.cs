@@ -33,4 +33,9 @@
     {
         Drawing.showTriangle((int)getAltura());
     }
+
+    public override string ToString()
+    {
+        return String.Format("El Tríangulo Equilátero de Lado: {0:F2} Tiene un Perímetro de: {1} y un Área de: {2:F2}", getAltura(), perimetro(), area());
+    }
 }

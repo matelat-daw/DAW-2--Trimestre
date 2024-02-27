@@ -33,4 +33,9 @@
     {
         Drawing.showTriangle(altura);
     }
+
+    public override string ToString()
+    {
+        return String.Format("El Tríangulo Isósceles de Base: {0} y Altura: {1} Tiene un Perímetro de: {2} y un Área de: {3:F2}", getAncho(), getAlto(), perimetro(), area());
+    }
 }

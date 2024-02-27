@@ -27,4 +27,9 @@
     {
         Drawing.showCircle(radio);
     }
+
+    public override string ToString()
+    {
+        return String.Format("El Circulo de Radio: {0} Tiene un Perímetro de: {1:F2} y un Área de: {2:F2}", getRadio(), perimetro(), area());
+    }
 }

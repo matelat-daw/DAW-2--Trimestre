@@ -1,0 +1,7 @@
+Figura;Coordenada X;Coordenada Y;Ancho/Radio;Alto/Nº Lados;Radio
+Rectangulo;60;8;45;15;
+Rectangulo;108;8;30;30;
+Circulo;15;15;15;;
+Poligono;5;5;20;8;20
+Triangulo;15;15;20;20;
+Equilatero;15;15;30;;

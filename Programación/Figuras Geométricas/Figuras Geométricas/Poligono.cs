@@ -42,4 +42,9 @@
         apotema = Math.Sqrt(radio * radio - (size / 2) * (size / 2));
         return apotema;
     }
+
+    public override string ToString()
+    {
+        return String.Format("El Poligono Regular de {0} Lados de Tamaño: {1} y Radio: {2} Tiene un Perímetro de: {3:F2} y un Área de: {4:F2}", getQtty(), getSize(), getRadio(), perimetro(), area());
+    }
 }

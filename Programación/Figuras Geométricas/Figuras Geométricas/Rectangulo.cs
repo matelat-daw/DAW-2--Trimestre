@@ -1,4 +1,6 @@
-﻿public class Rectangulo // Rectángulos y Cuadrados.
+﻿using System.Runtime.Serialization;
+
+public class Rectangulo // Rectángulos y Cuadrados.
 {
     private int ancho;
     private int alto;
@@ -63,5 +65,19 @@
     public int area()
     {
         return ancho * alto;
+    }
+
+    public override string ToString()
+    {
+        string figure;
+        if (getAlto() != getAncho())
+        {
+            figure = "Rectángulo";
+        }
+        else
+        {
+            figure = "Cuadrado";
+        }
+        return String.Format("El {0} de Ancho: {1} y Alto: {2} Tiene un Perímetro de: {3} y un Área de: {4}", figure, getAncho(), getAlto(), perimetro(), area());
     }
 }

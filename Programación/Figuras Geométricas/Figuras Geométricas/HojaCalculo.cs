@@ -8,8 +8,13 @@ public class HojaCalculo
         //String? line;
         //List<List<String>> datosLista;
         //String[,] datos;
+        //String directorioBase;
+        //String pathFile;
+        //directorioBase = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)
+        //    + Path.DirectorySeparatorChar + "Documents" + Path.DirectorySeparatorChar;
+        //pathFile = directorioBase + nameFile;
 
-        //StreamReader? myfile = new(nameFile, System.Text.Encoding.Default);
+        //StreamReader? myfile = new(pathFile, System.Text.Encoding.Default);
         //if (myfile == null)
         //    throw new IOException("No se pudo leer el fichero " + nameFile);
 
@@ -28,8 +33,14 @@ public class HojaCalculo
         //        datos[i, j] = datosLista[i][j];
 
         List<string> datos = new List<string>();
+        String directorioBase;
+        String pathFile;
+        directorioBase = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)
+            + Path.DirectorySeparatorChar + "Documents" + Path.DirectorySeparatorChar;
+        pathFile = directorioBase + nameFile;
 
-        List<string> listA = File.ReadAllLines(nameFile).ToList();
+        // List<string> listA = File.ReadAllLines(nameFile).ToList();
+        List<string> listA = File.ReadAllLines(pathFile).ToList();
         string[] aux = new string[6];
         for (int i = 0; i < listA.Count; i++)
         {
