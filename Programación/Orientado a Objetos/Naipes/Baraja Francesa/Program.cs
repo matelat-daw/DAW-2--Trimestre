@@ -6,27 +6,10 @@
         Console.ForegroundColor = ConsoleColor.Black;
         Console.WriteLine("Juego de Cartas");
         Mazo mazo = new Mazo();
-        mazo.show();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
-        mazo.daCarta();
+        for (int i = 0; i < 40; i++)
+        {
+            Console.WriteLine(mazo.daCarta());
+        }
         Console.WriteLine("Quedan: {0} Cartas.\n", Mazo.numCartas);
         mazo.show();
     }

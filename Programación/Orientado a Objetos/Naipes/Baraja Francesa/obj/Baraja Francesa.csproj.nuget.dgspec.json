@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Orion\\source\\repos\\Naipes\\Baraja Francesa\\Baraja Francesa.csproj": {}
+    "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Naipes\\Baraja Francesa\\Baraja Francesa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Orion\\source\\repos\\Naipes\\Baraja Francesa\\Baraja Francesa.csproj": {
+    "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Naipes\\Baraja Francesa\\Baraja Francesa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Orion\\source\\repos\\Naipes\\Baraja Francesa\\Baraja Francesa.csproj",
+        "projectUniqueName": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Naipes\\Baraja Francesa\\Baraja Francesa.csproj",
         "projectName": "Baraja Francesa",
-        "projectPath": "C:\\Users\\Orion\\source\\repos\\Naipes\\Baraja Francesa\\Baraja Francesa.csproj",
-        "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Orion\\source\\repos\\Naipes\\Baraja Francesa\\obj\\",
+        "projectPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Naipes\\Baraja Francesa\\Baraja Francesa.csproj",
+        "packagesPath": "C:\\Users\\orion\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Naipes\\Baraja Francesa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

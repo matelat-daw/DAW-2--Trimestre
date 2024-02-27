@@ -1,10 +1,7 @@
-﻿using System.Runtime.Serialization;
-
-public class Rectangulo // Rectángulos y Cuadrados.
+﻿public class Rectangulo: Figura // Rectángulos y Cuadrados.
 {
     private int ancho;
     private int alto;
-    private Punto posicion;
 
     public Rectangulo (int x, int y, int ancho, int alto)
     {

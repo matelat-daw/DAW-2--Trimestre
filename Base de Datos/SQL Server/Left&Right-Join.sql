@@ -227,20 +227,28 @@ horario char(2), /* 'AM' o 'PM'*/
 primary key (codigo)
 );
 -- 3- Insertar los siguientes registros:
-insert into guardias values('22333444','Juan Perez','m','La Candelaria 23');
-insert into guardias values('24333444','Alberto Torres','m','La Trinidad 67');
-insert into guardias values('25333444','Luis Ferreyra','m','Guachinche 25');
-insert into guardias values('23333444','Lorena Viale','f','La Candelaria 98');
-insert into guardias values('26333444','Irma Gonzalez','f','Los Menceyes 111');
-insert into tareas values(' Los Menceyes 1111','vigilancia exterior','AM');
-insert into tareas values(' La Candelaria 23','vigilancia exterior','PM');
-insert into tareas values('Guachinche 25','vigilancia interior','AM');
-insert into tareas values('La Trinidad 67','vigilancia interior','PM');
+insert into guardias values('22333444','Juan Perez','m','La Candelaria 23'),
+('24333444','Alberto Torres','m','La Trinidad 67'),
+('25333444','Luis Ferreyra','m','Guachinche 25'),
+('23333444','Lorena Viale','f','La Candelaria 98'),
+('26333444','Irma Gonzalez','f','Los Menceyes 111');
+
+insert into tareas values(' Los Menceyes 1111','vigilancia exterior','AM'),
+(' La Candelaria 23','vigilancia exterior','PM'),
+('Guachinche 25','vigilancia interior','AM'),
+('La Trinidad 67','vigilancia interior','PM');
 -- 4- La empresa quiere que todos sus empleados realicen todas las tareas. Realice una "cross join" (20 registros).
+
+SELECT * FROM guardias g CROSS JOIN tareas t;
+
+SELECT *
+FROM guardias, tareas;
+
 -- 5- En este caso, la empresa quiere que todos los guardias de sexo femenino realicen las tareas de "vigilancia interior" y los de sexo masculino de "vigilancia exterior". Realice una "cross join" con un "where" que controle tal requisito (10 registros).
+
+SELECT * FROM guardias g CROSS JOIN tareas t WHERE g.sexo='m' AND t.descripcion='vigilancia exterior' OR g.sexo='f' AND t.descripcion='vigilancia interior';
 
 
 SELECT * FROM mujeres;
 
 SELECT * from varones;
-

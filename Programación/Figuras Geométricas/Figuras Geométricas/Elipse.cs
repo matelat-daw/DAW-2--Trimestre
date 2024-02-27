@@ -1,14 +1,13 @@
-﻿public class Elipse
+﻿public class Elipse: Figura
 {
-    private Punto centro;
     private int radio_menor;
     private int radio_mayor;
 
     public Elipse(int x, int y, int radio_menor, int radio_mayor)
     {
-        centro = new Punto();
-        centro.setX(x);
-        centro.setY(y);
+        posicion = new Punto();
+        posicion.setX(x);
+        posicion.setY(y);
         this.radio_menor = radio_menor;
         this.radio_mayor = radio_mayor;
     }

@@ -1,14 +1,13 @@
-﻿public class TrianguloIso // Triángulo Isósceles.
+﻿public class TrianguloIso: Figura // Triángulo Isósceles.
 {
     private int _base;
     private int altura;
-    private Punto vertice;
 
     public TrianguloIso (int x, int y, int ancho, int altura)
     {
-        vertice = new Punto();
-        vertice.setX(x);
-        vertice.setY(y);
+        posicion = new Punto();
+        posicion.setX(x);
+        posicion.setY(y);
         // this._base = ancho; // Valen las Dos Formas.
         _base = ancho;
         this.altura = altura;

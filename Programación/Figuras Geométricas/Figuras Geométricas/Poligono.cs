@@ -1,15 +1,14 @@
-﻿public class Poligono
+﻿public class Poligono: Figura
 {
-    private Punto centro;
     private int size;
     private int number;
     private int radio;
 
     public Poligono (int x, int y, int size, int number, int radio)
     {
-        centro = new Punto();
-        centro.setX(x);
-        centro.setY(y);
+        posicion = new Punto();
+        posicion.setX(x);
+        posicion.setY(y);
         this.size = size;
         this.number = number;
         this.radio = radio;

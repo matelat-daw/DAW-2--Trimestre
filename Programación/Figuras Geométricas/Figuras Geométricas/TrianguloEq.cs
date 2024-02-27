@@ -1,13 +1,12 @@
-﻿public class TrianguloEq // Triángulo Equilatero.
+﻿public class TrianguloEq: Figura // Triángulo Equilatero.
 {
     private int lado;
-    private Punto vertice;
 
     public TrianguloEq (int x, int y, int lado)
     {
-        vertice = new Punto ();
-        vertice.setX(x);
-        vertice.setY(y);
+        posicion = new Punto ();
+        posicion.setX(x);
+        posicion.setY(y);
         this.lado = lado;
     }
 
