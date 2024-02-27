@@ -1,4 +1,4 @@
-﻿public static class Figuras
+﻿public static class Figuras // La Clase Figuras no la Pide, Yo la Usé en la Primera Versión pero no le Gusto. si Quieres te la Envío Como lo Hice Yo.
 {
     public static void heart()
     {
