@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Select Menu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2505f4de0849fd947ce0bc2d6ed09b29ec82356a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8dbef0e339d1bdb0329cfd909c230bdb3abf6d3d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Select Menu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Select Menu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
