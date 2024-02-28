@@ -27,3 +27,18 @@ C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Nai
 C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\Baraja Francesa.pdb
 C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\Baraja Francesa.genruntimeconfig.cache
 C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\ref\Baraja Francesa.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\bin\Debug\net8.0\Baraja Francesa.exe
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\bin\Debug\net8.0\Baraja Francesa.deps.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\bin\Debug\net8.0\Baraja Francesa.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\bin\Debug\net8.0\Baraja Francesa.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\bin\Debug\net8.0\Baraja Francesa.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\Baraja Francesa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\Baraja Francesa.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\Baraja Francesa.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\Baraja Francesa.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\Baraja Francesa.sourcelink.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\Baraja Francesa.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\refint\Baraja Francesa.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\Baraja Francesa.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\Baraja Francesa.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa\obj\Debug\net8.0\ref\Baraja Francesa.dll

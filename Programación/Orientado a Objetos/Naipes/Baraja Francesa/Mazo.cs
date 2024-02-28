@@ -19,218 +19,37 @@
         }
     }
 
-    public Carta daCarta()
+    public Carta daCarta() // Función que Retorna la Carta que se Selecciona Aleatoriamente. El switch lo Puse Yo Porque me Gusta, Pero no lo Pide.
     {
-        int card = alea.Next(numCartas);
-        int number = carta[card].getNumero();
-        switch (carta[card].getPalo())
+        Carta aux = null; // carta Auxiliar que Contendrá los Datos del Objeto Carta que se Obtiene con el Número Aleatorio.
+
+        if (numCartas > 0) // Si la Cantidad de Cartas es Mayor que 0.
         {
-            case Palo.Pica:
-                Console.ForegroundColor = ConsoleColor.Black;
-                //showFormatedUp(number);
-                //Figuras.pic();
-                //showFormatedDown(number);
-                // Console.WriteLine("{0}", carta[number].ToString());
-                break;
-            case Palo.Trebol:
-                Console.ForegroundColor = ConsoleColor.Black;
-                //showFormatedUp(number);
-                //Figuras.clover();
-                //showFormatedDown(number);
-                // Console.WriteLine("{0}", carta[number].ToString());
-                break;
-            case Palo.Diamante:
-                Console.ForegroundColor = ConsoleColor.Red;
-                //showFormatedUp(number);
-                //Figuras.diamond();
-                //showFormatedDown(number);
-                // Console.WriteLine("{0}", carta[number].ToString());
-                break;
-            case Palo.Corazon:
-                Console.ForegroundColor = ConsoleColor.Red;
-                //showFormatedUp(number);
-                //Figuras.heart();
-                //showFormatedDown(number);
-                // Console.WriteLine("{0}", carta[number].ToString());
-                break;
+            int card = alea.Next(numCartas); // Obtengo un Número Aleatorio entre 0 y en Número de Cartas Disponible.
+            switch (carta[card].getPalo()) // Hago un Switch al Palo de la Carta para Cambiar el Color de la Fuente.
+            {
+                case Palo.Pica: // Si es Pica.
+                case Palo.Trebol: // Si es Trébol.
+                    Console.ForegroundColor = ConsoleColor.Black; // Color Negro.
+                    break;
+                case Palo.Diamante: // Si es Diamante.
+                case Palo.Corazon: // Si es Coraazón
+                    Console.ForegroundColor = ConsoleColor.Red; // Color Rojo.
+                    break;
+            }
+            aux = new Carta(carta[card].getNumero(), carta[card].getPalo()); // Asigno a aux la Carta Actual.
+            carta[card] = carta[numCartas - 1]; // Cargo en la posición de la Carta Actual la Última Carta del Array de Cratas.
+            numCartas--; // Decremento la Cantidad de Carta Disponibles.
         }
-        carta[card] = carta[numCartas - 1];
-        numCartas--;
-        return carta[number];
+        return aux; // Retorno la Carta Aux, la Carta Actual.
     }
 
-    private void numeroCartas()
+    public void show() // Muestra las Cartas que Hay en el Array de Catas. OJO esta Función no la Pide.
     {
-        numCartas--;
-    }
-
-    public void show()
-    {
-        string cardNumber = "";
-        Console.ForegroundColor = ConsoleColor.Black;
-        for (int i = 0; i < numCartas; i++)
+        Console.ForegroundColor = ConsoleColor.Black; // Color de la Fuente Negro.
+        for (int i = 0; i < numCartas; i++) // Bucle hasta el Número de Cartas.
         {
-            //switch (carta[i].getNumero())
-            //{
-            //    case 0:
-            //        cardNumber = Carta.nombreCarta[0];
-            //        break;
-            //    case 1:
-            //        cardNumber = Carta.nombreCarta[1];
-            //        break;
-            //    case 2:
-            //        cardNumber = Carta.nombreCarta[2];
-            //        break;
-            //    case 3:
-            //        cardNumber = Carta.nombreCarta[3];
-            //        break;
-            //    case 4:
-            //        cardNumber = Carta.nombreCarta[4];
-            //        break;
-            //    case 5:
-            //        cardNumber = Carta.nombreCarta[5];
-            //        break;
-            //    case 6:
-            //        cardNumber = Carta.nombreCarta[6];
-            //        break;
-            //    case 7:
-            //        cardNumber = Carta.nombreCarta[7];
-            //        break;
-            //    case 8:
-            //        cardNumber = Carta.nombreCarta[8];
-            //        break;
-            //    case 9:
-            //        cardNumber = Carta.nombreCarta[9];
-            //        break;
-            //    case 10:
-            //        cardNumber = Carta.nombreCarta[10];
-            //        break;
-            //    case 11:
-            //        cardNumber = Carta.nombreCarta[11];
-            //        break;
-            //    case 12:
-            //        cardNumber = Carta.nombreCarta[12];
-            //        break;
-            //}
-            Console.WriteLine("Carta: {0}", carta[i].ToString());
-        }
-    }
-
-    private void showFormatedUp(int card)
-    {
-        Console.WriteLine(" __________________");
-        if (card == 9)
-        {
-            Console.WriteLine("|                  |\n|{0}                |", Carta.nombreCarta[card]);
-        }
-        else
-        {
-            bottomUp(card);
-        }
-    }
-
-    private void showFormatedDown(int card)
-    {
-        if (card == 9)
-        {
-            Console.WriteLine("|                {0}|", Carta.nombreCarta[card]);
-        }
-        else
-        {
-            bottomDown(card);
-        }
-        Console.WriteLine("|__________________|");
-    }
-
-    private void bottomUp(int card)
-    {
-        switch (card)
-        {
-            case 0:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[0]);
-                break;
-            case 1:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[1]);
-                break;
-            case 2:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[2]);
-                break;
-            case 3:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[3]);
-                break;
-            case 4:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[4]);
-                break;
-            case 5:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[5]);
-                break;
-            case 6:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[6]);
-                break;
-            case 7:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[7]);
-                break;
-            case 8:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[8]);
-                break;
-            case 9:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[9]);
-                break;
-            case 10:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[10]);
-                break;
-            case 11:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[11]);
-                break;
-            case 12:
-                Console.WriteLine("|                {0} |", Carta.nombreCarta[12]);
-                break;
-        }
-    }
-
-    private void bottomDown(int card)
-    {
-        switch (card)
-        {
-            case 0:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[0]);
-                break;
-            case 1:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[1]);
-                break;
-            case 2:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[2]);
-                break;
-            case 3:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[3]);
-                break;
-            case 4:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[4]);
-                break;
-            case 5:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[5]);
-                break;
-            case 6:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[6]);
-                break;
-            case 7:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[7]);
-                break;
-            case 8:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[8]);
-                break;
-            case 9:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[9]);
-                break;
-            case 10:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[10]);
-                break;
-            case 11:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[11]);
-                break;
-            case 12:
-                Console.WriteLine("|                  |\n|{0}                 |", Carta.nombreCarta[12]);
-                break;
+            Console.WriteLine("Carta: {0}", carta[i].ToString()); // Las Muestra en Pantalla.
         }
     }
 }
