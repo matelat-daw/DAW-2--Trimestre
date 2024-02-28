@@ -1,34 +1,34 @@
 ﻿public class Circulo: Figura // Círculos.
 {
-    private int radio;
+    private readonly int radio;
 
     public Circulo (int x, int y, int radio)
     {
         posicion = new Punto();
-        posicion.setX(x);
-        posicion.setY(y);
+        posicion.SetX(x);
+        posicion.SetY(y);
         this.radio = radio;
     }
 
-    public int getRadio() { return radio; }
+    public int GetRadio() { return radio; }
 
-    public override double perimetro()
+    public override double Perimetro()
     {
         return 2 * Math.PI * radio;
     }
 
-    public override double area()
+    public override double Area()
     {
         return Math.PI * radio * radio;
     }
 
-    public void mostrar()
+    public override void Mostrar()
     {
-        Drawing.showCircle(radio);
+        Drawing.ShowCircle(radio);
     }
 
     public override string ToString()
     {
-        return String.Format("El Circulo de Radio: {0} Tiene un Perímetro de: {1:F2} y un Área de: {2:F2}", getRadio(), perimetro(), area());
+        return String.Format("El Circulo de Radio: {0} Tiene un Perímetro de: {1:F2} y un Área de: {2:F2}", GetRadio(), Perimetro(), Area());
     }
 }

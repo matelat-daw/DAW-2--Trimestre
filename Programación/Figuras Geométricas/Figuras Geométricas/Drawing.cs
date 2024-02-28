@@ -1,28 +1,29 @@
 ﻿public class Drawing
 {
-    public static void showRectangle(int x, int y, int ancho, int alto) // Respeta las coordenadas del Punto para Mostrar el Rectángulo/Cuadrado en Pantalla.
+    public static void ShowRectangle(int ancho, int alto) // Respeta las coordenadas del Punto para Mostrar el Rectángulo/Cuadrado en Pantalla.
     {
+        int y = Console.CursorTop;
         Console.ForegroundColor = ConsoleColor.Red;
-        for (int i = x; i <= ancho + x; i++)
+        for (int i = 0; i <= ancho; i++)
         {
-            Console.SetCursorPosition(i, 0 + y);
+            Console.SetCursorPosition(0 + i, y + 2);
             Console.Write("*");
-            Console.SetCursorPosition(i, alto + y);
+            Console.SetCursorPosition(0 + i, y + alto / 2 + 2);
             Console.Write("*");
         }
 
-        for (int j = y; j < alto + y; j++)
+        for (int j = 0; j < alto / 2; j++)
         {
-            Console.SetCursorPosition(x, j);
+            Console.SetCursorPosition(0, y + j + 2);
             Console.Write("*");
-            Console.SetCursorPosition(ancho + x, j);
+            Console.SetCursorPosition(ancho, y + j + 2);
             Console.Write("*");
         }
         Console.ForegroundColor = ConsoleColor.Gray;
         Console.WriteLine("\n");
     }
 
-    public static void showTriangle(double altura)
+    public static void ShowTriangle(double altura)
     {
         Console.ForegroundColor = ConsoleColor.Blue;
         Render(Draw(altura)); // Llama al Método Render que llama al Método Draw y le Pasa la Altura del Triángulo.
@@ -71,7 +72,7 @@
         return map; // Retorna el Array Bidimensional map.
     }
 
-    public static void showCircle(int radio)
+    public static void ShowCircle(int radio)
     {
         double thickness = 0.4; // Espesor del borde
         double rIn = radio - thickness, rOut = radio + thickness; // Al Borde del Radio Interno se le resta el Espesor y al Externo de le Suma.
@@ -93,39 +94,40 @@
             }
             Console.WriteLine(); // Salto de Línea.
         }
-        Console.ForegroundColor = ConsoleColor.Gray; // Cambio el Color del Pincel a Gris, el Estandar de la Consola.
+        Console.ResetColor(); // Cambio el Color del Pincel a Gris, el Estandar de la Consola.
     }
 
-    public static void showOctogon(int size, double apotema)
+    public static void ShowOctogon(int size, double apotema)
     {
+        int y = Console.CursorTop;
         Console.ForegroundColor = ConsoleColor.White;
-        Console.SetCursorPosition(137, 75);
-        horizontal(size);
-        Console.SetCursorPosition(137, size / 2 + (int)apotema + 75);
-        horizontal(size);
-        vertical(size, apotema);
-        diagonal(size, apotema);
-        Console.ForegroundColor = ConsoleColor.Gray;
+        Console.SetCursorPosition(20, y);
+        Horizontal(size);
+        Console.SetCursorPosition(20, y + size / 2 + (int)apotema);
+        Horizontal(size);
+        Vertical(size, apotema, y);
+        Diagonal(size, apotema, y);
+        Console.ResetColor();
     }
 
-    private static void diagonal(int size, double apotema)
+    private static void Diagonal(int size, double apotema, int y)
     {
         int j = 0;
         for (int i = 1; i <= size / 2 - 1; i++)
         {
-            Console.SetCursorPosition(137 - (int)apotema - 1 + i + j, 75 + (int)apotema / 2 - i + 1);
+            Console.SetCursorPosition(20 - (int)apotema - 1 + i + j, y + (int)apotema / 2 - i + 1);
             Console.Write('*');
-            Console.SetCursorPosition(137 + size + i - 1 + j, size / 2 + (int)apotema + 75 - j);
+            Console.SetCursorPosition(20 + size + i - 1 + j, y + size / 2 + (int)apotema - j);
             Console.Write('*');
-            Console.SetCursorPosition(137 + size + i + j - 1, 75 + j);
+            Console.SetCursorPosition(20 + size + i + j - 1, y + j);
             Console.Write('*');
-            Console.SetCursorPosition(137 - (int)apotema - 1 + i + j, 75 + size + j - 1);
+            Console.SetCursorPosition(20 - (int)apotema - 1 + i + j, y + size + j - 1);
             Console.Write('*');
             j++;
         }
     }
 
-    private static void horizontal(int size)
+    private static void Horizontal(int size)
     {
         for (int i = 0; i < size; i++)
         {
@@ -133,13 +135,13 @@
         }
     }
 
-    private static void vertical(int size, double apotema)
+    private static void Vertical(int size, double apotema, int y)
     {
         for (int i = 0; i < size / 2 + 1; i++)
         {
-            Console.SetCursorPosition(137 - (int)apotema, i + 75 + (int)apotema / 2);
+            Console.SetCursorPosition(20 - (int)apotema, y + i + (int)apotema / 2);
             Console.Write("*");
-            Console.SetCursorPosition(137 + size + (int)apotema - 1, i + 75 + (int)apotema / 2);
+            Console.SetCursorPosition(20 + size + (int)apotema - 1, y + i + (int)apotema / 2);
             Console.Write("*");
         }
     }

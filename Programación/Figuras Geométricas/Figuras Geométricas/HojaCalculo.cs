@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-public class HojaCalculo
+﻿public class HojaCalculo
 {
     //public static String[,] datos(string nameFile)
     public static List<string> datos(string nameFile)
@@ -32,20 +30,18 @@ public class HojaCalculo
         //    for (int j = 0; j < datosLista[i].Count; j++)
         //        datos[i, j] = datosLista[i][j];
 
-        List<string> datos = new List<string>();
-        String directorioBase;
-        String pathFile;
-        directorioBase = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)
-            + Path.DirectorySeparatorChar + "Documents" + Path.DirectorySeparatorChar;
+        List<string> datos = [];
+        string directorioBase;
+        string pathFile;
+        directorioBase = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + Path.DirectorySeparatorChar + "Documents" + Path.DirectorySeparatorChar;
         pathFile = directorioBase + nameFile;
 
-        // List<string> listA = File.ReadAllLines(nameFile).ToList();
-        List<string> listA = File.ReadAllLines(pathFile).ToList();
-        string[] aux = new string[6];
+        List<string> listA = [.. File.ReadAllLines(pathFile)];
+        // _ = new string[6];
         for (int i = 0; i < listA.Count; i++)
         {
-            aux = (listA[i].Split(';'));
-                for (int j = 0; j < aux.Length; j++)
+            string[] aux = (listA[i].Split(';'));
+            for (int j = 0; j < aux.Length; j++)
                     datos.Add(aux[j]);
         }
 

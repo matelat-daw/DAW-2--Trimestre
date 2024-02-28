@@ -1,41 +1,41 @@
 ﻿public class Poligono: Figura
 {
-    private int size;
-    private int number;
-    private int radio;
+    private readonly int size;
+    private readonly int number;
+    private readonly int radio;
 
     public Poligono (int x, int y, int size, int number, int radio)
     {
         posicion = new Punto();
-        posicion.setX(x);
-        posicion.setY(y);
+        posicion.SetX(x);
+        posicion.SetY(y);
         this.size = size;
         this.number = number;
         this.radio = radio;
     }
 
-    public int getSize() { return size; } // Getter de los Atributos del Objeto.
+    public int GetSize() { return size; } // Getter de los Atributos del Objeto.
 
-    public int getQtty() { return number; }
+    public int GetQtty() { return number; }
 
-    public int getRadio() { return radio; }
+    public int GetRadio() { return radio; }
 
-    public void mostrar()
+    public override void Mostrar()
     {
-        Drawing.showOctogon(size, getApotema());
+        Drawing.ShowOctogon(size, GetApotema());
     }
 
-    public override double perimetro()
+    public override double Perimetro()
     {
         return number * size;
     }
 
-    public override double area()
+    public override double Area()
     {
-        return ((getApotema() * number * size) / 2);
+        return ((GetApotema() * number * size) / 2);
     }
 
-    public double getApotema()
+    public double GetApotema()
     {
         double apotema;
         apotema = Math.Sqrt(radio * radio - (size / 2) * (size / 2));
@@ -44,6 +44,6 @@
 
     public override string ToString()
     {
-        return String.Format("El Poligono Regular de {0} Lados de Tamaño: {1} y Radio: {2} Tiene un Perímetro de: {3:F2} y un Área de: {4:F2}", getQtty(), getSize(), getRadio(), perimetro(), area());
+        return String.Format("\nEl Poligono Regular de {0} Lados de Tamaño: {1} y Radio: {2} Tiene un Perímetro de: {3:F2} y un Área de: {4:F2}", GetQtty(), GetSize(), GetRadio(), Perimetro(), Area());
     }
 }

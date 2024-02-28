@@ -1,25 +1,26 @@
 ﻿public class Tablas
 {
-    public static double[,] creaTabla(int f, int c)
+    public static double[,] CreaTabla(int f, int c)
     {
-        Random random = new Random();
+        Random random = new();
         double[,] tabla_ramdoms = new double[f, c];
         for (f = 0; f < tabla_ramdoms.GetLength(0); f++)
             for (c = 0; c < tabla_ramdoms.GetLength(1); c++)
                 tabla_ramdoms[f, c] = random.NextDouble() * 100;
         return tabla_ramdoms;
     }
-    public static int[] creaTabla(int tam)
+
+    public static int[] CreaTabla(int tam)
     {
         int i;
-        Random random = new Random();
+        Random random = new();
         int[] tabla_ramdoms = new int[tam];
         for (i = 0; i < tabla_ramdoms.Length; i++)
             tabla_ramdoms[i] = random.Next(1, 100);
         return tabla_ramdoms;
     }
 
-    public static void mostrar(String[,] datos, int anchoCampo)
+    public static void Mostrar(String[,] datos, int anchoCampo)
     {
         int fila, col;
         for (fila = 0; fila < datos.GetLength(0); fila++)
@@ -31,7 +32,7 @@
         }
     }
 
-    public static void showCSV(List<string> datos, int anchoCampo)
+    public static void ShowCSV(List<string> datos, int anchoCampo)
     {
         int fila;
 
@@ -45,7 +46,7 @@
         }
     }
 
-    public static void mostrar(double[,] datos, int anchoCampo)
+    public static void Mostrar(double[,] datos, int anchoCampo)
     {
         int fila, col;
         for (fila = 0; fila < datos.GetLength(0); fila++)
@@ -56,7 +57,8 @@
             Console.WriteLine();
         }
     }
-    public static void mostrar(int[] numeros)
+
+    public static void Mostrar(int[] numeros)
     {
 
         int i;
@@ -71,7 +73,8 @@
         }
         Console.WriteLine(" }");
     }
-    public static void mostrar(double[] numeros)
+
+    public static void Mostrar(double[] numeros)
     {
 
         int i;
@@ -86,7 +89,8 @@
         }
         Console.WriteLine(" }");
     }
-    public static void mostrar(String[] palabras)
+
+    public static void Mostrar(String[] palabras)
     {
         int i;
         Console.Write("{ ");
@@ -100,7 +104,8 @@
         }
         Console.WriteLine(" }");
     }
-    public static void rellenar(int[] datos)
+
+    public static void Rellenar(int[] datos)
     {
         int i;
         Random random = new Random();
@@ -109,14 +114,16 @@
             datos[i] = random.Next(-10, 11);
         }
     }
-    public static void rellenar(char[,] datos, char ch)
+
+    public static void Rellenar(char[,] datos, char ch)
     {
         int f, c;
         for (f = 0; f < datos.GetLength(0); f++)
             for (c = 0; c < datos.GetLength(1); c++)
                 datos[f, c] = ch;
     }
-    public static void rellenar(int[] datos, int desde, int hasta)
+
+    public static void Rellenar(int[] datos, int desde, int hasta)
     {
         int i;
         Random random = new Random();
@@ -125,7 +132,8 @@
             datos[i] = random.Next(desde, hasta);
         }
     }
-    public static int[] merge(int[] tablaA, int[] tablaB)
+
+    public static int[] Merge(int[] tablaA, int[] tablaB)
     {
         int[] tablaC;
         int i = 0, j = 0, k = 0;
@@ -161,7 +169,7 @@
         return tablaC;
     }
 
-    public static int[] concat(int[] tablaA, int[] tablaB)
+    public static int[] Concat(int[] tablaA, int[] tablaB)
     {
         int i, j;
         int[] tablaC;
@@ -180,10 +188,8 @@
         return tablaC;
     }
 
-
-
     // Bidimensionales
-    public static void rellenar(int[,] datos)
+    public static void Rellenar(int[,] datos)
     {
         Random random = new Random();
 
@@ -194,7 +200,8 @@
                 datos[fila, col] = random.Next(-10, 11);
         }
     }
-    public static void mostrar(int[,] datos)
+
+    public static void Mostrar(int[,] datos)
     {
         int fila, col;
         for (fila = 0; fila < datos.GetLength(0); fila++)
@@ -206,7 +213,8 @@
         }
 
     }
-    public static void mostrar(char[,] datos)
+
+    public static void Mostrar(char[,] datos)
     {
         int fila, col;
         for (fila = 0; fila < datos.GetLength(0); fila++)
@@ -216,6 +224,5 @@
                 Console.Write("{0,3}", datos[fila, col]);
             Console.WriteLine();
         }
-
     }
 }
