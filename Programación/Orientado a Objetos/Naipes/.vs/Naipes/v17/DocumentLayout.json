@@ -1,12 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}|Baraja Francesa-Figuras\\Baraja Francesa-Figuras.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\baraja francesa-figuras\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}|Baraja Francesa-Figuras\\Baraja Francesa-Figuras.csproj|solutionrelative:baraja francesa-figuras\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Mazo.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Baraja Francesa-Figuras\\Mazo.cs",
-              "RelativeDocumentMoniker": "Baraja Francesa-Figuras\\Mazo.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Baraja Francesa-Figuras\\Mazo.cs",
-              "RelativeToolTip": "Baraja Francesa-Figuras\\Mazo.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAD8AAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T20:00:09.244Z",
-              "EditorCaption": ""
             }
           ]
         }

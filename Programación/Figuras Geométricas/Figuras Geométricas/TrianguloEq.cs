@@ -18,12 +18,12 @@
         return Math.Sqrt(base2 - lado / 2.0 * lado / 2.0);
     }
 
-    public int perimetro()
+    public override double perimetro()
     {
         return lado * 3;
     }
 
-    public double area()
+    public override double area()
     {
         return lado * getAltura() / 2.0;
     }

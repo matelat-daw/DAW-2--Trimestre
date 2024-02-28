@@ -17,13 +17,13 @@
 
     public int getAlto() { return altura; }
 
-    public int perimetro()
+    public override double perimetro()
     {
         double hipo = Math.Sqrt(_base / 2.0 * _base / 2.0 + altura * altura);
         return (int)(hipo * 2 + _base);
     }
 
-    public double area()
+    public override double area()
     {
         return (_base * altura) / 2.0;
     }

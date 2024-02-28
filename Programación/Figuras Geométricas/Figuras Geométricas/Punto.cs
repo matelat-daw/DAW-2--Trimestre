@@ -5,7 +5,7 @@
 
     public Punto() { } // Contructor Vacio para Instanciar un Objeto sin Ningún Dato.
 
-    //public Punto (int x, int y) // Constructor que Recive dos Parámetro, Para Crear un Objeto con sus Propiedades.
+    //public Punto(int x, int y) // Constructor que Recive dos Parámetro, Para Crear un Objeto con sus Propiedades.
     //{
     //    this.x = x;
     //    this.y = y;

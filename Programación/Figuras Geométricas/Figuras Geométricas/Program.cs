@@ -1,4 +1,6 @@
-﻿public class Program
+﻿using System.Security.AccessControl;
+
+public class Program
 {
     static void Main(string[] args)
     {
@@ -45,6 +47,12 @@
         //Console.WriteLine("\nEl Área del Triángulo Equilátero de Base={0} es: {1}\n", equilatero.getBase(), equilatero.area());
 
 
+        Figura figura = null;
+        figura = new Cuadrado(5, 5, 40, 40);
+        Console.WriteLine("\n{0}", figura);
+        Console.WriteLine("\nEl Área de {0} es: {1}\n", figura.GetType(), areaDeFigura(figura));
+
+
         // string[,] datos; // Declaro el Array Bidimensional de Strings datos.
         List<string> datos;
         datos = HojaCalculo.datos("Figuras.csv"); // Asigno a datos el Resultado de Leer el Fichero Figuras.csv del que se Encarga el Método datos("x.x") la clase HojaCalculo.
@@ -54,7 +62,7 @@
         // for (int i = 0; i < datos.GetLength(0); i++) // Bucle al tamaño del Array.
         for (int i = 0; i < datos.Count; i+=6) // Bucle al tamaño del Array.
         {
-            Object figura = null;
+            // Object figura = null;
             // switch (datos[i, 0]) // Cambia a la String Contenida en la Posición 0 del Índice i.
             switch (datos[i])
             {
@@ -96,5 +104,10 @@
     public static int getInt(string x)
     {
         return int.Parse(x);
+    }
+
+    private static double areaDeFigura(Figura f)
+    {
+        return f.area();
     }
 }

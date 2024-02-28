@@ -12,12 +12,12 @@
 
     public int getRadio() { return radio; }
 
-    public double perimetro()
+    public override double perimetro()
     {
         return 2 * Math.PI * radio;
     }
 
-    public double area()
+    public override double area()
     {
         return Math.PI * radio * radio;
     }

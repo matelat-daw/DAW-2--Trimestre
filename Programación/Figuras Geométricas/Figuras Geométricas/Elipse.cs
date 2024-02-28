@@ -16,14 +16,14 @@
 
     public int getRadioMayor() { return radio_mayor; }
 
-    public double perimetro() // Formula Para Calcular el Perímetro de la Elipse.
+    public override double perimetro() // Formula Para Calcular el Perímetro de la Elipse.
     {
         double h = ((radio_menor - radio_mayor) * (radio_menor - radio_mayor)) / ((radio_menor + radio_mayor) * (radio_menor + radio_mayor));
 
         return Math.PI * (radio_menor + radio_mayor) * (1 + 3 * h / (10 + Math.Sqrt(4 - 3 * h)));
     }
 
-    public double area() // Área de la Elipse, Radio Menor x Radio Mayor x PI.
+    public override double area() // Área de la Elipse, Radio Menor x Radio Mayor x PI.
     {
         return Math.PI * radio_menor * radio_mayor;
     }

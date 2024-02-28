@@ -22,5 +22,6 @@
         mazo.daCarta();
         mazo.daCarta();
         mazo.daCarta();
+        mazo.daCarta();
     }
 }

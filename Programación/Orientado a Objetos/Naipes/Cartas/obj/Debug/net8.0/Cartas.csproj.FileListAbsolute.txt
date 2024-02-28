@@ -13,3 +13,18 @@ C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Prog
 C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\Cartas.pdb
 C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\Cartas.genruntimeconfig.cache
 C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\ref\Cartas.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\bin\Debug\net8.0\Cartas.exe
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\bin\Debug\net8.0\Cartas.deps.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\bin\Debug\net8.0\Cartas.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\bin\Debug\net8.0\Cartas.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\bin\Debug\net8.0\Cartas.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\Cartas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\Cartas.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\Cartas.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\Cartas.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\Cartas.sourcelink.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\Cartas.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\refint\Cartas.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\Cartas.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\Cartas.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Cartas\obj\Debug\net8.0\ref\Cartas.dll

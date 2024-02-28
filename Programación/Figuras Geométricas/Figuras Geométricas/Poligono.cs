@@ -25,12 +25,12 @@
         Drawing.showOctogon(size, getApotema());
     }
 
-    public int perimetro()
+    public override double perimetro()
     {
         return number * size;
     }
 
-    public double area()
+    public override double area()
     {
         return ((getApotema() * number * size) / 2);
     }
