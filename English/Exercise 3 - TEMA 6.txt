@@ -1,0 +1,94 @@
+Conditionals:
+
+1º Conditional:
+
+If I see You, I tell You the true.
+
+
+2º Conditional
+
+If I saw You, I would tell You the true.
+
+I would tell You the true, if I saw You.
+
+Exercice 3:
+
+2 Kinds
+
+1 dedicated system: One computer for each participant, high definition monitors, a camera for each participant, from three differnt points/countries
+
+2 desktop system: Simpler, is cheaper.
+
+Both systems use compression.
+
+Exercice 10:
+
+A def Person can interact with people who use inclusive languages like sign language.
+
+A child who lives a long way from the school Would take a lot of advantage using videoconference.
+
+A Doctor could attend a lot of pacients.
+
+A business man Would take more profit using the system.
+
+3-.
+
+1) User Interface, shopping basket and the payment system.
+
+2) Componets
+
+3) Code.
+
+4) Process
+
+5) Address
+
+6) Order
+
+7) 
+
+
+4-.
+
+1) User Interface
+
+2) The shopping basket
+
+3) To manage the items selected by clients.
+
+4) Shopping Basket.
+
+5) Processing system.
+
+6) Payment Processing.
+
+7) Because is a standard in e-commerce systems and shares data between systems.
+
+
+7-. System e-Wallet.
+
+1) Online shopping: some people leave before They finishes buying.
+
+e-wallet system, implements the speaks up, you can save your data and access it any time, has hight level SSL security, Customers can buy with their phone face to face.
+
+11-.
+
+2).
+
+1) mobile (c)
+
+2) d
+
+3) b
+
+4) g
+
+5) a
+
+6) f
+
+7) h
+
+8) e
+
+
