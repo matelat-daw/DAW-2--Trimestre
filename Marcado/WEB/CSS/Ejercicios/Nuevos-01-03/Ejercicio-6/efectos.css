@@ -1,0 +1,72 @@
+div
+{
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+    width: 220px;
+    margin: 30px;
+    padding: 10px;
+    background-color: orange;
+    float: left;
+}
+
+div img
+{
+    margin-top: 10px;
+}
+
+#rotar1
+{
+    transform: rotate(30deg);
+}
+
+#rotar2
+{
+    transform: rotate(-30deg);
+}
+
+#escala1
+{
+    transform: scale(50%);
+}
+
+#escala2
+{
+    transform: scale(.5, 1);
+}
+
+#skewX1
+{
+    transform: skewX(33deg);
+}
+
+#skewX2
+{
+    transform: skewX(-33deg);
+}
+
+#skewY1
+{
+    transform: skewY(33deg);
+}
+
+#skewY2
+{
+    transform: skewY(-33deg);
+}
+
+#translate1
+{
+    transform: translate(0, 45px);
+}
+
+#translate2
+{
+    transform: translate(0, -45px);
+}
+
+#contentBox1:hover
+{
+    font-style: italic;
+    transform: skewX(-20deg);
+}
