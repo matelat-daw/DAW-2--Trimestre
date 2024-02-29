@@ -1,40 +1,40 @@
 ﻿public class TrianguloEq: Figura // Triángulo Equilatero.
 {
-    private int lado;
+    private readonly int lado;
 
     public TrianguloEq (int x, int y, int lado)
     {
         posicion = new Punto ();
-        posicion.setX(x);
-        posicion.setY(y);
+        posicion.SetX(x);
+        posicion.SetY(y);
         this.lado = lado;
     }
 
-    public int getBase() { return lado; }
+    public int GetBase() { return lado; }
 
-    public double getAltura()
+    public double GetAltura()
     {
         int base2 = lado * lado;
         return Math.Sqrt(base2 - lado / 2.0 * lado / 2.0);
     }
 
-    public override double perimetro()
+    public override double Perimetro()
     {
         return lado * 3;
     }
 
-    public override double area()
+    public override double Area()
     {
-        return lado * getAltura() / 2.0;
+        return lado * GetAltura() / 2.0;
     }
 
-    public void mostrar()
+    public override void Mostrar()
     {
-        Drawing.showTriangle((int)getAltura());
+        Drawing.ShowTriangle((int)GetAltura());
     }
 
     public override string ToString()
     {
-        return String.Format("El Tríangulo Equilátero de Lado: {0:F2} Tiene un Perímetro de: {1} y un Área de: {2:F2}", getAltura(), perimetro(), area());
+        return String.Format("El Tríangulo Equilátero de Lado: {0:F2} Tiene un Perímetro de: {1} y un Área de: {2:F2}", GetAltura(), Perimetro(), Area());
     }
 }

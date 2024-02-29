@@ -1,0 +1,45 @@
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.exe
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.deps.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.sourcelink.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\refint\Baraja Francesa-Figuras.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\ref\Baraja Francesa-Figuras.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.exe
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.deps.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.sourcelink.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\refint\Baraja Francesa-Figuras.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Baraja Francesa-Figuras\obj\Debug\net8.0\ref\Baraja Francesa-Figuras.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.exe
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.deps.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\bin\Debug\net8.0\Baraja Francesa-Figuras.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.sourcelink.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\obj\Debug\net8.0\refint\Baraja Francesa-Figuras.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\obj\Debug\net8.0\Baraja Francesa-Figuras.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\GAMES\Poker\Baraja Francesa-Figuras\obj\Debug\net8.0\ref\Baraja Francesa-Figuras.dll

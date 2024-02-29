@@ -1,40 +1,39 @@
 ﻿public class TrianguloIso: Figura // Triángulo Isósceles.
 {
-    private int _base;
-    private int altura;
+    private readonly int _base; // La Palabra Reservada base se usa para la Herencia Entre Clases.
+    private readonly int _altura;
 
     public TrianguloIso (int x, int y, int ancho, int altura)
     {
         posicion = new Punto();
-        posicion.setX(x);
-        posicion.setY(y);
-        // this._base = ancho; // Valen las Dos Formas.
+        posicion.SetX(x);
+        posicion.SetY(y);
         _base = ancho;
-        this.altura = altura;
+        _altura = altura;
     }
 
-    public int getAncho() { return _base; }
+    public int GetAncho() { return _base; }
 
-    public int getAlto() { return altura; }
+    public int GetAlto() { return _altura; }
 
-    public override double perimetro()
+    public override double Perimetro()
     {
-        double hipo = Math.Sqrt(_base / 2.0 * _base / 2.0 + altura * altura);
+        double hipo = Math.Sqrt(_base / 2.0 * _base / 2.0 + _altura * _altura);
         return (int)(hipo * 2 + _base);
     }
 
-    public override double area()
+    public override double Area()
     {
-        return (_base * altura) / 2.0;
+        return (_base * _altura) / 2.0;
     }
 
-    public void mostrar()
+    public override void Mostrar()
     {
-        Drawing.showTriangle(altura);
+        Drawing.ShowTriangle(_altura);
     }
 
     public override string ToString()
     {
-        return String.Format("El Tríangulo Isósceles de Base: {0} y Altura: {1} Tiene un Perímetro de: {2} y un Área de: {3:F2}", getAncho(), getAlto(), perimetro(), area());
+        return String.Format("El Tríangulo Isósceles de Base: {0} y Altura: {1} Tiene un Perímetro de: {2} y un Área de: {3:F2}", GetAncho(), GetAlto(), Perimetro(), Area());
     }
 }

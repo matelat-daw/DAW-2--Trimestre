@@ -1,20 +1,20 @@
-﻿public class Rectangulo: Figura // Rectángulos y Cuadrados.
+﻿public class Rectangulo: Figura // Rectángulos.
 {
-    private int ancho;
-    private int alto;
+    private readonly int ancho;
+    private readonly int alto;
 
     public Rectangulo (int x, int y, int ancho, int alto)
     {
         posicion = new Punto();
-        posicion.setX(x);
-        posicion.setY(y);
+        posicion.SetX(x);
+        posicion.SetY(y);
         this.ancho = Math.Abs(ancho);
         this.alto = Math.Abs(alto);
     }
 
-    public int getAncho() { return ancho; }
+    public int GetAncho() { return ancho; }
 
-    public int getAlto() { return alto; }
+    public int GetAlto() { return alto; }
 
     public static void pruebaRectangulo()
     {
@@ -24,21 +24,21 @@
             new Rectangulo(95, 5, 15, 15),
             new Rectangulo(115, 5, 20, 20)
             ];
-        area_total = areas(array);
+        area_total = Areas(array);
         Console.SetCursorPosition(76, 25);
         Console.WriteLine("El Area de Todos Los Cuadrados es: {0}", area_total);
         Console.SetCursorPosition(76, 27);
-        Console.WriteLine("El Perimetro Individual es: {0}, {1} y {2}", array[0].perimetro(), array[1].perimetro(), array[2].perimetro());
+        Console.WriteLine("El Perimetro Individual es: {0}, {1} y {2}", array[0].Perimetro(), array[1].Perimetro(), array[2].Perimetro());
         Console.SetCursorPosition(76, 29);
-        Console.WriteLine("Y el Área Individual es: {0}, {1} y {2}", array[0].area(), array[1].area(), array[2].area());
+        Console.WriteLine("Y el Área Individual es: {0}, {1} y {2}", array[0].Area(), array[1].Area(), array[2].Area());
     }
 
-    public override double perimetro()
+    public override double Perimetro()
     {
         return ancho * 2 + alto * 2;
     }
 
-    public override double area()
+    public override double Area()
     {
         return ancho * alto;
     }
@@ -46,7 +46,7 @@
     public override string ToString()
     {
         string figure;
-        if (getAlto() != getAncho())
+        if (GetAlto() != GetAncho())
         {
             figure = "Rectángulo";
         }
@@ -54,24 +54,23 @@
         {
             figure = "Cuadrado";
         }
-        return String.Format("El {0} de Ancho: {1} y Alto: {2} Tiene un Perímetro de: {3} y un Área de: {4}", figure, getAncho(), getAlto(), perimetro(), area());
+        return String.Format("El {0} de Ancho: {1} y Alto: {2} Tiene un Perímetro de: {3} y un Área de: {4}", figure, GetAncho(), GetAlto(), Perimetro(), Area());
     }
 
-    private static double areas(Rectangulo[] array)
+    private static double Areas(Rectangulo[] array)
     {
         double result = 0;
 
         for (int i = 0; i < array.Length; i++)
         {
-            result += array[i].area();
-            array[i].mostrar();
+            result += array[i].Area();
+            array[i].Mostrar();
         }
         return result;
     }
 
-    public void mostrar()
+    public override void Mostrar()
     {
-        //Drawing.showRectangle(posicion.getX(), posicion.getY(), ancho, alto); // Para Mi la Forma Correcta.
-        Drawing.showRectangle(getX(), getY(), getAncho(), getAlto());
+        Drawing.ShowRectangle(GetAncho(), GetAlto());
     }
 }

@@ -11,11 +11,11 @@
     //    this.y = y;
     //}
 
-    public int getX() { return x; } // Getter para Obtener los Datos del Objeto.
+    public int GetX() { return x; } // Getter para Obtener los Datos del Objeto.
 
-    public int getY() { return y; }
+    public int GetY() { return y; }
 
-    public void setX (int x) { this.x = x; } // Setter para asignar los datos al Objeto Creado con el Constructor Vacio.
+    public void SetX(int x) { this.x = x; } // Setter para asignar los datos al Objeto Creado con el Constructor Vacio.
 
-    public void setY (int y) { this.y = y; }
+    public void SetY(int y) { this.y = y; }
 }
