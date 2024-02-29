@@ -14,60 +14,65 @@ $array = [];
 
 function fillServices($conn, $result, $who)
 {   
-    global $service, $price, $qtty;
-    global $index, $array; // Hago globales las variables ya declaradas $index, contiene el índice, $array y $qtty.
-
-    $index = 0;
-    $array[] = [];
-    $qtty[] = [];
-    $serv = [];
-    $qtt = [];
-    foreach ($result as $row)
+    if (Count($result) > 0)
     {
-        $sql = "SELECT * FROM sold WHERE " . $row['id'] . "=invoice_id;"; // Selecciono el contenido de sold (vendidos) de las facturas solicitadas.
-        $stmt_sold = $conn->prepare($sql);
-        $stmt_sold->execute();
-        while ($row_sold = $stmt_sold->fetch(PDO::FETCH_OBJ))
+        global $service, $price, $qtty;
+        global $index, $array; // Hago globales las variables ya declaradas $index, contiene el índice, $array y $qtty.
+
+        $index = 0;
+        $array[] = [];
+        $qtty[] = [];
+        $serv = [];
+        $qtt = [];
+        foreach ($result as $row)
         {
-            $id[$index] = $row_sold->invoice_id; // Pongo todas las ID en el array $id, esta vez van las repetidas también.
-            $serv[$index] = $row_sold->service_id; // En $serv pongo las ID de los servicios de todas las facturas.
-            if ($who == "excel") // Si es para mostrarlo en Excel.
+            $sql = "SELECT * FROM sold WHERE " . $row['id'] . "=invoice_id;"; // Selecciono el contenido de sold (vendidos) de las facturas solicitadas.
+            $stmt_sold = $conn->prepare($sql);
+            $stmt_sold->execute();
+            while ($row_sold = $stmt_sold->fetch(PDO::FETCH_OBJ))
             {
-                $qtt[$index] = $row_sold->qtty . "\n"; // Meto en $qtt la cantidad de articulos vendidos con un salto de linea al final \n.
+                $id[$index] = $row_sold->invoice_id; // Pongo todas las ID en el array $id, esta vez van las repetidas también.
+                $serv[$index] = $row_sold->service_id; // En $serv pongo las ID de los servicios de todas las facturas.
+                if ($who == "excel") // Si es para mostrarlo en Excel.
+                {
+                    $qtt[$index] = $row_sold->qtty . "\n"; // Meto en $qtt la cantidad de articulos vendidos con un salto de linea al final \n.
+                }
+                else // Si es para mostrarlo en HTML.
+                {
+                    $qtt[$index] = $row_sold->qtty . "<br>"; // Meto en $qtt la cantidad de articulos vendidos con un break al final <br>.
+                }
+                $index++; // Incremento el $index.
             }
-            else // Si es para mostrarlo en HTML.
-            {
-                $qtt[$index] = $row_sold->qtty . "<br>"; // Meto en $qtt la cantidad de articulos vendidos con un break al final <br>.
-            }
-            $index++; // Incremento el $index.
         }
-    }
 
-    $size = 0; // Se Usará para contar la cantidad de Facturas que Hay en el Trimestre Seleccionado.
-    for ($i = 0; $i < count($id) - 1; $i++) // Hago un Bucle Hasta la Cantidad de Facturas - 1(Varias están repetidas ya que una Factura Tiene Varios Servicios y Varios Servicios puede pertenecer a una Única Factura).
-    {
-        if ($id[$i] != $id[$i + 1]) // Si el Número de Factura Actual es Distinta que la Siguiente.
-            $size++; // Incremento $size para saber cuantas facturas hay en total sin repetir.
-    }
-    $size++; // Vuelvo a Incrementar $size ya que Salió una Vuelta Antes y Queda una Factura por Contar.
-    $index = 0; // Inicializo $Index a 0.
-    $i = 0; // Inicializo $i a 0.
-    for ($z = 0; $z < $size; $z++) // Hago un bucle a la cantidad de facturas distintas que hay.
-    {
-        recursive($index, $serv, $qtt, $id, $z); // Llamo a la función recursive que carga todos los servicios y cantidades de las facturas, pasandole $index y $i y el array $serv, $qtt y $id.
-        $index++; // Incremento $index.
-    }
+        $size = 0; // Se Usará para contar la cantidad de Facturas que Hay en el Trimestre Seleccionado.
+        for ($i = 0; $i < count($id) - 1; $i++) // Hago un Bucle Hasta la Cantidad de Facturas - 1(Varias están repetidas ya que una Factura Tiene Varios Servicios y Varios Servicios puede pertenecer a una Única Factura).
+        {
+            if ($id[$i] != $id[$i + 1]) // Si el Número de Factura Actual es Distinta que la Siguiente.
+                $size++; // Incremento $size para saber cuantas facturas hay en total sin repetir.
+        }
+        $size++; // Vuelvo a Incrementar $size ya que Salió una Vuelta Antes y Queda una Factura por Contar.
+        $index = 0; // Inicializo $index a 0.
+        $i = 0; // Inicializo $i a 0.
+        for ($z = 0; $z < $size; $z++) // Hago un bucle a la cantidad de facturas distintas que hay.
+        {
+            recursive($index, $serv, $qtt, $id, $z); // Llamo a la función recursive que carga todos los servicios y cantidades de las facturas, pasandole $index y $i y el array $serv, $qtt y $id.
+            $index++; // Incremento $index.
+        }
 
-    if ($who == "excel") // Para Mostrar en Excel.
-    {
-        getService($conn, $array, "excel"); // Llamo a getService y le paso $conn (La COnexión con la Base de Datos), $array que tiene las ID de los servicios y el texto excel, para obtener los nombres de los servicios y los precios.
-    }
-    else // Para mostrar en HTML
-    {
-        getService($conn, $array, "html"); // Llamo a getService y le paso $array que tiene las ID de los servicios y el texto html, para obtener los nombres de los servicios y los precios.
+        if ($who == "excel") // Para Mostrar en Excel.
+        {
+            getService($conn, $array, "excel"); // Llamo a getService y le paso $conn (La Conexión con la Base de Datos), $array que tiene las ID de los servicios y el texto excel, para obtener los nombres de los servicios y los precios.
+        }
+        else // Para mostrar en HTML
+        {
+            getService($conn, $array, "html"); // Llamo a getService y le paso $array que tiene las ID de los servicios y el texto html, para obtener los nombres de los servicios y los precios.
+        }
     }
 }
 
+if (isset($_POST["date"]))
+{
 	$date = $_POST['date']; // El Trimestre recibido desde admin.php.
 	$year = $_POST['year']; // El Año recibido desde admin.php.
 	
@@ -95,6 +100,7 @@ function fillServices($conn, $result, $who)
 	$statement->execute();
 	
 	$result = $statement->fetchAll();
+}
 	
 if(isset($_POST["export"]))
 {
