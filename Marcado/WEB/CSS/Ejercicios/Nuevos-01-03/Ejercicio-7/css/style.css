@@ -1,0 +1,15 @@
+body
+{
+    background: url(../imagen1.png), url(../imagen2.png), url(../fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: 100px 100px, right bottom, left top;
+    -moz-background-position: 100px 100px, right bottom, 0 0;
+    background-size: 50px, 200px, cover;
+}
+
+p
+{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}

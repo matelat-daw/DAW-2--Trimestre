@@ -18,7 +18,7 @@ h1
     bottom: 144px;
     left: 80px;
     width: 640px;
-    height: 140px;
+    height: 70px;
     font-size: 3em;
     text-align: center;
     background-color: rgba(150,120,120,.4);
@@ -32,13 +32,25 @@ p
 
 #description
 {
-    visibility: hidden;
+    opacity: 0;
 }
 
-#image:hover > #description
+/* #image:hover > #description
 {
+    transition: 3s;
+    opacity: .6;
     font-weight: normal;
     color: blanchedalmond;
     background-color: rgba(165,42,42,.6);
-    visibility: visible;
+    height: 140px;
+} */
+
+#image:hover > #description
+{
+    transition: 3s;
+    opacity: .6;
+    font-weight: normal;
+    color: blanchedalmond;
+    background-color: rgba(165,42,42,.6);
+    height: 70px;
 }

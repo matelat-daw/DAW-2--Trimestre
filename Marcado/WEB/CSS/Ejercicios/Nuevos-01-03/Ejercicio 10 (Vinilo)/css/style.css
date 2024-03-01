@@ -1,0 +1,18 @@
+.cover
+{
+    position: relative;
+    left: 25%;
+}
+
+.cd
+{
+    position: absolute;
+    left: 25.5%;
+    top: 10px;
+    z-index: -1;
+}
+
+.title
+{
+    text-align: center;
+}
