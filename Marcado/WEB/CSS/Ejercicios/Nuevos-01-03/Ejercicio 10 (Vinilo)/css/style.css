@@ -8,7 +8,7 @@
 {
     position: absolute;
     left: 0;
-    top: -4px;
+    top: -2px;
     z-index: -1;
     transition: 3s;
 }
@@ -23,12 +23,14 @@
 
 .hide
 {
+    background-color: rgba(10, 10, 10, .5);
     position: absolute;
-    left: -170px;
-    top: 0;
+    left: 0;
+    top: 100px;
     color: white;
     margin: 0;
     transition: 3s;
+    opacity: 0;
 }
 
 .cover:hover > .cd
@@ -38,5 +40,5 @@
 
 .cover:hover > .hide
 {
-    transform: translateX(175px);
+    opacity: 1;
 }
