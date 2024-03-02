@@ -2,7 +2,6 @@
 {
     background-image: url(../nino.png);
     background-repeat: no-repeat;
-    background-size: contain;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -12,18 +11,15 @@
 {
     position: relative;
     top: 370px;
-    left: 237px;
+    left: 243px;
     width: 250px;
     height: 750px;
     overflow: hidden;
-    z-index: 10;
 }
 
 .yoyo
 {
     position: absolute;
-    top: 0;
-    left: 0;
     transition: 2s;
 }
 
