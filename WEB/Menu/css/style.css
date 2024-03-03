@@ -1,0 +1,97 @@
+body
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav.main-nav {
+	background: #333;
+   	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2f2f2f), to(#4f4f4f));
+   	background-image: -webkit-linear-gradient(top, #2f2f2f, #4f4f4f); 
+   	background-image:    -moz-linear-gradient(top, #2f2f2f, #4f4f4f);
+   	background-image:     -ms-linear-gradient(top, #2f2f2f, #4f4f4f);
+   	background-image:      -o-linear-gradient(top, #2f2f2f, #4f4f4f);
+	background-image:      linear-gradient(top, #2f2f2f, #4f4f4f);
+	width: 100%;
+} */
+
+.top-nav
+{
+	border-bottom: 2px solid #111;
+	height: 30px;
+    width: fit-content;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.top-nav li {
+	background: #333;
+   	/* background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2f2f2f), to(#4f4f4f)); */
+   	/* background-image: -webkit-linear-gradient(top, #2f2f2f, #6f6f6f); */
+   	/* background-image:    -moz-linear-gradient(top, #2f2f2f, #6f6f6f); */
+   	/* background-image:     -ms-linear-gradient(top, #2f2f2f, #4f4f4f); */
+   	/* background-image:      -o-linear-gradient(top, #2f2f2f, #4f4f4f); */
+	/* background-image:      linear-gradient(top, #2f2f2f, #4f4f4f); */
+
+    /* background: linear-gradient(top , #FFFFFF 40%, #CDEDFA 90%); */
+    /* background: -moz-linear-gradient(bottom , #FFFFFF 40%, #CDEDFA 90%); */
+    background: -webkit-linear-gradient(bottom , #FFFFFF 40%, #CDEDFA 90%);
+
+	border-bottom: 2px solid #111;
+	border-right: 1px solid #555;
+	float: left;
+	font-size: 14px;
+	height: 20px;
+	padding-top: 10px;
+	position: relative;
+	text-align: center;
+	width: 150px;
+}
+
+.top-nav li ul.drop-down {
+    list-style-type: none;
+	position: absolute;
+	top: 32px;
+	left: -40px;
+	visibility: hidden;	
+	opacity: 0;
+	/* -webkit-transition: opacity 0.3s; */
+	/* -moz-transition: opacity 0.3s; */
+	/* -o-transition: opacity 0.3s; */
+	transition: opacity 0.3s;
+}
+
+.top-nav li:hover ul.drop-down {    
+	visibility: visible;
+	opacity: 1;	
+}
+
+.top-nav li .drop-down li {
+	height: 20px;
+	/* -webkit-transition: height 0.3s ease; */
+	/* -moz-transition: height 0.3s ease; */
+	/* -o-transition: height 0.3s ease; */
+	transition: height 0.3s ease;
+}
+
+.top-nav li .drop-down li:hover {
+	height: 30px;
+}
+
+.top-nav li a {
+	color: #aaa;
+	padding-top: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 25px;
+	text-decoration: none;
+}
+
+footer
+{
+    margin-top: auto;
+}
