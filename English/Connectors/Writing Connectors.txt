@@ -8,6 +8,8 @@ besides.
 
 furthermore.
 
+so.
+
 
 2-. Reason:
 
@@ -19,6 +21,7 @@ since.
 
 in case.
 
+
 3-. Condition:
 
 if.
@@ -28,3 +31,5 @@ as long as.
 provided.
 
 unless.
+
+while.
