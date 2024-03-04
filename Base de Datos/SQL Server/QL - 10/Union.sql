@@ -105,67 +105,22 @@ insert into visitantes values ('Susana Molina', 35,'f','Los Menceyes 123', 1, nu
 
 -- 4- Cuente la cantidad de visitas por ciudad mostrando el nombre de la ciudad (3 filas)
 
-SELECT COUNT(v.edad), c.nombre
-FROM ciudades c INNER JOIN visitantes v ON c.codigo=v.codigociudad GROUP BY c.codigo;
+SELECT c.nombre, COUNT(v.edad)
+FROM ciudades c INNER JOIN visitantes v ON c.codigo=v.codigociudad GROUP BY c.nombre;
 
 -- 5- Muestre el promedio de gastos de las visitas agrupados por ciudad y sexo (4 filas)
+
+Select AVG(v.montocompra)
+FROM visitantes v INNER JOIN ciudades c ON c.codigo=v.codigociudad
+WHere montocompra > 0 GROUP BY v.nombre;
+
 -- 6- Muestre la cantidad de visitantes con mail, agrupados por ciudad (3 filas)
+
+Select v.nombre, v.mail
+FROM visitantes v INNER JOIN ciudades c ON c.codigo=v.codigociudad
+WHERE v.mail IS NOT NULL;
+
 -- 7- Obtenga el monto de compra más alto de cada ciudad (3 filas)
 
-
--- SQL Server - Totales
--- Un club imparte clases de distintos deportes. En una tabla llamada "socios" guarda los datos de los socios, en una tabla llamada "deportes" la información referente a los diferentes deportes que se dictan y en una tabla denominada "inscritos", las inscripciones de los socios a los distintos deportes. Un socio puede inscribirse en varios deportes el mismo año. Un socio no puede inscribirse en el mismo deporte el mismo año. Distintos socios se inscriben en un mismo deporte en el mismo año.
--- 1- Elimine las tablas si existen:
-
-if object_id('socios') is not null
-drop table socios;
-
-if object_id('deportes') is not null
-drop table deportes;
-
-if object_id('inscritos') is not null
-drop table inscritos;
-
--- 2- Cree las tablas con las siguientes estructuras:
-create table socios(
-documento char(8) not null,
-nombre varchar(30),
-domicilio varchar(30),
-primary key(documento)
-);
-
-create table deportes(
-codigo tinyint identity,
-nombre varchar(20),
-profesor varchar(15),
-primary key(codigo)
-);
-
-create table inscritos(
-documento char(8) not null,
-codigodeporte tinyint not null,
-anio char(4),
-matricula char(1),--'s'=paga, 'n'=impaga
-primary key(documento,codigodeporte,anio)
-);
-
--- 3- Ingrese algunos registros en "socios":
-insert into socios values('22222222','Ana Acosta','Tres de Mayo 111'),
-('23333333','Betina Bustos','San Andrés 222'),
-('24444444','Carlos Castro','Araya 333'),
-('25555555','Daniel Duarte','Dinamarca 44');
-
--- 4- Ingrese algunos registros en "deportes":
-insert into deportes values('basquet','Juan Juarez'),
-('futbol','Pedro Perez'),
-('natacion','Marina Morales'),
-('tenis','Marina Morales');
-
--- 5- Inscriba a varios socios en el mismo deporte en el mismo año:
-insert into inscritos values ('22222222',3,'2006','s'),
-('23333333',3,'2006','s'),
-('24444444',3,'2006','n');
-
--- 6- Inscriba a un mismo socio en el mismo deporte en distintos años:
-insert into inscritos values ('22222222',3,'2005','s'),
-('22222222',3,'2007','n');
+SELECT MAX(v.montocompra)
+FROM visitantes v INNER JOIN ciudades c ON c.codigo=v.codigociudad WHERE v.montocompra > 0 GROUP BY c.codigo;
