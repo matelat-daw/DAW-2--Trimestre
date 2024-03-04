@@ -1,0 +1,26 @@
+body
+{
+    background-image: url(../nino.png);
+    background-repeat: no-repeat;
+}
+
+.limit
+{
+    position: relative;
+    top: 370px;
+    left: 235px;
+    width: 250px;
+    height: 750px;
+    overflow: hidden;
+}
+
+.yoyo
+{
+    position: absolute;
+    transition: 2s;
+}
+
+body:hover > .limit .yoyo
+{
+    transform: translate(0, -258px);
+}

@@ -1,18 +1,44 @@
 .cover
 {
-    position: relative;
+    position: fixed;
     left: 25%;
 }
 
 .cd
 {
     position: absolute;
-    left: 25.5%;
-    top: 10px;
+    left: 0;
+    top: -2px;
     z-index: -1;
+    transition: 3s;
 }
 
 .title
 {
-    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.hide
+{
+    background-color: rgba(10, 10, 10, .5);
+    position: absolute;
+    left: 0;
+    top: 100px;
+    color: white;
+    margin: 0;
+    transition: 3s;
+    opacity: 0;
+}
+
+.cover:hover > .cd
+{
+    transform: translateX(175px) rotate(180deg)
+}
+
+.cover:hover > .hide
+{
+    opacity: 1;
 }

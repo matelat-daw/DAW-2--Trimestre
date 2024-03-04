@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Orion\\source\\repos\\Testing \u0026 Debugging\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48274A14-BE10-4C8D-8190-5A3695DA1602}|Pokemon\\Pokemon.csproj|c:\\users\\orion\\source\\repos\\testing \u0026 debugging\\pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48274A14-BE10-4C8D-8190-5A3695DA1602}|Pokemon\\Pokemon.csproj|solutionrelative:pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6840E518-D5E6-4F6D-8BFE-F021B35CFF80}|Test Ejercicio 3\\Test Ejercicio 3.csproj|c:\\users\\orion\\source\\repos\\testing \u0026 debugging\\test ejercicio 3\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6840E518-D5E6-4F6D-8BFE-F021B35CFF80}|Test Ejercicio 3\\Test Ejercicio 3.csproj|solutionrelative:test ejercicio 3\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\source\\repos\\Testing \u0026 Debugging\\Pokemon\\Program.cs",
+              "RelativeDocumentMoniker": "Pokemon\\Program.cs",
+              "ToolTip": "C:\\Users\\Orion\\source\\repos\\Testing \u0026 Debugging\\Pokemon\\Program.cs",
+              "RelativeToolTip": "Pokemon\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T19:48:56.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\source\\repos\\Testing \u0026 Debugging\\Test Ejercicio 3\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Test Ejercicio 3\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Orion\\source\\repos\\Testing \u0026 Debugging\\Test Ejercicio 3\\UnitTest1.cs",
+              "RelativeToolTip": "Test Ejercicio 3\\UnitTest1.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T07:26:45.483Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
