@@ -5,23 +5,36 @@ h1
 
 .position
 {
+    position: relative;
+    top: 100px;
+    left: 0;
     width: 800px;
+    height: 600px;
+    background-image: url(../imgs/Mardel-1.jpg);
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
-#image
+#text
 {
     position: relative;
+    top: 530px;
+    left: 80px;
     color: white;
     font-weight: bold;
-    bottom: 144px;
-    left: 80px;
     width: 640px;
-    height: 70px;
+    height: 140px;
     font-size: 3em;
     text-align: center;
     background-color: rgba(150,120,120,.4);
+    overflow: hidden;
+    transition: 1.5s;
+}
+
+#description
+{
+    transition: 5s;
 }
 
 p
@@ -30,27 +43,13 @@ p
     padding-top: 14px;
 }
 
-#description
+.position:hover > #text
 {
-    opacity: 0;
+    translate: 0 -70px;
 }
 
-/* #image:hover > #description
+.position:hover > #text #description
 {
-    transition: 3s;
-    opacity: .6;
-    font-weight: normal;
-    color: blanchedalmond;
+    color: #efc706;
     background-color: rgba(165,42,42,.6);
-    height: 140px;
-} */
-
-#image:hover > #description
-{
-    transition: 3s;
-    opacity: .6;
-    font-weight: normal;
-    color: blanchedalmond;
-    background-color: rgba(165,42,42,.6);
-    height: 70px;
 }
