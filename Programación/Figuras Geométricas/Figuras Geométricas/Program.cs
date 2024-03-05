@@ -52,6 +52,10 @@
         int j = 0;
         Figura? figura = new Cuadrado(5, 5, 40, 40);
         figura.Mostrar();
+        Console.WriteLine("\n\n{0}\n", figura);
+
+        Figura? trapecio = new Trapecio(5, 5, 5, 10, 8);
+        Console.WriteLine("\n\n{0}\n", trapecio);
 
         for (int i = 0; i < datos.Count; i+=6) // Bucle al tamaño de la Lista.
         {

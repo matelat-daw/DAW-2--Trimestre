@@ -4,11 +4,8 @@
     private readonly int number;
     private readonly int radio;
 
-    public Poligono (int x, int y, int size, int number, int radio)
+    public Poligono (int x, int y, int size, int number, int radio) : base(x, y)
     {
-        posicion = new Punto();
-        posicion.SetX(x);
-        posicion.SetY(y);
         this.size = size;
         this.number = number;
         this.radio = radio;
@@ -44,6 +41,7 @@
 
     public override string ToString()
     {
-        return String.Format("\nEl Poligono Regular de {0} Lados de Tamaño: {1} y Radio: {2} Tiene un Perímetro de: {3:F2} y un Área de: {4:F2}", GetQtty(), GetSize(), GetRadio(), Perimetro(), Area());
+        // return String.Format("\nEl Poligono Regular de {0} Lados de Tamaño: {1} y Radio: {2} Tiene un Perímetro de: {3:F2} y un Área de: {4:F2}", GetQtty(), GetSize(), GetRadio(), Perimetro(), Area());
+        return $"\nEl Poligono Regular de {GetQtty()} Lados de Tamaño: {GetSize()} y Radio: {GetRadio()} Tiene un Perímetro de: {Perimetro():F2} y un Área de: {Area():F2}";
     }
 }

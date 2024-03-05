@@ -3,11 +3,8 @@
     private readonly int radio_menor;
     private readonly int radio_mayor;
 
-    public Elipse(int x, int y, int radio_menor, int radio_mayor)
+    public Elipse(int x, int y, int radio_menor, int radio_mayor) : base(x, y)
     {
-        posicion = new Punto();
-        posicion.SetX(x);
-        posicion.SetY(y);
         this.radio_menor = radio_menor;
         this.radio_mayor = radio_mayor;
     }
@@ -30,7 +27,8 @@
 
     public override string ToString()
     {
-        return String.Format("La Elipse de Radio Menor: {0} y Radio Mayor: {1} Tiene un Perímetro de: {2:F2} y un Área de: {3:F2}", GetRadioMenor(), GetRadioMayor(), Perimetro(), Area());
+        // return String.Format("La Elipse de Radio Menor: {0} y Radio Mayor: {1} Tiene un Perímetro de: {2:F2} y un Área de: {3:F2}", GetRadioMenor(), GetRadioMayor(), Perimetro(), Area());
+        return $"La Elipse de Radio Menor: {GetRadioMenor()} y Radio Mayor: {GetRadioMayor()} Tiene un Perímetro de: {Perimetro():F2} y un Área de: {Area():F2}";
     }
 
     public override void Mostrar(){ }

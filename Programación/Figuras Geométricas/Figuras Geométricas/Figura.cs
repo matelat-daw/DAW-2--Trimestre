@@ -2,6 +2,11 @@
 {
     protected Punto? posicion;
 
+    public Figura(int x, int y)
+    {
+        posicion = new Punto(x, y);
+    }
+
     public int GetX() { return posicion.GetX(); }
     public int GetY() { return posicion.GetY(); }
 

@@ -3,11 +3,8 @@
     private readonly int _base; // La Palabra Reservada base se usa para la Herencia Entre Clases.
     private readonly int _altura;
 
-    public TrianguloIso (int x, int y, int ancho, int altura)
+    public TrianguloIso (int x, int y, int ancho, int altura): base (x, y)
     {
-        posicion = new Punto();
-        posicion.SetX(x);
-        posicion.SetY(y);
         _base = ancho;
         _altura = altura;
     }
@@ -34,6 +31,7 @@
 
     public override string ToString()
     {
-        return String.Format("El Tríangulo Isósceles de Base: {0} y Altura: {1} Tiene un Perímetro de: {2} y un Área de: {3:F2}", GetAncho(), GetAlto(), Perimetro(), Area());
+        // return String.Format("El Tríangulo Isósceles de Base: {0} y Altura: {1} Tiene un Perímetro de: {2} y un Área de: {3:F2}", GetAncho(), GetAlto(), Perimetro(), Area());
+        return $"El Tríangulo Isósceles de Base: {GetAncho()} y Altura: {GetAlto()} Tiene un Perímetro de: {Perimetro()} y un Área de: {Area():F2}";
     }
 }

@@ -2,11 +2,8 @@
 {
     private readonly int lado;
 
-    public TrianguloEq (int x, int y, int lado)
+    public TrianguloEq (int x, int y, int lado) : base(x, y)
     {
-        posicion = new Punto ();
-        posicion.SetX(x);
-        posicion.SetY(y);
         this.lado = lado;
     }
 
@@ -35,6 +32,7 @@
 
     public override string ToString()
     {
-        return String.Format("El Tríangulo Equilátero de Lado: {0:F2} Tiene un Perímetro de: {1} y un Área de: {2:F2}", GetAltura(), Perimetro(), Area());
+        // return String.Format("El Tríangulo Equilátero de Lado: {0:F2} Tiene un Perímetro de: {1} y un Área de: {2:F2}", GetAltura(), Perimetro(), Area());
+        return $"El Tríangulo Equilátero de Lado: {GetAltura():F2} Tiene un Perímetro de: {Perimetro()} y un Área de: {Area():F2}";
     }
 }
