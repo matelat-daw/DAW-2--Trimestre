@@ -1,17 +1,12 @@
-﻿public class TrianguloEq: Figura // Triángulo Equilatero.
+﻿public class TrianguloEq(int x, int y, double lado) : Figura(x, y) // Triángulo Equilatero.
 {
-    private readonly int lado;
+    private readonly double lado = lado;
 
-    public TrianguloEq (int x, int y, int lado) : base(x, y)
-    {
-        this.lado = lado;
-    }
-
-    public int GetBase() { return lado; }
+    public double GetBase() { return lado; }
 
     public double GetAltura()
     {
-        int base2 = lado * lado;
+        int base2 = (int)(lado * lado);
         return Math.Sqrt(base2 - lado / 2.0 * lado / 2.0);
     }
 
@@ -30,9 +25,9 @@
         Drawing.ShowTriangle((int)GetAltura());
     }
 
-    public override string ToString()
-    {
-        // return String.Format("El Tríangulo Equilátero de Lado: {0:F2} Tiene un Perímetro de: {1} y un Área de: {2:F2}", GetAltura(), Perimetro(), Area());
-        return $"El Tríangulo Equilátero de Lado: {GetAltura():F2} Tiene un Perímetro de: {Perimetro()} y un Área de: {Area():F2}";
-    }
+    //public override string ToString()
+    //{
+    //    // return String.Format("El Tríangulo Equilátero de Lado: {0:F2} Tiene un Perímetro de: {1} y un Área de: {2:F2}", GetAltura(), Perimetro(), Area());
+    //    return $"El Tríangulo Equilátero de Lado: {GetAltura():F2} Tiene un Perímetro de: {Perimetro()} y un Área de: {Area():F2}";
+    //}
 }

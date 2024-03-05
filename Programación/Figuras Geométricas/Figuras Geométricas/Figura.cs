@@ -1,11 +1,6 @@
-﻿public abstract class Figura
+﻿public abstract class Figura(int x, int y)
 {
-    protected Punto? posicion;
-
-    public Figura(int x, int y)
-    {
-        posicion = new Punto(x, y);
-    }
+    protected Punto posicion = new(x, y);
 
     public int GetX() { return posicion.GetX(); }
     public int GetY() { return posicion.GetY(); }
@@ -25,6 +20,6 @@
 
     public override string ToString()
     {
-        return $"{base.ToString()} ";
+        return $"La Figura {base.GetType()} Tiene un Perimetro de: {Perimetro():f2} y un Área de: {Area():f2}";
     }
 }

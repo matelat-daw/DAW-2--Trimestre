@@ -1,6 +1,6 @@
 ﻿public class Drawing
 {
-    public static void ShowRectangle(int ancho, int alto) // Respeta las coordenadas del Punto para Mostrar el Rectángulo/Cuadrado en Pantalla.
+    public static void ShowRectangle(double ancho, double alto) // Respeta las coordenadas del Punto para Mostrar el Rectángulo/Cuadrado en Pantalla.
     {
         int y = Console.CursorTop;
         Console.ForegroundColor = ConsoleColor.Red;
@@ -8,7 +8,7 @@
         {
             Console.SetCursorPosition(0 + i, y + 2);
             Console.Write("*");
-            Console.SetCursorPosition(0 + i, y + alto / 2 + 2);
+            Console.SetCursorPosition(0 + i, y + (int)alto / 2 + 2);
             Console.Write("*");
         }
 
@@ -16,7 +16,7 @@
         {
             Console.SetCursorPosition(0, y + j + 2);
             Console.Write("*");
-            Console.SetCursorPosition(ancho, y + j + 2);
+            Console.SetCursorPosition((int)ancho, y + j + 2);
             Console.Write("*");
         }
         Console.ForegroundColor = ConsoleColor.Gray;

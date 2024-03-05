@@ -1,15 +1,8 @@
-﻿public class Poligono: Figura
+﻿public class Poligono(int x, int y, int size, int number, int radio) : Figura(x, y)
 {
-    private readonly int size;
-    private readonly int number;
-    private readonly int radio;
-
-    public Poligono (int x, int y, int size, int number, int radio) : base(x, y)
-    {
-        this.size = size;
-        this.number = number;
-        this.radio = radio;
-    }
+    private readonly int size = size;
+    private readonly int number = number;
+    private readonly int radio = radio;
 
     public int GetSize() { return size; } // Getter de los Atributos del Objeto.
 

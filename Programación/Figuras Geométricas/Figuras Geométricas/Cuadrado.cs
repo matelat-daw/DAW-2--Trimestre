@@ -1,4 +1,3 @@
-﻿public class Cuadrado: Rectangulo
+﻿public class Cuadrado(int x, int y, double lado) : Rectangulo(x, y, lado, lado)
 {
-    public Cuadrado(int x, int y, int lado) : base(x, y, lado, lado) { }
 }

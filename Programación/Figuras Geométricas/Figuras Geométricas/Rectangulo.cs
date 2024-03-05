@@ -1,17 +1,11 @@
-﻿public class Rectangulo: Figura // Rectángulos.
+﻿public class Rectangulo(int x, int y, double ancho, double alto) : Figura(x, y) // Rectángulos.
 {
-    private readonly int ancho;
-    private readonly int alto;
+    private readonly double ancho = Math.Abs(ancho);
+    private readonly double alto = Math.Abs(alto);
 
-    public Rectangulo (int x, int y, int ancho, int alto) : base(x, y)
-    {
-        this.ancho = Math.Abs(ancho);
-        this.alto = Math.Abs(alto);
-    }
+    public double GetAncho() { return ancho; }
 
-    public int GetAncho() { return ancho; }
-
-    public int GetAlto() { return alto; }
+    public double GetAlto() { return alto; }
 
     public override double Perimetro()
     {
@@ -23,25 +17,25 @@
         return ancho * alto;
     }
 
-    public override string ToString()
-    {
-        string figure;
-        if (GetAlto() != GetAncho())
-        {
-            figure = "Rectángulo";
-        }
-        else
-        {
-            figure = "Cuadrado";
-        }
-        // return String.Format("El {0} de Ancho: {1} y Alto: {2} Tiene un Perímetro de: {3} y un Área de: {4}", figure, GetAncho(), GetAlto(), Perimetro(), Area());
-        return $"El {figure} de Ancho: {GetAncho()} y Alto: {GetAlto()} Tiene un Perímetro de: {Perimetro()} y un Área de: {Area()}";
-    }
-
     public override void Mostrar()
     {
         Drawing.ShowRectangle(GetAncho(), GetAlto());
     }
+
+    //public override string ToString()
+    //{
+    //    string figure;
+    //    if (GetAlto() != GetAncho())
+    //    {
+    //        figure = "Rectángulo";
+    //    }
+    //    else
+    //    {
+    //        figure = "Cuadrado";
+    //    }
+    //    // return String.Format("El {0} de Ancho: {1} y Alto: {2} Tiene un Perímetro de: {3} y un Área de: {4}", figure, GetAncho(), GetAlto(), Perimetro(), Area());
+    //    return $"El {figure} de Ancho: {GetAncho()} y Alto: {GetAlto()} Tiene un Perímetro de: {Perimetro()} y un Área de: {Area()}";
+    //}
 
     //public static void pruebaRectangulo()
     //{
