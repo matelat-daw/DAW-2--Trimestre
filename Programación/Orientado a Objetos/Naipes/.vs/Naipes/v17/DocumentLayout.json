@@ -1,26 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\",
+  "WorkspaceRootPath": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}|Baraja Francesa-Figuras\\Baraja Francesa-Figuras.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\baraja francesa-figuras\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}|Baraja Francesa-Figuras\\Baraja Francesa-Figuras.csproj|solutionrelative:baraja francesa-figuras\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}|Baraja Francesa-Figuras\\Baraja Francesa-Figuras.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\baraja francesa-figuras\\figuras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}|Baraja Francesa-Figuras\\Baraja Francesa-Figuras.csproj|solutionrelative:baraja francesa-figuras\\figuras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}|Baraja Francesa-Figuras\\Baraja Francesa-Figuras.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\baraja francesa-figuras\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}|Baraja Francesa-Figuras\\Baraja Francesa-Figuras.csproj|solutionrelative:baraja francesa-figuras\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\palo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\palo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}|Baraja Francesa-Figuras\\Baraja Francesa-Figuras.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\baraja francesa-figuras\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}|Baraja Francesa-Figuras\\Baraja Francesa-Figuras.csproj|solutionrelative:baraja francesa-figuras\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}|Baraja Francesa-Figuras\\Baraja Francesa-Figuras.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\baraja francesa-figuras\\palo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}|Baraja Francesa-Figuras\\Baraja Francesa-Figuras.csproj|solutionrelative:baraja francesa-figuras\\palo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,65 +34,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Baraja Francesa-Figuras\\Program.cs",
-              "RelativeDocumentMoniker": "Baraja Francesa-Figuras\\Program.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Baraja Francesa-Figuras\\Program.cs",
-              "RelativeToolTip": "Baraja Francesa-Figuras\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T22:54:36.092Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Palo.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Baraja Francesa-Figuras\\Palo.cs",
-              "RelativeDocumentMoniker": "Baraja Francesa-Figuras\\Palo.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Baraja Francesa-Figuras\\Palo.cs",
-              "RelativeToolTip": "Baraja Francesa-Figuras\\Palo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T22:54:32.148Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Mazo.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Baraja Francesa-Figuras\\Mazo.cs",
-              "RelativeDocumentMoniker": "Baraja Francesa-Figuras\\Mazo.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Baraja Francesa-Figuras\\Mazo.cs",
-              "RelativeToolTip": "Baraja Francesa-Figuras\\Mazo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFEAAAA7AAAA",
+              "Title": "Carta.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Carta.cs",
+              "RelativeDocumentMoniker": "Siete y Medio\\Carta.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Carta.cs",
+              "RelativeToolTip": "Siete y Medio\\Carta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T22:49:55.697Z",
+              "WhenOpened": "2024-03-05T09:16:21.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Figuras.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Baraja Francesa-Figuras\\Figuras.cs",
-              "RelativeDocumentMoniker": "Baraja Francesa-Figuras\\Figuras.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Baraja Francesa-Figuras\\Figuras.cs",
-              "RelativeToolTip": "Baraja Francesa-Figuras\\Figuras.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAAAAUAAAAtAAAA",
+              "Title": "Mazo.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Mazo.cs",
+              "RelativeDocumentMoniker": "Siete y Medio\\Mazo.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Mazo.cs",
+              "RelativeToolTip": "Siete y Medio\\Mazo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T22:49:12.255Z",
+              "WhenOpened": "2024-03-05T09:14:01.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Palo.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Palo.cs",
+              "RelativeDocumentMoniker": "Siete y Medio\\Palo.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Palo.cs",
+              "RelativeToolTip": "Siete y Medio\\Palo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T09:13:09.605Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Carta.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Baraja Francesa-Figuras\\Carta.cs",
-              "RelativeDocumentMoniker": "Baraja Francesa-Figuras\\Carta.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Baraja Francesa-Figuras\\Carta.cs",
-              "RelativeToolTip": "Baraja Francesa-Figuras\\Carta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Program.cs",
+              "RelativeDocumentMoniker": "Siete y Medio\\Program.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Program.cs",
+              "RelativeToolTip": "Siete y Medio\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T22:48:18.63Z"
+              "WhenOpened": "2024-03-05T09:12:36.281Z",
+              "EditorCaption": ""
             }
           ]
         }

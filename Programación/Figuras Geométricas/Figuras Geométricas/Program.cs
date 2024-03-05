@@ -50,7 +50,7 @@
         Tablas.ShowCSV(datos, 15); // Llamo al Método mostrar de la Clase Tablas, le paso el Array Bidimensional datos y la Separación Entre Palabras, Lo Muestra en Pantalla.
 
         int j = 0;
-        Figura? figura = new Cuadrado(5, 5, 40, 40);
+        Figura? figura = new Cuadrado(5, 5, 40);
         figura.Mostrar();
         Console.WriteLine("\n\n{0}\n", figura);
 
@@ -67,7 +67,7 @@
                     Console.WriteLine();
                     break;
                 case "Cuadrado": // Si está la Palabra Cuadrado, Instancia un Objeto de la Clase Cuadrado, Pasa los Datos de la Lista y Muestra el Cuadrado
-                    figura = new Cuadrado(getInt(datos[i + 1]), getInt(datos[i + 2]), getInt(datos[i + 3]), getInt(datos[i + 4]));
+                    figura = new Cuadrado(getInt(datos[i + 1]), getInt(datos[i + 2]), getInt(datos[i + 3]));
                     figura.Mostrar();
                     Console.WriteLine();
                     break;
@@ -75,6 +75,10 @@
                     figura = new Circulo(getInt(datos[i + 1]), getInt(datos[i + 2]), getInt(datos[i + 3]));
                     figura.Mostrar();
                     Console.WriteLine();
+                    break;
+                case "Casita":
+                    figura = new Casita(getInt(datos[i + 1]), getInt(datos[i + 2]), getInt(datos[i + 3]));
+                    figura.Mostrar();
                     break;
                 case "Triangulo":
                     figura = new TrianguloIso(getInt(datos[i + 1]), getInt(datos[i + 2]), getInt(datos[i + 3]), getInt(datos[i + 4]));

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cartas", "Cartas\Cartas.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Baraja Francesa-Figuras", "Baraja Francesa-Figuras\Baraja Francesa-Figuras.csproj", "{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Siete y Medio", "Siete y Medio\Siete y Medio.csproj", "{56227033-44B1-4922-8D21-1295A8A5C4A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C383B8D-F4D3-4B5D-9970-D4E1371942C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56227033-44B1-4922-8D21-1295A8A5C4A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56227033-44B1-4922-8D21-1295A8A5C4A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56227033-44B1-4922-8D21-1295A8A5C4A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56227033-44B1-4922-8D21-1295A8A5C4A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

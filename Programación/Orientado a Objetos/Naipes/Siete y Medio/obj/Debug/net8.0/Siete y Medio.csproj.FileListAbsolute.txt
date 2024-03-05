@@ -1,0 +1,15 @@
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\bin\Debug\net8.0\Siete y Medio.exe
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\bin\Debug\net8.0\Siete y Medio.deps.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\bin\Debug\net8.0\Siete y Medio.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\bin\Debug\net8.0\Siete y Medio.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\bin\Debug\net8.0\Siete y Medio.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\obj\Debug\net8.0\Siete y Medio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\obj\Debug\net8.0\Siete y Medio.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\obj\Debug\net8.0\Siete y Medio.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\obj\Debug\net8.0\Siete y Medio.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\obj\Debug\net8.0\Siete y Medio.sourcelink.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\obj\Debug\net8.0\Siete y Medio.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\obj\Debug\net8.0\refint\Siete y Medio.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\obj\Debug\net8.0\Siete y Medio.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\obj\Debug\net8.0\Siete y Medio.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Programación\Orientado a Objetos\Naipes\Siete y Medio\obj\Debug\net8.0\ref\Siete y Medio.dll

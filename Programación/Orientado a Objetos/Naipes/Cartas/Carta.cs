@@ -12,7 +12,7 @@
 
     public int getNumero() { return numero; } // Getter del Número de la Carta.
 
-    public Palo getPalo() { return palo; } // Getter del Palo de la Carta
+    public Palo getPalo() { return palo; } // Getter del Palo de la Carta.
 
     public override string ToString() // Sobreescribe la función ToString().
     {

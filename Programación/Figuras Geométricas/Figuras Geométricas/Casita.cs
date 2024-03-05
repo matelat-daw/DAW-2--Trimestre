@@ -1,14 +1,14 @@
 ﻿public class Casita: Figura
 {
-    private int lado;
-    private int _base;
-    Cuadrado fachada;
-    TrianguloEq techo;
+    private readonly int lado;
+    private readonly Cuadrado fachada;
+    private readonly TrianguloEq techo;
 
-    public Casita(int x, int y) : base(x, y)
+    public Casita(int x, int y, int lado) : base(x, y)
     {
-        fachada = new Cuadrado(x, y, lado);
-        techo = new TrianguloEq(x, y, _base);
+        this.lado = lado;
+        techo = new TrianguloEq(x, y, lado);
+        fachada = new Cuadrado(x, GetY() + (int)techo.GetAltura(), lado);
     }
 
     public override double Perimetro()
@@ -27,12 +27,22 @@
     public override string ToString()
     {
         // return String.Format("El Tríangulo Equilátero de Lado: {0:F2} Tiene un Perímetro de: {1} y un Área de: {2:F2}", GetAltura(), Perimetro(), Area());
-        return $"La Casita de Fachada de Área: {fachada.Area():F2} y Techo de Área: {techo.Area():F2} Tiene un Perímetro de Fachada: {fachada.Perimetro():F2} y un Perímetro de Techo: {techo.Perimetro():F2}";
+        return String.Format("La Casita de Fachada de Área: {0:F2} y Techo de Área: {1:F2} Tiene un Perímetro de Fachada: {2:F2} y un Perímetro de Techo: {3:F2}, En Definitiva la Casita tiene un Perimetro de: {4:F2} y un Área de: {5:F2}", fachada.Area(), techo.Area(), fachada.Perimetro(), techo.Perimetro(), fachada.Perimetro() + techo.Perimetro(), techo.Area() + fachada.Area());
     }
 
+    public double GetAlto()
+    {
+        return fachada.GetAlto() + techo.GetAltura();
+    }
+
+    public double GetAncho()
+    {
+        return fachada.GetAncho();
+    }
 
     public override void Mostrar()
     {
-        
+        //Drawing.ShowTriangle(techo.GetAltura());
+        //Drawing.ShowRectangle(fachada.GetAncho(), fachada.GetAlto());
     }
 }

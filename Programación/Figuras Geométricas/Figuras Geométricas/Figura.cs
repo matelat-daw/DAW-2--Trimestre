@@ -22,4 +22,9 @@
 
 
     public abstract double Perimetro();
+
+    public override string ToString()
+    {
+        return $"{base.ToString()} ";
+    }
 }
