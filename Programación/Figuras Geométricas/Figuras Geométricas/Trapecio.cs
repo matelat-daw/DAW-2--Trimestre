@@ -1,16 +1,8 @@
-﻿public class Trapecio: Figura
+﻿public class Trapecio(int x, int y, int altura, int anchoMayor, int anchoMenor) : Figura(x, y)
 {
-    private readonly int altura;
-    private readonly int anchoMayor;
-    private readonly int anchoMenor;
-
-
-    public Trapecio(int x, int y, int altura, int anchoMayor, int anchoMenor) : base(x, y)
-    {
-        this.altura = Math.Abs(altura);
-        this.anchoMayor = Math.Abs(anchoMayor);
-        this.anchoMenor = Math.Abs(anchoMenor);
-    }
+    private readonly int altura = Math.Abs(altura);
+    private readonly int anchoMayor = Math.Abs(anchoMayor);
+    private readonly int anchoMenor = Math.Abs(anchoMenor);
 
     public int GetAnchoMayor() { return anchoMayor; }
 
@@ -20,19 +12,14 @@
 
     public override double Area()
     {
-        double result = 0.0;
-
-        result = (anchoMayor + anchoMenor) * altura / 2;
-        return result;
+        return (anchoMayor + anchoMenor) * altura / 2;
     }
 
     public override double Perimetro()
     {
-        double result = 0.0;
-
         double _base = (anchoMayor - anchoMenor) / 2.0;
         double hipo = Math.Sqrt(_base * _base + altura * altura);
-        result = anchoMayor + anchoMenor + hipo * 2;
+        double result = anchoMayor + anchoMenor + hipo * 2;
         return result;
     }
 

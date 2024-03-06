@@ -37,7 +37,6 @@
         pathFile = directorioBase + nameFile;
 
         List<string> listA = [.. File.ReadAllLines(pathFile)];
-        // _ = new string[6];
         for (int i = 0; i < listA.Count; i++)
         {
             string[] aux = (listA[i].Split(';'));

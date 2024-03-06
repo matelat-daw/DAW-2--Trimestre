@@ -1,13 +1,7 @@
-﻿public class Elipse: Figura
+﻿public class Elipse(int x, int y, int radio_menor, int radio_mayor) : Figura(x, y)
 {
-    private readonly int radio_menor;
-    private readonly int radio_mayor;
-
-    public Elipse(int x, int y, int radio_menor, int radio_mayor) : base(x, y)
-    {
-        this.radio_menor = radio_menor;
-        this.radio_mayor = radio_mayor;
-    }
+    private readonly int radio_menor = radio_menor;
+    private readonly int radio_mayor = radio_mayor;
 
     public int GetRadioMenor() { return radio_menor; }
 

@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\orion\\.nuget\\packages\\": {}
+    "C:\\Users\\Orion\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Naipes\\Siete y Medio\\Siete y Medio.csproj",
+      "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Naipes\\Siete y Medio\\Siete y Medio.csproj",
       "projectName": "Siete y Medio",
-      "projectPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Naipes\\Siete y Medio\\Siete y Medio.csproj",
-      "packagesPath": "C:\\Users\\orion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Programación\\Orientado a Objetos\\Naipes\\Siete y Medio\\obj\\",
+      "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Naipes\\Siete y Medio\\Siete y Medio.csproj",
+      "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Programación\\Orientado a Objetos\\Naipes\\Siete y Medio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

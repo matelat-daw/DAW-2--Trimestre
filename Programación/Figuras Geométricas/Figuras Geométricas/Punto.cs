@@ -1,15 +1,7 @@
-﻿public class Punto // Coordenadas de las Figuras.
+﻿public class Punto(int x, int y) // Coordenadas de las Figuras.
 {
-    private int x;
-    private int y;
-
-    public Punto() { } // Contructor Vacio para Instanciar un Objeto sin Ningún Dato.
-
-    public Punto(int x, int y) // Constructor que Recive dos Parámetro, Para Crear un Objeto con sus Propiedades.
-    {
-        this.x = x;
-        this.y = y;
-    }
+    private int x = x;
+    private int y = y;
 
     public int GetX() { return x; } // Getter para Obtener los Datos del Objeto.
 

@@ -99,10 +99,6 @@
                 case "Elipse":
                     figura = new Elipse(getInt(datos[i + 1]), getInt(datos[i + 2]), getInt(datos[i + 3]), getInt(datos[i + 4]));
                     break;
-                //default:
-                //    Console.WriteLine(datos[i][j] + "\n");
-                //    j++;
-                //    break;
             }
             Console.WriteLine("\n\n{0}\n", figura);
         }

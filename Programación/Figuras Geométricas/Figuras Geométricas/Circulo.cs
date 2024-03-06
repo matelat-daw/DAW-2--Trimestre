@@ -1,11 +1,6 @@
-﻿public class Circulo: Figura // Círculos.
+﻿public class Circulo(int x, int y, int radio) : Figura(x, y) // Círculos.
 {
-    private readonly int radio;
-
-    public Circulo (int x, int y, int radio) : base(x, y)
-    {
-        this.radio = radio;
-    }
+    private readonly int radio = radio;
 
     public int GetRadio() { return radio; }
 
@@ -24,9 +19,9 @@
         Drawing.ShowCircle(radio);
     }
 
-    public override string ToString()
-    {
-        // return String.Format("El Circulo de Radio: {0} Tiene un Perímetro de: {1:F2} y un Área de: {2:F2}", GetRadio(), Perimetro(), Area());
-        return $"El Circulo de Radio: {GetRadio()} Tiene un Perímetro de: {Perimetro():F2} y un Área de: {Area():F2}";
-    }
+    //public override string ToString()
+    //{
+    //    // return String.Format("El Circulo de Radio: {0} Tiene un Perímetro de: {1:F2} y un Área de: {2:F2}", GetRadio(), Perimetro(), Area());
+    //    return $"El Circulo de Radio: {GetRadio()} Tiene un Perímetro de: {Perimetro():F2} y un Área de: {Area():F2}";
+    //}
 }

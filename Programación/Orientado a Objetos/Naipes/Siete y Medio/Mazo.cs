@@ -3,8 +3,8 @@
     private int baraja = 0;
     private int j = 0;
     public static int numCartas = 40;
-    private Carta[] carta = new Carta[numCartas];
-    private Random alea = new Random();
+    private static Carta[] carta = new Carta[numCartas];
+    private static Random alea = new Random();
 
     public Mazo()
     {
@@ -19,7 +19,22 @@
         }
     }
 
-    public Carta DaCarta() // Función que Retorna la Carta que se Selecciona Aleatoriamente. El switch lo Puse Yo Porque me Gusta, Pero no lo Pide.
+    public void Baraja()
+    {
+        Mazo mazo = new();
+    }
+
+    //public double GetPlayer()
+    //{
+    //    return AskPlayer();
+    //}
+
+    //public double GetBank()
+    //{
+    //    return AskBank();
+    //}
+
+    public static Carta DaCarta() // Función que Retorna la Carta que se Selecciona Aleatoriamente. El switch lo Puse Yo Porque me Gusta, Pero no lo Pide.
     {
         Carta aux = null; // carta Auxiliar que Contendrá los Datos del Objeto Carta que se Obtiene con el Número Aleatorio.
 
