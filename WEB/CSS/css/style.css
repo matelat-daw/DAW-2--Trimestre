@@ -1,0 +1,50 @@
+body
+{
+    background-color: #666666;
+}
+
+
+li
+{
+    height: 90px;
+    width: 90px;
+    list-style: none;
+    float: left;
+    margin: 2px;
+}
+
+li:nth-child(1n)
+{
+    background-color: antiquewhite;
+    transform: rotate(-5deg);
+}
+
+li:nth-child(2n)
+{
+    background-color: lightgreen;
+    transform: rotate(0deg);
+    width: 120px;
+    height: 110px;
+    box-shadow: 7px 7px 5px;
+}
+
+li:nth-child(6n)
+{
+    width: 90px;
+    height: 90px;
+    box-shadow: 0 0;
+    transform: rotate(-3deg);
+}
+
+li:nth-child(3n)
+{
+    background-color: #ccccfe;
+}
+
+li:nth-child(4n), :nth-child(5n)
+{
+    width: 90px;
+    height: 90px;
+    transform: rotate(5deg);
+    box-shadow: 0 0;
+}
