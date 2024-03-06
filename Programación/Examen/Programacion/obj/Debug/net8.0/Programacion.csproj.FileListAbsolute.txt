@@ -1,0 +1,15 @@
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\bin\Debug\net8.0\Programacion.exe
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\bin\Debug\net8.0\Programacion.deps.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\bin\Debug\net8.0\Programacion.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\bin\Debug\net8.0\Programacion.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\bin\Debug\net8.0\Programacion.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\obj\Debug\net8.0\Programacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\obj\Debug\net8.0\Programacion.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\obj\Debug\net8.0\Programacion.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\obj\Debug\net8.0\Programacion.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\obj\Debug\net8.0\Programacion.sourcelink.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\obj\Debug\net8.0\Programacion.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\obj\Debug\net8.0\refint\Programacion.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\obj\Debug\net8.0\Programacion.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\obj\Debug\net8.0\Programacion.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Programacion\obj\Debug\net8.0\ref\Programacion.dll
