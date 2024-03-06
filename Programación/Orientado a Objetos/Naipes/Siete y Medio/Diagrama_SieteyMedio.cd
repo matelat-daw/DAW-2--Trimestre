@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Siete_y_Medio.Program">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Naipes.Mazo">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAABYAAAAAAAAABEAAAAQAAA=</HashCode>
+      <FileName>Mazo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Naipes.Carta">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAEAAQAAAAAAAAAAAAAEAAAAAEAA=</HashCode>
+      <FileName>Carta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Siete_y_Medio.Mano" Collapsed="true">
+    <Position X="2" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgYAABAAABAABAAAAAAAAA=</HashCode>
+      <FileName>Mano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Siete_y_Medio.Mano_Siete_y_Media" Collapsed="true">
+    <Position X="2" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQADAAAAAgAAAA=</HashCode>
+      <FileName>ManoSieteyMedia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Naipes.Palo">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAABAAgAAAAAAAAAAg=</HashCode>
+      <FileName>Palo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

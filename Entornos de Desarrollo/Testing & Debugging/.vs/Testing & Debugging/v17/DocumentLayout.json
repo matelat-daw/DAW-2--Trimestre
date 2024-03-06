@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Orion\\source\\repos\\Testing \u0026 Debugging\\",
+  "WorkspaceRootPath": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Entornos de Desarrollo\\Testing \u0026 Debugging\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73AA2CBC-EAA4-4D94-8DE8-66D27EEF3993}|Pokemon Tests\\Pokemon Tests.csproj|c:\\users\\orion\\source\\repos\\testing \u0026 debugging\\pokemon tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6840E518-D5E6-4F6D-8BFE-F021B35CFF80}|Test Ejercicio 3\\Test Ejercicio 3.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\entornos de desarrollo\\testing \u0026 debugging\\test ejercicio 3\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6840E518-D5E6-4F6D-8BFE-F021B35CFF80}|Test Ejercicio 3\\Test Ejercicio 3.csproj|solutionrelative:test ejercicio 3\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73AA2CBC-EAA4-4D94-8DE8-66D27EEF3993}|Pokemon Tests\\Pokemon Tests.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\entornos de desarrollo\\testing \u0026 debugging\\pokemon tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73AA2CBC-EAA4-4D94-8DE8-66D27EEF3993}|Pokemon Tests\\Pokemon Tests.csproj|solutionrelative:pokemon tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48274A14-BE10-4C8D-8190-5A3695DA1602}|Pokemon\\Pokemon.csproj|c:\\users\\orion\\source\\repos\\testing \u0026 debugging\\pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48274A14-BE10-4C8D-8190-5A3695DA1602}|Pokemon\\Pokemon.csproj|solutionrelative:pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73AA2CBC-EAA4-4D94-8DE8-66D27EEF3993}|Pokemon Tests\\Pokemon Tests.csproj|c:\\users\\orion\\source\\repos\\testing \u0026 debugging\\pokemon tests\\pokemon tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{73AA2CBC-EAA4-4D94-8DE8-66D27EEF3993}|Pokemon Tests\\Pokemon Tests.csproj|solutionrelative:pokemon tests\\pokemon tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,40 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Pokemon Tests.csproj",
-              "DocumentMoniker": "C:\\Users\\Orion\\source\\repos\\Testing \u0026 Debugging\\Pokemon Tests\\Pokemon Tests.csproj",
-              "RelativeDocumentMoniker": "Pokemon Tests\\Pokemon Tests.csproj",
-              "ToolTip": "C:\\Users\\Orion\\source\\repos\\Testing \u0026 Debugging\\Pokemon Tests\\Pokemon Tests.csproj",
-              "RelativeToolTip": "Pokemon Tests\\Pokemon Tests.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-04T15:17:19.851Z"
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Entornos de Desarrollo\\Testing \u0026 Debugging\\Pokemon Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Pokemon Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Entornos de Desarrollo\\Testing \u0026 Debugging\\Pokemon Tests\\UnitTest1.cs",
+              "RelativeToolTip": "Pokemon Tests\\UnitTest1.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAEcAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T12:47:48.998Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\source\\repos\\Testing \u0026 Debugging\\Pokemon Tests\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "Pokemon Tests\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\Orion\\source\\repos\\Testing \u0026 Debugging\\Pokemon Tests\\UnitTest1.cs",
-              "RelativeToolTip": "Pokemon Tests\\UnitTest1.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAACsAAABeAAAA",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Entornos de Desarrollo\\Testing \u0026 Debugging\\Test Ejercicio 3\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Test Ejercicio 3\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Entornos de Desarrollo\\Testing \u0026 Debugging\\Test Ejercicio 3\\UnitTest1.cs",
+              "RelativeToolTip": "Test Ejercicio 3\\UnitTest1.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T15:13:51.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\source\\repos\\Testing \u0026 Debugging\\Pokemon\\Program.cs",
-              "RelativeDocumentMoniker": "Pokemon\\Program.cs",
-              "ToolTip": "C:\\Users\\Orion\\source\\repos\\Testing \u0026 Debugging\\Pokemon\\Program.cs",
-              "RelativeToolTip": "Pokemon\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T15:12:43.999Z",
+              "WhenOpened": "2024-03-06T12:47:43.232Z",
               "EditorCaption": ""
             }
           ]

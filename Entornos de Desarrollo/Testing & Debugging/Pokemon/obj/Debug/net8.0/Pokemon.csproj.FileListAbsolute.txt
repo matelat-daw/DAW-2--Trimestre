@@ -12,3 +12,18 @@ C:\Users\Orion\source\repos\Testing & Debugging\Pokemon\obj\Debug\net8.0\refint\
 C:\Users\Orion\source\repos\Testing & Debugging\Pokemon\obj\Debug\net8.0\Pokemon.pdb
 C:\Users\Orion\source\repos\Testing & Debugging\Pokemon\obj\Debug\net8.0\Pokemon.genruntimeconfig.cache
 C:\Users\Orion\source\repos\Testing & Debugging\Pokemon\obj\Debug\net8.0\ref\Pokemon.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\bin\Debug\net8.0\Pokemon.exe
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\bin\Debug\net8.0\Pokemon.deps.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\bin\Debug\net8.0\Pokemon.runtimeconfig.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\bin\Debug\net8.0\Pokemon.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\bin\Debug\net8.0\Pokemon.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\obj\Debug\net8.0\Pokemon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\obj\Debug\net8.0\Pokemon.AssemblyInfoInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\obj\Debug\net8.0\Pokemon.AssemblyInfo.cs
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\obj\Debug\net8.0\Pokemon.csproj.CoreCompileInputs.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\obj\Debug\net8.0\Pokemon.sourcelink.json
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\obj\Debug\net8.0\Pokemon.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\obj\Debug\net8.0\refint\Pokemon.dll
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\obj\Debug\net8.0\Pokemon.pdb
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\obj\Debug\net8.0\Pokemon.genruntimeconfig.cache
+C:\Users\orion\Documents\DAW-2º-Trimestre\Entornos de Desarrollo\Testing & Debugging\Pokemon\obj\Debug\net8.0\ref\Pokemon.dll

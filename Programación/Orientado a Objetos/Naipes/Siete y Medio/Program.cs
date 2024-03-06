@@ -1,4 +1,8 @@
-﻿public class Program
+﻿namespace Siete_y_Medio;
+
+using Naipes;
+
+public class Program
 {
     public static double player = 0.0;
     public static double banca = 0.0;
@@ -8,9 +12,9 @@
         Console.WriteLine("Juego del 7 y Medio.\n");
         Mazo mazo = new();
         Console.WriteLine("\nEsta es tu Mano.\n");
-        player = mazo.GetPlayer();
+        player = Mano_Siete_y_Media.CuentaPuntos();
         Console.WriteLine("\nAhora la Banca Sacará Carta.\n");
-        banca = mazo.GetBank();
+        banca = Mano_Siete_y_Media.CuentaPuntosBanca();
         if (player > 7.5 && banca > 7.5)
         {
             Console.WriteLine("No Pierdes, Tú te has Pasado, Pero la Banca También se ha Pasado.");

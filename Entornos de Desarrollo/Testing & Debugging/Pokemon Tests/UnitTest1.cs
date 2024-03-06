@@ -69,7 +69,7 @@ namespace Pokemon_Tests
         [TestMethod]
         public void ErrorEmpty1() // Da el Mismo Error que Pasándole NULL, ErrorNULL1().
         {
-            string result = Program.StrongestPokemon("", 'a');
+            string result = Program.StrongestPokemon("", 3);
             Assert.AreEqual("Error", result);
         }
 
