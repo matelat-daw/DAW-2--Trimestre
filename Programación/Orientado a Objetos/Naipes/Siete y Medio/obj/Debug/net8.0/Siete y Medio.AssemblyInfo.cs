@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Siete y Medio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91cb1da0161a21a0173196da0489e934f9f09e0f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b3ab9f5a41b54c08de68c7b6d3fd365ba63c211")]
 [assembly: System.Reflection.AssemblyProductAttribute("Siete y Medio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Siete y Medio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,8 +6,8 @@
     static void Main(string[] args)
     {
         Console.WriteLine("Juego del 7 y Medio.\n");
-        Mazo mazo = new Mazo();
-
+        Mazo mazo = new();
+        Console.WriteLine("\nEsta es tu Mano.\n");
         player = mazo.GetPlayer();
         Console.WriteLine("\nAhora la Banca Sacará Carta.\n");
         banca = mazo.GetBank();
