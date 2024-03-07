@@ -7,9 +7,9 @@ public class Program
         string[,] array = {{"Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola"},
         { "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola"},
         { "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola"},
-        { "Hola", "Hola", "Hola", "Chao", "Hola", "Hola", "Hola", "Hola"},
         { "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola"},
         { "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola"},
+        { "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Chao", "Hola"},
         { "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola"},
         { "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola", "Hola"} }; // Array de 8 x 8;
 
@@ -17,7 +17,7 @@ public class Program
         Punto punto = Busca(array, "Chao"); // Asigno al Punto punto el Resultado de la Llamada al Método.
         if (punto != null) // Si No Devolvió null.
         {
-            Console.WriteLine($"Las Coordenadas don de está la palabra Buscada son X: {punto.GetX()} e Y: {punto.GetY()}");
+            Console.WriteLine($"Las Coordenadas donde está la Frase Buscada son X: {punto.GetX()} e Y: {punto.GetY()}");
         }
         else
         {
@@ -48,7 +48,10 @@ public class Program
     {
         Punto punto = null; // Incializo punto a null, si no Encuentra la Frase en el Array Devuelve null.
         Punto c1 = new(2, 2); // Creo un punto con las coordenadas 2, 2.
-        Punto c2 = new(5, 6); // Creo otro punto con las coordenadas 4, 4.
+        Punto c2 = new(7, 7); // Creo otro punto con las coordenadas 4, 4.
+        int i_aux = -1; // Uso el i_aux Para Conservar el Valor de i si Encuentro la Cadena en j.
+        int j_aux = -1; // Uso j_aux Para Conservar el Valor de j si Encuentro la Cadena en j, ya que el Salir del Bucle j se Reinícia.
+        bool encontrado = false; // El Booleano se pone a true si Encuentra la Cadena en j.
         int i = c1.GetY(); // Asigno a i la Coordenada Vertical de Inicio (Y).
         int j = c1.GetX(); // Asigno a j la Coodenada Horizontal de Inicio (X).
 
@@ -59,18 +62,24 @@ public class Program
             {
                 j++; // Si no Encuentra la Frase o j aun no Superó el Limite Superior, Incrementa j.
             }
-            if (array[i, j] == frase) // A la Salida del while Para j hay que Verificar si la Frase Está en Esas Coordenadas.
+            if (j <= c2.GetX()) // A la Salida del while Para j hay que Verificar si j no es Mayor que el Límite Máximo de Busqueda.
             {
-                punto = new(j, i); // Si Está la Frase, Creo el Punto con las Coordenadas.
-                i = c2.GetY(); // Igual i al Límite Superior.
+                encontrado = true; // Si se Encontró la Frase, Pongo encontrado a true.
+                i_aux = i; // Asigno el Valor de i a i_aux, para Tener el Valor de i Donde Está la Frase.
+                j_aux = j; // Asigno el Valor de j a j_aux, para Tener el Valor de j Donde Está la Frase.
+                i = c2.GetY(); // Igualo i al Límite Superior, Para Salir del Bucle Exterior.
             }
             i++; // Incrementa i
             j = c1.GetX(); // Reincio j a la Coordenada de Inicio.
         }
-        if (array[i, j] == frase) // A la Salida Hay que Volver a Comprobar si La Frase Está en Esas Coordenadas, por si la Encontró Cuando Cambió i. El Problema de esto es que Si la Coordenada Final es la Última del Array al Salir sin Encontrar, i Será Mayor que la Cantidad de Items en el Array y Dará Index Out of Range Exception por ejemplo si i llega a 7 que es la Última Posición en la que se Puede Buscar en el Array y no se Puede Buscar i < c2.GetY(), Porque Estáriamos Dejando Afuera la Última Posición que se Desea Buscar, se Puede Solucionar Preguntando si la Última posición del Rango en el que se quiere Buscar la Frase es la Última, en ese caso hay que hacer el Bucle a i < c2.GetY().
+        if (i > c2.GetY() && encontrado) // Si Salió del Bucle Externo con i Mayor que el Límite pero encontrando la Frase.
         {
-            punto = new(j, i);
+            punto = new(j_aux, i_aux); // Creo el Punto punto con las Coordenadas j_aux(X), i_aux(Y).
         }
-        return punto; // Con el Doble Bucle for Es Mucho más Sencillo, Método que está Comentado Arriba, Pruebenlo.
+        else if (i <= c2.GetY()) // Si no se Cumple la Condición Anterior, Compruebo si i es Menor que el Límite de Busqueda
+        {
+            punto = new(j, i); // Si es así es que Encontró la Frase en j, i, Instancio el Punto con las Coordenadas j(X) e i(Y).
+        }
+        return punto; // Devuelvo el punto.
     }
 }
