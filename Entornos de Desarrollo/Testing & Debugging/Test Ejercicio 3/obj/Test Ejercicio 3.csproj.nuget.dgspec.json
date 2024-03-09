@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Orion\\source\\repos\\Testing & Debugging\\Test Ejercicio 3\\Test Ejercicio 3.csproj": {}
+    "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Test Ejercicio 3\\Test Ejercicio 3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Orion\\source\\repos\\Testing & Debugging\\Test Ejercicio 3\\Test Ejercicio 3.csproj": {
+    "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Test Ejercicio 3\\Test Ejercicio 3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Orion\\source\\repos\\Testing & Debugging\\Test Ejercicio 3\\Test Ejercicio 3.csproj",
+        "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Test Ejercicio 3\\Test Ejercicio 3.csproj",
         "projectName": "Test Ejercicio 3",
-        "projectPath": "C:\\Users\\Orion\\source\\repos\\Testing & Debugging\\Test Ejercicio 3\\Test Ejercicio 3.csproj",
+        "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Test Ejercicio 3\\Test Ejercicio 3.csproj",
         "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Orion\\source\\repos\\Testing & Debugging\\Test Ejercicio 3\\obj\\",
+        "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Test Ejercicio 3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",

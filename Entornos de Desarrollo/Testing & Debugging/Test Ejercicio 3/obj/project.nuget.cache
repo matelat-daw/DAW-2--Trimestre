@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cPWG5buqS0CGuQV89XrBrxkppn5FjWoq+z/a2UMgYGcytef6Qev2+hGwBdb+NgotwTehKjOBj4Zj0tzwTgMPGA==",
+  "dgSpecHash": "Crp0vkN9cDW6ZKg5aCgdxGojw4Sh1KeWGXJHNt9TLk/JJv5iigUHvdD/3hUba3QB0jCGEht+FAK5atO2fubZsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Orion\\source\\repos\\Testing & Debugging\\Test Ejercicio 3\\Test Ejercicio 3.csproj",
+  "projectFilePath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Test Ejercicio 3\\Test Ejercicio 3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Orion\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Orion\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
