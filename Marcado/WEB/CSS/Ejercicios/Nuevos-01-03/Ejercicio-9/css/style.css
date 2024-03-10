@@ -1,0 +1,24 @@
+.mes
+{
+    font-size: 4em;
+    margin-left: 10px;
+    text-shadow: 5px 5px 10px #ff0000, 10px 10px 10px #00ff00, 15px 15px 10px #0000ff;
+}
+
+.dia
+{
+    color: red;
+    position: relative;
+    top: 160px;
+    left: 20px;
+    font-size: 6em;
+}
+
+.anio
+{
+    font-size: 3.5em;
+    position: relative;
+    top: -315px;
+    left: -165px;
+    transform: rotate(-90deg);
+}

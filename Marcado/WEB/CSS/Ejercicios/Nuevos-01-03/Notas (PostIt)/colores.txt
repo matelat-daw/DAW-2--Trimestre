@@ -1,0 +1,7 @@
+arial
+
+Fondo pagina #666
+fondo notas:
+#ffc
+#cfc
+#ccf
