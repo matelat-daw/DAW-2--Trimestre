@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pasajero")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+befe5a270c554e04ab0ee0b947b11d7a77366e82")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+384ae600287f909bfdced50866e82f2808ff6f57")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pasajero")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pasajero")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
