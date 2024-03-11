@@ -1,3 +1,8 @@
+h2::before
+{
+    content: "Tablero";
+}
+
 table
 {
     border-collapse: collapse;
@@ -6,16 +11,16 @@ table
 td
 {
     border: 1px solid black;
-    width: 100px;
-    height: 75px;
+    width: 30px;
+    height: 30px;
 }
 
-td:nth-child(odd) :nth-child(n + 2)
+tr:nth-child(odd) > td:nth-child(odd)
 {
     background: black;
 }
 
-tr:nth-child(even)
+tr:nth-child(even) > td:nth-child(even)
 {
     background: black;
 }
