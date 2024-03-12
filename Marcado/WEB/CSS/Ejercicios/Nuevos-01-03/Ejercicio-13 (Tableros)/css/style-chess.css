@@ -11,16 +11,17 @@ table
 td
 {
     border: 1px solid black;
+    background: black;
     width: 30px;
     height: 30px;
 }
 
-tr:nth-child(odd) > td:nth-child(odd)
-{
-    background: black;
-}
-
 tr:nth-child(even) > td:nth-child(even)
 {
-    background: black;
+    background: white;
+}
+
+tr:nth-child(odd) > td:nth-child(odd)
+{
+    background: white;
 }
