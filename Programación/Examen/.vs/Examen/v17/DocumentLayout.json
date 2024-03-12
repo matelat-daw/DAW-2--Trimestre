@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0EC578D0-F533-4F5B-B1C5-38B5E28E602A}|Programacion\\Programacion.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\examen\\programacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EC578D0-F533-4F5B-B1C5-38B5E28E602A}|Programacion\\Programacion.csproj|solutionrelative:programacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF7E088C-1423-4198-8D7B-272241410E4F}|Sorteo Nombre\\Sorteo Nombre.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\examen\\sorteo nombre\\abstractasorteo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7E088C-1423-4198-8D7B-272241410E4F}|Sorteo Nombre\\Sorteo Nombre.csproj|solutionrelative:sorteo nombre\\abstractasorteo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CBA9028-8097-4ACD-9F2B-E2CE77FFA703}|Sorteo\\Sorteo.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\examen\\sorteo\\sorteo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CBA9028-8097-4ACD-9F2B-E2CE77FFA703}|Sorteo\\Sorteo.csproj|solutionrelative:sorteo\\sorteo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF7E088C-1423-4198-8D7B-272241410E4F}|Sorteo Nombre\\Sorteo Nombre.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\examen\\sorteo nombre\\sorteo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7E088C-1423-4198-8D7B-272241410E4F}|Sorteo Nombre\\Sorteo Nombre.csproj|solutionrelative:sorteo nombre\\sorteo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0EC578D0-F533-4F5B-B1C5-38B5E28E602A}|Programacion\\Programacion.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\examen\\programacion\\punto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EC578D0-F533-4F5B-B1C5-38B5E28E602A}|Programacion\\Programacion.csproj|solutionrelative:programacion\\punto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF7E088C-1423-4198-8D7B-272241410E4F}|Sorteo Nombre\\Sorteo Nombre.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\examen\\sorteo nombre\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7E088C-1423-4198-8D7B-272241410E4F}|Sorteo Nombre\\Sorteo Nombre.csproj|solutionrelative:sorteo nombre\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CBA9028-8097-4ACD-9F2B-E2CE77FFA703}|Sorteo\\Sorteo.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\examen\\sorteo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CBA9028-8097-4ACD-9F2B-E2CE77FFA703}|Sorteo\\Sorteo.csproj|solutionrelative:sorteo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF7E088C-1423-4198-8D7B-272241410E4F}|Sorteo Nombre\\Sorteo Nombre.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\examen\\sorteo nombre\\sorteosinduplicados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7E088C-1423-4198-8D7B-272241410E4F}|Sorteo Nombre\\Sorteo Nombre.csproj|solutionrelative:sorteo nombre\\sorteosinduplicados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,52 +35,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Programacion\\Program.cs",
-              "RelativeDocumentMoniker": "Programacion\\Program.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Programacion\\Program.cs",
-              "RelativeToolTip": "Programacion\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA/AAAA",
+              "Title": "AbstractaSorteo.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Sorteo Nombre\\AbstractaSorteo.cs",
+              "RelativeDocumentMoniker": "Sorteo Nombre\\AbstractaSorteo.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Sorteo Nombre\\AbstractaSorteo.cs",
+              "RelativeToolTip": "Sorteo Nombre\\AbstractaSorteo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T05:41:11.441Z",
+              "WhenOpened": "2024-03-12T16:24:41.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SorteoSinDuplicados.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Sorteo Nombre\\SorteoSinDuplicados.cs",
+              "RelativeDocumentMoniker": "Sorteo Nombre\\SorteoSinDuplicados.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Sorteo Nombre\\SorteoSinDuplicados.cs",
+              "RelativeToolTip": "Sorteo Nombre\\SorteoSinDuplicados.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T16:23:05.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Sorteo.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Sorteo\\Sorteo.cs",
-              "RelativeDocumentMoniker": "Sorteo\\Sorteo.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Sorteo\\Sorteo.cs",
-              "RelativeToolTip": "Sorteo\\Sorteo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAByAAAA",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Sorteo Nombre\\Sorteo.cs",
+              "RelativeDocumentMoniker": "Sorteo Nombre\\Sorteo.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Sorteo Nombre\\Sorteo.cs",
+              "RelativeToolTip": "Sorteo Nombre\\Sorteo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T18:11:42.645Z",
+              "WhenOpened": "2024-03-12T16:22:53.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Sorteo\\Program.cs",
-              "RelativeDocumentMoniker": "Sorteo\\Program.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Sorteo\\Program.cs",
-              "RelativeToolTip": "Sorteo\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T18:10:50.501Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Punto.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Programacion\\Punto.cs",
-              "RelativeDocumentMoniker": "Programacion\\Punto.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Programacion\\Punto.cs",
-              "RelativeToolTip": "Programacion\\Punto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAgAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Sorteo Nombre\\Program.cs",
+              "RelativeDocumentMoniker": "Sorteo Nombre\\Program.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Examen\\Sorteo Nombre\\Program.cs",
+              "RelativeToolTip": "Sorteo Nombre\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T16:49:47.177Z"
+              "WhenOpened": "2024-03-12T16:20:24.853Z",
+              "EditorCaption": ""
             }
           ]
         }
