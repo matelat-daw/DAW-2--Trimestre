@@ -1,0 +1,10 @@
+.hide
+{
+    display: none;
+}
+
+/* .pick:checked .hide */
+#pick:checked ~ .hide
+{
+    display: block;
+}

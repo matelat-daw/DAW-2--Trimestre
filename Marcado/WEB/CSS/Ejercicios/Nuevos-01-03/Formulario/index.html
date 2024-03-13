@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Contact</h1>
+    <p>Escribe!</p>
+    <fieldset>
+        <legend>Información</legend>
+        <br>
+        <label>Nombre: <input type="text" name="username"></label>
+        <br><br>
+        <label>Teléfono: <input type="text" name="phone"></label>
+        <br><br>
+        <label>Dirección: <input type="text" name="address"></label>
+        <br><br>
+        <label>Comunidad: <select name="state">
+            <option value="">Selecciona tu Comunidad</option>
+            <optgroup label="A">
+                <option value="Andalucía">Andalucía</option>
+                <option value="Andalucía">Andalucía</option>
+                <option value="Andalucía">Andalucía</option>
+                <option value="Andalucía">Andalucía</option>
+                <option value="Andalucía">Andalucía</option>
+                <option value="Andalucía">Andalucía</option>
+                <option value="Andalucía">Andalucía</option>
+                <option value="Andalucía">Andalucía</option>
+            </optgroup>
+            <optgroup label="B">
+                <option value="Barcelona">Barcelona</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Barcelona">Barcelona</option>
+            </optgroup>
+        </select></label>
+        <br><br>
+        <label>Código Postal: <input type="text" name="cp"></label>
+        <br><br>
+    </fieldset>
+    <fieldset>
+        <label>Pincha para recibir información: <input id="pick" type="checkbox" name="options"></label>
+        <br><br>
+        <div class="hide">
+            <label><input type="checkbox" name="ten1"> Tenerife</label>
+            <br><br>
+            <label><input type="checkbox" name="ten2"> Tenerife Calma</label>
+            <br><br>
+            <label><input type="checkbox" name="ten3"> Tenerife</label>
+            <br><br>
+            <label><input type="checkbox" name="ten4"> Tenerife</label>
+            <br><br>
+            <label><input type="checkbox" name="ten5"> Tenerife</label>
+            <br><br>
+            <label><input type="checkbox" name="ten6"> Tenerife</label>
+            <br><br>
+            <label><input type="checkbox" name="ten7"> Tenerife</label>
+            <br><br>
+            <label><input type="checkbox" name="ten8"> Tenerife</label>
+            <br><br>
+            <label><input type="checkbox" name="ten9"> Tenerife</label>
+            <br><br><br>
+        </div>
+        <input type="submit" value="Enviame">
+    </fieldset>
+</body>
+</html>
