@@ -1,0 +1,28 @@
+Para Obtener el nombre y el índice del adaptador de red en PowerShell:
+
+Get-NetAdapter
+
+Para Cambiar la IP el Gateway y la Máscara de subred, se usa el índice del adaptador:
+
+New-NetIPAddress -InterfaceIndex 5 -AddressFamily IPv4 -IPAddress 172.16.1.254 -DefaultGateway 172.16.1.254 -PrefixLength 24
+
+
+Para Activar el DHCP en el adaptador de red, se usa el nombre del adaptador:
+
+Set-NetIPInterface -InterfaceAlias "Ethernet0" -Dhcp Enabled
+
+Otros comandos, se pueden usar también en CMD:
+
+Para ver la configuración del adaptador de red:
+
+ipconfig
+
+Para seguir una ruta a una dirección IP:
+
+tracert google.es
+
+Para saber si una máquina de la red responde:
+
+ping 192.168.0.1 red Privada
+
+ping 8.8.8.8 red Pública.

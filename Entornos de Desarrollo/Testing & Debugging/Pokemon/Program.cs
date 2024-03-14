@@ -20,7 +20,7 @@
                 result = StrongestPokemon("pokemon.csv", number); // Llama al Método para saber Cual es el Pokemon com más Ataque de su Generación.
                 Console.WriteLine($"El Pokemon de la Generación: {number} que más Ataque tiene es: {result}"); // Muestra el Resutado.
 
-                // FilterPokemon(directorioBase); // Llama al Método que Almacena en un Fichero los Pokemon que Son de 2 Tipos.
+                FilterPokemon(directorioBase); // Llama al Método que Almacena en un Fichero los Pokemon que Son de 2 Tipos.
                 Console.WriteLine("Presiona Enter para Terminar.");
                 Console.ReadLine();
             }

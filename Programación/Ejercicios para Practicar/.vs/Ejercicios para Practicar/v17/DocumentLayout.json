@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Ejercicios para Practicar\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F58290D6-6034-4405-ACCC-FDF7A40A264A}|Tranvia\\Tranvia.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\ejercicios para practicar\\tranvia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F58290D6-6034-4405-ACCC-FDF7A40A264A}|Tranvia\\Tranvia.csproj|solutionrelative:tranvia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F58290D6-6034-4405-ACCC-FDF7A40A264A}|Tranvia\\Tranvia.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\ejercicios para practicar\\tranvia\\tranvia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F58290D6-6034-4405-ACCC-FDF7A40A264A}|Tranvia\\Tranvia.csproj|solutionrelative:tranvia\\tranvia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Ejercicios para Practicar\\Tranvia\\Program.cs",
+              "RelativeDocumentMoniker": "Tranvia\\Program.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Ejercicios para Practicar\\Tranvia\\Program.cs",
+              "RelativeToolTip": "Tranvia\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T20:33:35.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tranvia.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Ejercicios para Practicar\\Tranvia\\Tranvia.cs",
+              "RelativeDocumentMoniker": "Tranvia\\Tranvia.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Ejercicios para Practicar\\Tranvia\\Tranvia.cs",
+              "RelativeToolTip": "Tranvia\\Tranvia.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAYwEsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T20:33:32.266Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

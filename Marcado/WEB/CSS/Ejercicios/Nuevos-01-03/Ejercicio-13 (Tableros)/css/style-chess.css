@@ -1,0 +1,27 @@
+h2::before
+{
+    content: "Tablero";
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+td
+{
+    border: 1px solid black;
+    background: black;
+    width: 30px;
+    height: 30px;
+}
+
+tr:nth-child(even) > td:nth-child(even)
+{
+    background: white;
+}
+
+tr:nth-child(odd) > td:nth-child(odd)
+{
+    background: white;
+}

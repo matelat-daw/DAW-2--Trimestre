@@ -1,0 +1,21 @@
+h2::before
+{
+    content: "Columnas";
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+td
+{
+    border: 1px solid black;
+    width: 100px;
+    height: 75px;
+}
+
+td:nth-child(odd)
+{
+    background: black;
+}

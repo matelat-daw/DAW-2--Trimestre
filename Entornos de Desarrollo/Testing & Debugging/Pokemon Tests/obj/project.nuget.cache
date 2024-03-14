@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "nqQQbzYEKcEtOVIi2O6A4yJWoXoPdk1C3PlqcWkdaBYI3VndQ1/4rV0syW2ax9hjBluMnUSNLLwfMH7iUxylXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Pokemon Tests\\Pokemon Tests.csproj",
+=======
+  "dgSpecHash": "j/pLmRI+/xFOdUqUkFXlJ0A8w1kudVhyUGLVNDDChS/5/7UT2Wz5zugZOnb1F6Gx9bDtaWQT0w+164nz/IEYVw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Pokemon Tests\\Pokemon Tests.csproj",
+>>>>>>> 706c3668d0414ef0ae9665a8c90588603931d9f9
   "expectedPackageFiles": [
     "C:\\Users\\orion\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\orion\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

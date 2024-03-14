@@ -1,0 +1,15 @@
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\bin\Debug\net8.0\Sorteo.exe
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\bin\Debug\net8.0\Sorteo.deps.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\bin\Debug\net8.0\Sorteo.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\bin\Debug\net8.0\Sorteo.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\bin\Debug\net8.0\Sorteo.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\obj\Debug\net8.0\Sorteo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\obj\Debug\net8.0\Sorteo.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\obj\Debug\net8.0\Sorteo.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\obj\Debug\net8.0\Sorteo.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\obj\Debug\net8.0\Sorteo.sourcelink.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\obj\Debug\net8.0\Sorteo.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\obj\Debug\net8.0\refint\Sorteo.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\obj\Debug\net8.0\Sorteo.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\obj\Debug\net8.0\Sorteo.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\Examen\Sorteo\obj\Debug\net8.0\ref\Sorteo.dll
