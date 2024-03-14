@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Just a Toggle Button</title>
+</head>
+<style>
+    #toggle {
+    display: none;
+  }
+  
+  label {
+    display: inline-block;
+    border: 2px solid black;
+    width: 70px;
+    height: 36px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 32px;
+    z-index: 0;
+  }
+
+  span
+  {
+    position: relative;
+    top: 10px;
+    z-index: -1;
+  }
+  
+  label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 32px;
+    height: 32px;
+    background-color: green;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+
+  input:checked + label:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: red;
+  }
+  
+  #toggle:checked + label {
+    background-color: #ccc;
+  }
+  
+  #toggle:checked + label::before {
+    transform: translateX(33px);
+  }
+</style>
+<body>
+    <input type="checkbox" id="toggle" />
+   <label for="toggle">
+    <span>
+        &nbsp;OFF&nbsp;&nbsp;ON
+       </span>
+   </label>
+</body>
+</html>
