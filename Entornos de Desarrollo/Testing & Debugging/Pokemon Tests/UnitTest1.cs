@@ -64,12 +64,21 @@ public class UnitTest1
         Assert.AreEqual("Error", result);
     }
 
+<<<<<<< HEAD
+        [TestMethod]
+        public void ErrorEmpty1() // Da el Mismo Error que Pasándole NULL, ErrorNULL1().
+        {
+            string result = Program.StrongestPokemon("", 3);
+            Assert.AreEqual("Error", result);
+        }
+=======
     [TestMethod]
     public void ErrorEmpty1() // Da el Mismo Error que Pasándole NULL, ErrorNULL1().
     {
         string result = Program.StrongestPokemon("", 'a');
         Assert.AreEqual("Error", result);
     }
+>>>>>>> 706c3668d0414ef0ae9665a8c90588603931d9f9
 
     [TestMethod]
     public void ErrorNULL1() // Da el Mismo Error que Pasándole "" (String Vacia), ErrorEmpty1().

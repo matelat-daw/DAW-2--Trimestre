@@ -1,6 +1,19 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Pokemon\\Pokemon.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Pokemon\\Pokemon.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Pokemon\\Pokemon.csproj",
+        "projectName": "Pokemon",
+        "projectPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Pokemon\\Pokemon.csproj",
+        "packagesPath": "C:\\Users\\orion\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Pokemon\\obj\\",
+=======
     "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Pokemon\\Pokemon.csproj": {}
   },
   "projects": {
@@ -12,9 +25,10 @@
         "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Pokemon\\Pokemon.csproj",
         "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Pokemon\\obj\\",
+>>>>>>> 706c3668d0414ef0ae9665a8c90588603931d9f9
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

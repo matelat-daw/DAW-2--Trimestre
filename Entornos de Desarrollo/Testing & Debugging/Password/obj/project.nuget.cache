@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "FMTvrGzUDEdvKa6OT6SGqG2IlWMnlZcJHOv7qXPA7bxSHXVhtwYQLsB2ZsREW2XnOH8rjGCSHP23kTkHEDJbwg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Password\\Password.csproj",
+=======
   "dgSpecHash": "VWA8kiLKbTS4i6RYxByb6dMNK+G+kQNBSKBNHEQA8wRLUsiE/zPj7Zi6UkRivjaKlMZFLsqBxKkeWcOtMjgpIQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Password\\Password.csproj",
+>>>>>>> 706c3668d0414ef0ae9665a8c90588603931d9f9
   "expectedPackageFiles": [],
   "logs": []
 }

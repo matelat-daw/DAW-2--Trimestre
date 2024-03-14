@@ -1,20 +1,41 @@
-﻿
+﻿namespace Siete_y_Medio;
+
+using Naipes;
+
 public abstract class Mano
 {
-    public Mano() { }
+    public int numCartas = 0;
+    public Carta[] cartas;
+    private const int TOPE = 20;
+
+    public Mano() : this(TOPE) { }
 
     public Mano(int num)
     {
-
+        if (num > TOPE)
+        {
+            throw new Exception($"No se aceptan más de {TOPE} cartas n la Mano.");
+        }
+        cartas = new Carta[num];
     }
 
-    public static void DescartaTodas()
+    public void DescartaTodas()
     {
-        Mazo mazo = new();
+        numCartas = 0;
     }
 
-    protected int AnadeCarta(Carta carta)
+    public void AnadeCarta(Carta carta)
     {
-        return carta.getNumero() + 1;
+        cartas[numCartas++] = carta;
+    }
+
+    public int NumeroCartas()
+    {
+        return numCartas;
+    }
+
+    protected abstract double CuentaPuntos()
+    {
+
     }
 }

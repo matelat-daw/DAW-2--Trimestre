@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\",
+  "WorkspaceRootPath": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\mano siete y media.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\mano siete y media.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\manosieteymedia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\manosieteymedia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\mano.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\mano.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\mano.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\mano.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\diagrama_sieteymedio.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\diagrama_sieteymedio.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\palo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\programaci\u00F3n\\orientado a objetos\\naipes\\siete y medio\\palo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56227033-44B1-4922-8D21-1295A8A5C4A1}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\palo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,79 +46,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Mano Siete y Media.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Mano Siete y Media.cs",
-              "RelativeDocumentMoniker": "Siete y Medio\\Mano Siete y Media.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Mano Siete y Media.cs",
-              "RelativeToolTip": "Siete y Medio\\Mano Siete y Media.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T07:17:29.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Mano.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Mano.cs",
-              "RelativeDocumentMoniker": "Siete y Medio\\Mano.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Mano.cs",
-              "RelativeToolTip": "Siete y Medio\\Mano.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T06:55:49.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Carta.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Carta.cs",
-              "RelativeDocumentMoniker": "Siete y Medio\\Carta.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Carta.cs",
-              "RelativeToolTip": "Siete y Medio\\Carta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA8AAAA",
+              "Title": "Diagrama_SieteyMedio.cd",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Diagrama_SieteyMedio.cd",
+              "RelativeDocumentMoniker": "Siete y Medio\\Diagrama_SieteyMedio.cd",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Diagrama_SieteyMedio.cd",
+              "RelativeToolTip": "Siete y Medio\\Diagrama_SieteyMedio.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-03-06T11:41:37.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Palo.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Palo.cs",
+              "RelativeDocumentMoniker": "Siete y Medio\\Palo.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Palo.cs",
+              "RelativeToolTip": "Siete y Medio\\Palo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T09:16:21.299Z",
+              "WhenOpened": "2024-03-06T11:39:00.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Mazo.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Mazo.cs",
-              "RelativeDocumentMoniker": "Siete y Medio\\Mazo.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Mazo.cs",
-              "RelativeToolTip": "Siete y Medio\\Mazo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
+              "Title": "Mano.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Mano.cs",
+              "RelativeDocumentMoniker": "Siete y Medio\\Mano.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Mano.cs",
+              "RelativeToolTip": "Siete y Medio\\Mano.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T09:14:01.212Z",
+              "WhenOpened": "2024-03-06T11:37:13.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManoSieteyMedia.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\ManoSieteyMedia.cs",
+              "RelativeDocumentMoniker": "Siete y Medio\\ManoSieteyMedia.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\ManoSieteyMedia.cs",
+              "RelativeToolTip": "Siete y Medio\\ManoSieteyMedia.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T11:36:05.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Palo.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Palo.cs",
-              "RelativeDocumentMoniker": "Siete y Medio\\Palo.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Palo.cs",
-              "RelativeToolTip": "Siete y Medio\\Palo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAJAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Program.cs",
+              "RelativeDocumentMoniker": "Siete y Medio\\Program.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Program.cs",
+              "RelativeToolTip": "Siete y Medio\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T09:13:09.605Z"
+              "WhenOpened": "2024-03-06T11:35:45.497Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Program.cs",
-              "RelativeDocumentMoniker": "Siete y Medio\\Program.cs",
-              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Program.cs",
-              "RelativeToolTip": "Siete y Medio\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "Title": "Mazo.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Mazo.cs",
+              "RelativeDocumentMoniker": "Siete y Medio\\Mazo.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Mazo.cs",
+              "RelativeToolTip": "Siete y Medio\\Mazo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T09:12:36.281Z",
+              "WhenOpened": "2024-03-06T11:35:34.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Carta.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Carta.cs",
+              "RelativeDocumentMoniker": "Siete y Medio\\Carta.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Programaci\u00F3n\\Orientado a Objetos\\Naipes\\Siete y Medio\\Carta.cs",
+              "RelativeToolTip": "Siete y Medio\\Carta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T11:35:10.131Z",
               "EditorCaption": ""
             }
           ]

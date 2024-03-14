@@ -1,5 +1,16 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "WorkspaceRootPath": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Entornos de Desarrollo\\Testing \u0026 Debugging\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6840E518-D5E6-4F6D-8BFE-F021B35CFF80}|Test Ejercicio 3\\Test Ejercicio 3.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\entornos de desarrollo\\testing \u0026 debugging\\test ejercicio 3\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6840E518-D5E6-4F6D-8BFE-F021B35CFF80}|Test Ejercicio 3\\Test Ejercicio 3.csproj|solutionrelative:test ejercicio 3\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73AA2CBC-EAA4-4D94-8DE8-66D27EEF3993}|Pokemon Tests\\Pokemon Tests.csproj|c:\\users\\orion\\documents\\daw-2\u00BA-trimestre\\entornos de desarrollo\\testing \u0026 debugging\\pokemon tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73AA2CBC-EAA4-4D94-8DE8-66D27EEF3993}|Pokemon Tests\\Pokemon Tests.csproj|solutionrelative:pokemon tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
   "WorkspaceRootPath": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing \u0026 Debugging\\",
   "Documents": [
     {
@@ -9,6 +20,7 @@
     {
       "AbsoluteMoniker": "D:0:0:{48274A14-BE10-4C8D-8190-5A3695DA1602}|Pokemon\\Pokemon.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\entornos de desarrollo\\testing \u0026 debugging\\pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48274A14-BE10-4C8D-8190-5A3695DA1602}|Pokemon\\Pokemon.csproj|solutionrelative:pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 706c3668d0414ef0ae9665a8c90588603931d9f9
     }
   ],
   "DocumentGroupContainers": [
@@ -26,6 +38,31 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Entornos de Desarrollo\\Testing \u0026 Debugging\\Pokemon Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Pokemon Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Entornos de Desarrollo\\Testing \u0026 Debugging\\Pokemon Tests\\UnitTest1.cs",
+              "RelativeToolTip": "Pokemon Tests\\UnitTest1.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAEcAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T12:47:48.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Entornos de Desarrollo\\Testing \u0026 Debugging\\Test Ejercicio 3\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Test Ejercicio 3\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\orion\\Documents\\DAW-2\u00BA-Trimestre\\Entornos de Desarrollo\\Testing \u0026 Debugging\\Test Ejercicio 3\\UnitTest1.cs",
+              "RelativeToolTip": "Test Ejercicio 3\\UnitTest1.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T12:47:43.232Z",
+              "EditorCaption": ""
+=======
               "DocumentIndex": 0,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing \u0026 Debugging\\Pokemon Tests\\UnitTest1.cs",
@@ -48,6 +85,7 @@
               "ViewState": "AQIAAC8AAAAAAAAAAAAYwFwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-04T15:12:43.999Z"
+>>>>>>> 706c3668d0414ef0ae9665a8c90588603931d9f9
             }
           ]
         }

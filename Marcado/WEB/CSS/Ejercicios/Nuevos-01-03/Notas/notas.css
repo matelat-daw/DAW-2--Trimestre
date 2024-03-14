@@ -42,19 +42,19 @@ a
     transform: rotate(-5deg);
 }
 
-li:nth-child(2n+2) a
+li:nth-child(2n) a
 {
     background-color: #CCFFCC;
     transform: rotate(2deg);
 }
 
-li:nth-child(3n+3) a
+li:nth-child(3n) a
 {
     background-color: #ccccff;
     transform: rotate(-3deg);
 }
 
-li:nth-child(5n) /* Rota el PostIt Nº 5 8 Grados a la Derecha, ya que Estaba 5 a la Izquierda. */
+li:nth-child(5) /* Rota el PostIt Nº 5 8 Grados a la Derecha, ya que Estaba 5 a la Izquierda. */
 {
     transform: rotate(8deg);
 }

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "O/7sCNW8ZYqWvHvOFZRcXNz2xc5C8dxprZLtjEkzzoImdZMA1kdVAePxFToWvOU+9qQbcl+RQC7qKnRQ2EFOhw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\orion\\Documents\\DAW-2º-Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Pokemon\\Pokemon.csproj",
+=======
   "dgSpecHash": "xXYgqDQNBtBjR1OXAdivgMjB6MWC1slijh0trRr9vmeZU9JT0FQpX4BDcLUOnYKUebnwJ9K/zSL7dx6dpcJCyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\Entornos de Desarrollo\\Testing & Debugging\\Pokemon\\Pokemon.csproj",
+>>>>>>> 706c3668d0414ef0ae9665a8c90588603931d9f9
   "expectedPackageFiles": [],
   "logs": []
 }

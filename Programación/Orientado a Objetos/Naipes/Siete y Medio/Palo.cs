@@ -1,4 +1,6 @@
-﻿public enum Palo
+﻿namespace Naipes;
+
+public enum Palo
 {
     Oro,
     Espada,

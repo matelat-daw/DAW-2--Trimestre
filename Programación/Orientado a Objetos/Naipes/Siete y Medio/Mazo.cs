@@ -1,4 +1,6 @@
-﻿public class Mazo
+﻿namespace Naipes;
+
+public class Mazo
 {
     private int baraja = 0;
     private int j = 0;
@@ -12,7 +14,7 @@
         {
             for (int i = 0; i < 10; i++)
             {
-                carta[i + j] = new Carta(i, Palo.Oro + baraja);
+                carta[i + j] = new Carta(i + 1, Palo.Oro + baraja);
             }
             j += 10;
             baraja++;
@@ -23,16 +25,6 @@
     {
         Mazo mazo = new();
     }
-
-    //public double GetPlayer()
-    //{
-    //    return AskPlayer();
-    //}
-
-    //public double GetBank()
-    //{
-    //    return AskBank();
-    //}
 
     public static Carta DaCarta() // Función que Retorna la Carta que se Selecciona Aleatoriamente. El switch lo Puse Yo Porque me Gusta, Pero no lo Pide.
     {
