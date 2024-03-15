@@ -1,0 +1,19 @@
+.alignhere
+{
+    display: inline-block;
+    width: 120px;
+    height: 160px;
+    background: lightblue;
+}
+
+p
+{
+    /* position: relative;
+    top: 50px;
+    left: 20%; */
+    margin-top: 50%;
+    text-align: center;
+    /* display: inline-block; */
+    /* float: left; */
+    /* vertical-align: bottom; */
+}

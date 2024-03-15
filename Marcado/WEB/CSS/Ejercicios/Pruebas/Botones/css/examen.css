@@ -1,0 +1,161 @@
+div:first-child
+{
+    position: relative;
+    top: 100px;
+    transform: skewY(-10deg);
+}
+
+div:last-child
+{
+    position: relative;
+    top: 350px;
+    left: px;
+    transform: skewY(20deg);
+}
+
+div p:nth-child(even)
+{
+    position: relative;
+    top: 20px;
+}
+
+div p:nth-child(odd)
+{
+    position: relative;
+    top: -20px;
+}
+
+p
+{
+    box-shadow: 10px -10px 20px;
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding-top: 4%;
+    font-weight: bold;
+    font-size: 44px;
+    background-color: #0013d4;
+    transition: 2s;
+}
+
+p:hover
+{
+    transform: rotateY(360deg);
+    border-radius: 50%;
+}
+
+div:last-child p:last-child
+{
+    color: red;
+    box-shadow: 10px -10px 20px black;
+}
+
+div:last-child p:last-child:hover
+{
+    background-image: url(../img/flecha.png);
+    background-repeat: repeat-y;
+    border-radius: 0;
+    transform: scale(1.5);
+    translate: 60px;
+    box-shadow: -10px -10px 20px black;
+    background-position: 65px;
+}
+
+.ejercicio3
+{
+    position: relative;
+    top: 558px; 
+    left: 180px;
+    text-align: center;
+}
+
+.ejercicio3 p
+{
+    background-color: green;
+    box-shadow: 0 0;
+    border-radius: 0;
+    font-size: 18px;
+    width: 200px;
+    height: 28px;
+    transform: none;
+    padding-top: 10px;
+}
+
+.ejercicio3 p:hover
+{
+    color: orange;
+    text-shadow: -2px 2px 0 #f00, 2px 2px 0 #f00, 2px -2px 0 #f00, -2px -2px 0 #f00;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 3px orange;
+    border-radius: 20px;
+}
+
+#btn {
+    display: none;
+  }
+  
+  div label {
+    display: inline-block;
+    position: relative;
+    top: 500px;
+    left: 700px;
+    border: 2px solid black;
+    width: 70px;
+    height: 36px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 32px;
+    z-index: 0;
+  }
+
+  span
+  {
+    position: relative;
+    top: 10px;
+    z-index: -1;
+  }
+  
+  div label::before
+  {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 32px;
+    height: 32px;
+    background-color: green;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+
+  input:checked + div label:before {
+    /* -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px); */
+    /* transform: translateX(26px); */
+    background-color: red;
+  }
+  
+  #btn:checked + div label {
+    background-color: #ccc;
+  }
+  
+  #btn:checked + div label::before {
+    transform: translateX(33px);
+  }
+
+  .barra::after
+  {
+    visibility: hidden;
+  }
+
+table td
+{
+    border: 1px solid blue;
+    position: relative;
+    top: 300px;
+    left: 450px;
+}

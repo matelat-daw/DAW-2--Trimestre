@@ -43,12 +43,12 @@ p
     padding-top: 14px;
 }
 
-.position:hover > #text
+.position:hover #text
 {
     translate: 0 -70px;
 }
 
-.position:hover > #text #description
+.position:hover #text #description
 {
     color: #efc706;
     background-color: rgba(165,42,42,.6);
