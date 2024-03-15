@@ -152,10 +152,30 @@ div:last-child p:last-child:hover
     visibility: hidden;
   }
 
-table td
+table
+{
+  display: none;
+}
+
+#btn:checked ~ table
+{
+  display: inline-block;
+}
+
+table
 {
     border: 1px solid blue;
     position: relative;
     top: 300px;
     left: 450px;
+}
+
+td
+{
+  border: 1px solid black;
+}
+
+td:empty
+{
+  border: none;
 }
