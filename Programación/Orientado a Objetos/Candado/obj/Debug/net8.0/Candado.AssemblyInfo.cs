@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Candado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eadb5e776d9776896ba6963cff6d8229dfce7409")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+428eb4b07742f4d3062ae73d32ab531ca3dcb420")]
 [assembly: System.Reflection.AssemblyProductAttribute("Candado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Candado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

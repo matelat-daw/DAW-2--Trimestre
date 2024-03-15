@@ -1,0 +1,164 @@
+/* Ejercicio 1 */
+.oval
+{
+    display: inline-block;
+    position: relative;
+    top: 600px;
+    left: 200px;
+    background-color: gray;
+    text-align: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 380px;
+    height: 80px;
+    border-radius: 60%;
+    box-shadow: 20px 20px 10px white, 15px 15px 5px black;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+.oval p
+{
+    position: relative;
+    top: -20%;
+    left: -120px;
+    color: white;
+}
+
+.oval:hover p
+{
+    position: relative;
+    top: -30px;
+    transition: 2s;
+    font-size: 1.5em;
+    translate: 200px;
+    color: white;
+    text-shadow: -3px -3px 3px white, 3px 3px black;
+}
+
+.oval:hover
+{
+    transition: 2s;
+    border-radius: 100px;
+    box-shadow: 0 0;
+    background-color: silver;
+    border-left: 5px solid gray;
+    border-right: 5px solid gray;
+}
+
+
+/* Ejercicio 2 */
+
+.barra
+{
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/flechaI.png);
+    background-position: 1px;
+    background-color: silver;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+}
+
+#btn /* ID del Input checkbox */
+{
+    position: relative;
+    top: 37px;
+    left: -387px;
+    transition: 1s;
+    opacity: 0; /* Opacity a 0 para no verlo pero está en primer plano. Por encima del div con la clase barra. */
+    width: 32px;
+    height: 32px;
+}
+
+#btn:hover ~ .barra, #btn:checked ~ .barra
+{
+    transition: 2s;
+    background-image: url(../img/flechaD.png);
+    background-position: 15px;
+    background-color: gray;
+    background-repeat: no-repeat;
+}
+
+#btn:checked ~ .menu
+{
+    display: inline-block;
+}
+
+/* Ejercicio 3 */
+
+.menu
+{
+    display: none;
+}
+
+.menu ul li
+{
+    display: inline-block;
+    position: relative;
+    top: -47px;
+    left: 5px;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+ul
+{
+    position: relative;
+    list-style: none;
+}
+
+li
+{
+    position: relative;
+    width: 120px;
+    background: gray;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: -5px;
+    height: 24px;
+}
+
+li ul li
+{
+    position: relative;
+    /* top: 166px; */
+    /* left: -255px; */
+    display: block;
+    border:1px solid black;
+    background-color: silver;
+}
+
+li ul
+{
+    display: none;
+    position: relative;
+    left: -41px;
+    top: 53px;
+}
+
+li:hover ul
+{
+    display: block;
+}
+
+a:hover
+{
+    color: black;
+    text-shadow: 1px 1px white;
+}
+
+li:hover
+{
+    background-image: none;
+    background-color:gray;    
+    background-image: url(../img/flechaD.png), url(../img/flechaI.png);
+    background-position: 1px 5px, 104px 5px;
+    background-repeat: no-repeat;
+}
