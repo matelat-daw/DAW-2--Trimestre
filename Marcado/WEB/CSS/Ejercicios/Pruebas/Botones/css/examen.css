@@ -155,7 +155,17 @@ div:last-child p:last-child:hover
     visibility: hidden;
   }
 
-table td
+table
+{
+  display: none;
+}
+
+#btn:checked ~ table
+{
+  display: inline-block;
+}
+
+table
 {
     border: 1px solid blue;
     position: relative;
@@ -165,5 +175,14 @@ table td
 
 td
 {
+<<<<<<< HEAD
     empty-cells: hide;
+=======
+  border: 1px solid black;
+}
+
+td:empty
+{
+  border: none;
+>>>>>>> ed5e0537985fb86ecd21e663d6dea34eaa9a8830
 }
