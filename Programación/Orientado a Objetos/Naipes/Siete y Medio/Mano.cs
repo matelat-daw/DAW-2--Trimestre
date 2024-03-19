@@ -14,7 +14,7 @@ public abstract class Mano
     {
         if (num > TOPE)
         {
-            throw new Exception($"No se aceptan más de {TOPE} cartas n la Mano.");
+            throw new Exception($"No se aceptan más de {TOPE} cartas en la Mano.");
         }
         cartas = new Carta[num];
     }
@@ -34,8 +34,5 @@ public abstract class Mano
         return numCartas;
     }
 
-    protected abstract double CuentaPuntos()
-    {
-
-    }
+    protected abstract double CuentaPuntos();
 }

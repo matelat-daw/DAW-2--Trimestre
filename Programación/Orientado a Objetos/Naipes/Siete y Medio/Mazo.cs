@@ -33,7 +33,7 @@ public class Mazo
         if (numCartas > 0) // Si la Cantidad de Cartas es Mayor que 0.
         {
             int card = alea.Next(numCartas); // Obtengo un Número Aleatorio entre 0 y en Número de Cartas Disponible.
-            aux = new Carta(carta[card].getNumero(), carta[card].getPalo()); // Asigno a aux la Carta Actual.
+            aux = new Carta(carta[card].GetNumero(), carta[card].GetPalo()); // Asigno a aux la Carta Actual.
             carta[card] = carta[numCartas - 1]; // Cargo en la posición de la Carta Actual la Última Carta del Array de Cratas.
             numCartas--; // Decremento la Cantidad de Carta Disponibles.
         }

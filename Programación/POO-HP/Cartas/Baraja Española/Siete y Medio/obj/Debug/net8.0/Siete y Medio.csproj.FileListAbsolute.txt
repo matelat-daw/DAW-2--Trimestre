@@ -1,0 +1,15 @@
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\obj\Debug\net8.0\Siete y Medio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\obj\Debug\net8.0\Siete y Medio.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\obj\Debug\net8.0\Siete y Medio.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\obj\Debug\net8.0\Siete y Medio.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\obj\Debug\net8.0\Siete y Medio.sourcelink.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\bin\Debug\net8.0\Siete y Medio.exe
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\bin\Debug\net8.0\Siete y Medio.deps.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\bin\Debug\net8.0\Siete y Medio.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\bin\Debug\net8.0\Siete y Medio.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\bin\Debug\net8.0\Siete y Medio.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\obj\Debug\net8.0\Siete y Medio.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\obj\Debug\net8.0\refint\Siete y Medio.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\obj\Debug\net8.0\Siete y Medio.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\obj\Debug\net8.0\Siete y Medio.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Cartas\Baraja Española\Siete y Medio\obj\Debug\net8.0\ref\Siete y Medio.dll

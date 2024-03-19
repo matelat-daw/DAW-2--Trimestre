@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Siete y Medio/1.0.0": {
+        "runtime": {
+          "Siete y Medio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Siete y Medio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

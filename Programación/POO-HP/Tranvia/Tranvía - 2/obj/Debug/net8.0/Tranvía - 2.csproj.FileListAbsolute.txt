@@ -1,0 +1,15 @@
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\bin\Debug\net8.0\Tranvía - 2.exe
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\bin\Debug\net8.0\Tranvía - 2.deps.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\bin\Debug\net8.0\Tranvía - 2.runtimeconfig.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\bin\Debug\net8.0\Tranvía - 2.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\bin\Debug\net8.0\Tranvía - 2.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\obj\Debug\net8.0\Tranvía - 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\obj\Debug\net8.0\Tranvía - 2.AssemblyInfoInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\obj\Debug\net8.0\Tranvía - 2.AssemblyInfo.cs
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\obj\Debug\net8.0\Tranvía - 2.csproj.CoreCompileInputs.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\obj\Debug\net8.0\Tranvía - 2.sourcelink.json
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\obj\Debug\net8.0\Tranvía - 2.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\obj\Debug\net8.0\refint\Tranvía - 2.dll
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\obj\Debug\net8.0\Tranvía - 2.pdb
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\obj\Debug\net8.0\Tranvía - 2.genruntimeconfig.cache
+C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\Programación\POO-HP\Tranvia\Tranvía - 2\obj\Debug\net8.0\ref\Tranvía - 2.dll

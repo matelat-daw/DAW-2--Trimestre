@@ -1,0 +1,3 @@
+DELETE FROM `mac` WHERE id=10;
+
+LOAD XML LOCAL INFILE 'C:/Tools/Macs.xml' INTO TABLE mac ROWS IDENTIFIED BY '<VendorMapping>'; -- La Tabla tiene que tener los mismos nombres de campos que el XML.
