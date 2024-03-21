@@ -1,16 +1,10 @@
 ﻿namespace Baraja;
 
-public class Carta
+public class Carta(int valor, Palo palo)
 {
-    private static string[] nombreCarta = { "1", "2", "3", "4", "5", "6", "7", "Sota", "Caballo", "Rey" };
-    private int valor;
-    private Palo palo;
-
-    public Carta(int valor, Palo palo)
-    {
-        this.valor = valor;
-        this.palo = palo;
-    }
+    private static readonly string[] nombreCarta = ["1", "2", "3", "4", "5", "6", "7", "Sota", "Caballo", "Rey"];
+    private readonly int valor = valor;
+    private readonly Palo palo = palo;
 
     public Palo GetPalo()
     {
@@ -29,9 +23,13 @@ public class Carta
 
     public override bool Equals(object? obj)
     {
-        Carta objCarta = (Carta)obj;
+        Carta? objCarta = obj as Carta;
 
         return this.palo == objCarta.palo && this.valor == objCarta.valor;
     }
 
+    public override int GetHashCode()
+    {
+        throw new NotImplementedException();
+    }
 }

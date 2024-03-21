@@ -2,8 +2,8 @@
 public class Mazo
 {
     private int numCartas = 40;
-    private Carta[] cartas;
-    private static Random alea = new Random();
+    private readonly Carta[] cartas;
+    private static readonly Random alea = new();
     public Mazo()
     {
         int i = 0;
@@ -18,11 +18,11 @@ public class Mazo
         //    cartas[i] = new Carta((i % 10) + 1, (Palo)(i / 10));
         //}
     }
-    public int numeroCartas()
+    public int NumeroCartas()
     {
         return numCartas;
     }
-    public Carta daCarta()
+    public Carta DaCarta()
     {
         int posCarta = alea.Next(numCartas);
         Carta ret = cartas[posCarta];

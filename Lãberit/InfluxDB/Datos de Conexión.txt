@@ -1,0 +1,10 @@
+Token Para InfluxDB:
+
+yePx2-6aAofisOdxKka9XUlu2lR_bEe-KvZ3Kh-WhS1NCcuF54opGmMEr3FCpQpDFP4cFrwNHwu-hjWD6wzjKA==
+
+User: laberit
+Pass: @laberit
+
+Organization: Laberit
+
+First Bucket: MACDB

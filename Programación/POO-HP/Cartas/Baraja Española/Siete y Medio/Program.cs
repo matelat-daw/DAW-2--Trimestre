@@ -11,7 +11,7 @@ public class Program
         {
             do
             {
-                mano.AñadeCarta(mazo.daCarta());
+                mano.AñadeCarta(mazo.DaCarta());
                 Console.WriteLine(mano);
                 Console.Write("¿Desea otra carta? (n Para Terminar, Cualquier Otra Para Tomar Carta): ");
                 opcion = Char.ToLower(Console.ReadKey().KeyChar);
@@ -32,7 +32,7 @@ public class Program
         Mazo m = new();
         Carta[] cartas = new Carta[5];
         for (int i = 0; i < cartas.Length; i++)
-            cartas[i] = m.daCarta();
+            cartas[i] = m.DaCarta();
         mostrar(cartas);
     }
 
