@@ -8,3 +8,9 @@ Pass: @laberit
 Organization: Laberit
 
 First Bucket: MACDB
+
+
+
+Conexión con el Shell V1:
+
+influx v1 shell --host http://localhost:8086 -o Laberit -t yePx2-6aAofisOdxKka9XUlu2lR_bEe-KvZ3Kh-WhS1NCcuF54opGmMEr3FCpQpDFP4cFrwNHwu-hjWD6wzjKA==
