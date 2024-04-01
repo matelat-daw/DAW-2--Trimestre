@@ -1,3 +1,14 @@
 DELETE FROM `mac` WHERE id=10;
 
 LOAD XML LOCAL INFILE 'C:/Tools/Macs.xml' INTO TABLE mac ROWS IDENTIFIED BY '<VendorMapping>'; -- La Tabla tiene que tener los mismos nombres de campos que el XML.
+
+
+
+
+01hsfw08hcf49adh2najn5sxhe01hsfw5df15t9nnzbh58zfb8ywkvlpjngcdxlm
+
+
+
+
+
+LOAD XML LOCAL INFILE 'C:/Tools/Mac.xml' INTO TABLE mac ROWS IDENTIFIED BY '<row>';
