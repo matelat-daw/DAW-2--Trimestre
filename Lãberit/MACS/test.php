@@ -1,5 +1,4 @@
 <?php
-include "vendor/autoload.php";
 // $string = "8C1F64FF3";
 
 
@@ -34,11 +33,5 @@ include "vendor/autoload.php";
 
 // $output = shell_exec("C:/tools/nmap/nmap.exe -sP 192.168.0.217");
 // echo $output;
-
-$hosts = Nmap\Nmap::create()->scan([ '192.168.0.217' ]);
-
-$ports = $hosts->getOpenPorts();
-
-echo $ports;
 
 ?>
