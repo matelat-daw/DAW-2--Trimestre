@@ -1,0 +1,8 @@
+Starting Nmap 7.94 ( https://nmap.org ) at 2024-04-12 22:39 GMT Daylight Time
+Nmap scan report for Pixel-8.technicolor.net (192.168.0.217)
+Host is up (0.017s latency).
+All 1000 scanned ports on Pixel-8.technicolor.net (192.168.0.217) are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 66:CF:DD:44:BC:0A (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.72 seconds
