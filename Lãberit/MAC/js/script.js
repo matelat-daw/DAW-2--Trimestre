@@ -28,12 +28,12 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
     var length = oui.length; // Necesito el tamaño del array de servicios(Los Servicios en la Base de Datos).
     window.length = length; // Hago global la variable length.
 
-    var html = "<table><tr><th>OUI</th><th>Dirección</th><th>Fabricante</th><th>Privada</th><th>Tipo</th><th>Actualizada</th><th>Ataques</th><th>Fecha</th></tr>";
+    var html = "<table><tr><th>OUI</th><th>Dirección</th><th>Fabricante</th><th>Dispositivo</th><th>Puertos</th><th>Privada</th><th>Tipo</th><th>Actualizada</th><th>Ataques</th><th>Fecha</th></tr>";
     for (i = (page - 1) * qtty; i < page * qtty; i++) // Aquí hago el bucle desde la página donde esté, a la cantidad de resultados a mostrar.
     {
         if (i < length) // Si i es menor que el tamaño del array.
         {
-            html += "<tr><td>" + oui[i] + "</td><td>" + mac[i] + "</td><td>" + mark[i] + "</td><td>" + private[i] + "</td><td>" + type[i] + "</td><td>" + update[i] + "</td><td>" + attacks[i] + "</td><td>" + date[i] + "</td></tr>";
+            html += "<tr><td>" + oui[i] + "</td><td>" + mac[i] + "</td><td>" + mark[i] + "</td><td>" + device[i] + "</td><td>" + port[i] + "</td><td>" + private[i] + "</td><td>" + type[i] + "</td><td>" + update[i] + "</td><td>" + attacks[i] + "</td><td>" + date[i] + "</td></tr>";
         }
     }
     html += "</table>";
@@ -63,7 +63,7 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
 
 function wait()
 {
-    alert("Verificar la IP demora unos segundos.\nHaz Click en Aceptar y Se Cargará una Nueva Página Después de Aproximadamente 30 Segundos.");
+    alert("Verificar la IP demora unos segundos.\nHaz Click en Aceptar y Se Cargará una Nueva Página Después de Aproximadamente 10 Segundos.");
 }
 
 function toast(warn, ttl, msg) // Función para mostrar el Dialogo con los mensajes de alerta, recibe, Código, Título y Mensaje.
