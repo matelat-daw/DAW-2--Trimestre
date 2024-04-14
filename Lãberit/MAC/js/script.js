@@ -61,12 +61,12 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
     }
 }
 
-function wait()
+function wait() // Se muestra una alerta para indicar que verificar la IP demora unos 10 segundos.
 {
     alert("Verificar la IP demora unos segundos.\nHaz Click en Aceptar y Se Cargará una Nueva Página Después de Aproximadamente 10 Segundos.");
 }
 
-function toast(warn, ttl, msg) // Función para mostrar el Dialogo con los mensajes de alerta, recibe, Código, Título y Mensaje.
+function toast(warn, ttl, msg) // Función para mostrar el Diálogo con los mensajes de alerta, recibe, Código, Título y Mensaje.
 {
     if (warn == 1) // Si el código es 1, es una alerta.
     {

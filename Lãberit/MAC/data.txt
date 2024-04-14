@@ -1,8 +1,0 @@
-Starting Nmap 7.94 ( https://nmap.org ) at 2024-04-13 23:12 GMT Daylight Time
-Nmap scan report for Xiaomi-11T-Pro.technicolor.net (192.168.0.68)
-Host is up (0.021s latency).
-All 1000 scanned ports on Xiaomi-11T-Pro.technicolor.net (192.168.0.68) are in ignored states.
-Not shown: 1000 closed tcp ports (reset)
-MAC Address: 8C:7A:3D:C8:A7:71 (Xiaomi Communications)
-
-Nmap done: 1 IP address (1 host up) scanned in 17.32 seconds
