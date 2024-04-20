@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>JavaScript y el Document Object Model</title>
+</head>
+<body>
+  <div id="page">
+    <div id="header"><h1 id="title">título</h1></div>
+    <div id="content">
+      <h2>contenido del titulo</h2>
+      <p>algo copiado iría aqui</p>
+      <p>más cosas aqui</p>
+    </div>
+  </div>
+    <script>
+      var nodo = document.body.children[0];
+      alert("El nodo Se Llama: " + nodo.nodeName);
+      alert("El anterior al nodo Se Llama: " + nodo.previousSibling);
+      alert("El anterior al nodo Se Llama: " + nodo.nextSibling);
+      alert("El anterior al nodo Se Llama: " + nodo.parentElement);
+   </script>
+ 
+</body>
+</html>

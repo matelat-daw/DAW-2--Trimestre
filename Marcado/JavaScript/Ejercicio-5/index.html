@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <label><input type="text" id="tarea"> Ingresa una Tarea</label>
+    <button onclick="add_end()">Añadir al Final</button>
+    <button onclick="add_start()">Añadir al Principio</button>
+    <button onclick="delete_start()">Borrar el Primero</button>
+    <button onclick="delete_end()">Borrar el Último</button>
+    <button onclick="delete_all()">Borrar Todos</button>
+    <br><br>
+    <h3 class="hidden">LISTA</h3>
+    <br>
+    <div id="tareas"></div>
+</body>
+</html>
