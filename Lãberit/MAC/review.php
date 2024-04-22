@@ -82,7 +82,6 @@ function loadFile($ip) // Carga el Fichero data.txt en Memoria y Obtiene los Dat
                         $port = false; // Ya no hay más puertos abiertos, pongo $port a false, al volver al while como $port es false sale del bucle.
                     }
                 }
-                // $mac = explode(" ", $ports[$port_index]); // Asigna el contenido de $ports en el índice $port_index a la variable Array $mac explotándola por el espacio, obteniendo en la posición 2 del array la dirección MAC.
             }
             else if (str_starts_with($string, "MAC Address:")) // Si la string Contiene la Frase MAC Address:
             {
