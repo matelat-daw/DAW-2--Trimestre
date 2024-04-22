@@ -1,8 +1,11 @@
 <?php
+require "vendor/autoload.php";
 include "includes/conn.php";
 $title = "Detección de Intrusión";
 include "includes/header.php";
 include "includes/modal_index.html";
+
+use InfluxDB2\Model\WritePrecision;
 
 if (isset($_POST["ip"])) // Recibe la IP desde el script index.php por POST.
 {
@@ -18,6 +21,12 @@ if (isset($_POST["ip"])) // Recibe la IP desde el script index.php por POST.
     {
         echo "<script>toast(2, 'ERROR:', 'No se Han Podido Obtener los Datos Verifica que el Disco no esté Lleno y si Tienes Permisos Para Escribir en la Carpeta del Proyecto.');</script>";
     }
+
+    $writeApi = $client->createWriteApi();
+    $data = "intruder,nombre=attack ip=\"$ip\",mac=\"$mac_result[0]\"";
+    $writeApi->write($data, WritePrecision::S, $bucket, $org);
+
+    $client->close();
 
     echo '<fieldset>
             <legend>Datos de la MAC Sospechosa y su IP</legend>
@@ -73,7 +82,7 @@ function loadFile($ip) // Carga el Fichero data.txt en Memoria y Obtiene los Dat
                         $port = false; // Ya no hay más puertos abiertos, pongo $port a false, al volver al while como $port es false sale del bucle.
                     }
                 }
-                $mac = explode(" ", $ports[$port_index]); // Asigna el contenido de $ports en el índice $port_index a la variable Array $mac explotándola por el espacio, obteniendo en la posición 2 del array la dirección MAC.
+                // $mac = explode(" ", $ports[$port_index]); // Asigna el contenido de $ports en el índice $port_index a la variable Array $mac explotándola por el espacio, obteniendo en la posición 2 del array la dirección MAC.
             }
             else if (str_starts_with($string, "MAC Address:")) // Si la string Contiene la Frase MAC Address:
             {

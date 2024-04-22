@@ -1,8 +1,9 @@
 <?php
+require "vendor/autoload.php";
 include "includes/conn.php";
 $title = "Verificador de Direcciones MAC Intrusas.";
 include "includes/header.php";
-include "includes/modal_index.html";
+include "includes/modal.html";
 include "includes/nav_index.html";
 ?>
 <section class="container-fluid pt-3">
@@ -86,6 +87,50 @@ include "includes/nav_index.html";
                 <button onclick="next()" id="next_btn" class="btn btn-primary" style="visibility: hidden;">Siguientes Resultados</button><br>
                 <script>change(1, 8);</script>
                 <br><br><br><br>
+                </div>
+                <div id="view3">
+                    <br><br><br><br>
+                    <h3>Lista de datos de InfluxDB</h3>
+                    <br><br>
+                    <?php
+                    $query = "from(bucket: \"MACDB\") |> range(start: -1h) |> filter(fn: (r) => r._measurement == \"intruder\")";
+                    $tables = $client->createQueryApi()->query($query, $org);
+                    $time = [];
+                    
+                    $i = 0;
+                    foreach ($tables as $table)
+                    {
+                        foreach ($table->records as $record)
+                        {
+                            $time[$i] = $record->getTime();
+                            $measurement[$i] = $record->getMeasurement();
+                            $field[$i] = $record->getField();
+                            $value[$i] = $record->getValue();
+                            $i++;
+                        }
+                    }
+                    
+                    if (count($time) > 0)
+                    {
+                        for ($i = 0; $i < count($time); $i++)
+                        {
+                            for ($j = 0; $j < count($time) / 2; $j++)
+                            {
+                                if ($j != $i)
+                                {
+                                    if ($time[$j] == $time[$i])
+                                    {
+                                        print "<pre>$time[$i] $measurement[$i]: tiene: $field[$i]=$value[$i] $field[$j] = $value[$j]</pre><br>";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        echo "<script>alert ('No Hay Datos de la Última Hora.');</script>";
+                    }
+                    ?>
                 </div>
             </div>
         <div class="col-md-1"></div>

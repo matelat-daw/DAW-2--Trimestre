@@ -9,4 +9,15 @@ catch(PDOException $e) // En caso de error
 {
 	echo 'Error: ' . $e->getMessage(); // Muestra el error.
 }
+
+use InfluxDB2\Client;
+// use InfluxDB2\Model\WritePrecision;
+
+$org = 'FP';
+$bucket = 'MACDB';
+
+$client = new Client([
+    "url" => "http://localhost:8086",
+    "token" => $_ENV["INFLUXDB_TOKEN"],
+]);
 ?>
