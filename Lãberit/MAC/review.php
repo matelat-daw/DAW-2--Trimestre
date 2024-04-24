@@ -23,7 +23,7 @@ if (isset($_POST["ip"])) // Recibe la IP desde el script index.php por POST.
     }
 
     $writeApi = $client->createWriteApi();
-    $data = "intruder,nombre=attack ip=\"$ip\",mac=\"$mac_result[0]\"";
+    $data = "intruder,ip=$ip,mac=$mac_result[0] Mark=$mac_result[1],Ports=$mac_result[2]";
     $writeApi->write($data, WritePrecision::S, $bucket, $org);
 
     $client->close();
@@ -64,28 +64,37 @@ function loadFile($ip) // Carga el Fichero data.txt en Memoria y Obtiene los Dat
         $port_index = 0; // Índice para los Puertos.
         while (!feof($file)) // Mientras lea del fichero.
         {
-            $string = fgets($file); // Asigna a $string la línea de texto leida desde el fichero.
-            if (str_starts_with($string, "Nmap scan")) // Si la cadena obtenida en $string empieza por la frase 'Nmap scan'.
+            try // Hay que Procesar el Fichero en un try ctach, ya que si surge cualquier error, el fichero no se cierra y el comando nmap mantiene abierto el fichero data.txt.
             {
-                $device = $string; // Asigna la cadena a la variable $device, la cadena contiene el nombre del dispositivo.
-            }
-            else if (str_starts_with($string, "PORT")) // Si la Línea contiene la palabra PORT, es que hay al menos un puerto abierto.
-            {
-                $port = true; // Variable booleana $port, para comprobar cuando no hay más puertos abiertos.
-                $ports[$port_index] = fgets($file); // Se asigna a $ports en el índice $port_index la lectura de la siguiente fila del Fichero data.txt, contiene un puerto abierto.
-                while ($port) // Mientras $port sea true
+                $string = fgets($file); // Asigna a $string la línea de texto leida desde el fichero.
+                if (str_starts_with($string, "Nmap scan")) // Si la cadena obtenida en $string empieza por la frase 'Nmap scan'.
                 {
-                    $port_index++; // Incrementa el Índice $port_index.
-                    $ports[$port_index] = fgets($file); // Se asigna a $ports en el índice $port_index la lectura de la siguiente fila del Fichero data.txt.
-                    if(str_starts_with($ports[$port_index], "MAC Address:")) // Si el contenido del Array $ports en el índice $port_index empieza por la frase 'MAC Address:'.
+                    $device = $string; // Asigna la cadena a la variable $device, la cadena contiene el nombre del dispositivo.
+                }
+                else if (str_starts_with($string, "PORT")) // Si la Línea contiene la palabra PORT, es que hay al menos un puerto abierto.
+                {
+                    $port = true; // Variable booleana $port, para comprobar cuando no hay más puertos abiertos.
+                    $ports[$port_index] = fgets($file); // Se asigna a $ports en el índice $port_index la lectura de la siguiente fila del Fichero data.txt, contiene un puerto abierto.
+                    while ($port) // Mientras $port sea true
                     {
-                        $port = false; // Ya no hay más puertos abiertos, pongo $port a false, al volver al while como $port es false sale del bucle.
+                        $port_index++; // Incrementa el Índice $port_index.
+                        $ports[$port_index] = fgets($file); // Se asigna a $ports en el índice $port_index la lectura de la siguiente fila del Fichero data.txt.
+                        if(str_starts_with($ports[$port_index], "MAC Address:")) // Si el contenido del Array $ports en el índice $port_index empieza por la frase 'MAC Address:'.
+                        {
+                            $port = false; // Ya no hay más puertos abiertos, pongo $port a false, al volver al while como $port es false sale del bucle.
+                            $mac = explode(" ", $ports["port_index"]);
+                        }
                     }
                 }
+                else if (str_starts_with($string, "MAC Address:")) // Si la string Contiene la Frase MAC Address:
+                {
+                    $mac = explode(" ", $string); // Asigna $string a la Variable Array $mac explotándola por el espacio, obteniendo en la posición 2 del array la dirección MAC.
+                }
             }
-            else if (str_starts_with($string, "MAC Address:")) // Si la string Contiene la Frase MAC Address:
+            catch (Exception $e) // Si se Produce algún Error.
             {
-                $mac = explode(" ", $string); // Asigna $string a la Variable Array $mac explotándola por el espacio, obteniendo en la posición 2 del array la dirección MAC.
+                fclose($file); // Se Cierra el Fichero.
+                echo "Paso Algo Inesperado, se Produjo el Error: " . $e->getMessage();
             }
         }   
         fclose($file); // Cierra el Fichero.
@@ -118,12 +127,25 @@ function getOui($conn, $mac, $ip, $device, $port) // Verfifica si la MAC es Pequ
             $ok = search($conn, $ma_l, $mac, $ip, $device, $port); // Verifica si es una MAC Grande.
             if (!$ok) // Si se Devuelve false, Igual se Almacena la MAC, la IP y el nombre del dispositivo en la Base de Datos, Pero se Avisa que Puede ser una MAC Aleatoria o Virtual.
             {
-                echo "<script>toast(2, 'CUIDADO:', 'La MAC Detectada no es Valida, puede tratarse de una MAC Virtual o Randomizada, Android, IOS o Virtual.');</script>";
-                date_default_timezone_set('Europe/London');
-                $date = date('Y/m/d H:i:s A', time());
-                $sql = "INSERT INTO intruder VALUES(:oui, :mac, :ip, :mark, :device, :open_ports, :private, :type, :up_date, :date, :attacks);";
+                $sql = "SELECT oui FROM intruder WHERE mac='$mac' AND ip='$ip';"; // Sentencia SQL para Verificar si la MAC y la IP del dispositivo ya habían intentado un ataque.
                 $stmt = $conn->prepare($sql);
-                $stmt->execute([':oui' => $ma_l, ':mac' => $mac, ':ip' => $ip, ':mark' => "Android, IOS, Virtual", ':device' => $device, ':open_ports' => $port, ':private' => 1, ':type' => "MA_L", ':up_date' => "1970-01-01", ':date' => $date, ':attacks' => 1]);
+                $stmt->execute();
+                if ($stmt->rowCount() > 0) // Si ya había un ataque de esa MAC con esa IP.
+                {
+                    $sql = "UPDATE intruder SET attacks = attacks + 1, date = NOW() WHERE oui='$oui';"; // Se actualiza la tabla de Ataques incrementando el campo attacks y Actualizando la fecha y hora.
+                    $stmt = $conn->prepare($sql);
+                    $stmt->execute();
+                    echo "<script>toast(1, 'ALERTA:', 'Se Ha Detectado un Ataque de una MAC con una IP ya Registradas.<br>Tomen las Precauciones Necesarias.');</script>"; // Se muestra una alerta que se repite un ataque de un dispositvo que ya había atacado en el pasado.
+                }
+                else // Si no hay coicidencia.
+                {
+                        echo "<script>toast(2, 'CUIDADO:', 'La MAC Detectada no es Valida, puede tratarse de una MAC Virtual o Randomizada, Android, IOS o Virtual.');</script>";
+                        date_default_timezone_set('Europe/London');
+                        $date = date('Y/m/d H:i:s A', time());
+                        $sql = "INSERT INTO intruder VALUES(:oui, :mac, :ip, :mark, :device, :open_ports, :private, :type, :up_date, :date, :attacks);";
+                        $stmt = $conn->prepare($sql);
+                        $stmt->execute([':oui' => $ma_l, ':mac' => $mac, ':ip' => $ip, ':mark' => "Android, IOS, Virtual", ':device' => $device, ':open_ports' => $port, ':private' => 1, ':type' => "MA_L", ':up_date' => "1970-01-01", ':date' => $date, ':attacks' => 1]);
+                }
             }
         }
     }

@@ -114,16 +114,7 @@ include "includes/nav_index.html";
                     {
                         for ($i = 0; $i < count($time); $i++)
                         {
-                            for ($j = 0; $j < count($time) / 2; $j++)
-                            {
-                                if ($j != $i)
-                                {
-                                    if ($time[$j] == $time[$i])
-                                    {
-                                        print "<pre>$time[$i] $measurement[$i]: tiene: $field[$i]=$value[$i] $field[$j] = $value[$j]</pre><br>";
-                                    }
-                                }
-                            }
+                            print "<pre>$time[$i] $measurement[$i]: tiene: $field[$i]=$value[$i]</pre><br>";
                         }
                     }
                     else
