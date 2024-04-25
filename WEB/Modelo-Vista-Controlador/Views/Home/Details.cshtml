@@ -1,0 +1,30 @@
+﻿@model Modelo_Vista_Controlador.Models.Contact
+@{
+    ViewData["Title"] = "Detalles del Contacto";
+}
+
+<h1 class="text-center">Detalles del Contacto con .NET 6 Modelo Vista Controlador</h1>
+<br>
+<br>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white">
+                    <strong>Detalle del Contacto</strong>
+                </h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-grooup">
+                    <li class="list-group-item"><strong>Nombre: </strong>@Html.DisplayFor(m => m.Name)</li>
+                    <li class="list-group-item"><strong>Apelldo 1: </strong>@Html.DisplayFor(m => m.Surname1)</li>
+                    <li class="list-group-item"><strong>Apellido 2: </strong>@Html.DisplayFor(m => m.Surname2)</li>
+                    <li class="list-group-item"><strong>Teléfono: </strong>@Html.DisplayFor(m => m.Phone)</li>
+                    <li class="list-group-item"><strong>E-mail: </strong>@Html.DisplayFor(m => m.Email)</li>
+                </ul>
+                <br><br>
+                <a asp-asp-controller="Inicio" asp-action="Index">Volver a Inicio</a>
+            </div>
+        </div>
+    </div>
+</div>

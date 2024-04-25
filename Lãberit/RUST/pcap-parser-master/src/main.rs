@@ -15,6 +15,7 @@ fn main()
         match reader.next() {
             Ok((offset, _block)) => {
                 println!("got new block");
+                // println!("The Block is: {}", _block);
                 num_blocks += 1;
                 reader.consume(offset);
             },

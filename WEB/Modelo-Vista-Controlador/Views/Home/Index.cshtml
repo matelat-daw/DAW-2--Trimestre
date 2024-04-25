@@ -1,0 +1,98 @@
+﻿@model IEnumerable<Modelo_Vista_Controlador.Models.Contact>
+@{
+    ViewData["Title"] = "Modelo Vista Controlador .NET";
+}
+
+<h1 class="text-center">Contacto con .NET 6 Modelo Vista Controlador</h1>
+<br><br>
+<div class="row">
+    <div class="offset-9 col-3 mb-3">
+        <a asp-action="Create" asp-controller="Home" class="btn btn-secondary btn-lg d-block mx-auto">
+            <i class="bi bi-file-plus-fill"></i>Nuevo Contacto</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white">
+                    <strong>Lista de Contactos</strong>
+                </h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    @if (Model.Count() > 0)
+                    {
+                        <table class="table table-bordered" id="tblContact" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Primero Apellido</th>
+                                    <th>Segundo Apellido</th>
+                                    <th>Teléfono</th>
+                                    <th>E-mail</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(m => item.Id)</td>
+                                        <td>@Html.DisplayFor(m => item.Name)</td>
+                                        <td>@Html.DisplayFor(m => item.Surname1)</td>
+                                        <td>@Html.DisplayFor(m => item.Surname2)</td>
+                                        <td>@Html.DisplayFor(m => item.Phone)</td>
+                                        <td>@Html.DisplayFor(m => item.Email)</td>
+                                        <td>
+                                            <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-fill"></i>Edita este Contacto</a>
+                                            <a class="btn btn-secondary" asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-info-circle-fill"></i>Muestra Detalles</a>
+                                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-eraser-fill"></i>Borra este Contacto</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                    else
+                    {
+                        <p>Aun no hay Ningún Contacto.</p>
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function ()
+        {
+            $('#tblContact').DataTable({
+                language: {
+                    "decimal": "",
+                    "emptyTable": "Aun no hay Ningún Contacto.",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                    "infoEmpty": "Mostrado 0 a 0 de 0 Entradas",
+                    "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                    "infoPostFix": "",
+                    "thousands": ".",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "Sin resultados encontrados",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Último",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    }
+                }
+            });
+        });
+    </script>
+}
