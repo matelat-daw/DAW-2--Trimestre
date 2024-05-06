@@ -25,15 +25,17 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
 {
     window.page = page; // Asigno la variable page, a la variable global window.page.
     window.qtty = qtty; // Asigno la variable qtty, a la variable global window.qtty.
-    var length = oui.length; // Necesito el tamaño del array de servicios(Los Servicios en la Base de Datos).
+    const tags = array_key.length - 1;
+    var length = array_value.length / (tags + 1); // Necesito el tamaño del array de servicios(Los Servicios en la Base de Datos).
+    console.log("Hay: " + tags + " Tags y: " + length + " Datos.");
     window.length = length; // Hago global la variable length.
 
-    var html = "<table><tr><th>OUI</th><th>Dirección</th><th>Fabricante</th><th>Dispositivo</th><th>Puertos</th><th>Privada</th><th>Tipo</th><th>Actualizada</th><th>Ataques</th><th>Fecha</th></tr>";
+    var html = "<table><tr><th>Dirección</th><th>MAC</th><th>Puerto Local</th><th>Puerto Remoto</th><th>Protocolo</th><th>OUI</th><th>Tamaño del Paquete</th><th>Marca</th><th>Ataques</th><th>Fecha</th></tr>";
     for (i = (page - 1) * qtty; i < page * qtty; i++) // Aquí hago el bucle desde la página donde esté, a la cantidad de resultados a mostrar.
     {
         if (i < length) // Si i es menor que el tamaño del array.
         {
-            html += "<tr><td>" + oui[i] + "</td><td>" + mac[i] + "</td><td>" + mark[i] + "</td><td>" + device[i] + "</td><td>" + port[i] + "</td><td>" + private[i] + "</td><td>" + type[i] + "</td><td>" + update[i] + "</td><td>" + attacks[i] + "</td><td>" + date[i] + "</td></tr>";
+            html += "<tr><td>" + array_value[i + (tags * i)] + "</td><td>" + array_value[i + 1 + (tags * i)] + "</td><td>" + array_value[i + 2 + (tags * i)] + "</td><td>" + array_value[i + 3 + (tags * i)] + "</td><td>" + array_value[i + 4 + (tags * i)] + "</td><td>" + array_value[i + 5 + (tags * i)] + "</td><td>" + array_value[i + 7 + (tags * i)] + "</td><td>" + array_value[i + 8 + (tags * i)] + "</td><td></td><td>" + array_value[i + 6 + (tags * i)] + "</td></tr>";
         }
     }
     html += "</table>";
