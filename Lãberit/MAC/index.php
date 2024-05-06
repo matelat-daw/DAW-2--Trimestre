@@ -28,7 +28,7 @@ include "includes/nav_index.html";
                         <br><br>
                         <label><input type="number" name="packet" required> Tamaño del Paquete</label>
                         <br><br>
-                        <input type="submit" onclick="wait();" value="Verifica" class="btn btn-primary">
+                        <input type="submit" value="Verifica" class="btn btn-primary">
                         </form>
                     </fieldset>
                 </div>

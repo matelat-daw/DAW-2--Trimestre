@@ -13,11 +13,13 @@ catch(PDOException $e) // En caso de error
 use InfluxDB2\Client;
 // use InfluxDB2\Model\WritePrecision;
 
-$org = 'laberit';
+// $org = 'laberit';
+$org = 'Laberit';
 $bucket = 'MACDB';
 
 $client = new Client([
     "url" => "http://localhost:8086",
-    "token" => "VgWawXJKf2oSbVzJF7yfkQWzCL1RMWQx1Kj__hRm_8xS41GiSm6y0yvs0xWtkIDllq8EZNsybMWIE3T55LtLtg==",
+    "token" => "yePx2-6aAofisOdxKka9XUlu2lR_bEe-KvZ3Kh-WhS1NCcuF54opGmMEr3FCpQpDFP4cFrwNHwu-hjWD6wzjKA==",
+    // "token" => "VgWawXJKf2oSbVzJF7yfkQWzCL1RMWQx1Kj__hRm_8xS41GiSm6y0yvs0xWtkIDllq8EZNsybMWIE3T55LtLtg==",
 ]);
 ?>
