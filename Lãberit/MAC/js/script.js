@@ -92,14 +92,56 @@ function drawBasic() // Gráfica de Barras.
 
     values = getValues(); /// Llama a la función que obtiene los valores de InfluxDB.
 
-    var data = google.visualization.arrayToDataTable(values);
+    // values = {"cols":[
+    //     {"id":"","label":"Month","pattern":"","type":"string"},
+    //     {"id":"","label":"Sales","pattern":"","type":"number"},
+    //     {"id":"","label":"","pattern":"","type":"number","p":{"role":"interval"}},
+    //     {"id":"","label":"","pattern":"","type":"number","p":{"role":"interval"}},
+    //     {"id":"","label":"Expenses","pattern":"","type":"number"}],
+    //   "rows":[
+    //     {"c":[
+    //       {"v":"April","f":null},
+    //       {"v":1000,"f":null},
+    //       {"v":900,"f":null},
+    //       {"v":1100,"f":null},
+    //       {"v":400,"f":null}]},
+    //     {"c":[
+    //       {"v":"May","f":null},
+    //       {"v":1170,"f":null},
+    //       {"v":1000,"f":null},
+    //       {"v":1200,"f":null},
+    //       {"v":460,"f":null}]},
+    //     {"c":[{"v":"June","f":null},
+    //       {"v":660,"f":null},
+    //       {"v":550,"f":null},
+    //       {"v":800,"f":null},
+    //       {"v":1120,"f":null}]},
+    //     {"c":[
+    //       {"v":"July","f":null},
+    //       {"v":1030,"f":null},
+    //       {"v":null,"f":null},
+    //       {"v":null,"f":null},
+    //       {"v":540,"f":null}]}],
+    //   "p":null
+    //   };
 
-    data.addColumn({type: 'string', role: 'tooltip'});
-    data.addRows([
-        [values[0].size, values[0].amount, values[0].mac, values[0].time, 'Acá va toda la Información.'],
-        ]);
+    // var data = new google.visualization.DataTable(values);
 
-    var options = {
+//     var data = new google.visualization.DataTable();
+//     data.addColumn('string', 'MAC');
+//     data.addColumn('string', 'Time');
+//     data.addColumn('number', 'Size');
+//     data.addColumn('number', 'Amount');
+
+// for (var i = 0; i < values.length; i++)
+// {
+//     data.addRow([values[i].mac, values[i].time, values[i].size, values[i].amount]);
+// }
+
+
+var data = google.visualization.arrayToDataTable(values);
+
+var options = {
     title: 'Ataques Totales',
     hAxis: {
         title: 'Ataques de Mayor a Menor, Por Cantidad y por Tamaño de Paquete',
@@ -112,7 +154,7 @@ function drawBasic() // Gráfica de Barras.
     vAxis: {
         title: 'Rating (Escala 1:10)'
     }
-    };
+};
 
     new google.visualization.ColumnChart(chart_div).draw(data, options);
 }
@@ -145,6 +187,8 @@ function getValues()
     let values = [];
     let sizes = [];
 
+    // sizes.push({size: 'Size', amount: 'Amount', mac: 'MAC', time: 'Time'});
+
     for(i = 0; i < length; i++){
         if(!sizes.map(e => e.size).includes(array_value[i + 8 + (i * 9)]))
             sizes.push({size: array_value[i + 8 + (i * 9)], amount: 1, mac: array_value[i + 1 + (i * 9)], time: array_value[i + 7 + (i * 9)]});
@@ -166,11 +210,13 @@ function getValues()
     {
         // values[i] = [sizes[i].size, sizes[i].amount];
         values.push([sizes[i].size, sizes[i].amount, parseInt('sizes[i].mac'), parseInt('sizes[i].time')]);
+        console.log("El contenido de Values en size es: " + values[i + 1]);
     }
 
     // values.unshift(['Size', 'Amount']);
 
     return values;
+    // return sizes;
 }
 
 function toast(warn, ttl, msg) // Función para mostrar el Diálogo con los mensajes de alerta, recibe, Código, Título y Mensaje.
