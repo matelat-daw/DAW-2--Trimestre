@@ -25,16 +25,16 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
 {
     window.page = page; // Asigno la variable page, a la variable global window.page.
     window.qtty = qtty; // Asigno la variable qtty, a la variable global window.qtty.
-    const tags = array_key.length - 1; // Cantidad de Tags(Último Índice del Array de Tags, es el Tamaño del Array - 1).
-    var length = array_value.length / (tags + 1); // Tamaño del Array de Valores(La Cantidad de Tuplas se Obtiene Dividiendo Todos los Resultados por la Cantidad de Tags).
+    const tags = array_key.length - 1; // Cantidad de Datos en Cada Tupla de Valores.
+    var length = array_value.length / (tags + 1); // Obtengo en length el Tamaño de Cada Tupla en el Array de Valores.
     window.length = length; // Hago global la variable length.
 
-    var html = "<table><tr><th>Dirección</th><th>MAC</th><th>Puerto Local</th><th>Puerto Remoto</th><th>Protocolo</th><th>OUI</th><th>Tamaño del Paquete</th><th>Marca</th><th>Ataques</th><th>Fecha</th></tr>";
+    var html = "<table><tr class='text-center'><th>IP</th><th>MAC</th><th>Host</th><th>Puerto Local</th><th>Puerto Remoto</th><th>Protocolo</th><th>OUI</th><th>Tamaño del Paquete</th><th>Marca</th><th>Fecha</th></tr>";
     for (i = (page - 1) * qtty; i < page * qtty; i++) // Aquí hago el bucle desde la página donde esté, a la cantidad de resultados a mostrar.
     {
         if (i < length) // Si i es menor que el tamaño del array.
         {
-            html += "<tr><td>" + array_value[i + (tags * i)] + "</td><td>" + array_value[i + 1 + (tags * i)] + "</td><td>" + array_value[i + 2 + (tags * i)] + "</td><td>" + array_value[i + 3 + (tags * i)] + "</td><td>" + array_value[i + 4 + (tags * i)] + "</td><td>" + array_value[i + 5 + (tags * i)] + "</td><td>" + array_value[i + 8 + (tags * i)] + "</td><td>" + array_value[i + 9 + (tags * i)] + "</td><td>" + array_value[i + 7 + (tags * i)] + "</td><td>" + array_value[i + 6 + (tags * i)] + "</td></tr>";
+            html += "<tr><td>" + array_value[i + (tags * i)] + "</td><td>" + array_value[i + 1 + (tags * i)] + "</td><td>" + array_value[i + 2 + (tags * i)] + "</td><td>" + array_value[i + 3 + (tags * i)] + "</td><td>" + array_value[i + 4 + (tags * i)] + "</td><td>" + array_value[i + 5 + (tags * i)] + "</td><td>" + array_value[i + 6 + (tags * i)] + "</td><td>" + array_value[i + 8 + (tags * i)] + "</td><td>" + array_value[i + 9 + (tags * i)] + "</td><td>" + array_value[i + 7 + (tags * i)] + "</td></tr>";
         }
     }
     html += "</table>";
@@ -62,10 +62,116 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
     }
 }
 
-// function wait() // Se muestra una alerta para indicar que verificar la IP demora unos 10 segundos.
-// {
-//     alert("Verificar la IP demora unos segundos.\nHaz Click en Aceptar y Se Cargará una Nueva Página Después de Aproximadamente 10 Segundos.");
-// }
+/* function wait() // Se muestra una alerta para indicar que verificar la IP demora unos 10 segundos.
+{
+    alert("Verificar la IP demora unos segundos.\nHaz Click en Aceptar y Se Cargará una Nueva Página Después de Aproximadamente 10 Segundos.");
+} */
+
+function addColon()
+{
+    mac.addEventListener("keydown", (e) => {
+        if (e.keyCode != 8)
+        {
+            switch(mac.value.length)
+            {
+                case 2:
+                case 5:
+                case 8:
+                case 11:
+                case 14:
+                    mac.value += ":";
+                    break;
+            }
+        }
+    });
+}
+
+function drawBasic() // Gráfica de Barras.
+{
+    let values = [];
+
+    values = getValues(); /// Llama a la función que obtiene los valores de InfluxDB.
+
+    var data = google.visualization.arrayToDataTable(values);
+
+    data.addColumn({type: 'string', role: 'tooltip'});
+    data.addRows([
+        [values[0].size, values[0].amount, values[0].mac, values[0].time, 'Acá va toda la Información.'],
+        ]);
+
+    var options = {
+    title: 'Ataques Totales',
+    hAxis: {
+        title: 'Ataques de Mayor a Menor, Por Cantidad y por Tamaño de Paquete',
+        format: 'H:mm a',
+        viewWindow: {
+        min: [0, 0, 0],
+        max: [24, 0, 0]
+        }
+    },
+    vAxis: {
+        title: 'Rating (Escala 1:10)'
+    }
+    };
+
+    new google.visualization.ColumnChart(chart_div).draw(data, options);
+}
+
+function drawChart() // Gráfica de Anillo.
+{
+    let values = [];
+    values = getValues();
+
+    var data = google.visualization.arrayToDataTable(values);
+
+    var options = {
+        title: 'Ataques Totales',
+        pieHole: 0.4,
+        slices: {}
+    };
+      
+    var color = 30;
+    for(var i = 0; i < values.length; i++)
+    {
+        options.slices[i] = {color: "rgb(255," + color + "," + color + ")"};
+        color+=Math.round(256/values.length)-1;
+    }
+    
+    new google.visualization.PieChart(donutchart).draw(data, options);
+}
+
+function getValues()
+{
+    let values = [];
+    let sizes = [];
+
+    for(i = 0; i < length; i++){
+        if(!sizes.map(e => e.size).includes(array_value[i + 8 + (i * 9)]))
+            sizes.push({size: array_value[i + 8 + (i * 9)], amount: 1, mac: array_value[i + 1 + (i * 9)], time: array_value[i + 7 + (i * 9)]});
+            // sizes.push({size: array_value[i + 8 + (i * 9)], amount: 1});
+        else
+            sizes[sizes.map(e => e.size).indexOf(array_value[i + 8 + (i * 9)])].amount++;
+    }
+
+    sizes.sort(function (a, b)
+    {
+        return b.amount - a.amount || b.size - a.size;
+    });
+
+    // values.push(['Size', 'Amount']);
+
+    values.push(['Size', 'Amount', 'MAC', 'Time']);
+
+    for (i = 0; i < sizes.length; i++)
+    {
+        // values[i] = [sizes[i].size, sizes[i].amount];
+        values.push([sizes[i].size, sizes[i].amount, parseInt('sizes[i].mac'), parseInt('sizes[i].time')]);
+    }
+
+    // values.unshift(['Size', 'Amount']);
+
+    return values;
+}
 
 function toast(warn, ttl, msg) // Función para mostrar el Diálogo con los mensajes de alerta, recibe, Código, Título y Mensaje.
 {
@@ -91,7 +197,7 @@ function toast(warn, ttl, msg) // Función para mostrar el Diálogo con los mens
 
 function screenSize() // Función para dar el tamaño máximo de la pantalla a las vistas.
 {
-    let view3 = document.getElementById("view3");
+    let view4 = document.getElementById("view4");
     let height = window.innerHeight; // window.innerHeight es el tamaño vertical de la pantalla.
 
     if (view1.offsetHeight < height) // Si el tamaño vertical de la vista es menor que el tamaño vertical de la pantalla.
