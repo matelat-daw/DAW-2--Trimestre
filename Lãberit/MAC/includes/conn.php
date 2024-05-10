@@ -17,7 +17,7 @@ $bucket = 'MACDB';
 
 $client = new Client([
     "url" => "http://localhost:8086",
-    // "token" => $_ENV["Influx-Token"],
-    "token" => "yePx2-6aAofisOdxKka9XUlu2lR_bEe-KvZ3Kh-WhS1NCcuF54opGmMEr3FCpQpDFP4cFrwNHwu-hjWD6wzjKA==",
+    "token" => $_ENV["Influx-Token"],
+    // "token" => "yePx2-6aAofisOdxKka9XUlu2lR_bEe-KvZ3Kh-WhS1NCcuF54opGmMEr3FCpQpDFP4cFrwNHwu-hjWD6wzjKA==",
 ]);
 ?>

@@ -110,7 +110,7 @@ include "includes/nav_index.html";
                         google.charts.setOnLoadCallback(drawBasic);</script>
 
                         <!-- Este Código Dibuja un Anillo -->
-                    <div id="donutchart" style="width: 960px; height: 680px;"></div>
+                    <div id="donutchart"></div>
                     <script>google.charts.load("current", {packages:["corechart"]});
                         google.charts.setOnLoadCallback(drawChart);</script>
                 </div>

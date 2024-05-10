@@ -75,5 +75,7 @@ span
 
 #donutchart
 {
+    width: 960px;
+    height: 680px;
     margin-left: 25%;
 }
