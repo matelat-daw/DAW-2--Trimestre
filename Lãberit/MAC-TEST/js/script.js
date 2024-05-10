@@ -84,19 +84,16 @@ function addColon()
 function drawBasic() // Gráfica de Barras.
 {
     let values = [];
+    values = getValues(); // Llama a la función que obtiene los valores de InfluxDB.
 
-    values = getValues(); /// Llama a la función que obtiene los valores de InfluxDB.
-
-    for (i = 1; i < values.length; i++)
+    for (i = 1; i < values.length; i++) // Bucle para Corregir las Fechas para Ordenar por Fecha y Tamaño de Paquete, Se Inicia en el Índice 1.
     {
-        var date = values[i][0].substr(0, 10);
+        var date = values[i][0].substr(0, 10); // Corta los 10 Primeros Caracteres de la Cadena con Formato de Fecha ISO 8601 Date and Time(2024-05-09T15:14:33Z).
         let each = date.split("-");
-        each[1]--;
+        each[1]--; // Reduce en 1 el Mes ya que los Meses en Javascript Van de 0 a 11.
         let my_date = new Date(each[0], each[1], each[2]);
         values[i][0] = my_date;
     }
-
-    var data = google.visualization.arrayToDataTable(values);
     
     var options = {
         title: 'Ataques Totales',
@@ -106,9 +103,9 @@ function drawBasic() // Gráfica de Barras.
             groupWidth: "80%"
         },
         hAxis: {
-            title: 'Ataques de Mayor a Menor, Por Cantidad y por Tamaño de Paquete',
+            title: 'Ataques de Mayor a Menor, Por Cantidad, Tamaño de Paquete y por Fecha',
             format: 'd MMM YYYY',
-            gridlines: {count: 10},
+            gridlines: {count: 7},
             viewWindow: {
                 min: new Date(Date.now() - (7 * 24 * 60 * 60 * 1000)),
                 max: new Date()
@@ -119,7 +116,10 @@ function drawBasic() // Gráfica de Barras.
         }
     };
 
-    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+    var data = google.visualization.arrayToDataTable(values);
+
+    // var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+    var chart = new google.visualization.ColumnChart(chart_div);
 
     chart.draw(data, options);
 }
@@ -128,10 +128,6 @@ function drawChart() // Gráfica de Anillo.
 {
     let values = [];
     values = getValues();
-    for (i = 1; i < values.length; i++)
-    {
-        values[i][0] = values[i][0].toString();
-    }
 
     var options = {
         title: 'Ataques Totales',
@@ -140,46 +136,36 @@ function drawChart() // Gráfica de Anillo.
         slices: {}
     };
       
-    var color = 0;
-    var index = 1;
+    var color = 0; // Para los Colores Verde y Azul.
 
-    for(i = 0; i < values.length; i++)
+    for (i = 1; i < values.length; i++)
     {
-        options.slices[i] = {color: "rgb(255,"+color+","+color+")"};
-        if (values[index][1] != values[index + 1][1])
-        {
-            color+=Math.trunc(256/(values.length - 1));
-        }
-        index++;
-        if (index == values.length - 1)
-        {
-            index--;
-        }
+        options.slices[i - 1] = {color: "rgb(255, " + color + ", " + color + ")"}; // Da color Rojo puro al primer valor.
+        if (i < values.length - 1 && values[i][1] != values[i + 1][1]) // Si el Índice del Array es Menor que el Tamaño del Array - 1 y el Primer Valor es Distinto del Segundo.
+            color += Math.trunc(256 / values.length); // Incrementa el Valor de Color, Hace el Color Más Claro.
     }
 
     var data = google.visualization.arrayToDataTable(values);
     
-    var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+    // var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+    var chart = new google.visualization.PieChart(donutchart);
     chart.draw(data, options);
 }
 
 function getValues()
 {
     let values = [];
-    let sizes = [];
+    let data = [];
 
-    for(i = 0; i < length; i++)
+    for(i = 0; i < length; i++) // Acá Uso el Length Global, Para Poner los Datos del Array array_value de JavaScript en un Array Asociativo Llamado data.
     {
-        if(!sizes.map(e => e.size).includes(array_value[i + 8 + (i * 9)]))
-            // sizes.push({mac: array_value[i + 1 + (i * 9)], date: my_date, size: parseInt(array_value[i + 8 + (i * 9)]), amount: 1});
-            // sizes.push({date: my_date, size: parseInt(array_value[i + 8 + (i * 9)]), amount: 1});
-            sizes.push({date: array_value[i + 7 + (i * 9)], size: parseInt(array_value[i + 8 + (i * 9)]), amount: 1});
-        else{
-            sizes[sizes.map(e => e.size).indexOf(array_value[i + 8 + (i * 9)])].amount++;
-        }
+        if(!data.map(e => e.size).includes(array_value[i + 8 + (i * 9)]))
+            data.push({date: array_value[i + 7 + (i * 9)], size: parseInt(array_value[i + 8 + (i * 9)]), amount: 1});
+        else
+            data[data.map(e => e.size).indexOf(array_value[i + 8 + (i * 9)])].amount++;
     }
 
-    sizes.sort(function (a, b)
+    data.sort(function (a, b)
     {
         return b.amount - a.amount || b.size - a.size;
     });
@@ -188,16 +174,12 @@ function getValues()
 
     var color = 0;
 
-    for (i = 0; i < sizes.length; i++)
+    for (i = 0; i < data.length; i++)
     {
-        values[i + 1] = [sizes[i].date, sizes[i].size / 1000, 'color: ' + "rgb(255,"+color+","+color+")"]; // , sizes[i].amount];
-        if (i < sizes.length - 1 && sizes[i].size != sizes[i + 1].size)
-        {
-            color+=Math.trunc(256/(sizes.length - 1));
-        }
+        values[i + 1] = [data[i].date, data[i].size / 1000, 'color: ' + "rgb(255, " + color + ", " + color + ")"]; // , data[i].amount];
+        if (i < data.length - 1 && data[i].size != data[i + 1].size)
+            color+=Math.trunc(256 / data.length);
     }
-
-    // values.unshift(['Ataques', 'Ataques']);
 
     return values;
 }
