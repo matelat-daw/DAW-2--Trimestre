@@ -62,11 +62,6 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
     }
 }
 
-/* function wait() // Se muestra una alerta para indicar que verificar la IP demora unos 10 segundos.
-{
-    alert("Verificar la IP demora unos segundos.\nHaz Click en Aceptar y Se Cargará una Nueva Página Después de Aproximadamente 10 Segundos.");
-} */
-
 function addColon()
 {
     mac.addEventListener("keydown", (e) => {
@@ -92,27 +87,36 @@ function drawBasic() // Gráfica de Barras.
 
     values = getValues(); /// Llama a la función que obtiene los valores de InfluxDB.
 
+    for (i = 1; i < values.length; i++)
+    {
+        var date = values[i][0].substr(0, 10);
+        let each = date.split("-");
+        each[1]--;
+        let my_date = new Date(each[0], each[1], each[2]);
+        values[i][0] = my_date;
+    }
+
     var data = google.visualization.arrayToDataTable(values);
     
     var options = {
-    title: 'Ataques Totales',
-    'height':480,
-    colors: ['#ff0000'],
-    bar: {
-        groupWidth: "80%"
-    },
-    hAxis: {
-        title: 'Ataques de Mayor a Menor, Por Cantidad y por Tamaño de Paquete',
-        format: 'd MMM YYYY',
-        gridlines: {count: 10},
-        viewWindow: {
-            min: new Date(Date.now() - (7 * 24 * 60 * 60 * 1000)),
-            max: new Date()
+        title: 'Ataques Totales',
+        'height':480,
+        colors: ['#ff0000'],
+        bar: {
+            groupWidth: "80%"
         },
-    },
-    vAxis: {
-        title: 'Rating (Escala 1:1000)'
-    }
+        hAxis: {
+            title: 'Ataques de Mayor a Menor, Por Cantidad y por Tamaño de Paquete',
+            format: 'd MMM YYYY',
+            gridlines: {count: 10},
+            viewWindow: {
+                min: new Date(Date.now() - (7 * 24 * 60 * 60 * 1000)),
+                max: new Date()
+            },
+        },
+        vAxis: {
+            title: 'Rating (Escala 1:1000)'
+        }
     };
 
     var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
@@ -126,7 +130,7 @@ function drawChart() // Gráfica de Anillo.
     values = getValues();
     for (i = 1; i < values.length; i++)
     {
-        values[i][0]= values[i][0].toString();
+        values[i][0] = values[i][0].toString();
     }
 
     var options = {
@@ -137,10 +141,20 @@ function drawChart() // Gráfica de Anillo.
     };
       
     var color = 0;
-    for(var i = 0; i < values.length; i++)
+    var index = 1;
+
+    for(i = 0; i < values.length; i++)
     {
         options.slices[i] = {color: "rgb(255,"+color+","+color+")"};
-        color+=Math.round(256/(values.length - 1));
+        if (values[index][1] != values[index + 1][1])
+        {
+            color+=Math.trunc(256/(values.length - 1));
+        }
+        index++;
+        if (index == values.length - 1)
+        {
+            index--;
+        }
     }
 
     var data = google.visualization.arrayToDataTable(values);
@@ -156,14 +170,10 @@ function getValues()
 
     for(i = 0; i < length; i++)
     {
-        var date = array_value[i + 7 + (i * 9)].substr(0, 10);
-        let each = date.split("-");
-        each[1]--;
-        let my_date = new Date(each[0], each[1], each[2]);
         if(!sizes.map(e => e.size).includes(array_value[i + 8 + (i * 9)]))
             // sizes.push({mac: array_value[i + 1 + (i * 9)], date: my_date, size: parseInt(array_value[i + 8 + (i * 9)]), amount: 1});
-        // sizes.push({date: my_date, size: parseInt(array_value[i + 8 + (i * 9)]), amount: 1});
-        sizes.push({date: array_value[i + 7 + (i * 9)], size: parseInt(array_value[i + 8 + (i * 9)]), amount: 1});
+            // sizes.push({date: my_date, size: parseInt(array_value[i + 8 + (i * 9)]), amount: 1});
+            sizes.push({date: array_value[i + 7 + (i * 9)], size: parseInt(array_value[i + 8 + (i * 9)]), amount: 1});
         else{
             sizes[sizes.map(e => e.size).indexOf(array_value[i + 8 + (i * 9)])].amount++;
         }
@@ -174,16 +184,17 @@ function getValues()
         return b.amount - a.amount || b.size - a.size;
     });
 
-    // values.push(['Fecha', 'Tamaño del Paquete', {role: 'style'}, 'Cantidad de Ataques']);
     values.push(['Fecha', 'Tamaño del Paquete', {role: 'style'}]); // , 'Cantidad de Ataques']);
 
     var color = 0;
+
     for (i = 0; i < sizes.length; i++)
     {
         values[i + 1] = [sizes[i].date, sizes[i].size / 1000, 'color: ' + "rgb(255,"+color+","+color+")"]; // , sizes[i].amount];
-        // values[i + 1] = [sizes[i].date, sizes[i].amount, 'color: ' + "rgb(255,"+color+","+color+")"];
-        color+=Math.trunc(256/sizes.length) - 1;
-        
+        if (i < sizes.length - 1 && sizes[i].size != sizes[i + 1].size)
+        {
+            color+=Math.trunc(256/(sizes.length - 1));
+        }
     }
 
     // values.unshift(['Ataques', 'Ataques']);

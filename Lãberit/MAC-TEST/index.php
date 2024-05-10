@@ -1,5 +1,5 @@
 <?php
-require "vendor/autoload.php";
+require "Influx/autoload.php";
 include "includes/conn.php";
 $title = "Verificador de Direcciones MAC Intrusas.";
 include "includes/header.php";
@@ -109,9 +109,10 @@ include "includes/nav_index.html";
                         google.charts.setOnLoadCallback(drawBasic);</script>
 
                         <!-- Este Código Dibuja un Anillo -->
-                    <div id="donutchart" style="width: 960px; height: 680px;"></div>
+                    <div id="donutchart" style="width: 960px; height: 640px;"></div>
                     <script>google.charts.load("current", {packages:["corechart"]});
                         google.charts.setOnLoadCallback(drawChart);</script>
+                        <br><br><br>
                 </div>
             </div>
         <div class="col-md-1"></div>
