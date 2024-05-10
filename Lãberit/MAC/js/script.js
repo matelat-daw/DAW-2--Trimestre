@@ -127,19 +127,7 @@ function drawBasic() // Gráfica de Barras.
 
     // var data = new google.visualization.DataTable(values);
 
-//     var data = new google.visualization.DataTable();
-//     data.addColumn('string', 'MAC');
-//     data.addColumn('string', 'Time');
-//     data.addColumn('number', 'Size');
-//     data.addColumn('number', 'Amount');
-
-// for (var i = 0; i < values.length; i++)
-// {
-//     data.addRow([values[i].mac, values[i].time, values[i].size, values[i].amount]);
-// }
-
-
-var data = google.visualization.arrayToDataTable(values);
+var data = new google.visualization.arrayToDataTable(values);
 
 var options = {
     title: 'Ataques Totales',
@@ -187,33 +175,30 @@ function getValues()
     let values = [];
     let sizes = [];
 
-    // sizes.push({size: 'Size', amount: 'Amount', mac: 'MAC', time: 'Time'});
+    // sizes.push({length: 'Length', amount: 'Amount'});
 
     for(i = 0; i < length; i++){
-        if(!sizes.map(e => e.size).includes(array_value[i + 8 + (i * 9)]))
-            sizes.push({size: array_value[i + 8 + (i * 9)], amount: 1, mac: array_value[i + 1 + (i * 9)], time: array_value[i + 7 + (i * 9)]});
-            // sizes.push({size: array_value[i + 8 + (i * 9)], amount: 1});
+        if(!sizes.map(e => e.length).includes(array_value[i + 8 + (i * 9)]))
+            sizes.push({length: array_value[i + 8 + (i * 9)], amount: 1, mac: array_value[i + 1 + (i * 9)], time: array_value[i + 7 + (i * 9)]});
+            // sizes.push({length: array_value[i + 8 + (i * 9)], amount: 1});
         else
-            sizes[sizes.map(e => e.size).indexOf(array_value[i + 8 + (i * 9)])].amount++;
+            sizes[sizes.map(e => e.length).indexOf(array_value[i + 8 + (i * 9)])].amount++;
     }
 
     sizes.sort(function (a, b)
     {
-        return b.amount - a.amount || b.size - a.size;
+        return b.amount - a.amount || b.length - a.length;
     });
 
-    // values.push(['Size', 'Amount']);
-
-    values.push(['Size', 'Amount', 'MAC', 'Time']);
+    values.push(['Length', 'Amount', 'MAC', 'Time']);
 
     for (i = 0; i < sizes.length; i++)
     {
         // values[i] = [sizes[i].size, sizes[i].amount];
-        values.push([sizes[i].size, sizes[i].amount, parseInt('sizes[i].mac'), parseInt('sizes[i].time')]);
-        console.log("El contenido de Values en size es: " + values[i + 1]);
+        values.push([sizes[i].length, sizes[i].amount, parseInt('sizes[i].mac'), parseInt('sizes[i].time')]);
     }
 
-    // values.unshift(['Size', 'Amount']);
+    // // values.unshift(['Size', 'Amount']);
 
     return values;
     // return sizes;
