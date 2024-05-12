@@ -127,12 +127,14 @@ include "includes/nav_index.html";
                     <form action="export.php" method="post" target="_blank" encode="multipartformdata">
 
                         <?php // foreach ($data as $val) : ?>
-                        <!-- <input type="hidden" name="data[]" value="<?= $val ?>"> -->
+                        <!-- <input type="hidden" name="data[]" value="<?= $val ?>"> Forma Compleja de pasar un Array en PHP, se recibe $data = $_POST["data"]; -->
                         <?php // endforeach ?>
 
                         <?php
-                            echo '<input type="hidden" name="data" value="' . htmlspecialchars(json_encode($data)) . '">';
+                            // echo '<input type="hidden" name="data" value="' . htmlspecialchars(json_encode($data)) . '">'; // Forma de Pasar un Array en PHP, se Recibe con jsondecode.
                         ?>
+
+                        <input type="hidden" name="data" value="<?php echo htmlspecialchars(json_encode($data)); ?>"> <!-- Forma de Pasar un Array en HTML, se Recibe con jsondecode. -->
 
                         <input type="submit" name="index" value="Ver Informe" class="btn btn-info btn-lg">
                         </form>

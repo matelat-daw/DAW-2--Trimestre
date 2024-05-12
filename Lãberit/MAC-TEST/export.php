@@ -16,25 +16,20 @@ if(isset($_POST["export"])) // Viene del Mismo Script.
 	$active_sheet = $file->getActiveSheet();
 
 	$active_sheet->setCellValue('A1', 'IP');
-    $active_sheet->getStyle('A1')->getAlignment()->setHorizontal("center");
 	$active_sheet->setCellValue('B1', 'MAC');
-    $active_sheet->getStyle('B1')->getAlignment()->setHorizontal("center");
 	$active_sheet->setCellValue('C1', 'Host');
-    $active_sheet->getStyle('C1')->getAlignment()->setHorizontal("center");
 	$active_sheet->setCellValue('D1', 'Puerto Local');
-    $active_sheet->getStyle('D1')->getAlignment()->setHorizontal("center");
 	$active_sheet->setCellValue('E1', 'Puerto Remoto');
-    $active_sheet->getStyle('E1')->getAlignment()->setHorizontal("center");
 	$active_sheet->setCellValue('F1', 'Protocolo');
-    $active_sheet->getStyle('F1')->getAlignment()->setHorizontal("center");
     $active_sheet->setCellValue('G1', 'OUI');
-    $active_sheet->getStyle('G1')->getAlignment()->setHorizontal("center");
     $active_sheet->setCellValue('H1', 'Tamaño de Paquete');
-    $active_sheet->getStyle('H1')->getAlignment()->setHorizontal("center");
 	$active_sheet->setCellValue('I1', 'Marca');
-    $active_sheet->getStyle('I1')->getAlignment()->setHorizontal("center");
 	$active_sheet->setCellValue('J1', 'Fecha');
-    $active_sheet->getStyle('J1')->getAlignment()->setHorizontal("center");
+
+    for ($i = 65; $i < 75; $i++) // Bucle de la A a la J(ASCII).
+    {
+        $active_sheet->getStyle(chr($i) . 1)->getAlignment()->setHorizontal("center"); // Centra en Texto de Todos Los Títulos.
+    }
 
 	$count = 2;
 	$total = 0;
@@ -46,15 +41,15 @@ if(isset($_POST["export"])) // Viene del Mismo Script.
         $active_sheet->setCellValue('B' . $count, $data[$i + 1]);
         $active_sheet->getStyle('B' . $count)->getAlignment()->setHorizontal("center");
         $active_sheet->setCellValue('C' . $count, $data[$i + 2]);
-        $active_sheet->getStyle('C' . $count)->getAlignment()->setHorizontal("left");
+        $active_sheet->getStyle('C' . $count)->getAlignment()->setHorizontal("left"); // Alineación del texto con la cadena 'left', Alinea a la Izquierda.
         $active_sheet->setCellValue('D' . $count, $data[$i + 3]);
-        $active_sheet->getStyle('D' . $count)->getAlignment()->setHorizontal("right");
+        $active_sheet->getStyle('D' . $count)->getAlignment()->setHorizontal("right"); // Alineación del texto con la cadena 'right', Alinea a la Derecha.
         $active_sheet->setCellValue('E' . $count, $data[$i + 4]);
-        $active_sheet->getStyle('E' . $count)->getAlignment()->setHorizontal("right"); // Alineación del texto con la cadena 'center', Alinea al Centro.
+        $active_sheet->getStyle('E' . $count)->getAlignment()->setHorizontal("right");
         $active_sheet->setCellValue('F' . $count, $data[$i + 5]);
-        $active_sheet->getStyle('F' . $count)->getAlignment()->setHorizontal("center");
+        $active_sheet->getStyle('F' . $count)->getAlignment()->setHorizontal("center"); // Alineación del texto con la cadena 'center', Alinea al Centro.
         $active_sheet->setCellValue('G' . $count, $data[$i + 6]);
-        $active_sheet->getStyle('G' . $count)->getAlignment()->setHorizontal("center"); // Alineación del texto con la cadena 'left', Alinea a la Izquierda.
+        $active_sheet->getStyle('G' . $count)->getAlignment()->setHorizontal("center");
         $active_sheet->setCellValue('H' . $count, $data[$i + 8]);
         $active_sheet->getStyle('H' . $count)->getAlignment()->setHorizontal("right");
         $active_sheet->setCellValue('I' . $count, "\t" . $data[$i + 9]);
@@ -71,8 +66,8 @@ if(isset($_POST["export"])) // Viene del Mismo Script.
 
     $active_sheet->getRowDimension(1)->setRowHeight(20); // Cambia el tamaño Vertical de las filas usadas en la planilla.
     $active_sheet->getColumnDimension(chr(65))->setWidth(15);
-    $active_sheet->getColumnDimension(chr(66))->setWidth(20); // Si es la Letra C le da el tamaño horizontal 40.
-    $active_sheet->getColumnDimension(chr(67))->setWidth(10); // Si es la Letra D le da el tamaño horizontal 50.
+    $active_sheet->getColumnDimension(chr(66))->setWidth(20); // Si es la Letra B le da el tamaño horizontal 20.
+    $active_sheet->getColumnDimension(chr(67))->setWidth(10); // Si es la Letra C le da el tamaño horizontal 10.
     for ($i = 68; $i < 75; $i++)
     {
         if ($i < 71)
