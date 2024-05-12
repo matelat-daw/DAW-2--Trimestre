@@ -42,6 +42,8 @@ include "includes/nav_index.html";
                     $query = "from(bucket: \"$bucket\") |> range(start: -8d) |> filter(fn: (r) => r._measurement == \"intruder\")"; // Consulta a InfluxDB.
                     $tables = $client->createQueryApi()->query($query, $org); // Ejecuta la Consulta Asignado el Resutlado a la Variable $tables.
                     $records = []; // $records Contendrá todos los Resultados de la Tabla intruder de la Base de Datos MACDB.
+                    $data = [];
+                    $i = 0;
                     foreach ($tables as $table) // Obtiene cada Tabla de las Tablas de la Variable $tables(Solo Obtiene la Tabla intruder).
                     {
                         foreach ($table->records as $record) // De la Tabla intruder Obtiene cada Campo Almacenado en la Varaible $record.
@@ -72,6 +74,7 @@ include "includes/nav_index.html";
                                     echo "<script>array_key[" . $i . "] = '" . key($key) . "';</script>"; // Almaceno Las Tags en el Array de Tags de Javascript.
                                 }
                                 echo "<script>array_value[" . $i . "] = '" . $value . "';</script>"; // Almaceno Los Valores en el Array de Valores de Javascript.
+                                $data[$i] = $value;
                                 next($key); // Siguiente Clave.
                                 $i++; // Siguiente Índice.
                             }
@@ -112,7 +115,42 @@ include "includes/nav_index.html";
                     <div id="donutchart" style="width: 960px; height: 640px;"></div>
                     <script>google.charts.load("current", {packages:["corechart"]});
                         google.charts.setOnLoadCallback(drawChart);</script>
-                        <br><br><br>
+                    <br><br><br>
+                </div>
+                <div id="view4">
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h3>Exportando los Datos a Excel o CSV</h3>
+                    <br>
+                    <div class="col-md-5">
+                    <h4>Selecciona el Trimestre y el Año para Descargar un Informe de las Incidencias del Trimestre que Necesites y Haz Click en Ver Informe.</h4>
+                    <br>
+                    <form action="export.php" method="post" target="_blank" encode="multipartformdata">
+                        <label>
+                            <select name="date" required>
+                                <option value="">Selecciona una Opción</option>
+                                <option value="1">1º Trimestre</option>
+                                <option value="2">2º Trimestre</option>
+                                <option value="3">3º Trimestre</option>
+                                <option value="4">4º Trimestre</option>
+                                <option value="5">Todo el Año</option>
+                            </select> Selecciona el Trimestre a consultar
+                        </label>
+                        <br><br>
+                        <label><input type="number" id="year" name="year" min="2024" max="3000" step="1" required> Selecciona el Año</label>
+                        <br><br>
+                        <?php foreach ($data as $val) : ?>
+                        <input type="hidden" name="data[]" value="<?= $val ?>">
+                        <?php endforeach ?>
+                        <input type="submit" value="Ver Informe" class="btn btn-info btn-lg">
+                        </form>
+                        <script>
+                            var date = document.getElementById("year");
+                            const d = new Date();
+                            let year = d.getFullYear();
+                            date.value = year;
+                        </script>
+                        <br><br>
+                    </div>
                 </div>
             </div>
         <div class="col-md-1"></div>
