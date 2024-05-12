@@ -122,10 +122,10 @@ include "includes/nav_index.html";
                     <h3>Exportando los Datos a Excel o CSV</h3>
                     <br>
                     <div class="col-md-5">
-                    <h4>Selecciona el Trimestre y el Año para Descargar un Informe de las Incidencias del Trimestre que Necesites y Haz Click en Ver Informe.</h4>
+                    <h4>Haz Click en Ver Informe.</h4>
                     <br>
                     <form action="export.php" method="post" target="_blank" encode="multipartformdata">
-                        <label>
+                        <!-- <label>
                             <select name="date" required>
                                 <option value="">Selecciona una Opción</option>
                                 <option value="1">1º Trimestre</option>
@@ -137,7 +137,7 @@ include "includes/nav_index.html";
                         </label>
                         <br><br>
                         <label><input type="number" id="year" name="year" min="2024" max="3000" step="1" required> Selecciona el Año</label>
-                        <br><br>
+                        <br><br> -->
                         <?php foreach ($data as $val) : ?>
                         <input type="hidden" name="data[]" value="<?= $val ?>">
                         <?php endforeach ?>
