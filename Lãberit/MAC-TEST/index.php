@@ -125,23 +125,16 @@ include "includes/nav_index.html";
                     <h4>Haz Click en Ver Informe.</h4>
                     <br>
                     <form action="export.php" method="post" target="_blank" encode="multipartformdata">
-                        <!-- <label>
-                            <select name="date" required>
-                                <option value="">Selecciona una Opción</option>
-                                <option value="1">1º Trimestre</option>
-                                <option value="2">2º Trimestre</option>
-                                <option value="3">3º Trimestre</option>
-                                <option value="4">4º Trimestre</option>
-                                <option value="5">Todo el Año</option>
-                            </select> Selecciona el Trimestre a consultar
-                        </label>
-                        <br><br>
-                        <label><input type="number" id="year" name="year" min="2024" max="3000" step="1" required> Selecciona el Año</label>
-                        <br><br> -->
-                        <?php foreach ($data as $val) : ?>
-                        <input type="hidden" name="data[]" value="<?= $val ?>">
-                        <?php endforeach ?>
-                        <input type="submit" value="Ver Informe" class="btn btn-info btn-lg">
+
+                        <?php // foreach ($data as $val) : ?>
+                        <!-- <input type="hidden" name="data[]" value="<?= $val ?>"> -->
+                        <?php // endforeach ?>
+
+                        <?php
+                            echo '<input type="hidden" name="data" value="' . htmlspecialchars(json_encode($data)) . '">';
+                        ?>
+
+                        <input type="submit" name="index" value="Ver Informe" class="btn btn-info btn-lg">
                         </form>
                         <script>
                             var date = document.getElementById("year");

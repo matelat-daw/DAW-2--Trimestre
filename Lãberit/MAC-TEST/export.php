@@ -3,12 +3,12 @@ require "Influx/autoload.php";
 include 'includes/conn.php';
 require 'Excel/autoload.php';
 
-if (isset($_POST["data"]))
+if (isset($_POST["data"]) && isset($_POST["index"])) // Viene de index.php
 {
-    $data = $_POST["data"];
+    $data = json_decode($_POST["data"]);
 }
 	
-if(isset($_POST["export"]))
+if(isset($_POST["export"])) // Viene del Mismo Script.
 {
     $data = $_POST["data"];
 	$file = new PhpOffice\PhpSpreadsheet\Spreadsheet(); // Hay que usarlo así en Wordpress, también funciona en cualquier script de PHP.
