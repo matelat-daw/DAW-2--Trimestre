@@ -1,5 +1,5 @@
 <?php
-require "vendor/autoload.php";
+require "Influx/autoload.php";
 include "includes/conn.php";
 $title = "Detección de Intrusión";
 include "includes/header.php";
@@ -44,8 +44,7 @@ if (isset($_POST["ip"])) // Recibe la IP y los Demás Datos desde el script inde
     echo "<script>toast(0, 'Datos Agregados', 'Se Han Agregado Datos a InfluxDB.');</script>";
 }
 
-function get_device($conn, $mac)
-{
+function get_device($conn, $mac){
     $ma_s = substr($mac, 0, 13); // Parte la Cadena $mac y Obtiene la OUI de una MAC Pequeña.
     $ma_m = substr($mac, 0, 10); // Parte la Cadena $mac y Obtiene la OUI de una MAC Mediana.
     $ma_l = substr($mac, 0, 8); // Parte la Cadena $mac y Obtiene la OUI de una MAC Grande.

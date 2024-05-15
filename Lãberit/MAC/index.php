@@ -1,5 +1,5 @@
 <?php
-require "vendor/autoload.php";
+require "Influx/autoload.php";
 include "includes/conn.php";
 $title = "Verificador de Direcciones MAC Intrusas.";
 include "includes/header.php";
@@ -39,15 +39,15 @@ include "includes/nav_index.html";
                     <h3>Lista de datos en InfluxDB:</h3>
                     <br><br>
                     <?php
-                    $query = "from(bucket: \"$bucket\") |> range(start: -6d) |> filter(fn: (r) => r._measurement == \"intruder\")"; // Consulta a InfluxDB.
+                    $query = "from(bucket: \"$bucket\") |> range(start: -7d) |> filter(fn: (r) => r._measurement == \"intruder\")"; // Consulta a InfluxDB.
                     $tables = $client->createQueryApi()->query($query, $org); // Ejecuta la Consulta Asignado el Resutlado a la Variable $tables.
                     $records = []; // $records Contendrá todos los Resultados de la Tabla intruder de la Base de Datos MACDB.
+                    $i = 0;
                     foreach ($tables as $table) // Obtiene cada Tabla de las Tablas de la Variable $tables(Solo Obtiene la Tabla intruder).
                     {
                         foreach ($table->records as $record) // De la Tabla intruder Obtiene cada Campo Almacenado en la Varaible $record.
                         {
                             $tag = ["ip" => $record->getRecordValue("ip"), "mac" => $record->getRecordValue("mac"), "host" => $record->getRecordValue("host"), "l_port" => $record->getRecordValue("localPort"), "r_port" => $record->getRecordValue("remotePort"), "protocol" => $record->getRecordValue("protocol"), "oui" => $record->getRecordValue("oui"), "time" => $record->getTime()]; // En la Varible de tipo array $tag, pusimos todos los tags y sus valores.
-
                             $row = key_exists($record->getTime(), $records) ? $records[$record->getTime()] : []; // Este operador ternario asigna a $row los datos en InfluxDB.
                             $records[$record->getTime()] = array_merge($row, $tag, [$record->getField() => $record->getValue()]); // Hacemos un array_merge con los datos de toda la Tupla y los Tags.
                         }
@@ -55,6 +55,7 @@ include "includes/nav_index.html";
 
                     if (count($records) > 0) // Si hay Datos.
                     {
+                        $data = [];
                         $time = array_column($records, 'time'); // Obtengo la KEY time del Array $records.
 
                         array_multisort($time, SORT_DESC, $records); // Ordena el Array $records por la Columna time, en Orden Descendiente.
@@ -73,6 +74,7 @@ include "includes/nav_index.html";
                                     echo "<script>array_key[" . $i . "] = '" . key($key) . "';</script>"; // Almaceno Las Tags en el Array de Tags de Javascript.
                                 }
                                 echo "<script>array_value[" . $i . "] = '" . $value . "';</script>"; // Almaceno Los Valores en el Array de Valores de Javascript.
+                                $data[$i] = $value;
                                 next($key); // Siguiente Clave.
                                 $i++; // Siguiente Índice.
                             }
@@ -101,18 +103,36 @@ include "includes/nav_index.html";
                 </div>
                 <div id="view3">
                     <br><br><br><br>
-                    <h3>Grafica de Nivel de Ataque de las Conexiones Intrusas.</h3>
+                    <h3>Gráfica de Nivel de Ataque de las Conexiones Intrusas.</h3>
                     <br>
 
-                    <!-- Este Código Dibuja una Gráfica de Barras -->
                     <div id="chart_div"></div>
                     <script>google.charts.load('current', {packages: ['corechart', 'bar']});
-                        google.charts.setOnLoadCallback(drawBasic);</script>
+                        google.charts.setOnLoadCallback(drawBars);</script>
 
-                        <!-- Este Código Dibuja un Anillo -->
-                    <div id="donutchart"></div>
+                    <div id="donutchart" style="width: 960px; height: 500px;"></div>
                     <script>google.charts.load("current", {packages:["corechart"]});
-                        google.charts.setOnLoadCallback(drawChart);</script>
+                        google.charts.setOnLoadCallback(drawDonut);</script>
+                    <br><br><br>
+                </div>
+                <div id="view4">
+                    <br><br><br><br><br><br><br>
+                    <?php
+                        if (isset($data))
+                        {
+                            echo '<h3>Exportando los Datos a Excel o CSV</h3>
+                            <br>
+                            <div class="col-md-5">
+                            <h4>Haz Click en Ver Informe.</h4>
+                            <br>
+                            <form action="export.php" method="post" target="_blank">
+                                <input type="hidden" name="data" value="' . htmlspecialchars(json_encode($data)) . '">
+                                <input type="submit" name="index" value="Ver Informe" class="btn btn-info btn-lg">
+                            </form>';
+                        }
+                    ?>
+                    <br><br>
+                    </div>
                 </div>
             </div>
         <div class="col-md-1"></div>
