@@ -34,12 +34,12 @@ Delete Data From Influx:
 influx delete --bucket Bucket_Name --start '2024-01-01T00:00:00Z' --stop $('2024-05-14T09:00:00Z') --predicate '_measurement="Measurement_Name"'
 
 
-influx delete --bucket SAIDI_DATA --start 2024-03-01T00:00:00Z --stop 2024-05-14T09:00:00Z
+influx delete --bucket MACDB --start 2024-03-01T00:00:00Z --stop 2024-05-14T09:00:00Z
 
 
 Export the Data Base From InfluxDB:
 
-influx backup --bucket saidi_data data // Exporta La Base de Datos Comprimida al Directorio data.
+influx backup --bucket MACDB data // Exporta La Base de Datos Comprimida al Directorio data.
 
 influx restore --full data // Recupera la Base de Datos desde el Directorio data.
 
@@ -47,7 +47,7 @@ influx restore --full data // Recupera la Base de Datos desde el Directorio data
 Export a Measurement:
 
 
-curl -X POST http://localhost:8086/query --header "Authorization: Token h7ehkw6Bvt_zIrTP9C73N_2Z_O2g2H4DjvpN_wBV3sXlKLWNhne0c97r34ikHX2inFjxT54KcYh_pFwkS0J44Q==" --header "Accept: application/csv" --data-urlencode "db=SAIDI_DATA" --data-urlencode "q=SELECT * FROM intruder" -fo data.csv
+curl -X POST http://localhost:8086/query --header "Authorization: Token yePx2-6aAofisOdxKka9XUlu2lR_bEe-KvZ3Kh-WhS1NCcuF54opGmMEr3FCpQpDFP4cFrwNHwu-hjWD6wzjKA==" --header "Accept: application/csv" --data-urlencode "db=MACDB" --data-urlencode "q=SELECT * FROM intruder" -fo data.csv
 
 Este comando CURL exporta los datos del measurement intruder del bucket SAIDI_DATA a un fichero CSV llamado data.csv
 

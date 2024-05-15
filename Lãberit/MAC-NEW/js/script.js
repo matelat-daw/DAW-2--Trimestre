@@ -42,7 +42,7 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
         html += "</table>";
         table.innerHTML = html; // Muestro todo en pantalla.
 
-        if (length > 5) // Si la cantidad de Artículos es mayor que 5.
+        if (length > 8) // Si la cantidad de Artículos es mayor que 5.
         {
             pages.innerHTML = "Página: " + page; // Muestro el número de página.
             if (page == 1) // Si la página es la número 1

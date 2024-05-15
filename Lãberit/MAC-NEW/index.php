@@ -17,7 +17,7 @@ include "includes/nav_index.html";
                         $line = [];
                         $each = [];
                         $i = 0;
-                        $file = fopen("data.txt", "r") or die("Unable to open file!");
+                        $file = fopen("saidi.csv", "r") or die("Unable to open file!");
                         while(!feof($file))
                         {
                             $line[$i] = fgets($file);
@@ -25,9 +25,6 @@ include "includes/nav_index.html";
                             $i++;
                         }
                         fclose($file);
-
-                        print_r($each);
-
 
                         echo '
                             <h3>Los Datos ya Están Listos, Haz Click en el Botón Enviar para Almacenarlos en la Base de Datos</h3>
@@ -44,7 +41,7 @@ include "includes/nav_index.html";
                     <h3>Lista de datos en InfluxDB:</h3>
                     <br><br>
                     <?php
-                    $query = "from(bucket: \"$bucket\") |> range(start: -7d) |> filter(fn: (r) => r._measurement == \"aintruder\")"; // Consulta a InfluxDB.
+                    $query = "from(bucket: \"$bucket\") |> range(start: -7d) |> filter(fn: (r) => r._measurement == \"aintrusa\")"; // Consulta a InfluxDB.
                     $tables = $client->createQueryApi()->query($query, $org); // Ejecuta la Consulta Asignado el Resutlado a la Variable $tables.
                     $records = []; // $records Contendrá todos los Resultados de la Tabla intruder de la Base de Datos MACDB.
                     $i = 0;
@@ -52,8 +49,7 @@ include "includes/nav_index.html";
                     {
                         foreach ($table->records as $record) // De la Tabla intruder Obtiene cada Campo Almacenado en la Varaible $record.
                         {
-                            $tag = ["mac" => $record->getRecordValue("mac"), "time" => $record->getTime()];
-                            // $tag = ["mac" => $record->getRecordValue("mac"), "qtty" => $record->getRecordValue("qtty"), "uni" => $record->getRecordValue("uni"), "multi" => $record->getRecordValue("multi"), "broad" => $record->getRecordValue("broad"), "arp" => $record->getRecordValue("arp"), "traffic" => $record->getRecordValue("traffic"), "icmp" => $record->getRecordValue("icmp"), "tcp" => $record->getRecordValue("tcp"), "udp" => $record->getRecordValue("udp"), "resto" => $record->getRecordValue("resto"), "ipv6" => $record->getRecordValue("ipv6"), "arp46" => $record->getRecordValue("arp46"), "badip" => $record->getRecordValue("badip"), "ssdp" => $record->getRecordValue("ssdp"), "icmp6" => $record->getRecordValue("icmp6")]; // En la Varible de tipo array $tag, pusimos todos los tags y sus valores.
+                            $tag = ["mac" => $record->getRecordValue("mac"), "mark" => $record->getRecordValue("mark"), "oui" => $record->getRecordValue("oui"), "time" => $record->getTime()];
                             $row = key_exists($record->getTime(), $records) ? $records[$record->getTime()] : []; // Este operador ternario asigna a $row los datos en InfluxDB.
                             $records[$record->getTime()] = array_merge($row, $tag, [$record->getField() => $record->getValue()]); // Hacemos un array_merge con los datos de toda la Tupla y los Tags.
                         }
