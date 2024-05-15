@@ -56,3 +56,22 @@ Este comando CURL exporta los datos del measurement intruder del bucket SAIDI_DA
 Import Data in CSV to InfluxDB:
 
 influx write --bucket SAIDI_DATA --format=csv --file C:/Tools/InfluxDB/Data/data.csv // Escribe los Datos del CSV a InfluxDB.
+
+Datos de Una Incidencia en SAIDI:
+
+1º:	MAC del dispositivo anómalo
+2º:	Nº de paquetes detectados por esta MAC
+3º:	Nº de conexiones por Unicast
+4º:	Nº de conexiones por Multicast
+5º:	Nº de conexiones por Broadcast
+6º:	Nº de paquetes por protocolo ARP
+7º:	Tráfico ARP entre dos IPs activas dentro de la red definida
+8º:	Nº de paquetes por protocolo IPv4 > ICMP
+9º:	Nº de paquetes por protocolo IPv4 > UDP
+10º:	Nº de paquetes por protocolo IPv4 > TCP
+11º:	Nº de paquetes por protocolo IPv4 > resto
+12º:	Nº de paquetes por protocolo IPv6
+13º:	Nº de paquetes por protocolo !(ARP, IPv4, IPv6)
+14º:	Ha preguntado por una IP no contemplada por ARP -------------------------???
+15º:	Nº de paquetes por protocolo IPv4 > UDP > SSDP
+16º:	Nº de paquetes por protocolo IPv6 > ICMPv6

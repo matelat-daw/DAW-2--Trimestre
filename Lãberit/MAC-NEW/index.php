@@ -13,33 +13,38 @@ include "includes/nav_index.html";
                 <div id="view1">
                     <br><br><br><br>
                     <h1>Verificador de MACS</h1>
-                    <fieldset>
-                        <legend>Por Favor Ingresa los Datos</legend>
-                        <form action="review.php" method="post">
-                        <label><input id="ip" type="text" name="ip" maxlength="15" required> Dirección IP</label>
-                        <br><br>
-                        <label><input id="mac" type="text" name="mac" oninput="addColon()" placeholder="No Escribas los :" maxlength="17" required> Dirección MAC</label>
-                        <br><br>
-                        <label><input type="text" name="host" required> Nombre del Dispositvo</label>
-                        <br><br>
-                        <label><input type="text" name="local_port" min="1" max="65535" required> Puerto Local</label>
-                        <br><br>
-                        <label><input type="text" name="remote_port" min="1" max="1024" required> Puerto Remoto</label>
-                        <br><br>
-                        <label><input type="text" name="protocol" required> Protocolo de Conexión</label>
-                        <br><br>
-                        <label><input type="number" name="packet" required> Tamaño del Paquete</label>
-                        <br><br>
-                        <input type="submit" value="Verifica" class="btn btn-primary btn-lg">
-                        </form>
-                    </fieldset>
+                    <?php
+                        $line = [];
+                        $each = [];
+                        $i = 0;
+                        $file = fopen("data.txt", "r") or die("Unable to open file!");
+                        while(!feof($file))
+                        {
+                            $line[$i] = fgets($file);
+                            $each[$i] = explode(";", $line[$i]);
+                            $i++;
+                        }
+                        fclose($file);
+
+                        print_r($each);
+
+
+                        echo '
+                            <h3>Los Datos ya Están Listos, Haz Click en el Botón Enviar para Almacenarlos en la Base de Datos</h3>
+                            <br><br>
+                            <form action="review.php" method="post">
+                            <input type="hidden" name="data" value="'. htmlspecialchars(json_encode($each)) . '">
+                            <input type="submit" value="Enviar" class="btn btn-primary btn-lg">
+                            </form>
+                        ';
+                    ?>
                 </div>
                 <div id="view2">
                     <br><br><br><br>
                     <h3>Lista de datos en InfluxDB:</h3>
                     <br><br>
                     <?php
-                    $query = "from(bucket: \"$bucket\") |> range(start: -7d) |> filter(fn: (r) => r._measurement == \"intruder\")"; // Consulta a InfluxDB.
+                    $query = "from(bucket: \"$bucket\") |> range(start: -7d) |> filter(fn: (r) => r._measurement == \"aintruder\")"; // Consulta a InfluxDB.
                     $tables = $client->createQueryApi()->query($query, $org); // Ejecuta la Consulta Asignado el Resutlado a la Variable $tables.
                     $records = []; // $records Contendrá todos los Resultados de la Tabla intruder de la Base de Datos MACDB.
                     $i = 0;
@@ -47,7 +52,8 @@ include "includes/nav_index.html";
                     {
                         foreach ($table->records as $record) // De la Tabla intruder Obtiene cada Campo Almacenado en la Varaible $record.
                         {
-                            $tag = ["ip" => $record->getRecordValue("ip"), "mac" => $record->getRecordValue("mac"), "host" => $record->getRecordValue("host"), "l_port" => $record->getRecordValue("localPort"), "r_port" => $record->getRecordValue("remotePort"), "protocol" => $record->getRecordValue("protocol"), "oui" => $record->getRecordValue("oui"), "time" => $record->getTime()]; // En la Varible de tipo array $tag, pusimos todos los tags y sus valores.
+                            $tag = ["mac" => $record->getRecordValue("mac"), "time" => $record->getTime()];
+                            // $tag = ["mac" => $record->getRecordValue("mac"), "qtty" => $record->getRecordValue("qtty"), "uni" => $record->getRecordValue("uni"), "multi" => $record->getRecordValue("multi"), "broad" => $record->getRecordValue("broad"), "arp" => $record->getRecordValue("arp"), "traffic" => $record->getRecordValue("traffic"), "icmp" => $record->getRecordValue("icmp"), "tcp" => $record->getRecordValue("tcp"), "udp" => $record->getRecordValue("udp"), "resto" => $record->getRecordValue("resto"), "ipv6" => $record->getRecordValue("ipv6"), "arp46" => $record->getRecordValue("arp46"), "badip" => $record->getRecordValue("badip"), "ssdp" => $record->getRecordValue("ssdp"), "icmp6" => $record->getRecordValue("icmp6")]; // En la Varible de tipo array $tag, pusimos todos los tags y sus valores.
                             $row = key_exists($record->getTime(), $records) ? $records[$record->getTime()] : []; // Este operador ternario asigna a $row los datos en InfluxDB.
                             $records[$record->getTime()] = array_merge($row, $tag, [$record->getField() => $record->getValue()]); // Hacemos un array_merge con los datos de toda la Tupla y los Tags.
                         }
