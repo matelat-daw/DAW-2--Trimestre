@@ -7,11 +7,31 @@ include "includes/modal_index.html";
 
 use InfluxDB2\Model\WritePrecision;
 
-if (isset($_POST["data"])) // Recibe la IP y los Demás Datos desde el script index.php por POST.
+if (isset($_POST["sended"])) // Recibe la IP y los Demás Datos desde el script index.php por POST.
 {
-    $data = json_decode($_POST["data"]);
-    $length = count($data);
+    $file = htmlspecialchars($_FILES["data"]["name"]);
+    $tmp = htmlspecialchars($_FILES["data"]["tmp_name"]);
 
+    if (!file_exists("Data"))
+    {
+        mkdir("Data", 0777, true);
+    }
+    $path = "Data/" . basename($file);
+    move_uploaded_file($tmp, $path);
+
+    $line = [];
+    $data = [];
+    $i = 0;
+    $datos = fopen($file, "r") or die("Unable to open file!");
+    while(!feof($datos))
+    {
+        $line[$i] = fgets($datos);
+        $data[$i] = explode(";", $line[$i]);
+        $i++;
+    }
+    fclose($datos);
+
+    $length = count($data);
     for ($i = 0; $i < $length; $i++)
     {
         $data[$i][0] = implode(':', str_split($data[$i][0], 2));
@@ -38,7 +58,7 @@ if (isset($_POST["data"])) // Recibe la IP y los Demás Datos desde el script in
         }
         $writeApi = $client->createWriteApi();
         $save = 'aintrusa,mac=' . $data[$i][0] . ',mark=' . $owner . ',oui=' . $oui . ' qtty=' . $data[$i][1] . ',uni=' . $data[$i][2] . ',multi=' . $data[$i][3] . ',broad=' . $data[$i][4] . ',arp=' . $data[$i][5] . ',traffic=' . $data[$i][6] . ',icmp=' . $data[$i][7] . ',tcp=' . $data[$i][8] . ',udp=' . $data[$i][9] . ',resto=' . $data[$i][10] . ',ipv6=' . $data[$i][11] . ',arp46=' . $data[$i][12] . ',badip=' . $data[$i][13] . ',ssdp=' . $data[$i][14] . ',icmp6="' . $data[$i][15] . '"'; // Los Tags en Influx no pueden tener espacios.
-        $writeApi->write($save, WritePrecision::S, $bucket, $org);
+        $writeApi->write($save, WritePrecision::MS, $bucket, $org);
         $client->close();
     }
 

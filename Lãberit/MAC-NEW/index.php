@@ -13,28 +13,13 @@ include "includes/nav_index.html";
                 <div id="view1">
                     <br><br><br><br>
                     <h1>Verificador de MACS</h1>
-                    <?php
-                        $line = [];
-                        $each = [];
-                        $i = 0;
-                        $file = fopen("saidi.csv", "r") or die("Unable to open file!");
-                        while(!feof($file))
-                        {
-                            $line[$i] = fgets($file);
-                            $each[$i] = explode(";", $line[$i]);
-                            $i++;
-                        }
-                        fclose($file);
-
-                        echo '
-                            <h3>Los Datos ya Están Listos, Haz Click en el Botón Enviar para Almacenarlos en la Base de Datos</h3>
-                            <br><br>
-                            <form action="review.php" method="post">
-                            <input type="hidden" name="data" value="'. htmlspecialchars(json_encode($each)) . '">
-                            <input type="submit" value="Enviar" class="btn btn-primary btn-lg">
-                            </form>
-                        ';
-                    ?>
+                    <br><br>
+                    <h3>Agrega el Fichero de Datos al Formulario y Haz Click en el Botón Enviar para Almacenarlos en la Base de Datos</h3>
+                    <br><br>
+                    <form action="review.php" method="post" enctype="multipart/form-data">
+                        <label><input id="file" type="file" name="data"> Carga el Fichero CSV</label>
+                        <input type="submit" name="sended" value="Enviar" class="btn btn-primary btn-lg">
+                    </form>
                 </div>
                 <div id="view2">
                     <br><br><br><br>
