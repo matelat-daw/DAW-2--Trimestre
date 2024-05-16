@@ -35,7 +35,7 @@ if(isset($_POST["export"])) // Viene del Mismo Script.
     $active_sheet->setCellValue('R1', 'Marca');
 	$active_sheet->setCellValue('S1', 'Fecha');
 
-    for ($i = 65; $i < 75; $i++) // Bucle de la A a la J(ASCII).
+    for ($i = 65; $i < 84; $i++) // Bucle de la A a la S(ASCII).
     {
         $active_sheet->getStyle(chr($i) . 1)->getAlignment()->setHorizontal("center"); // Centra en Texto de Todos Los Títulos.
     }
