@@ -1,6 +1,6 @@
 function totNumPages() // Función para la paginación
 {
-    return Math.ceil(window.length / window.qtty); // Calcula la cantidad de páginas que habrá, divide la cantidad de datos por 5 resultados a mostrar por página.
+    return Math.ceil(window.vlength / window.qtty); // Calcula la cantidad de páginas que habrá, divide la cantidad de datos por 5 resultados a mostrar por página.
 }
 
 function prev() // Función para ir a la página anterior.
@@ -29,10 +29,10 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
         window.qtty = qtty; // Asigno la variable qtty, a la variable global window.qtty.
         const array_length = array_value.length;
         const data_length = array_value[0].length;
-        window.length = array_length; // Hago global la variable length.
+        window.vlength = array_length; // Hago global la variable length.
+        window.hlength = data_length;
 
         var html = "<table><tr class='text-center'><th>MAC</th><th>Marca</th><th>OUI</th><th>Fecha</th><th>Nº Paquetes</th><th>Unicast</th><th>Multicast</th><th>Broadcast</th><th>ARP</th><th>Trafico</th><th>ICMP</th><th>UDP</th><th>TCP</th><th>Resto</th><th>IPV6</th><th>ARP46</th><th>Otro</th><th>SSDP</th><th>ICMP6</th></tr>";
-        console.log(array_value);
         for (i = 0 + qtty * (page - 1); i < array_length && i < qtty * page; i++)
         {
             html += "<tr>";
@@ -45,7 +45,7 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
         html += "</tr></table>";
         table.innerHTML = html; // Muestro todo en pantalla.
 
-        if (length > 8) // Si la cantidad de Artículos es mayor que 5.
+        if (vlength > 8) // Si la cantidad de Artículos es mayor que 5.
         {
             pages.innerHTML = "Página: " + page; // Muestro el número de página.
             if (page == 1) // Si la página es la número 1
@@ -68,23 +68,29 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
     }
 }
 
-function addColon()
-{
-    mac.addEventListener("keydown", (e) => {
-        if (e.keyCode != 8)
-        {
-            switch(mac.value.length)
-            {
-                case 2:
-                case 5:
-                case 8:
-                case 11:
-                case 14:
-                    mac.value += ":";
-                    break;
-            }
-        }
-    });
+// function addColon()
+// {
+//     mac.addEventListener("keydown", (e) => {
+//         if (e.keyCode != 8)
+//         {
+//             switch(mac.value.length)
+//             {
+//                 case 2:
+//                 case 5:
+//                 case 8:
+//                 case 11:
+//                 case 14:
+//                     mac.value += ":";
+//                     break;
+//             }
+//         }
+//     });
+// }
+
+function makeData(data)
+{    
+    window.array_value = data;
+    console.log(array_value);
 }
 
 function drawBars() // Gráfica de Barras.
@@ -103,7 +109,7 @@ function drawBars() // Gráfica de Barras.
     var options = {
         title: 'Ataques Totales',
         'height':480,
-        colors: ['#ff0000'],
+        // colors: ['#ff0000'],
         bar: {
             groupWidth: "80%"
         },
@@ -112,7 +118,7 @@ function drawBars() // Gráfica de Barras.
             format: 'd MMM YYYY',
             gridlines: {count: 7},
             viewWindow: {
-                min: new Date(Date.now() - (7 * 24 * 60 * 60 * 1000)),
+                min: new Date(Date.now() - (2 * 24 * 60 * 60 * 1000)),
                 max: new Date()
             },
         },
@@ -165,29 +171,27 @@ function getValues()
 {
     
     let values = [];
-    let data = [];
+    // let data = [];
 
-    if (length > 0)
+    if (vlength > 0)
     {
-        for(i = 0; i < length; i++) // Acá Uso el Length Global, Para Poner los Datos del Array array_value de JavaScript en un Array Asociativo Llamado data.
-        {
-            data.push({date: array_value[i + 7 + (i * 9)], length: parseInt(array_value[i + 8 + (i * 9)]), mac_ip: array_value[i + 1 + (i * 9)].toUpperCase()});
-        }
+        // for(i = 0; i < vlength; i++) // Acá Uso el Length Global, Para Poner los Datos del Array array_value de JavaScript en un Array Asociativo Llamado data.
+        // {
+        //     data.push({date: array_value[i + 7 + (i * 9)], length: parseInt(array_value[i + 8 + (i * 9)]), mac_ip: array_value[i + 1 + (i * 9)].toUpperCase()});
+        // }
 
-        data.sort(function (a, b)
-        {
-            return b.length - a.length;
-        });
+        // data.sort(function (a, b)
+        // {
+        //     return b.length - a.length;
+        // });
 
-        values.push(['Fecha', 'Tamaño del Paquete', {role: 'style'}, {role: "tooltip", 'p': {'html': true}}]); // , 'Cantidad de Ataques']);
+        values.push(['Fecha', 'ARP', 'ARP46', 'Broadcast', 'ICPM', 'ICPM6', 'IPV6', 'Multicast', 'Otros', 'Nº Paquetes', 'Otro Más', 'SSDP', 'TCP', 'Trafico', 'UDP', 'Unicast', {role: "tooltip", 'p': {'html': true}}]); // , 'Cantidad de Ataques']);
 
         var color = 0;
 
-        for (i = 0; i < data.length; i++)
+        for (i = 0; i < vlength; i++)
         {
-            values[i + 1] = [data[i].date, data[i].length, 'color: ' + "rgb(255, " + color + ", " + color + ")", "<div class='toolbox'><strong>MAC: </strong>" + data[i].mac_ip  + "<br>" + "<strong>Tamaño: </strong>" + data[i].length / 1000 + " KBytes</div>"]; // , data[i].amount];
-            if (i < data.length - 1 && data[i].length != data[i + 1].length)
-                color+=Math.trunc(256 / data.length);
+            values[i + 1] = [array_value[i][3], array_value[i][4], array_value[i][5], array_value[i][6], array_value[i][7], array_value[i][8], array_value[i][9], array_value[i][10], array_value[i][11], array_value[i][12], array_value[i][13], array_value[i][14], array_value[i][15], array_value[i][16], array_value[i][17], array_value[i][18], "<div class='toolbox'><strong>MAC: </strong>" + array_value[i][0] + "<br>" + "<strong>Marca: </strong>" + array_value[i][1] + "</div>"]; // , data[i].amount];
         }
     }
     else

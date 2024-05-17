@@ -49,28 +49,23 @@ include "includes/nav_index.html";
 
                         $i = 0; // Índice de Todos los Datos de Todas las Tuplas.
                         $z = 0; // Se usa para almacenar los Tags Solo una Vez.
-                        $pos = 0; 
-                        echo   "<script>
-                                    var array_key = [];
-                                    var array_value = [];
-                                </script>"; // Creo las Variables de Tipo Array de Javascript.
+                        $pos = 0;
 
                         foreach($records as $key) // Bucle para Obtener las Keys.
                         {
                             $z++; // Incremento $z.
                             $i = 0;
-                            echo "<script>array_value[" . $pos . "] = [];</script>";
                             $data[$pos] = [];
                             foreach ($key as $value) // Bucle para Obtener los Valores de cada Clave.
                             {
-                                echo "<script>array_value[" . $pos . "][" . $i . "] = '" . $value . "';</script>"; // Almaceno Los Valores en el Array de Valores de Javascript.
                                 $data[$pos][$i] = $value;
                                 next($key); // Siguiente Clave.
                                 $i++; // Siguiente Índice.
-                                
                             }
                             $pos++;
                         }
+                        echo "<script>let array_value = " . json_encode($data) . ";
+                                    makeData(array_value);</script>";
                     }   
                     else // Si No Hay Datos.
                     {
