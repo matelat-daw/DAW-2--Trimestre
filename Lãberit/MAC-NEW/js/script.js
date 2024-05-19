@@ -90,7 +90,6 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
 function makeData(data)
 {    
     window.array_value = data;
-    console.log(array_value);
 }
 
 function drawBars() // Gráfica de Barras.
@@ -105,25 +104,25 @@ function drawBars() // Gráfica de Barras.
         let my_date = new Date(each[0], each[1], each[2]);
         values[i][0] = my_date;
     }
-    
+
     var options = {
         title: 'Ataques Totales',
         'height':480,
-        // colors: ['#ff0000'],
+        colors: ['#0000ff', '#808080', '#808080', '#808080', '#808080', '#808080', '#808080', '#808080', '#00ff00', '#808080', '#808080', '#ff0000', '#808080', '#800080', '#ff00ff', '#ffff00'],
         bar: {
-            groupWidth: "80%"
+            groupWidth: "60%"
         },
         hAxis: {
             title: 'Ataques de Mayor a Menor, Por Cantidad, Tamaño de Paquete y por Fecha',
             format: 'd MMM YYYY',
-            gridlines: {count: 7},
+            gridlines: {count: 6},
             viewWindow: {
-                min: new Date(Date.now() - (2 * 24 * 60 * 60 * 1000)),
+                min: new Date(Date.now() - (7 * 24 * 60 * 60 * 1000)),
                 max: new Date()
             },
         },
         vAxis: {
-            title: 'Rating (Escala 1:1000)'
+            title: 'Rating (Escala 1:1)'
         },
         tooltip: {isHtml: true}
     };
@@ -134,38 +133,38 @@ function drawBars() // Gráfica de Barras.
     chart.draw(data, options);
 }
 
-function drawDonut() // Gráfica de Anillo.
-{
-    let values = [];
-    values = getValues();
+// function drawDonut() // Gráfica de Anillo.
+// {
+//     let values = [];
+//     values = getValues();
 
-    if (values[0][0] != "No Data")
-    {
-        var options = {
-            title: 'Ataques Totales',
-            pieHole: 0.4,
-            slices: {}
-        };
+//     if (values[0][0] != "No Data")
+//     {
+//         var options = {
+//             title: 'Ataques Totales',
+//             pieHole: 0.4,
+//             slices: {}
+//         };
         
-        var color = 0; // Para los Colores Verde y Azul.
+//         var color = 0; // Para los Colores Verde y Azul.
 
-        for (i = 1; i < values.length; i++)
-        {
-            options.slices[i - 1] = {color: "rgb(255, " + color + ", " + color + ")"}; // Da color Rojo puro al primer valor.
-            if (i < values.length - 1 && values[i][1] != values[i + 1][1]) // Si el Índice del Array es Menor que el Tamaño del Array - 1 y el Primer Valor es Distinto del Segundo.
-                color += Math.trunc(256 / values.length); // Incrementa el Valor de Color, Hace el Color Más Claro.
-        }
+//         for (i = 1; i < values.length; i++)
+//         {
+//             options.slices[i - 1] = {color: "rgb(255, " + color + ", " + color + ")"}; // Da color Rojo puro al primer valor.
+//             if (i < values.length - 1 && values[i][1] != values[i + 1][1]) // Si el Índice del Array es Menor que el Tamaño del Array - 1 y el Primer Valor es Distinto del Segundo.
+//                 color += Math.trunc(256 / values.length); // Incrementa el Valor de Color, Hace el Color Más Claro.
+//         }
 
-        var data = google.visualization.arrayToDataTable(values);
-        // var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        var chart = new google.visualization.PieChart(donutchart);
-        chart.draw(data, options);
-    }
-    else
-    {
-        donutchart.innerHTML = "<h1>No Hay Datos</h1>";
-    }
-}
+//         var data = google.visualization.arrayToDataTable(values);
+//         // var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+//         var chart = new google.visualization.PieChart(donutchart);
+//         chart.draw(data, options);
+//     }
+//     else
+//     {
+//         donutchart.innerHTML = "<h1>No Hay Datos</h1>";
+//     }
+// }
 
 function getValues()
 {
@@ -175,23 +174,18 @@ function getValues()
 
     if (vlength > 0)
     {
-        // for(i = 0; i < vlength; i++) // Acá Uso el Length Global, Para Poner los Datos del Array array_value de JavaScript en un Array Asociativo Llamado data.
-        // {
-        //     data.push({date: array_value[i + 7 + (i * 9)], length: parseInt(array_value[i + 8 + (i * 9)]), mac_ip: array_value[i + 1 + (i * 9)].toUpperCase()});
-        // }
 
-        // data.sort(function (a, b)
-        // {
-        //     return b.length - a.length;
-        // });
-
-        values.push(['Fecha', 'ARP', 'ARP46', 'Broadcast', 'ICPM', 'ICPM6', 'IPV6', 'Multicast', 'Otros', 'Nº Paquetes', 'Otro Más', 'SSDP', 'TCP', 'Trafico', 'UDP', 'Unicast', {role: "tooltip", 'p': {'html': true}}]); // , 'Cantidad de Ataques']);
+        values.push(['Fecha', 'ARP', {role: "style"}, 'ARP46', 'Broadcast', 'ICPM', 'ICPM6', 'IPV6', 'Multicast', 'Otros', 'Nº Paquetes', {role: "style"}, 'Otro Más', 'SSDP', 'TCP', {role: "style"}, 'Trafico', 'UDP', {role: "style"}, 'Unicast', {role: "style"}, "MAC - Owner - Time", {role: "tooltip", 'p': {'html': true}}]); // , 'Cantidad de Ataques']);
 
         var color = 0;
 
         for (i = 0; i < vlength; i++)
         {
-            values[i + 1] = [array_value[i][3], array_value[i][4], array_value[i][5], array_value[i][6], array_value[i][7], array_value[i][8], array_value[i][9], array_value[i][10], array_value[i][11], array_value[i][12], array_value[i][13], array_value[i][14], array_value[i][15], array_value[i][16], array_value[i][17], array_value[i][18], "<div class='toolbox'><strong>MAC: </strong>" + array_value[i][0] + "<br>" + "<strong>Marca: </strong>" + array_value[i][1] + "</div>"]; // , data[i].amount];
+            values[i + 1] = [array_value[i][3], array_value[i][4], 'color: ' + "rgb(" + color + ", " + color + ", 255)", array_value[i][5], array_value[i][6], array_value[i][7], array_value[i][8], array_value[i][9], array_value[i][10], array_value[i][11], array_value[i][12], 'color: ' + "rgb(" + color +  ", 255, " + color + ")", array_value[i][13], array_value[i][14], array_value[i][15], 'color: ' + "rgb(255, " + color + ", " + color + ")", array_value[i][16], array_value[i][17], 'color: ' + "rgb(80, " + color + ", 80)", array_value[i][18], 'color: ' + "rgb(255, " + color + ", 255)", array_value[i][18], "<div class='toolbox'><strong>MAC: </strong>" + array_value[i][0] + "<br><strong>Marca: </strong>" + array_value[i][1] + "<br><strong>Fecha: </strong>" + array_value[i][3] + "</div>"];
+            if (i < vlength - 1 && array_value[i][15] != array_value[i + 1][15])
+            {
+                color+=Math.trunc(256 / vlength);
+            }
         }
     }
     else
