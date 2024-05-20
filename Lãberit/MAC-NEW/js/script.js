@@ -133,49 +133,16 @@ function drawBars() // Gráfica de Barras.
     chart.draw(data, options);
 }
 
-// function drawDonut() // Gráfica de Anillo.
-// {
-//     let values = [];
-//     values = getValues();
-
-//     if (values[0][0] != "No Data")
-//     {
-//         var options = {
-//             title: 'Ataques Totales',
-//             pieHole: 0.4,
-//             slices: {}
-//         };
-        
-//         var color = 0; // Para los Colores Verde y Azul.
-
-//         for (i = 1; i < values.length; i++)
-//         {
-//             options.slices[i - 1] = {color: "rgb(255, " + color + ", " + color + ")"}; // Da color Rojo puro al primer valor.
-//             if (i < values.length - 1 && values[i][1] != values[i + 1][1]) // Si el Índice del Array es Menor que el Tamaño del Array - 1 y el Primer Valor es Distinto del Segundo.
-//                 color += Math.trunc(256 / values.length); // Incrementa el Valor de Color, Hace el Color Más Claro.
-//         }
-
-//         var data = google.visualization.arrayToDataTable(values);
-//         // var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-//         var chart = new google.visualization.PieChart(donutchart);
-//         chart.draw(data, options);
-//     }
-//     else
-//     {
-//         donutchart.innerHTML = "<h1>No Hay Datos</h1>";
-//     }
-// }
-
 function getValues()
 {
-    
     let values = [];
-    // let data = [];
 
     if (vlength > 0)
     {
 
-        values.push(['Fecha', 'ARP', {role: "style"}, 'ARP46', 'Broadcast', 'ICPM', 'ICPM6', 'IPV6', 'Multicast', 'Otros', 'Nº Paquetes', {role: "style"}, 'Otro Más', 'SSDP', 'TCP', {role: "style"}, 'Trafico', 'UDP', {role: "style"}, 'Unicast', {role: "style"}, "MAC - Owner - Time", {role: "tooltip", 'p': {'html': true}}]); // , 'Cantidad de Ataques']);
+        // values.push(['Fecha', 'ARP', {role: "style"}, 'ARP46', 'Broadcast', 'ICPM', 'ICPM6', 'IPV6', 'Multicast', 'Resto', 'Nº Paquetes', {role: "style"}, 'Wrong IP', 'SSDP', 'TCP', {role: "style"}, 'Trafico', 'UDP', {role: "style"}, 'Unicast', {role: "style"}, "MAC - Owner - Time", {role: "tooltip", 'p': {'html': true}}]);
+
+        values.push(['Fecha', 'ARP', {role: "style"}, 'ARP46', 'Bad IP', 'Broadcast', 'ICPM', 'ICPM6', 'IPV6', 'Multicast', 'Nº Paquetes', {role: "style"}, 'Resto', 'SSDP', 'TCP', {role: "style"}, 'Trafico', 'UDP', {role: "style"}, 'Unicast', {role: "style"}, "MAC - Owner - Time", {role: "tooltip", 'p': {'html': true}}]);
 
         var color = 0;
 

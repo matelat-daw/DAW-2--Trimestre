@@ -19,21 +19,21 @@ if(isset($_POST["export"])) // Viene del Mismo Script.
 	$active_sheet->setCellValue('B1', 'Marca');
 	$active_sheet->setCellValue('C1', 'OUI');
 	$active_sheet->setCellValue('D1', 'Fecha');
-	$active_sheet->setCellValue('E1', 'Puerto Remoto');
-	$active_sheet->setCellValue('F1', 'Protocolo');
-    $active_sheet->setCellValue('G1', 'OUI');
-    $active_sheet->setCellValue('H1', 'Tamaño de Paquete');
-	$active_sheet->setCellValue('I1', 'Marca');
-	$active_sheet->setCellValue('J1', 'Fecha');
-    $active_sheet->setCellValue('K1', 'Puerto Local');
-	$active_sheet->setCellValue('L1', 'Puerto Remoto');
-	$active_sheet->setCellValue('M1', 'Protocolo');
-    $active_sheet->setCellValue('N1', 'OUI');
-    $active_sheet->setCellValue('O1', 'Tamaño de Paquete');
-	$active_sheet->setCellValue('P1', 'Marca');
-	$active_sheet->setCellValue('Q1', 'Fecha');
-    $active_sheet->setCellValue('R1', 'Marca');
-	$active_sheet->setCellValue('S1', 'Fecha');
+	$active_sheet->setCellValue('E1', 'ARP');
+	$active_sheet->setCellValue('F1', 'ARP46');
+    $active_sheet->setCellValue('G1', 'Broadcast');
+    $active_sheet->setCellValue('H1', 'ICPM');
+	$active_sheet->setCellValue('I1', 'ICPM6');
+	$active_sheet->setCellValue('J1', 'IPV6');
+    $active_sheet->setCellValue('K1', 'Multicast');
+	$active_sheet->setCellValue('L1', 'Resto');
+	$active_sheet->setCellValue('M1', 'Nº de Paquetes');
+    $active_sheet->setCellValue('N1', 'Wrong IP');
+    $active_sheet->setCellValue('O1', 'SSDP');
+	$active_sheet->setCellValue('P1', 'TCP');
+	$active_sheet->setCellValue('Q1', 'Tráfico');
+    $active_sheet->setCellValue('R1', 'UDP');
+	$active_sheet->setCellValue('S1', 'Unicast');
 
     for ($i = 65; $i < 84; $i++) // Bucle de la A a la S(ASCII).
     {

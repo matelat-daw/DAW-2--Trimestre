@@ -89,9 +89,9 @@ include "includes/nav_index.html";
                     <script>google.charts.load('current', {packages: ['corechart', 'bar']});
                         google.charts.setOnLoadCallback(drawBars);</script>
 
-                    <div id="donutchart" style="width: 960px; height: 500px;"></div>
+                    <!-- <div id="donutchart" style="width: 960px; height: 500px;"></div>
                     <script>google.charts.load("current", {packages:["corechart"]});
-                        google.charts.setOnLoadCallback(drawDonut);</script>
+                        google.charts.setOnLoadCallback(drawDonut);</script> -->
                     <br><br><br>
                 </div>
                 <div id="view4">
