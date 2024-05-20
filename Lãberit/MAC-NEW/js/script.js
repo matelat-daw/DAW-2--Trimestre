@@ -1,6 +1,6 @@
 function totNumPages() // Función para la paginación
 {
-    return Math.ceil(window.vlength / window.qtty); // Calcula la cantidad de páginas que habrá, divide la cantidad de datos por 5 resultados a mostrar por página.
+    return Math.ceil(window.array_length / window.qtty); // Calcula la cantidad de páginas que habrá, divide la cantidad de datos por 5 resultados a mostrar por página.
 }
 
 function prev() // Función para ir a la página anterior.
@@ -27,12 +27,12 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
     {
         window.page = page; // Asigno la variable page, a la variable global window.page.
         window.qtty = qtty; // Asigno la variable qtty, a la variable global window.qtty.
-        const array_length = array_value.length;
+        window.array_length = array_value.length;
         const data_length = array_value[0].length;
-        window.vlength = array_length; // Hago global la variable length.
+        window.vlength = 18; // array_length; // Hago global la variable length.
         window.hlength = data_length;
 
-        var html = "<table><tr class='text-center'><th>MAC</th><th>Marca</th><th>OUI</th><th>Fecha</th><th>Nº Paquetes</th><th>Unicast</th><th>Multicast</th><th>Broadcast</th><th>ARP</th><th>Trafico</th><th>ICMP</th><th>UDP</th><th>TCP</th><th>Resto</th><th>IPV6</th><th>ARP46</th><th>Otro</th><th>SSDP</th><th>ICMP6</th></tr>";
+        var html = "<table><tr class='text-center'><th>MAC</th><th>Marca</th><th>OUI</th><th>Fecha</th><th>ARP</th><th>ARP46</th><th>Bad IP</th><th>Broadcast</th><th>ICMP</th><th>ICPM6</th><th>IPV6</th><th>Multicast</th><th>Nº de Paquetes</th><th>Resto</th><th>Trafico</th><th>UDP</th><th>SSDP</th><th>TCP</th><th>Unicast</th></tr>";
         for (i = 0 + qtty * (page - 1); i < array_length && i < qtty * page; i++)
         {
             html += "<tr>";
@@ -68,25 +68,6 @@ function change(page, qtty) // Función que muestra los resultados de a 5 en la 
     }
 }
 
-// function addColon()
-// {
-//     mac.addEventListener("keydown", (e) => {
-//         if (e.keyCode != 8)
-//         {
-//             switch(mac.value.length)
-//             {
-//                 case 2:
-//                 case 5:
-//                 case 8:
-//                 case 11:
-//                 case 14:
-//                     mac.value += ":";
-//                     break;
-//             }
-//         }
-//     });
-// }
-
 function makeData(data)
 {    
     window.array_value = data;
@@ -96,63 +77,75 @@ function drawBars() // Gráfica de Barras.
 {
     let values = [];
     values = getValues(); // Llama a la función que obtiene los valores de InfluxDB.
-    for (i = 1; i < values.length; i++) // Bucle para Corregir las Fechas para Ordenar por Fecha y Tamaño de Paquete, Se Inicia en el Índice 1.
+    let length = values.length;
+
+    if (values[0][0] != "No Data")
     {
-        var date = values[i][0].substr(0, 10); // Corta los 10 Primeros Caracteres de la Cadena con Formato de Fecha ISO 8601 Date and Time(2024-05-09T15:14:33Z).
-        let each = date.split("-");
+        var date = values[length - 1][0].substr(0, 19); // Corta los 19 Primeros Caracteres de la Cadena con Formato de Fecha ISO 8601 Date and Time.(2024-05-09T15:14:33Z).
+        
+        let each = date.split("-"); // Recuperamos los Meses.
+        let time = each[2].split("T"); // Partimos el Último Dato por la T.
+        each[2] = time[0]; // Es el Día, lo Asignamos a each[2].
+        time = time[1].split(":"); // Partimos la hora por los :.
         each[1]--; // Reduce en 1 el Mes ya que los Meses en Javascript Van de 0 a 11.
-        let my_date = new Date(each[0], each[1], each[2]);
-        values[i][0] = my_date;
-    }
+        let my_date = new Date(each[0], each[1], each[2], time[0], time[1], time[2]); // Reconstruimos la Fecha en Formato GMT.
+        values[length - 1][0] = my_date; // Asignamos al Primer Valor de Tiempo del Array values la Fecha.
 
-    var options = {
-        title: 'Ataques Totales',
-        'height':480,
-        colors: ['#0000ff', '#808080', '#808080', '#808080', '#808080', '#808080', '#808080', '#808080', '#00ff00', '#808080', '#808080', '#ff0000', '#808080', '#800080', '#ff00ff', '#ffff00'],
-        bar: {
-            groupWidth: "60%"
-        },
-        hAxis: {
-            title: 'Ataques de Mayor a Menor, Por Cantidad, Tamaño de Paquete y por Fecha',
-            format: 'd MMM YYYY',
-            gridlines: {count: 6},
-            viewWindow: {
-                min: new Date(Date.now() - (7 * 24 * 60 * 60 * 1000)),
-                max: new Date()
+        var options = {
+            title: 'Ataques Totales',
+            height: 480,
+            colors: ['#0000ff', '#808080', '#808080', '#808080', '#808080', '#808080', '#808080', '#808080', '#00ff00', '#808080', '#808080', '#ff0000', '#808080', '#800080', '#ff00ff', '#ffff00'],
+            bar: {
+                groupWidth: "20%"
             },
-        },
-        vAxis: {
-            title: 'Rating (Escala 1:1)'
-        },
-        tooltip: {isHtml: true}
-    };
+            hAxis: {
+                title: 'Ataques de Mayor a Menor, Por Cantidad, Tamaño de Paquete y por Fecha',
+                format: 'd MMM YYYY HH:mm:ss', // Muestra la Fecha Anglo y la Hora Latin. 1 Jan 1970 13:00:00
+                gridlines: {count: 4},
+                viewWindow: {
+                    min: new Date(values[length - 1][0] - 30 * 60 * 1000),
+                    max: new Date(values[length - 1][0] - (-30 * 60 * 1000))
+                },
+            },
+            vAxis: {
+                title: 'Rating (Escala 1:1)'
+            },
+            tooltip: {isHtml: true}
+        };
 
-    var data = google.visualization.arrayToDataTable(values);
-    // var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-    var chart = new google.visualization.ColumnChart(chart_div);
-    chart.draw(data, options);
+        var data = google.visualization.arrayToDataTable(values);
+        // var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        var chart = new google.visualization.ColumnChart(chart_div);
+        chart.draw(data, options);
+    }
+    else
+    {
+        chart_div.innerHTML = "<h3>No Hay Datos Aun.</h3>";
+    }
 }
 
 function getValues()
 {
     let values = [];
 
-    if (vlength > 0)
+    if (typeof array_value != "undefined" && array_value.length > 0)
     {
+        values.push(['Fecha', 'ARP', 'ARP46', 'Bad IP', 'Broadcast', 'ICPM', 'ICPM6', 'IPV6', 'Multicast', 'Nº Paquetes', 'Resto', 'SSDP', 'TCP', 'Trafico', 'UDP', 'Unicast', "MAC - Owner - Time", {role: "tooltip", 'p': {'html': true}}]);
 
-        // values.push(['Fecha', 'ARP', {role: "style"}, 'ARP46', 'Broadcast', 'ICPM', 'ICPM6', 'IPV6', 'Multicast', 'Resto', 'Nº Paquetes', {role: "style"}, 'Wrong IP', 'SSDP', 'TCP', {role: "style"}, 'Trafico', 'UDP', {role: "style"}, 'Unicast', {role: "style"}, "MAC - Owner - Time", {role: "tooltip", 'p': {'html': true}}]);
-
-        values.push(['Fecha', 'ARP', {role: "style"}, 'ARP46', 'Bad IP', 'Broadcast', 'ICPM', 'ICPM6', 'IPV6', 'Multicast', 'Nº Paquetes', {role: "style"}, 'Resto', 'SSDP', 'TCP', {role: "style"}, 'Trafico', 'UDP', {role: "style"}, 'Unicast', {role: "style"}, "MAC - Owner - Time", {role: "tooltip", 'p': {'html': true}}]);
-
-        var color = 0;
-
-        for (i = 0; i < vlength; i++)
+        for (y = 0; y < array_value.length; y+=18)
         {
-            values[i + 1] = [array_value[i][3], array_value[i][4], 'color: ' + "rgb(" + color + ", " + color + ", 255)", array_value[i][5], array_value[i][6], array_value[i][7], array_value[i][8], array_value[i][9], array_value[i][10], array_value[i][11], array_value[i][12], 'color: ' + "rgb(" + color +  ", 255, " + color + ")", array_value[i][13], array_value[i][14], array_value[i][15], 'color: ' + "rgb(255, " + color + ", " + color + ")", array_value[i][16], array_value[i][17], 'color: ' + "rgb(80, " + color + ", 80)", array_value[i][18], 'color: ' + "rgb(255, " + color + ", 255)", array_value[i][18], "<div class='toolbox'><strong>MAC: </strong>" + array_value[i][0] + "<br><strong>Marca: </strong>" + array_value[i][1] + "<br><strong>Fecha: </strong>" + array_value[i][3] + "</div>"];
-            if (i < vlength - 1 && array_value[i][15] != array_value[i + 1][15])
+            for (i = 1; i < vlength; i++)
             {
-                color+=Math.trunc(256 / vlength);
+                for (j = 4; j < hlength; j++)
+                {
+                    array_value[y][j] += array_value[i + y][j];
+                }
             }
+        }
+
+        for (i = 0; i < array_value.length; i+=18)
+        {
+            values.push([array_value[i][3], array_value[i][4], array_value[i][5], array_value[i][6], array_value[i][7], array_value[i][8], array_value[i][9], array_value[i][10], array_value[i][11], array_value[i][12], array_value[i][13], array_value[i][14], array_value[i][17], array_value[i][16], array_value[i][15], array_value[i][18], array_value[i][18], "<div class='toolbox'><strong>MAC: </strong>" + array_value[i][0] + "<br><strong>Marca: </strong>" + array_value[i][1] + "<br><strong>Fecha: </strong>" + array_value[i][3] + "</div>"]);
         }
     }
     else
