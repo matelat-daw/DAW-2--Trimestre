@@ -20,7 +20,7 @@ exec pa_empleados_sueldo 1500;
 
 -- 4- Ejecute el procedimiento almacenado "pa_empleados_sueldo" sin parámetros. Mostrará un mensaje de error.
 
-exec pa_empleados_sueldo 0;
+exec pa_empleados_sueldo; -- ERROR.
 
 -- 5- Elimine el procedimiento almacenado "pa_empleados_actualizar_sueldo" si existe:
 
