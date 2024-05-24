@@ -1,0 +1,18 @@
+function addColon()
+{
+    mac.addEventListener("keydown", (e) => {
+        if (e.keyCode != 8)
+        {
+            switch(mac.value.length)
+            {
+                case 2:
+                case 5:
+                case 8:
+                case 11:
+                case 14:
+                    mac.value += ":";
+                    break;
+            }
+        }
+    });
+}

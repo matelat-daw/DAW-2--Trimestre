@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\POO-HP\\Cartas\\Baraja Espa\u00F1ola\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F66197EE-0380-4331-9421-6AE4130B9EDC}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\poo-hp\\cartas\\baraja espa\u00F1ola\\siete y medio\\baraja\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66197EE-0380-4331-9421-6AE4130B9EDC}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\baraja\\mazo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66197EE-0380-4331-9421-6AE4130B9EDC}|Siete y Medio\\Siete y Medio.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\programaci\u00F3n\\poo-hp\\cartas\\baraja espa\u00F1ola\\siete y medio\\baraja\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66197EE-0380-4331-9421-6AE4130B9EDC}|Siete y Medio\\Siete y Medio.csproj|solutionrelative:siete y medio\\baraja\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Mazo.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\POO-HP\\Cartas\\Baraja Espa\u00F1ola\\Siete y Medio\\Baraja\\Mazo.cs",
+              "RelativeDocumentMoniker": "Siete y Medio\\Baraja\\Mazo.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\POO-HP\\Cartas\\Baraja Espa\u00F1ola\\Siete y Medio\\Baraja\\Mazo.cs",
+              "RelativeToolTip": "Siete y Medio\\Baraja\\Mazo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T19:27:47.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Carta.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\POO-HP\\Cartas\\Baraja Espa\u00F1ola\\Siete y Medio\\Baraja\\Carta.cs",
+              "RelativeDocumentMoniker": "Siete y Medio\\Baraja\\Carta.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\Programaci\u00F3n\\POO-HP\\Cartas\\Baraja Espa\u00F1ola\\Siete y Medio\\Baraja\\Carta.cs",
+              "RelativeToolTip": "Siete y Medio\\Baraja\\Carta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T19:22:49.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

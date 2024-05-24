@@ -1,0 +1,57 @@
+﻿@model Modelo_Vista_Controlador.Models.Contact
+@{
+    ViewData["Title"] = "Edita el Contacto";
+}
+
+<h1 class="text-center">Edita el Contacto con .NET 6 Modelo Vista Controlador</h1>
+<br>
+<br>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white">
+                    <strong>Edita el Contacto</strong>
+                </h3>
+            </div>
+            <div class="card-body">
+                <form asp-action="Edit">
+
+                    <input type="hidden" asp-for="Id">
+
+                    <div asp-asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label">Nombre</label>
+                        <input asp-for="Name" class="form-control" placeholder="Ingresa el Nombre">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Surname1" class="control-label">Primer Apellido</label>
+                        <input asp-for="Surname1" class="form-control" placeholder="Ingresa el Primer Apellido">
+                        <span asp-validation-for="Surname1" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Surname2" class="control-label">Segundo Apellido</label>
+                        <input asp-for="Surname2" class="form-control" placeholder="Ingresa el Segundo Apellido">
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Phone" class="control-label">Teléfono</label>
+                        <input asp-for="Phone" class="form-control" placeholder="Ingresa el Teléfono">
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label">E-mail</label>
+                        <input asp-for="Email" class="form-control" placeholder="Ingresa el E-mail">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary d-block mx-auto"><i class="bi bi-pencil-fill"></i>Edita el Contacto</button>
+                    </div>
+                </form>
+                <br><br>
+                <a asp-asp-controller="Inicio" asp-action="Index">Volver a Inicio</a>
+            </div>
+        </div>
+    </div>
+</div>

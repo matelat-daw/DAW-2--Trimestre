@@ -1,0 +1,17 @@
+Agregar al proyecto (Dependencias) desde los paquetes Nuget:
+
+Microsoft Entity Framework Core SQL Server
+y
+Microsoft Entity Framework Core Tools
+
+Para Migrar los datos a la base de datos:
+
+Herraminetas/Controlador de Paquetes NuGet/Consola del Administrador de Paquetes.
+
+Se abre la consola y hay que escribir:
+
+clear, Limpia la pantalla.
+
+add-migration nombre-de-la-migracion // Inicializa la Migración de los datos.
+
+update-database // Crea la Base de Datos y las Tablas.
