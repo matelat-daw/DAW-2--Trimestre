@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lenguaje=”javascript”>
+        // tipo de datos numéricos
+        // pueden ser enteros o números con decimales
+        var miEntero = 33;
+        var miDecimales = 2.5;
+        var comaFlotante = 2344.983338;
+        var numeral = 0.573;
+        // pueden tener notación científica
+        var numCientifico = 2.9e3;
+        var otroNumCientifico = 2e-3;
+        //alert(otroNumCientifico);
+        // podemos escribir números en otras bases
+        var numBase10 = 2200;
+        var numBase8 = 0o234;
+        var numBase16 = 0x2A9F;
+        //alert(numBase16);
+        // tipo de datos cadena de caracteres
+        var miCadena = "Hola! esto es una cadena!";
+        var otraCadena = "2323232323"; // parece un numérico pero es una cadena
+        // caracteres de escape en cadenas
+        var cadenaConSaltoDeLinea = "linea1\nLínea2\nLínea3";
+        var cadenaConComillas = "cadena con comillas\"comillas dobles\"";
+        var cadenaNum = "11";
+        var sumaCadenaConcatenacion = otraCadena + cadenaNum;
+        //alert(sumaCadenaConcatenacion);
+        // tipos de datos booleano
+        var miBooleano = true; var falso = false;
+        if (miBooleano) {
+        //alert (“era true”);
+        }else{
+        //alert(“era false”);
+        }
+        var booleano = (23=="23");
+        //alert(booleano);
+        //esos eran los tipos de datos principales
+        //pero existen otros tipos especiales que veremos más adelante arrays
+        var miArray = [2,5,7]; //objetos
+        var miObjeto = {
+        propiedad: 23,
+        otracosa: "hola"
+        };
+        //operador typeof para conocer un tipo
+        alert("El tipo de miEntero es: " + typeof(miEntero) + " y el Valor es: " + miEntero);
+        alert("El tipo de miCadena es: " + typeof(miCadena));
+        alert("El tipo de miBooleano es: " + typeof(miBooleano));
+        alert("El tipo de miArray es: " + typeof(miArray));
+        alert("El tipo de miObjeto es: " + typeof(miObjeto));
+        alert("El tipo de booleano es: " + typeof(booleano) + " y el valor es: " + booleano);
+        miEntero = miEntero >> 1; // Lo divide por 2(Redondea hacia abajo);
+        alert("El Valor de miEntero al hacer: miEntero = miEntero >> 1 es: " + miEntero);
+        miEntero = miEntero << 1; // Lo multiplica por 2;
+        alert("El Valor de miEntero al hacer: miEntero = miEntero << 1 es: " + miEntero);
+        </script>
+</body>
+</html>
