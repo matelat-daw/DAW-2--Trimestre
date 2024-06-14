@@ -38,7 +38,7 @@
         }else{
         //alert(“era false”);
         }
-        var booleano = (23==="23");
+        var booleano = (23=="23");
         //alert(booleano);
         //esos eran los tipos de datos principales
         //pero existen otros tipos especiales que veremos más adelante arrays
@@ -48,12 +48,16 @@
         otracosa: "hola"
         };
         //operador typeof para conocer un tipo
-        alert("El tipo de miEntero es: " + typeof(miEntero));
+        alert("El tipo de miEntero es: " + typeof(miEntero) + " y el Valor es: " + miEntero);
         alert("El tipo de miCadena es: " + typeof(miCadena));
         alert("El tipo de miBooleano es: " + typeof(miBooleano));
         alert("El tipo de miArray es: " + typeof(miArray));
         alert("El tipo de miObjeto es: " + typeof(miObjeto));
         alert("El tipo de booleano es: " + typeof(booleano) + " y el valor es: " + booleano);
+        miEntero = miEntero >> 1; // Lo divide por 2(Redondea hacia abajo);
+        alert("El Valor de miEntero al hacer: miEntero = miEntero >> 1 es: " + miEntero);
+        miEntero = miEntero << 1; // Lo multiplica por 2;
+        alert("El Valor de miEntero al hacer: miEntero = miEntero << 1 es: " + miEntero);
         </script>
 </body>
 </html>
