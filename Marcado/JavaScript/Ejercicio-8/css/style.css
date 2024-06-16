@@ -11,11 +11,17 @@ td
 
 pre
 {
-    margin-left: 30%;
+    margin-left: 20%;
 }
 
 .circle
 {
-    background-color: red;
     border-radius: 50%;
+}
+
+.cont
+{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
 }

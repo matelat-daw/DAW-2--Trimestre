@@ -10,7 +10,7 @@
 <body>
     <h1>Esta App Dibuja una Tabla del Tamaño Proporcionado por el Usuario</h1>
     <br><br>
-    <h3>Ingresa la cantidad de FIlas y Columnas</h3>
+    <h3>Ingresa la Cantidad de Filas y Columnas</h3>
     <input id="rowcol" type="number">
     <br><br>
     <input type="submit" value="Dibuja la Tabla" onclick="draw()">
@@ -21,7 +21,7 @@
 <pre>
       <input type="radio" name="controls" onclick="up()">
 <br>
-<input type="radio" name="controls" onclick="left()"> &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" name="controls" onclick="right()">
+<input type="radio" name="controls" onclick="left()">        <input type="radio" name="controls" onclick="right()">        <input id="color" type="color" name="color" onchange="change()">     <label><select id="mySize" name="size" onmouseup="circleSize()"><option value="big">Grande</option><option value="med">Mediano</option><option value="small">Pequeño</option></select> Selecciona el Tamaño del Círculo</label>
 <br>
       <input type="radio" name="controls" onclick="down()">
 </pre>
