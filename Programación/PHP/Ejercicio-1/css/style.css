@@ -1,0 +1,9 @@
+.bottom
+{
+    position:absolute;
+    bottom:0;
+    width:95%;
+    margin-left: 2.5%;
+    height:120px;   /* Height of the footer */
+    background:#6cf;
+}
