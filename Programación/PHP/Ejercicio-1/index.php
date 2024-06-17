@@ -24,7 +24,7 @@
         echo "<br>" . NEPER;
     ?>
     <footer class="bottom">
-        <hr SIZE=11 NOSHADE WIDTH="95%">
+        <hr SIZE=10 NOSHADE WIDTH="95%">
         <i>Copyright © 2019-2020 Alguien</i></font><br>
         <i>ES MIO</i></font><br>
         <i>URL: http://www.miweb.es</i></font><br>
