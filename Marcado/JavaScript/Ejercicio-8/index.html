@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - Tabla</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Esta App Dibuja una Tabla del Tamaño Proporcionado por el Usuario</h1>
+    <br><br>
+    <h3>Ingresa la Cantidad de Filas y Columnas</h3>
+    <input id="rowcol" type="number">
+    <br><br>
+    <input type="submit" value="Dibuja la Tabla" onclick="draw()">
+    <br><br>
+    <div id="table"></div>
+    <br><br>
+    <div id="controls">
+<pre>
+      <input type="radio" name="controls" onclick="up()">
+<br>
+<input type="radio" name="controls" onclick="left()">        <input type="radio" name="controls" onclick="right()">        <input id="color" type="color" name="color" onchange="change()">     <label><select id="mySize" name="size" onmouseup="circleSize()"><option value="big">Grande</option><option value="med">Mediano</option><option value="small">Pequeño</option></select> Selecciona el Tamaño del Círculo</label>
+<br>
+      <input type="radio" name="controls" onclick="down()">
+</pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+table
+{
+    margin-left: 10%;
+    border: 1px solid red;
+}
+
+td
+{
+    border: 1px solid blue;
+}
+
+pre
+{
+    margin-left: 20%;
+}
+
+.circle
+{
+    border-radius: 50%;
+}
+
+.cont
+{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}

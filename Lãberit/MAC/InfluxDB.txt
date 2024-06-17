@@ -34,7 +34,7 @@ Delete Data From Influx:
 influx delete --bucket Bucket_Name --start '2024-01-01T00:00:00Z' --stop $('2024-05-14T09:00:00Z') --predicate '_measurement="Measurement_Name"'
 
 
-influx delete --bucket MACDB --start 2024-03-01T00:00:00Z --stop 2024-05-14T09:00:00Z
+influx delete --bucket MACDB --start 2024-05-20T00:00:00Z --stop 2024-05-20T23:59:00Z
 
 
 Export the Data Base From InfluxDB:
