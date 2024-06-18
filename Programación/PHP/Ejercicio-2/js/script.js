@@ -5,14 +5,22 @@ function screen()
     date.innerHTML += new Date(Date.now()).toLocaleString() + " -";
 }
 
-function show(id)
+function show(id, qtty)
 {
     let which = document.getElementsByClassName("goContainer");
-    for (var i = 0; i < 7; i++)
+    let login = document.getElementById("login");
+    login.style.display = "none";
+
+    for (var i = 0; i < qtty; i++)
     {
         which[i].style.display = "none";
     }
     id.style.display = "block";
+}
+
+function register()
+{
+    
 }
 
 function ej1Opera()

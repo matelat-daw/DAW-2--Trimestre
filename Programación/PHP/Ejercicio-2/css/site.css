@@ -100,3 +100,8 @@ img
     background-color: aqua;
     border-radius: 10%;
 }
+
+.separator
+{
+    margin-left: 200px;
+}
