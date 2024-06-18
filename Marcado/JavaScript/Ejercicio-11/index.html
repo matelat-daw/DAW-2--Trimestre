@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 - Teclado para pulsar una Vez y Adivinar la Frase.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>En el Abecedario Marca las Letras que Quieras, Solo Podrás Marcar las Letras una Vez y Adivinar la Frase Oculta.</h1>
+    <br><br>
+    <input type="submit" value="Formatea la Frase" onclick="format()">
+    <br><br>
+    <h3>Escribe tu Combinación.</h3>
+    <br><br>
+    <div id="keyboard"></div>
+    <br><br>
+    <div id="container"></div>
+    <br><br>
+    <h3>Por Favor Ingresa la Frase que está Oculta.</h3>
+    <br><br>
+    <h3 class="center">Lo Se!</h3>
+    <input id="frase" type="text" placeholder="Escribe tu Respuesta">
+    <br><br>
+    <input class="bottom" type="submit" value="Es Esta la Frase?" onclick="guess()">
+    <br><br>
+    <script>show()</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* .button
+{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+} */
+
+.center
+{
+    text-align: center;
+}
+
+#frase
+{
+    width: 90%;
+    height: 48px;
+    margin-left: 5%;
+}
+
+.bottom
+{
+    margin-left: 46.5%;
+    width: 120px;
+    height: 48px;
+    border-radius: 25%;
+    background-color: aqua;
+}
+
+.span
+{
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 5px;
+}
+
+.button:hover
+{
+    background-color: red;
+    color: white;
+}
