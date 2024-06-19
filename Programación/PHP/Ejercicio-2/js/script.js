@@ -1,6 +1,5 @@
-function screen()
+function date()
 {
-    let height = window.innerHeight;
     let date = document.getElementById("date");
     date.innerHTML += new Date(Date.now()).toLocaleString() + " -";
 }

@@ -1,6 +1,6 @@
 <?php // Script que destruye la sesión.
 session_start();
-session_destroy(); // Cierra la sesión de Alumno, para poder cerrar la sesión hay que abrirla previamente con session_start().
+session_destroy(); // Cierra la Sesión de Usuario, para Poder Cerrar la Sesión hay que Usar session_start() para Mantener la Sesión que se Inició en Otro Script.
 $title = "Has Cerrado Sesión, Hasta Pronto";
 include "includes/header.php";
 ?>
