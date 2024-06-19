@@ -45,6 +45,7 @@ if ($ok)
 {
     $title = "Registro de Usuario";
     include "includes/header.php";
+    include "includes/modal_index.html";
 
     $sql = "INSERT INTO user VALUES(:id, :dni, :name, :surname, :surname2, :phone, :email, :pass, :bday, :path, :hash, :active)";
     $stmt = $conn->prepare($sql);
@@ -80,13 +81,15 @@ if ($ok)
     }
     else
     {
-        echo "Error al enviar el mensaje si vuelves a intentarlo y vuelve a dar error, por favor escribe a matelat@gmail.com";
+        echo "<script>toast(2, 'ERROR del Servidor', 'Error al Enviar el Mensaje si Vuelves a Intentarlo y da Error Nuevamente, por Favor Escribe a <a href=\"mailto:matelat@gmail.com\">matelat@gmail.com</a>');</script>";
     }
-    echo "<script>if (!alert('Ya estás dado de alta, consulta tu E-mail para confirmar tu inscripción.')) window.location = 'index.php'</script>";
-    include "includes/footer.html";
+    echo "<script>toast(0, 'Activa tu Cuenta', 'Ya Estás Dado de Alta, Consulta tu E-mail para Confirmar tu Inscripción.');</script>";
 }
 else
 {
-    echo "<script>if (!alert('Tus Datos ya Están Registrados en este Sitio, Por Favor Accede con tu Datos en la Página de Login. Si has Olvidado la Contraseña Puedes Recuperarla Desde la Página de Login.')) window.location = 'index.php'</script>";
+    $title = "Usuario ya Registrado";
+    include "includes/header.php";
+    include "includes/modal_index.html";
+    echo "<script>toast(1, 'Datos Ya Registrados', 'Tus Datos ya Están Registrados en este Sitio, Por Favor Accede con tus Credenciales. Si has Olvidado la Contraseña Puedes Recuperarla Desde la Página de Login.');</script>";
 }
 ?>

@@ -3,7 +3,7 @@ include "includes/conn.php";
 
 $activate = $_SERVER["REQUEST_URI"];
 $urlArray = explode('/', $activate);
-$hash = $urlArray[5];
+$hash = $urlArray[5]; // La URL es: localhost/Programación/PHP/Ejercicio-2/activate.php/#hash/ID - Por eso se toman los valores 5 y 6 del Array.
 $id = $urlArray[6];
 
 $stmt = $conn->prepare("SELECT * FROM user WHERE id=$id;");

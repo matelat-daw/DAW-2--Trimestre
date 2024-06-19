@@ -5,15 +5,22 @@ function screen()
     date.innerHTML += new Date(Date.now()).toLocaleString() + " -";
 }
 
-function show(id, qtty)
+function show(id)
 {
     let which = document.getElementsByClassName("goContainer");
+    let qtty = document.getElementsByClassName("goContainer").length;
     let login = document.getElementById("login");
-    login.style.display = "none";
+    if (login != null)
+    {
+        login.style.display = "none";
+    }
 
     for (var i = 0; i < qtty; i++)
     {
-        which[i].style.display = "none";
+        if (which[i].style.display != "none")
+        {
+            which[i].style.display = "none";
+        }
     }
     id.style.display = "block";
 }
@@ -120,4 +127,9 @@ function verify() // Función para validar las contraseñas de registro de alumn
         toast(2, 'El D.N.I. o N.I.E. es Incorrecto', 'Verifica que los Números y la Letra o Letras Estén Bien.');
         return false;
     }
+}
+
+function closeSession()
+{
+    window.open("logout.php", "_self");
 }

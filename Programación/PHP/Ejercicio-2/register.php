@@ -1,7 +1,7 @@
 <?php
-echo "Perfect I am here.";
+
 ?>
-<h3>Registro de Clientes</h3>
+<h3>Registro de Usuario</h3>
 <br>
 <form action="logon.php" method="post" enctype="multipart/form-data" onsubmit="return verify()">
     <label><input type="text" name="username" required> Nombre</label>
@@ -27,11 +27,11 @@ echo "Perfect I am here.";
     <fieldset>
         <legend>Selecciona tu Género</legend>
         <label><input type="radio" name="gender" value="0" checked required> Mujer</label>
-        <br><br>
+        &nbsp;&nbsp;
         <label><input type="radio" name="gender" value="1" required> Varón</label>
-        <br><br>
     </fieldset>
+    <br>
     <label><input type="file" name="profile"> Foto de Perfil<small>(opcional)</small></label>
     <br><br>
-    <input type="submit" value="Regístrame!">
+    <input type="submit" value="Regístrame!"><span class="margin"><a href="index.php" target="_self">Volver a LogIn</a></span>
 </form>

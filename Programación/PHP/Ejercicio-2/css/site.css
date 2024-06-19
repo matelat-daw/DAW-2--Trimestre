@@ -11,7 +11,7 @@
 {
     margin-left: 5%;
     width: 70%;
-    height: 600px;
+    height: 800px;
     background-color: rgba(0, 255, 0, .3);
     color: black;
 }
@@ -19,10 +19,10 @@
 .footer
 {
     position: relative;
-    top: -600px;
+    top: -800px;
     margin-left: 5%;
     width: 90%;
-    height: 100px;
+    height: 150px;
     background-color: rgba(0, 0, 255, .3);
     color: black;
 }
@@ -31,10 +31,10 @@
 {
     position: relative;
     left: 75%;
-    top: -600px;
+    top: -800px;
     margin-right: 5%;
     width: 20%;
-    height: 600px;
+    height: 800px;
     background-color: rgba(255, 255, 0, .3);
     color: black;
 }
@@ -81,16 +81,17 @@ img
     padding: 75px 0;
 }
 
-.border
+.myBorder
 {
     font-family: cursive;
+    font-size: 1.25rem;
     position: relative;
     top: -100px;
     left: 300px;
     padding: 10px;
     border: 3px solid gray;
     width: 30%;
-    height: 300px;
+    height: 350px;
 }
 
 .button1
@@ -104,4 +105,16 @@ img
 .separator
 {
     margin-left: 200px;
+}
+
+.firstHalf
+{
+    float: left;
+    width: 50%;
+}
+
+.secondHalf
+{
+    width: 50%;
+    overflow: hidden;
 }

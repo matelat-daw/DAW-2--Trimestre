@@ -8,4 +8,4 @@
 <br><br>
 <input type="submit" value="Operar" onclick="ej1Opera();" class="button1">
 <br><br>
-<h3 id="result" class="border"></h3>
+<h3 id="result" class="myBorder"></h3>
