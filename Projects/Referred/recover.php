@@ -39,16 +39,9 @@ if (isset($_POST["email"]))
         <div class="col-md-1"></div>
             <div class="col-md-10">
                 <div id="view1">
-                <br><br><br><br>
-                    <h1>Vas a Modificar tu Contraseña por una Provisoria</h1>
-                    <br><br>
-                    <h2>Por Favor Después de Loguearte Modifícala Entrando en tu Perfil</h2>
-                    <br><br>
-                    <form method="post">
-                        <label><input type="text" name="email"> Danos el E-mail con el que te Registraste</label>
-                        <br><br>
-                        <input type="submit" value="Recuperar mi Contraseña">
-                    </form>
+                    <?php
+                        include "includes/recover.php";
+                    ?>
                 </div>
             </div>
         <div class="col-md-1"></div>

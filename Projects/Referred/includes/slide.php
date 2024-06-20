@@ -6,24 +6,24 @@
 <h4>Aquí una Pequeña Muestra de las Empresas que Aceptan tus Referidos:</h4>
 <div id="slide" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/boeing.jpg" class="d-block w-100" alt="Aviones Boeing">
-        </div>
-        <div class="carousel-item">
-            <img src="img/coca.webp" class="d-block w-100" alt="Coca Cola">
-        </div>
-        <div class="carousel-item">
-            <img src="img/ferrari.jpg" class="d-block w-100" alt="Ferrari">
-        </div>
-        <div class="carousel-item">
-            <img src="img/lamborghini.webp" class="d-block w-100" alt="Lamborghini">
-        </div>
-        <div class="carousel-item">
-            <img src="img/lürssen.jpg" class="d-block w-100" alt="Yate Lürssen">
-        </div>
-        <div class="carousel-item">
-            <img src="img/rosa.jpg" class="d-block w-100" alt="Doña Rosa">
-        </div>
+        <?php
+        $path = "img/slide/*"; // Asigno a $path todos los Ficheros que están en el Directorio pages.
+        $qtty = count(glob($path));
+        for ($i = 0; $i < $qtty; $i++)
+        {
+            if ($i == $qtty - 1)
+            {
+                $html = '<div class="carousel-item active">';
+            }
+            else
+            {
+                $html = '<div class="carousel-item">';
+            }
+            echo $html . '
+                <img src="img/slide/img' . $i . '.jpg" class="d-block w-100" alt="Imagen-' . $i . '">
+            </div>';
+        }
+        ?>
     </div>
 </div>
 <br><br><br><br><br>

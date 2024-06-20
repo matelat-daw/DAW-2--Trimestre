@@ -10,12 +10,13 @@ include "includes/modal.html";
             <div class="col-md-10">
                 <div id="view1">
                     <?php
+                        include "includes/nav_index_top.html";
                         include "includes/slide.php";
                     ?>
                 </div>
                 <div id="view2">
                     <?php
-                        include "includes/nav_index.php";
+                        include "includes/nav_index.html";
                     ?>
                     <br><br>
                     <div id="login">

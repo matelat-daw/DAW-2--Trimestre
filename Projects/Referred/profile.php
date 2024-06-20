@@ -69,7 +69,7 @@ if (isset($_SESSION["user"])) // Verifico si la sesión no está vacia.
             <div class="col-md-10">
                 <div id="view1">
                     <?php
-                        include "includes/nav_profile.php";
+                        include "includes/nav_profile.html";
                     ?>
                     <br><br><br>
                     <div id="modify">
