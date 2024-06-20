@@ -77,3 +77,41 @@ function show(id)
         login.style.display = "block";
     }
 }
+
+function showEye(which) // Función para mostrar el ojo de los input de las contraseñas, recibe el número del elemento que contiene el ojo.
+{
+    let eye = document.getElementById("togglePassword" + which); // Asigno a eye la id del elemento que contiene el ojo.
+    eye.style.visibility = "visible"; // Hago visible el elemento, el ojo.
+}
+
+function spy(which) // Función para el ojito de las Contraseñas al hacer click en el ojito, recibe el número de la ID del input de la password.
+{
+    const togglePassword = document.querySelector('#togglePassword' + which); // Asigno a la constante togglePassword el input con ID togglePassword + which.
+    const password = document.querySelector('#pass' + which); // Asigno a password la ID del input con ID pass + which.
+    
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password'; // Asigno a type el resultado de un operador ternario, si presiono el ojito y el tipo del input es password
+    // lo cambia a text, si es text lo cambia a password.
+    password.setAttribute('type', type); // Le asigno el atributo al input password.
+    togglePassword.classList.toggle('fa-eye-slash'); // Cambia el aspecto del ojito, al cambiar el input a tipo texto, el ojo aparece con una raya.
+}
+
+function verify() // Función para validar las contraseñas de registro de alumnos y las de modificación, también valida el D.N.I.
+{
+    var pass1 = document.getElementById("pass1").value; // pass es la ID del input pass0.
+    var pass2 = document.getElementById("pass2").value; // pass2 es la ID del input pass1.
+
+    if (pass1 != pass2) // Verifico si los valores en los input pass y pass2 no coinciden.
+    {
+        toast(1, "Hay un Error", "Las contraseñas no coinciden, has Escrito: " + pass1 + " y " + pass2); // Si no coinciden muestro error.
+        return false; // devulvo false, el formulario no se envía.
+    }
+    else // Si son iguales.
+    {
+        return true; // Devuelvo true, envía el formulario.
+    }
+}
+
+function closeSession()
+{
+    window.open("logout.php", "_self");
+}

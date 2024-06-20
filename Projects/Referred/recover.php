@@ -30,7 +30,7 @@ if (isset($_POST["email"]))
         $sql = "UPDATE user SET pass='$pass' WHERE email='$email'"; // Hago un update de la contraseña de ese E-mail.
         $stmt = $conn->prepare($sql);
         $stmt->execute();
-        echo "<script>toast(0, 'Todo ha Ido Bien', 'Se ha cambiado tu Contraseña a: $hash, Selecciónala, Cópiala y Pegala en un Texto, Después Vuelve a Iniciar Sesión con los Nuevos Datos. Te Recomendamos que Cambies la Contraseña, Gracias por Comprar tus Suplementos Aquí.');</script>";
+        echo "<script>toast(0, 'Todo ha Ido Bien', 'Se ha Cambiado tu Contraseña a: $hash, Selecciónala, Cópiala y Pegala en un Texto, Después Vuelve a Iniciar Sesión con los Nuevos Datos. Te Recomendamos que Cambies la Contraseña, Gracias por Ser Parte de la WEB de Referidos.');</script>";
     }
 }
 ?>
@@ -54,3 +54,6 @@ if (isset($_POST["email"]))
         <div class="col-md-1"></div>
     </div>
 </section>
+<?php
+include "includes/footer.html";
+?>

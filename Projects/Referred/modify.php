@@ -9,7 +9,12 @@ if (isset($_POST["username"])) // Si llegan datos por post.
     $ok = true; // Uso la variable $ok para verificar que no se repita el DNI ni el E-mail.
     $id = $_SESSION["user"]; // Asigno a la variable $id el valor de la sesión id.
     $name = htmlspecialchars($_POST["username"]); // Asigno a variables lo recibido por post.
-    $address = htmlspecialchars($_POST["address"]);
+    $surname1 = htmlspecialchars($_POST["surname1"]);
+    $surname2 = htmlspecialchars($_POST["surname2"]);
+    if ($surname2 = "")
+    {
+        $surname2 = null;
+    }
     $phone = htmlspecialchars($_POST["phone"]);
     $email = htmlspecialchars($_POST["email"]);
     $bday = htmlspecialchars($_POST["bday"]);
@@ -34,60 +39,71 @@ if (isset($_POST["username"])) // Si llegan datos por post.
     }
     if ($ok) // Si $ok está a true, no hubo coincidencias.
     {
-        $sql = "SELECT phone, email FROM user WHERE id=$id"; // Preparo la consulta a la ID del cliente.
-        $stmt = $conn->prepare($sql);
-        $stmt->execute();
-        $row = $stmt->fetch(PDO::FETCH_OBJ); // Asigno el resultado a la variable $row.
-        if ($row->email != $email) // Verifico que el E-mail enviado por post es distinto que el de la tabla.
+        if ($pass != "")
         {
-            if ($row->phone != $phone)
-            {
-                if ($pass != "")
-                {
-                    $sql = "UPDATE client SET name='$name', address='$address', phone='$phone', email='$email', pass='$hash', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo.
-                }
-                else
-                {
-                    $sql = "UPDATE client SET name='$name', address='$address', phone='$phone', email='$email', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo.
-                }
-            }
-            else
-            {
-                if ($pass != "")
-                {
-                    $sql = "UPDATE client SET name='$name', address='$address', email='$email', pass='$hash', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo.
-                }
-                else
-                {
-                    $sql = "UPDATE client SET name='$name', address='$address', email='$email', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo.
-                }
-            }
+            $sql = "UPDATE user SET name='$name', surname1='$surname1', surname2='$surname2', phone='$phone', email='$email', pass='$hash', bday='$bday' WHERE id=$id;"; // Preparo la Consulta Modificando Todo.
         }
-        else // Si el E-mail está repetido, el cliente no cambió su E-mail.
+        else
         {
-            if ($row->phone != $phone)
-            {
-                if ($pass != "")
-                {
-                    $sql = "UPDATE client SET name='$name', address='$address', phone='$phone', pass='$hash', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo.
-                }
-                else
-                {
-                    $sql = "UPDATE client SET name='$name', address='$address', phone='$phone', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo.
-                }
-            }
-            else
-            {
-                if ($pass != "")
-                {
-                    $sql = "UPDATE client SET name='$name', address='$address', pass='$hash', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo menos los datos repetidos.
-                }
-                else
-                {
-                    $sql = "UPDATE client SET name='$name', address='$address', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo menos los datos repetidos.
-                }
-            }
+            $sql = "UPDATE user SET name='$name', surname1='$surname1', surname2='$surname2', phone='$phone', email='$email', bday='$bday' WHERE id=$id;"; // Preparo la Consulta Modificando todo Excepto la Contraseña.
         }
+
+
+        // $sql = "SELECT phone, email FROM user WHERE id=$id"; // Preparo la consulta a la ID del cliente.
+        // $stmt = $conn->prepare($sql);
+        // $stmt->execute();
+        // $row = $stmt->fetch(PDO::FETCH_OBJ); // Asigno el resultado a la variable $row.
+
+        // if ($row->email != $email) // Verifico que el E-mail enviado por post es distinto que el de la tabla.
+        // {
+        //     if ($row->phone != $phone)
+        //     {
+        //         if ($pass != "")
+        //         {
+        //             $sql = "UPDATE client SET name='$name', address='$address', phone='$phone', email='$email', pass='$hash', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo.
+        //         }
+        //         else
+        //         {
+        //             $sql = "UPDATE client SET name='$name', address='$address', phone='$phone', email='$email', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo.
+        //         }
+        //     }
+        //     else
+        //     {
+        //         if ($pass != "")
+        //         {
+        //             $sql = "UPDATE client SET name='$name', address='$address', email='$email', pass='$hash', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo.
+        //         }
+        //         else
+        //         {
+        //             $sql = "UPDATE client SET name='$name', address='$address', email='$email', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo.
+        //         }
+        //     }
+        // }
+        // else // Si el E-mail está repetido, el cliente no cambió su E-mail.
+        // {
+        //     if ($row->phone != $phone)
+        //     {
+        //         if ($pass != "")
+        //         {
+        //             $sql = "UPDATE client SET name='$name', address='$address', phone='$phone', pass='$hash', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo.
+        //         }
+        //         else
+        //         {
+        //             $sql = "UPDATE client SET name='$name', address='$address', phone='$phone', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo.
+        //         }
+        //     }
+        //     else
+        //     {
+        //         if ($pass != "")
+        //         {
+        //             $sql = "UPDATE client SET name='$name', address='$address', pass='$hash', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo menos los datos repetidos.
+        //         }
+        //         else
+        //         {
+        //             $sql = "UPDATE client SET name='$name', address='$address', bday='$bday' WHERE id=$id;"; // Preparo la consulta modificando todo menos los datos repetidos.
+        //         }
+        //     }
+        // }
 
         $stmt = $conn->prepare($sql);
         $stmt->execute();
