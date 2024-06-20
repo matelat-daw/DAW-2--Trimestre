@@ -65,17 +65,37 @@ function show(id)
 {
     let login = document.getElementById("login");
     let logon = document.getElementById("logon");
+    let modify = document.getElementById("modify");
+    let quit = document.getElementById("delete");
 
-    if (id == login)
+    switch (id)
     {
-        id.style.display = "none";
-        logon.style.display = "block";
+        case login:
+            id.style.display = "none";
+            logon.style.display = "block";
+            break;
+        case logon:
+            id.style.display = "none";
+            login.style.display = "block";
+            break;
+        case modify:
+            id.style.display = "block";
+            quit.style.display = "none";
+            break;
+        default:
+            id.style.display = "block";
+            modify.style.display = "none";
     }
-    else
-    {
-        id.style.display = "none";
-        login.style.display = "block";
-    }
+    // if (id == login)
+    // {
+    //     id.style.display = "none";
+    //     logon.style.display = "block";
+    // }
+    // else
+    // {
+    //     id.style.display = "none";
+    //     login.style.display = "block";
+    // }
 }
 
 function showEye(which) // Función para mostrar el ojo de los input de las contraseñas, recibe el número del elemento que contiene el ojo.
