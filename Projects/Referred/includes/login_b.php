@@ -8,4 +8,4 @@
     <br><br>
     <input type="submit" value="Quiero Entrar en mi Perfil" class="btn btn-success btn-lg">
 </form>
-<a href='recover_b.php'><small>Olvidé mi Contraseña</small></a><span class='separator'>No estoy Dado de Alta, <a href='javascript:show(document.getElementById("login_b"));'>Quiero Regístrarme</a></span>
+<a href='recover_b.php'><small>Olvidé mi Contraseña</small></a><span class='separator'>No estoy Dado de Alta, <a href='javascript:show_b(document.getElementById("logon_b"));'>Quiero Regístrarme</a></span>

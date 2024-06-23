@@ -25,12 +25,22 @@ input[type="radio"]:checked
     background-color: #00ff00;
 }
 
-#logon
+#logon_u
 {
     display: none;
 }
 
-#delete
+#logon_b
+{
+    display: none;
+}
+
+#delete_u
+{
+    display: none;
+}
+
+#delete_b
 {
     display: none;
 }

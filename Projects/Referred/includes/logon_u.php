@@ -33,4 +33,5 @@
         <input type="submit" value="Me Quiero Registrar" class="btn btn-primary btn-lg">
     </fieldset>
 </form>
-<a href="javascript:show(document.getElementById('logon_u'));">Volver a LogIn</a>
+<a href="javascript:show_u(document.getElementById('login_u'));">Volver a LogIn</a>
+<br><br><br>
