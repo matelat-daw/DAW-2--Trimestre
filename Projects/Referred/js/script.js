@@ -131,6 +131,21 @@ function verify() // Función para validar las contraseñas de registro de alumn
     }
 }
 
+function QRGen() // Función para generar el código QR, directamente desde una API de google, (seguramente durará muy poco), recibe el numero de entradas compradas, del script checkout.php.
+{
+    let code = document.getElementById("code"); // Obtengo la ID del <input> oculto que contiene la url con los datos de las entradas compradas, lo asigno al array code[i].
+    let qr = document.getElementById("here"); // Obtengo las ID de los input que contendrán la URL completa del código QR.
+    let btn = document.getElementById("btn"); // ID del input type submit para enviar los datos, está oculto (hidden)
+    
+    finalURL ='https://chart.googleapis.com/chart?cht=qr&chl=' + code.value + '&chs=160x160&chld=L|0'; // Se lo paso a Google y asigno el resultado a la variable finalURL.
+    qr.value = finalURL; // Lo pongo en el input con ID qr[i].
+
+    setTimeout(function() // La función para esperar 2 segundos.
+    {
+        btn.style.visibility = "visible"; // Después de 2 segundos se hace visible el botón. Espero 2 segundos para dar tiempo a Google a Crear el QR.
+    }, 2000);
+}
+
 function closeSession()
 {
     window.open("logout.php", "_self");
