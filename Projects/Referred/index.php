@@ -10,13 +10,13 @@ include "includes/modal.html";
             <div class="col-md-10">
                 <div id="view1">
                     <?php
-                        include "includes/nav_index_top.html";
+                        include "includes/nav_index_top.html"; // Menú de Index.
                         include "includes/slide.php";
                     ?>
                 </div>
                 <div id="view2">
                     <?php
-                        include "includes/nav_index_u.html";
+                        include "includes/nav_index_u.html"; // Menú de la Vista de LogIn/Registro de Usuario.
                     ?>
                     <br><br>
                     <div id="login_u">
@@ -32,7 +32,7 @@ include "includes/modal.html";
                 </div>
                 <div id="view3">
                     <?php
-                        include "includes/nav_index_b.html";
+                        include "includes/nav_index_b.html"; // Menú de la Vista de LogIn/Registro de Empresa.
                     ?>
                     <br><br>
                     <div id="login_b">
