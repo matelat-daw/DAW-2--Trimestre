@@ -16,17 +16,33 @@ include "includes/modal.html";
                 </div>
                 <div id="view2">
                     <?php
-                        include "includes/nav_index.html";
+                        include "includes/nav_index_u.html";
                     ?>
                     <br><br>
-                    <div id="login">
+                    <div id="login_u">
                         <?php
-                            include "includes/login.php";
+                            include "includes/login_u.php";
                         ?>
                     </div>
-                    <div id="logon">
+                    <div id="logon_u">
                         <?php
-                            include "includes/logon.php";
+                            include "includes/logon_u.php";
+                        ?>
+                    </div>
+                </div>
+                <div id="view3">
+                    <?php
+                        include "includes/nav_index_b.html";
+                    ?>
+                    <br><br>
+                    <div id="login_b">
+                        <?php
+                            include "includes/login_b.php";
+                        ?>
+                    </div>
+                    <div id="logon_b">
+                        <?php
+                            include "includes/logon_b.php";
                         ?>
                     </div>
                 </div>

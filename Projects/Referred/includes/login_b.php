@@ -1,6 +1,6 @@
-<h1>Formulario de Entrada de Usuario</h1>
+<h1>Formulario de Entrada de Empresa</h1>
 <br>
-<form action="profile.php" method="post">
+<form action="profile_b.php" method="post">
     <legend>Ingresa tus Credenciales</legend>
     <label><input type="text" name="email"> E-mail</label>
     <br><br>
@@ -8,4 +8,4 @@
     <br><br>
     <input type="submit" value="Quiero Entrar en mi Perfil" class="btn btn-success btn-lg">
 </form>
-<a href='recover.php'><small>Olvidé mi Contraseña</small></a><span class='separator'>No estoy Dado de Alta, <a href='javascript:show(document.getElementById("login"));'>Quiero Regístrarme</a></span>
+<a href='recover_b.php'><small>Olvidé mi Contraseña</small></a><span class='separator'>No estoy Dado de Alta, <a href='javascript:show(document.getElementById("login_b"));'>Quiero Regístrarme</a></span>

@@ -69,17 +69,17 @@ if (isset($_SESSION["user"])) // Verifico si la sesión no está vacia.
             <div class="col-md-10">
                 <div id="view1">
                     <?php
-                        include "includes/nav_profile.html";
+                        include "includes/nav_profile_u.html";
                     ?>
                     <br><br><br>
-                    <div id="modify">
+                    <div id="modify_u">
                         <?php
-                            include "includes/modify.php";
+                            include "includes/modify_u.php";
                         ?>
                     </div>
-                    <div id="delete">
+                    <div id="delete_u">
                         <?php
-                            include "includes/delete.php";
+                            include "includes/delete_u.php";
                         ?>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
-<h1>Formulario de Registro de Usuarios</h1>
+<h1>Formulario de Registro de Usuario</h1>
 <br>
-<form action="logon.php" method="post" enctype="multipart/form-data" onsubmit="return verify()">
+<form action="logon_u.php" method="post" enctype="multipart/form-data" onsubmit="return verify()">
     <fieldset>
         <legend>Ingresa tus Datos Para Registrarte</legend>
         <br>
@@ -33,4 +33,4 @@
         <input type="submit" value="Me Quiero Registrar" class="btn btn-primary btn-lg">
     </fieldset>
 </form>
-<a href="javascript:show(document.getElementById('logon'));">Volver a LogIn</a>
+<a href="javascript:show(document.getElementById('logon_u'));">Volver a LogIn</a>

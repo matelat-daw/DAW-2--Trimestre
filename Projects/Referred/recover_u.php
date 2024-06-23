@@ -1,6 +1,6 @@
 <?php
 include "includes/conn.php";
-$title = "Sitio - Recupera tu Contraseña";
+$title = "Referidos - Recupera tu Contraseña";
 include "includes/header.php";
 include "includes/modal_index.html";
 
@@ -17,20 +17,15 @@ if (isset($_POST["email"]))
     {
         if ($row->email == $email) // Si el E-mail está en la base de datos.
         {
-            $ok = true; // $ok es true.
-            break; // Rompo el bucle, si se encuentra el E-mail en los primeros resultados no hace falta seguir buscando, el E-mail es clave unica.
+            $sql = "UPDATE user SET pass='$pass' WHERE email='$email'"; // Hago un update de la contraseña de ese E-mail.
+            $stmt = $conn->prepare($sql);
+            $stmt->execute();
+            echo "<script>toast(0, 'Todo ha Ido Bien', 'Se ha Cambiado tu Contraseña a: $hash, Selecciónala, Cópiala y Pegala en un Texto, Después Vuelve a Iniciar Sesión con los Nuevos Datos. Te Recomendamos que Cambies la Contraseña, Gracias por Ser Parte de la WEB de Referidos.');</script>";
         }
-    }
-    if (!$ok) // Si $ok es false.
-    {
-        echo "<script>toast(2, 'Hay un Error', 'Lo Siento no Existe Ningún Cliente con E-mail: $email, Vuelve a Intentarlo con la Dirección con la que te Registrate.');</script>"; // Error.
-    }
-    else // Si el E-mail está en la base de datos.
-    {
-        $sql = "UPDATE user SET pass='$pass' WHERE email='$email'"; // Hago un update de la contraseña de ese E-mail.
-        $stmt = $conn->prepare($sql);
-        $stmt->execute();
-        echo "<script>toast(0, 'Todo ha Ido Bien', 'Se ha Cambiado tu Contraseña a: $hash, Selecciónala, Cópiala y Pegala en un Texto, Después Vuelve a Iniciar Sesión con los Nuevos Datos. Te Recomendamos que Cambies la Contraseña, Gracias por Ser Parte de la WEB de Referidos.');</script>";
+        else // Si el E-mail está en la base de datos.
+        {
+            echo "<script>toast(2, 'Hay un Error', 'Lo Siento no Existe Ningún Cliente con E-mail: $email, Vuelve a Intentarlo con la Dirección con la que te Registrate.');</script>"; // Error.
+        }
     }
 }
 ?>

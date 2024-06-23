@@ -63,28 +63,39 @@ function toast(warn, ttl, msg) // Función para mostrar el Dialogo con los mensa
 
 function show(id)
 {
-    let login = document.getElementById("login");
-    let logon = document.getElementById("logon");
-    let modify = document.getElementById("modify");
-    let quit = document.getElementById("delete");
+    let login_u = document.getElementById("login_u");
+    let logon_u = document.getElementById("logon_u");
+    let modify_u = document.getElementById("modify_u");
+    let quit_u = document.getElementById("delete_u");
+    let login_b = document.getElementById("login_b");
+    let logon_b = document.getElementById("logon_b");
+    let modify_b = document.getElementById("modify_b");
+    let quit_b = document.getElementById("delete_b");
 
     switch (id)
     {
-        case login:
+        case login_u:
+        case login_b:
             id.style.display = "none";
-            logon.style.display = "block";
+            logon_u.style.display = "block";
+            logon_b.style.display = "block";
             break;
-        case logon:
+        case logon_u:
+        case logon_b:
             id.style.display = "none";
-            login.style.display = "block";
+            login_u.style.display = "block";
+            login_b.style.display = "block";
             break;
-        case modify:
+        case modify_u:
+        case modify_b:
             id.style.display = "block";
-            quit.style.display = "none";
+            quit_u.style.display = "none";
+            quit_b.style.display = "none";
             break;
         default:
             id.style.display = "block";
-            modify.style.display = "none";
+            modify_u.style.display = "none";
+            modify_b.style.display = "none";
     }
     // if (id == login)
     // {
