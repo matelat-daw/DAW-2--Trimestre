@@ -27,6 +27,15 @@ if (isset($_POST['email'])) // Si recibe datos por POST en la variable array $_P
                 $row = $stmt->fetch(PDO::FETCH_OBJ);
                 if (password_verify($pass, $row->pass))
                 {
+                    $sql = "SELECT id_user FROM referrer WHERE id_user=" . $row->id_user . ";";
+                    $stmt = $conn->prepare($sql);
+                    $stmt->execute();
+                    if ($stmt->rowCount() == 0)
+                    {
+                        $sql = "INSERT INTO referrer VALUES (:id_user);";
+                        $stmt = $conn->prepare($sql);
+                        $stmt->execute([':id_user' => $row->id_user]);
+                    }
                     $_SESSION["user"] = $row->id; // Asigno a la variable de sesión user la id del cliente.
                     $_SESSION["name"] = $row->name; // Asigno a la variable de sesión name el nombre del cliente.
                     $path = $row->path;
