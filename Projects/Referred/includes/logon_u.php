@@ -8,7 +8,7 @@
         <br><br>
         <label><input type="text" name="surname1" required> Apellido 1</label>
         <br><br>
-        <label><input type="text" name="surname2" required> Apellido 2</label>
+        <label><input type="text" name="surname2"> Apellido 2</label>
         <br><br>
         <label><input type="text" name="phone" required> Teléfono</label>
         <br><br>

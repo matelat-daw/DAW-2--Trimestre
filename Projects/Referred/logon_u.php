@@ -52,7 +52,7 @@ if ($ok) // Si $ok es true.
     $id = $conn->lastInsertId(); // Asigno a la variable $id la última id guardada en la tabla.
 
     $subject = "Si Tienes Algún Problema para Registrarte Contactame en Esta Dirección";
-    $message = "<h3>Gracias por registrarte</h3><p>Por Favor haz Click en el Botón Activar mi Cuenta para Empezar a Usar el Sitio.</p><a href='http://" . $_SERVER['SERVER_NAME'] . "/Projects/Referred/activate.php/" . $hash . "/" . $id . "'><div style='background-color:aquamarine; border:thin; width:120px; height:60px; text-align:center;'>Activo mi Cuenta</div></a><br><br><small>Copyright © 2024 César Matelat <a href='mailto:matelat@gmail.com'>matelat@gmail.com</a></small>";
+    $message = "<h3>Gracias por registrarte</h3><p>Por Favor haz Click en el Botón Activar mi Cuenta para Empezar a Usar el Sitio.</p><a href='http://" . $_SERVER['SERVER_NAME'] . "/Projects/Referred/activate_u.php/" . $hash . "/" . $id . "'><div style='background-color:aquamarine; border:thin; width:120px; height:60px; text-align:center;'>Activo mi Cuenta</div></a><br><br><small>Copyright © 2024 César Matelat <a href='mailto:matelat@gmail.com'>matelat@gmail.com</a></small>";
     $server_email = "matelat@gmail.com";
     $headers  = "From: $server_email" . "\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion(). "\r\n";

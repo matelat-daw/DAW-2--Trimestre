@@ -27,16 +27,16 @@ if (isset($_POST['email'])) // Si recibe datos por POST en la variable array $_P
                 $row = $stmt->fetch(PDO::FETCH_OBJ);
                 if (password_verify($pass, $row->pass))
                 {
-                    $sql = "SELECT id_user FROM referrer WHERE id_user=" . $row->id_user . ";";
+                    $sql = "SELECT id_user FROM referred WHERE id_user=" . $row->id_user . ";";
                     $stmt = $conn->prepare($sql);
                     $stmt->execute();
                     if ($stmt->rowCount() == 0)
                     {
-                        $sql = "INSERT INTO referrer VALUES (:id_user);";
+                        $sql = "INSERT INTO referred (id_user) VALUES (:id_user);";
                         $stmt = $conn->prepare($sql);
                         $stmt->execute([':id_user' => $row->id_user]);
                     }
-                    $_SESSION["user"] = $row->id; // Asigno a la variable de sesión user la id del cliente.
+                    $_SESSION["user"] = $row->id_user; // Asigno a la variable de sesión user la id del cliente.
                     $_SESSION["name"] = $row->name; // Asigno a la variable de sesión name el nombre del cliente.
                     $path = $row->path;
                 }
@@ -59,7 +59,7 @@ if (isset($_SESSION["user"])) // Verifico si la sesión no está vacia.
     include "includes/modal.html";
     $ok = false; // Booleano para verificar si los datos son correctos.
     $id = $_SESSION["user"]; // Asigno a la variable $id el valor de la sesión client.
-    $sql = "SELECT * FROM user WHERE id=$id;"; // Preparo una consulta por la ID.
+    $sql = "SELECT * FROM user WHERE id_user=$id;"; // Preparo una consulta por la ID.
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $row = $stmt->fetch(PDO::FETCH_OBJ); // Asigno el resultado a la variable $row.
