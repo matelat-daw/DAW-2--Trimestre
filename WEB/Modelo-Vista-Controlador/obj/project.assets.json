@@ -3514,11 +3514,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Server\\www\\Modelo-Vista-Controlador\\Modelo-Vista-Controlador.csproj",
+      "projectUniqueName": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\WEB\\Modelo-Vista-Controlador\\Modelo-Vista-Controlador.csproj",
       "projectName": "Modelo-Vista-Controlador",
-      "projectPath": "C:\\Server\\www\\Modelo-Vista-Controlador\\Modelo-Vista-Controlador.csproj",
+      "projectPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\WEB\\Modelo-Vista-Controlador\\Modelo-Vista-Controlador.csproj",
       "packagesPath": "C:\\Users\\Orion\\.nuget\\packages\\",
-      "outputPath": "C:\\Server\\www\\Modelo-Vista-Controlador\\obj\\",
+      "outputPath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\WEB\\Modelo-Vista-Controlador\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Orion\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3582,7 +3582,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -2,3 +2,8 @@ label, input
 {
     font-size: 1.25rem;
 }
+
+#logon
+{
+    display: none;
+}

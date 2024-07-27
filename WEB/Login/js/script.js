@@ -22,71 +22,19 @@ function pdfDown(number)
     doc.save();
 }
 
-// function prices(howmany)
-// {
-//     let container = document.getElementById("prices");
-//     container.innerHTML = "";
-
-//     for (i = 0; i < howmany; i++)
-//     {
-//         window ["input" + i] = document.createElement("input");
-//         window ["br" + i] = document.createElement("br");
-//         window ["br2" + i] = document.createElement("br");
-//         window ["br3" + i] = document.createElement("br");
-//         window ["br4" + i] = document.createElement("br");
-//         window ["input2" + i] = document.createElement("input");
-//         window ["label" + i] = document.createElement("label");
-//         window ["label2" + i] = document.createElement("label");
-
-//         eval("label" + i).innerHTML = " Nombre del Repuesto";
-//         eval("label2" + i).innerHTML = " Precio del Repuesto";
-//         eval("input" + i).type = "text";
-//         eval("input" + i).name = "material" + i;
-//         eval("input2" + i).type = "number";
-//         eval("input2" + i).name = "price" + i;
-//         eval("input2" + i).step = ".05";
-
-//         container.appendChild(eval("input" + i));
-//         container.appendChild(eval("label" + i));
-//         container.appendChild(eval("br" + i));
-//         container.appendChild(eval("br2" + i));
-//         container.appendChild(eval("input2" + i));
-//         container.appendChild(eval("label2" + i));
-//         container.appendChild(eval("br3" + i));
-//         container.appendChild(eval("br4" + i));
-            /* Funciona con este bloque */
-
-            /* O con este */
-            // const input = document.createElement("input");
-            // const label = document.createElement("label");
-            // const br = document.createElement("br");
-            // const br2 = document.createElement("br");
-            
-            // const input2 = document.createElement("input");
-            // const label2 = document.createElement("label");
-            // const br3 = document.createElement("br");
-            // const br4 = document.createElement("br");
-        
-            // input.name = "material" + i;
-            // input.type = "text";
-            // label.innerHTML = " Nombre del Repuesto";
-    
-            // input2.name = "price" + i;
-            // input2.type = "number";
-            // input2.step = .5;
-            // label2.innerHTML = " Precio del Repuesto";
-    
-            // container.appendChild(input);
-            // container.appendChild(label);
-            // container.appendChild(br);
-            // container.appendChild(br2);
-    
-            // container.appendChild(input2);
-            // container.appendChild(label2);
-            // container.appendChild(br3);
-            // container.appendChild(br4);
-//     }
-// }
+function change(to)
+{
+    if (to == "logon")
+    {
+        login.style.display = "none";
+        logon.style.display = "block";
+    }
+    else
+    {
+        logon.style.display = "none";
+        login.style.display = "block";
+    }
+}
 
 function screen() // Establece el tamaño de las vistas en la pantalla.
 {

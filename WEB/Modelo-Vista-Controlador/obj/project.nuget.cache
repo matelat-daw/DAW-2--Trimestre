@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ovth0bXUPda//kZ6aa253kq3RtFHHw21ILUYUZ7CnkmgRauBj6guRx+2UG7cO4bUjV25yHXfCkg7WeZEFYH4cQ==",
+  "dgSpecHash": "fLTO+6YXtLQ=",
   "success": true,
-  "projectFilePath": "C:\\Server\\www\\Modelo-Vista-Controlador\\Modelo-Vista-Controlador.csproj",
+  "projectFilePath": "C:\\Users\\Orion\\Documents\\César Manrique\\Daw-2º-Trimestre\\DAW-2--Trimestre\\WEB\\Modelo-Vista-Controlador\\Modelo-Vista-Controlador.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Orion\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Orion\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

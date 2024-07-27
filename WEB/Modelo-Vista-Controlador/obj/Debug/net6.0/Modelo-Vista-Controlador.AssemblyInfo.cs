@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Modelo-Vista-Controlador")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59bf6bbb271429d7537d5c34b694eede3469eaa9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Modelo-Vista-Controlador")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Modelo-Vista-Controlador")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

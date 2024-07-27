@@ -9,55 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Modelo_Vista_Controlador
 build_property.RootNamespace = Modelo_Vista_Controlador
-build_property.ProjectDir = C:\Server\www\Modelo-Vista-Controlador\
+build_property.ProjectDir = C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\WEB\Modelo-Vista-Controlador\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Server\www\Modelo-Vista-Controlador
+build_property.MSBuildProjectDirectory = C:\Users\Orion\Documents\César Manrique\Daw-2º-Trimestre\DAW-2--Trimestre\WEB\Modelo-Vista-Controlador
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Server/www/Modelo-Vista-Controlador/Views/Home/Create.cshtml]
+[C:/Users/Orion/Documents/César Manrique/Daw-2º-Trimestre/DAW-2--Trimestre/WEB/Modelo-Vista-Controlador/Views/Home/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Server/www/Modelo-Vista-Controlador/Views/Home/Delete.cshtml]
+[C:/Users/Orion/Documents/César Manrique/Daw-2º-Trimestre/DAW-2--Trimestre/WEB/Modelo-Vista-Controlador/Views/Home/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Server/www/Modelo-Vista-Controlador/Views/Home/Details.cshtml]
+[C:/Users/Orion/Documents/César Manrique/Daw-2º-Trimestre/DAW-2--Trimestre/WEB/Modelo-Vista-Controlador/Views/Home/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Server/www/Modelo-Vista-Controlador/Views/Home/Edit.cshtml]
+[C:/Users/Orion/Documents/César Manrique/Daw-2º-Trimestre/DAW-2--Trimestre/WEB/Modelo-Vista-Controlador/Views/Home/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Server/www/Modelo-Vista-Controlador/Views/Home/Index.cshtml]
+[C:/Users/Orion/Documents/César Manrique/Daw-2º-Trimestre/DAW-2--Trimestre/WEB/Modelo-Vista-Controlador/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Server/www/Modelo-Vista-Controlador/Views/Home/Privacy.cshtml]
+[C:/Users/Orion/Documents/César Manrique/Daw-2º-Trimestre/DAW-2--Trimestre/WEB/Modelo-Vista-Controlador/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Server/www/Modelo-Vista-Controlador/Views/Shared/Error.cshtml]
+[C:/Users/Orion/Documents/César Manrique/Daw-2º-Trimestre/DAW-2--Trimestre/WEB/Modelo-Vista-Controlador/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Server/www/Modelo-Vista-Controlador/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Orion/Documents/César Manrique/Daw-2º-Trimestre/DAW-2--Trimestre/WEB/Modelo-Vista-Controlador/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Server/www/Modelo-Vista-Controlador/Views/_ViewImports.cshtml]
+[C:/Users/Orion/Documents/César Manrique/Daw-2º-Trimestre/DAW-2--Trimestre/WEB/Modelo-Vista-Controlador/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Server/www/Modelo-Vista-Controlador/Views/_ViewStart.cshtml]
+[C:/Users/Orion/Documents/César Manrique/Daw-2º-Trimestre/DAW-2--Trimestre/WEB/Modelo-Vista-Controlador/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Server/www/Modelo-Vista-Controlador/Views/Shared/_Layout.cshtml]
+[C:/Users/Orion/Documents/César Manrique/Daw-2º-Trimestre/DAW-2--Trimestre/WEB/Modelo-Vista-Controlador/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jyo9kg8riw

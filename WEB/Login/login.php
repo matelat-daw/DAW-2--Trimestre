@@ -43,7 +43,7 @@ include "includes/modal-index.html";
                     {
                         $_SESSION["id"] = $email;
                         echo "<h3>Bienvenido Usuario $email</h3>";
-                        echo "<img alt='Foto de Perfil' src='" . $path . "' width='160' heigth='120'";
+                        echo "<img alt='Foto de Perfil' src='" . $path . "' width='160' heigth='120'>";
                     }
                     else
                     {
