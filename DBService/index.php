@@ -109,37 +109,8 @@ include "includes/nav.html";
         <div class="col-md-1"></div>
             <div class="col-md-10">
                 <div id="view1">
-                    <br><br>
-                    <h1 class="center">CRUD a la Base de Datos a Través de un Servicio</h1>
-                    <br>
-                    <h2>Primer Servicio CREATE - Inserta un Usuario en la Base de Datos</h2>
-                    <form method="post" enctype="multipart/form-data" onsubmit="return verify(1)">
-                        <label><input type="text" name="username" required> Nombre del Usuario.</label>
-                        <br><br>
-                        <label><input type="text" name="surname" required> Primer Apellido</label>
-                        <br><br>
-                        <label><input type="text" name="surname2"> Segundo Apellido</label>
-                        <br><br>
-                        <label><input type="number" name="phone" required> Teléfono</label>
-                        <br><br>
-                        <label><input type="email" name="email" required> E-mail</label>
-                        <br><br>
-                        <label><input type="password" id="pass" name="pass" required> Contraseña</label>
-                        <br><br>
-                        <label><input type="password" id="pass2" required> Repite Contraseña</label>
-                        <br><br>
-                        <label><input type="date" name="bday" required> Fecha de Nacimiento</label>
-                        <br><br>
-                        <label><input type="radio" name="gender" value="0" checked> Mujer</label>
-                        <br><br>
-                        <label><input type="radio" name="gender" value="1"> Varón</label>
-                        <br><br>
-                        <label><input type="file" name="profile" class="btn btn-primary btn-lg"> Foto de Perfil<small>(opcional)</small></label>
-                        <br><br>
-                        <input type="submit" name="create" value="Inserta Usuario" class="btn btn-info btn-lg">
-                    </form>
-                    <br><br>
                     <?php
+                    include "includes/create.html";
                     if (isset($_POST["create"])) // Si se solicito crear un usuario
                     {
                         session_unset(); // Rompo la sesión
@@ -148,15 +119,8 @@ include "includes/nav.html";
                     ?>
                 </div>
                 <div id="view2">
-                    <br><br><br>
-                    <h2>Segundo Servicio READ - Consulta de Usuarios por ID, en Blanco Muestra Todos los Usuarios.</h2>
-                    <form method="post">
-                        <label><input type="number" name="id"> ID del Registro a Consultar.</label>
-                        <br><br>
-                        <input type="submit" name="read" value="Consulta" class="btn btn-success btn-lg">
-                        <br><br>
-                    </form>
                     <?php
+                    include "includes/read.html";
                     if (isset($_POST["read"])) // Si se solicitó la lectura de los datos de una ID o de todos los resultados.
                     {
                         $id = $_POST["id"]; // Asigno a la variable $id lo que llega por $_POST["id"].
@@ -167,7 +131,7 @@ include "includes/nav.html";
                             {
                                 echo "<h3 class='blue'>" . $data["message"] . "</h3>"; // Muestro el resultado en una tabla.
                                 $html = "<table><tr>";
-                                $html .= "<th>Nombre</th><th>Apellido1</th><th>Apellido2</th><th>Teléfono</th><th>E-mail</th><th>Fecha de Nacimiento</th><th>Genero</th><th>Imagen de Perfil</th><tr>";
+                                $html .= "<th>Nombre</th><th>Apellido 1</th><th>Apellido 2</th><th>Teléfono</th><th>E-mail</th><th>Fecha de Nacimiento</th><th>Genero</th><th>Imagen de Perfil</th><tr>";
                                 $html .= "<td>" . $data["data"][0]["name"] . "</td>";
                                 $html .= "<td>" . $data["data"][0]["surname"] . "</td>";
                                 $html .= "<td>" . $data["data"][0]["surname2"] . "</td>";
@@ -209,7 +173,7 @@ include "includes/nav.html";
                                 echo "<script>var phone = [];</script>";
                                 echo "<script>var email = [];</script>";
                                 echo "<script>var bday = [];</script>";
-                                echo "<script>var genre = [];</script>";
+                                echo "<script>var gender = [];</script>";
                                 echo "<script>var img = [];</script>";
                                 for ($i = 0; $i < $length; $i++)
                                 {
@@ -220,17 +184,10 @@ include "includes/nav.html";
                                     echo "<script>phone[" . $i . "] = '" . $data["data"][$i]["phone"] . "';</script>";
                                     echo "<script>email[" . $i . "] = '" . $data["data"][$i]["email"] . "';</script>";
                                     echo "<script>bday[" . $i . "] = '" . $data["data"][$i]["bday"] . "';</script>";
-                                    echo "<script>genre[" . $i . "] = '" . $data["data"][$i]["gender"] . "';</script>";
+                                    echo "<script>gender[" . $i . "] = '" . $data["data"][$i]["gender"] . "';</script>";
                                     echo "<script>img[" . $i . "] = '" . $data["data"][$i]["path"] . "';</script>";
                                 }
-                                ?>
-                                <div id="table"></div>
-                                <br>
-                                <span id="page"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button onclick="javascript:prev()" id="prev" class="btn btn-danger btn-lg">Anteriores Resultados</button>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button onclick="javascript:next()" id="next" class="btn btn-primary btn-lg">Siguientes Resultados</button><br>
-                                <script>change(1, 5, length);</script>
-                                <?php
+                                include "includes/read-result.html";
                             }
                             else //  Si la respuesta tiene el código de estado distinto de 200
                             {
@@ -241,20 +198,8 @@ include "includes/nav.html";
                     ?>
                 </div>
                 <div id="view3">
-                    <br><br><br><br>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>Tercer Servicio UPDATE - Modifica Datos de un Usuario Previo Login de Usuario</h2>
-                            <form method="post">
-                            <label><input type="email" name="email" required> E-mail de Usuario</label>
-                            <br><br>
-                            <label><input type="password" name="pass" required> Contraseña</label>
-                            <br><br>
-                            <input type="submit" name="login" value="Login"  class="btn btn-secondary btn-lg">
-                            </form>
-                            <small><a href="forget.php">Olvidé mi Contraseña</a></small>
-                            <br><br>
                             <?php
+                            include "includes/login.html";
                             if (isset($_POST["login"])) // Si llegó la solicitud de login.
                             {
                                 session_unset(); // Rompo la sesión.
@@ -331,25 +276,11 @@ include "includes/nav.html";
                             }
                             ?>
                         </div>
-                        <?php
-                            // if (isset($_POST["update"])) // Si llega una solicitud de modificar
-                            // {
-                            //     session_unset(); // Rompo la sesión
-                            //     echo "<h3 class='blue'>" . $data["message"] . $data["data"] . "</h3>"; // Muestro los resultados.
-                            // }
-                        ?>
                     </div>
                 </div>
                 <div id="view4">
-                    <br><br><br><br>
-                    <h2>Cuarto Servicio DELETE - Borra un Usuario</h2>
-                    <form method="post">
-                        <label><input type="number" name="id" required> ID del Usuario a Borrar.</label>
-                        <br><br>
-                        <input type="submit" name="delete" value="Borra Usuario">
-                    </form>
-                    <br><br>
                     <?php
+                    include "includes/delete.html";
                     if (isset($_POST["delete"])) // Si llega una solicitud delete
                     {
                         session_unset(); // Rompo la sesión

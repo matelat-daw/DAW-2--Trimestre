@@ -2,33 +2,22 @@ function screenSize()
 {
     let screenHeight = window.innerHeight;
 
-    if (view1 != null)
+    if (typeof(view1) != "undefined")
     {
         view1.style.height = screenHeight + "px";
-        if (view2 != null)
+        if (typeof(view2) != "undefined")
         {
             view2.style.height = screenHeight + "px";
-            if (view3 != null)
+            if (typeof(view3) != "undefined")
             {
                 view3.style.height = screenHeight + "px";
-                if (view4 != null)
+                if (typeof(view4) != "undefined")
                 {
                     view4.style.height = screenHeight + "px";
                 }
             }
         }
     }
-    // if (typeof(view1) != "undefined" && typeof(view2) != "undefined" && typeof(view3) != "undefined")
-    // {
-    //     view1.style.height = screenHeight + "px";
-    //     view2.style.height = screenHeight + "px";
-    //     view3.style.height = screenHeight + "px";
-    //     view4.style.height = screenHeight - 190 + "px";
-    // }
-    // else
-    // {
-    //     view4.style.height = screenHeight - 190 + "px";
-    // }
 }
 
 function verify(place)
@@ -140,7 +129,7 @@ function totNumPages()
             if (i < length)
             {
                 let gen = "";
-                if (genre[i] == 0)
+                if (gender[i] == 0)
                 {
                     gen = "Mujer";
                 }

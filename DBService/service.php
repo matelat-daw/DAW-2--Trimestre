@@ -250,10 +250,9 @@
 			break;
 		case isset($_GET["forget"]): // Si la solicitud es forget, olvido de contraseña.
 			$email = $_GET["email"]; // Recibo el email.
-			$stmt = $conn->prepare("SELECT email FROM contacto WHERE email='$email'"); // Solicito el email que coincida con el enviado por el usuario.
+			$stmt = $conn->prepare("SELECT email FROM contacto WHERE email='$email';"); // Solicito el email que coincida con el enviado por el usuario.
 			$stmt->execute(); // Ejecuto la consulta.
-			$user = $stmt->fetch(PDO::FETCH_OBJ);
-			if ($user->email == $email) // Si está en la base de datos.
+            if ($stmt->rowCount() > 0)
 			{
 				$hash = password_hash("1111", PASSWORD_DEFAULT); // Codifico la cadena 1111 en la variable $hash.
 				$sql = "UPDATE contacto SET pass='$hash' WHERE email='$email'"; // Hago un udate a la base de datos a la columna pass con el $hash a la dirección del email del usuario.

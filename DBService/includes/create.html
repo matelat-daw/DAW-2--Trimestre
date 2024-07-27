@@ -1,0 +1,30 @@
+<br><br>
+<h1 class="center">CRUD a la Base de Datos a Través de un Servicio</h1>
+<br>
+<h2>Primer Servicio CREATE - Inserta un Usuario en la Base de Datos</h2>
+<form method="post" enctype="multipart/form-data" onsubmit="return verify(1)">
+    <label><input type="text" name="username" required> Nombre del Usuario.</label>
+    <br><br>
+    <label><input type="text" name="surname" required> Primer Apellido</label>
+    <br><br>
+    <label><input type="text" name="surname2"> Segundo Apellido</label>
+    <br><br>
+    <label><input type="number" name="phone" required> Teléfono</label>
+    <br><br>
+    <label><input type="email" name="email" required> E-mail</label>
+    <br><br>
+    <label><input type="password" id="pass" name="pass" required> Contraseña</label>
+    <br><br>
+    <label><input type="password" id="pass2" required> Repite Contraseña</label>
+    <br><br>
+    <label><input type="date" name="bday" required> Fecha de Nacimiento</label>
+    <br><br>
+    <label><input type="radio" name="gender" value="0" checked> Mujer</label>
+    <br><br>
+    <label><input type="radio" name="gender" value="1"> Varón</label>
+    <br><br>
+    <label><input type="file" name="profile" class="btn btn-primary btn-lg"> Foto de Perfil<small>(opcional)</small></label>
+    <br><br>
+    <input type="submit" name="create" value="Inserta Usuario" class="btn btn-info btn-lg">
+</form>
+<br><br>

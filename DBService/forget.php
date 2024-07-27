@@ -16,10 +16,10 @@ if (isset($_POST["email"])) // Verifco si llega una solicitud con un email a est
     <div class="row">
         <div class="col-md-1"></div>
             <div class="col-md-10">
-                <div id="view4">
+                <div id="view1">
                     <br><br><br><br><br>
                     <h2>Quinto Servicio Recupera Contraseña - Genera la Contraseña 1111 e Informa al Usuario para Cambiarla Inmediatamente.</h2>
-                    <form action="" method="post">
+                    <form method="post">
                         <label><input type="email" name="email" required> E-mail del Usuario.</label>
                         <br><br>
                         <input type="submit" name="forget" value="Recupera Mi Contraseña">
@@ -28,7 +28,14 @@ if (isset($_POST["email"])) // Verifco si llega una solicitud con un email a est
                     <?php
                     if (isset($_POST["forget"])) // Si llega la solicitud forget.
                     {
-                        echo "<h3>" . $data["message"] . ", " . $data["data"] . "</h3>"; // Muestro el resultado.
+                        if ($data["status"] == 200)
+                        {
+                            echo "<h3 class='blue'>" . $data["message"] . ", " . $data["data"] . "</h3>"; // Muestro el Resultado Satisfactorio.
+                        }
+                        else
+                        {
+                            echo "<h3 class='red'>" . $data["message"] . ", " . $data["data"] . "</h3>"; // Muestro el Resultado Error.
+                        }
                     }
                     ?>
                 </div>
