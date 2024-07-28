@@ -1,0 +1,18 @@
+@font-face
+{
+    font-family:"CustomFont";
+    src: url("../font/DS-Digital.ttf");
+}
+
+body
+{
+    font-family: "CustomFont";
+    font-size: 64px;
+    color: blue;
+}
+
+span
+{
+    border: 3px solid black;
+    background-color: black;
+}
