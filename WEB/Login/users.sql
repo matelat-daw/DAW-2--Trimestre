@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-07-2024 a las 15:13:52
+-- Tiempo de generación: 29-07-2024 a las 21:05:30
 -- Versión del servidor: 10.11.6-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -31,17 +31,17 @@ USE `users`;
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `dni` varchar(9) NOT NULL,
   `name` varchar(20) NOT NULL,
   `surname` varchar(20) NOT NULL,
   `surname2` varchar(20) DEFAULT NULL,
-  `phone` varchar(9) NOT NULL,
-  `email` varchar(24) NOT NULL,
+  `dni` varchar(10) NOT NULL,
+  `phone` varchar(12) NOT NULL,
+  `email` varchar(32) NOT NULL,
   `pass` varchar(180) NOT NULL,
   `bday` date NOT NULL,
   `gender` tinyint(1) NOT NULL,
   `path` varchar(256) NOT NULL,
-  `hash` varchar(16) NOT NULL,
+  `hash` varchar(16) DEFAULT NULL,
   `active` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -55,7 +55,8 @@ CREATE TABLE `user` (
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`),
-  ADD UNIQUE KEY `phone` (`phone`);
+  ADD UNIQUE KEY `phone` (`phone`),
+  ADD UNIQUE KEY `dni` (`dni`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas

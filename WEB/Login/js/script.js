@@ -288,3 +288,13 @@ function spy(which) // Función para el ojito de las Contraseñas al hacer click
     password.setAttribute('type', type); // Le asigno el atributo al input password.
     togglePassword.classList.toggle('fa-eye-slash'); // Cambia el aspecto del ojito, al cambiar el input a tipo texto, el ojo aparece con una raya.
 }
+
+function remove(id)
+{
+    window.open("delete.php?id=" + id, "_self");
+}
+
+function kill(id)
+{
+    window.open("kill.php?id=" + id, "_self");
+}

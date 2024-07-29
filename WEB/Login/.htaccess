@@ -1,1 +1,1 @@
-ErrorDocument 404 http://localhost/Login/Error/index.html
+ErrorDocument 404 http://localhost/web/Login/Error/index.html

@@ -47,13 +47,13 @@ if ($ok)
     include "includes/header.php";
     include "includes/modal-index.html";
 
-    $sql = "INSERT INTO user VALUES(:id, :dni, :name, :surname, :surname2, :phone, :email, :pass, :bday, :gender, :path, :hash, :active)";
+    $sql = "INSERT INTO user VALUES(:id, :name, :surname, :surname2, :dni, :phone, :email, :pass, :bday, :gender, :path, :hash, :active)";
     $stmt = $conn->prepare($sql);
-    $stmt->execute(array(':id' => NULL, ':dni' => $dni, ':name' => $user, ':surname' => $surname1, ':surname2' => $surname2, ':phone' => $phone, ':email' => $email, ':pass' => $encrypted, ':bday' => $bday, ':gender' => $gender, ':path' => $path, ':hash' => $hash, ':active' => 0));
+    $stmt->execute(array(':id' => NULL, ':name' => $user, ':surname' => $surname1, ':surname2' => $surname2, ':dni' => $dni, ':phone' => $phone, ':email' => $email, ':pass' => $encrypted, ':bday' => $bday, ':gender' => $gender, ':path' => $path, ':hash' => $hash, ':active' => 0));
     $id = $conn->lastInsertId(); // Asigno a la variable $id la última id guardada en la tabla.
 
     $subject = "Por Favor Contactame en Esta Dirección";
-    $message = "<h3>Gracias por registrarte</h3><p>Por Favor haz Click en el Botón Activar mi Cuenta para Empezar a Usar el Sitio.</p><a href='http://" . $_SERVER['SERVER_NAME'] . "/web/Login/activate.php/" . $hash . "/" . $id . "'><div style='background-color:aquamarine; border:thin; width:120px; height:60px; text-align:center;'>Quiero Activar mi Cuenta</div></a><br><br><small>Copyright © 2024 César Matelat <a href='mailto:matelat@gmail.com'>matelat@gmail.com</a></small>";
+    $message = "<h3>Gracias por registrarte</h3><p>Por Favor haz Click en el Botón Activar mi Cuenta para Empezar a Usar el Sitio.</p><a href='http://" . $_SERVER['SERVER_NAME'] . "/web/Login/activate.php?hash=" . $hash . "&id=" . $id . "'><div style='background-color:aquamarine; border:thin; width:120px; height:60px; text-align:center;'>Quiero Activar mi Cuenta</div></a><br><br><small>Copyright © 2024 César Matelat <a href='mailto:matelat@gmail.com'>matelat@gmail.com</a></small>";
     $server_email = "matelat@gmail.com";
     $headers  = "From: $server_email\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
