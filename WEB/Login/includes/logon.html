@@ -1,13 +1,13 @@
-<h2>Te Damos la Bienvenida a la WEB de la Peluquería de Javier Borneo</h2>
+<h2>Te Damos la Bienvenida al Sitio</h2>
 <br>
-<h3>Registro de Clientes</h3>
+<h3>Registro de Usuarios</h3>
 <br>
 <form action="logon.php" method="post" enctype="multipart/form-data" onsubmit="return verify()">
     <label><input type="text" name="username" required> Nombre</label>
     <br><br>
-    <label><input type="text" name="surname" required> Apellido1</label>
+    <label><input type="text" name="surname" required> Primer Apellido</label>
     <br><br>
-    <label><input type="text" name="surname2"> Apellido2</label>
+    <label><input type="text" name="surname2"> Segundo Apellido</label>
     <br><br>
     <label><input id="dni" type="text" name="dni" required> D.N.I.</label>
     <br><br>
@@ -31,4 +31,4 @@
     <br><br>
     <input type="submit" value="Regístrame!" class="btn btn-info btn-lg">
 </form>
-<button onclick="change('login')" class="btn btn-link btn-lg">Ya estoy Registrado</button>
+<button onclick="show('login')" class="btn btn-link btn-lg">Ya estoy Registrado</button>

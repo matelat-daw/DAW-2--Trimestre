@@ -7,7 +7,7 @@
   <div class="modal-content">
       <div class="modal-header">
       <h4 class="modal-title" id="alertDialogLabel">Dialogo de Avisos</h4>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="window.open('login.php?id=<?php echo $id; ?>', '_self')"></button>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="window.open('login.php', '_self')"></button>
       </div>
       <div class="modal-body">
           <h4><span id="title"></span></h4>
@@ -18,7 +18,7 @@
             <input type="hidden" name="id" value="<?php echo $id; ?>">
             <input type="submit" value="Elimino Mi Perfil" class="btn btn-danger btn-lg">
         </form>
-        <button type="button" id="close_dialog" class="btn btn-secondary" data-bs-dismiss="modal" onclick="window.open('login.php?id=<?php echo $id; ?>', '_self')">Me Quedo</button>
+        <button type="button" id="close_dialog" class="btn btn-secondary" data-bs-dismiss="modal" onclick="window.open('login.php', '_self')">Me Quedo</button>
       </div>
   </div>
   </div>
