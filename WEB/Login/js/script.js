@@ -1,24 +1,24 @@
-function show(what)
+function show(what) // Función que muestra la pantalla de login o la de logon según seleccione el usuario.
 {
-    if (what == "logon")
+    if (what == "logon") // Si llega logon.
     {
-        login.style.display = "none";
-        logon.style.display = "block";
+        login.style.display = "none"; // Oculta login.
+        logon.style.display = "block"; // Muestra logon.
     }
-    else
+    else // Si No.
     {
-        logon.style.display = "none";
-        login.style.display = "block";
+        logon.style.display = "none"; // Oculta logon.
+        login.style.display = "block"; // Muestra login.
     }
 }
 
-function screen() // Establece el tamaño de las vistas en la pantalla.
+function screen() // Verifica si las vistas existen y llama a la función views para establecer el tamaño.
 {
     let viewheight = window.innerHeight; // Obtiene el tamaño vertical de la pantalla.
 
-    if (typeof(view1) != "undefined")
+    if (typeof(view1) != "undefined") // Si el div con ID view existe.
     {
-        views(view1, view1.offsetHeight, viewheight);
+        views(view1, view1.offsetHeight, viewheight); // Llama a la función views y le pasa la vista, el tamaño vertical de la vista y el tamaño vertical de la pantalla.
         if (typeof(view2) != "undefined") // Si existe el div view2
         {
             views(view2, view2.offsetHeight, viewheight);
@@ -34,11 +34,11 @@ function screen() // Establece el tamaño de las vistas en la pantalla.
     }
 }
 
-function views(view, heights, viewheight)
+function views(view, heights, viewheight) // Establece el tamaño de las vistas en la pantalla.
 {
-    if (heights < viewheight)
+    if (heights < viewheight) // Si la altura vertical de la vista es menor que la altura total de la pantalla.
     {
-        view.style.height = viewheight + "px";
+        view.style.height = viewheight + "px"; // Le da el tamaño de la pantalla.
     }
 }
 
@@ -67,7 +67,7 @@ function toast(warn, ttl, msg) // Función para mostrar el Dialogo con los mensa
     alerta.click(); // Lo hago aparecer pulsando el botón con ID alerta.
 }
 
-function verify() // Función para validar las contraseñas de registro de alumnos y las de modificación, también valida el D.N.I.
+function verify() // Función para validar las contraseñas, también valida el D.N.I o N.I.E.
 {
     let dnielement = document.getElementById("dni");
     let dni = dnielement.value;
@@ -84,7 +84,6 @@ function verify() // Función para validar las contraseñas de registro de alumn
         numero = numero.replace('Z', 2);
         letra = dni.substr(dni.length - 1, 1);
         numero = numero % 23;
-        // letras = 'TRWAGMYFPDXBNJZSQVHLCKET';
         letras = 'TRWAGMYFPDXBNJZSQVHLCKE';
         letras = letras.substring(numero, numero + 1);
         if (letras != letra.toUpperCase())
@@ -118,7 +117,7 @@ function showEye(which) // Función para mostrar el ojo de los input de las cont
     eye.style.visibility = "visible"; // Hago visible el elemento, el ojo.
 }
 
-function spy(which) // Función para el ojito de las Contraseñas al hacer click en el ojito, recibe el número de la ID del input de la password.
+function spy(which) // Función para el ojo de las Contraseñas al hacer click en el ojo, recibe el número de la ID del input de la password.
 {
     const togglePassword = document.querySelector('#togglePassword' + which); // Asigno a la constante togglePassword el input con ID togglePassword + which.
     const password = document.querySelector('#pass' + which); // Asigno a password la ID del input con ID pass + which.
@@ -126,5 +125,5 @@ function spy(which) // Función para el ojito de las Contraseñas al hacer click
     const type = password.getAttribute('type') === 'password' ? 'text' : 'password'; // Asigno a type el resultado de un operador ternario, si presiono el ojito y el tipo del input es password
     // lo cambia a text, si es text lo cambia a password.
     password.setAttribute('type', type); // Le asigno el atributo al input password.
-    togglePassword.classList.toggle('fa-eye-slash'); // Cambia el aspecto del ojito, al cambiar el input a tipo texto, el ojo aparece con una raya.
+    togglePassword.classList.toggle('fa-eye-slash'); // Cambia el aspecto del ojo, al cambiar el input a tipo texto, el ojo aparece con una raya.
 }

@@ -1,4 +1,4 @@
-<?php // Documento de script php
+<?php // Script de entrada de usuario, muestra el E-mail con la foto y el botón para eliminar el perfil.
 include "includes/conn.php";
 
 if (isset($_POST['email'])) // Si recibe datos por POST en la variable array $_POST["email"].

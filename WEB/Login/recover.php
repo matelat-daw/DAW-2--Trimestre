@@ -1,4 +1,4 @@
-<?php
+<?php // Script para recuperar la contraseña, se genera una contraseña aleatoria de 8 caracteres, tengo que modificar el script para que envíe un E-mail con la nueva contraseña al intreresado.
 include "includes/conn.php";
 $title = "Recupera tu Contraseña";
 include "includes/header.php";
@@ -47,7 +47,7 @@ if (isset($_POST["email"]))
                     <form action="" method="post">
                         <label><input type="text" name="email"> Danos el E-mail con el que te Registraste</label>
                         <br><br>
-                        <input type="submit" value="Recuperar mi Contraseña">
+                        <input type="submit" value="Modifico mi Contraseña">
                     </form>
                 </div>
             </div>

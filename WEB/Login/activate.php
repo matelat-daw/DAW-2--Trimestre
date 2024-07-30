@@ -1,4 +1,4 @@
-<?php
+<?php // Este script activa el perfil del usuario que se registró en el sitio, llega el enlace por E-mail.
 include "includes/conn.php";
 $title = "Activando Perfil";
 include "includes/header.php";

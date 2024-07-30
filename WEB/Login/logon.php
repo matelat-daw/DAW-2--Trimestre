@@ -1,4 +1,4 @@
-<?php
+<?php // Script de registro de usuario con confirmación por E-mail.
 include "includes/conn.php";
 
 if (isset($_POST["username"]))

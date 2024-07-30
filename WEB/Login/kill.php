@@ -1,4 +1,4 @@
-<?php
+<?php // Script de eliminación del perfil del usuario, arregla los índices de la tabla para que sigan siendo correlativos.
 include "includes/conn.php";
 $title = "Eliminando Perfil";
 include "includes/header.php";
