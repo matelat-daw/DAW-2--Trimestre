@@ -14,7 +14,10 @@
           <h5 id="message"></h5>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger btn-lg" onclick="window.open(kill(<?php echo $id;?>), '_self')">Elimino Mi Perfil</button>
+        <form action="kill.php" method="post">
+            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <input type="submit" value="Elimino Mi Perfil" class="btn btn-danger btn-lg">
+        </form>
         <button type="button" id="close_dialog" class="btn btn-secondary" data-bs-dismiss="modal" onclick="window.open('login.php?id=<?php echo $id; ?>', '_self')">Me Quedo</button>
       </div>
   </div>

@@ -4,9 +4,9 @@ $title = "Eliminando Perfil";
 include "includes/header.php";
 include "includes/modal-index.html";
 
-if (isset($_GET["id"]))
+if (isset($_POST["id"]))
 {
-    $id = $_GET["id"];
+    $id = $_POST["id"];
     $sql = "DELETE FROM user WHERE id=$id;";
     $stmt = $conn->prepare($sql);
     $stmt->execute();

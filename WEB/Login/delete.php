@@ -1,11 +1,11 @@
 <?php
-if (isset($_GET["id"]))
+if (isset($_POST["id"]))
 {
-    $id = $_GET["id"];
+    $id = $_POST["id"];
     include "includes/conn.php";
     $title = "Eliminando Perfil de Usuario";
     include "includes/header.php";
     include "includes/modal-delete.php";
-    echo '<script>toast(2, "Se Eliminará Tu Perfil:", "Estas Seguro que Quieres ELiminar tu Perfil del Sitio?");</script>';
+    echo '<script>toast(2, "Se Borrará Tu Perfil:", "Estas Seguro que Quieres Eliminar tu Perfil del Sitio?");</script>';
 }
 ?>
