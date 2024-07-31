@@ -109,6 +109,7 @@ function verify() // Función para validar las contraseñas, también valida el 
             }
             else // Si son iguales.
             {
+                console.log("Ya que devuelve true quiero saber si entra acá.");
                 return true; // Devuelvo true, envía el formulario.
             }
         }

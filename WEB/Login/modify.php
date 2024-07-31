@@ -7,7 +7,7 @@ include "includes/modal-index.html";
 if (isset($_POST["username"])) // Si llegan datos por post.
 {
     $ok = true; // Uso la variable $ok para verificar que no se repita el DNI ni el E-mail.
-    $id = $_SESSION["id"]; // Asigno a la variable $id el valor de la sesión id.
+    $id = $_POST["id"];
     $name = $_POST["username"]; // Asigno a variables lo recibido por post.
     $surname1 = $_POST["surname"];
     $surname2 = $_POST["surname2"];
@@ -46,16 +46,21 @@ if (isset($_POST["username"])) // Si llegan datos por post.
     {
         if ($img != "")
         {
-            $path = "users/" . $id . "/pic/" . basename($img);
+            chdir("users");
+            if (!file_exists($id))
+            {
+                mkdir($id . "/pic", 0777, true);
+            }
+            $path = $id . "/pic/" . basename($img);
             move_uploaded_file($tmp, $path);
         }
         if ($pass != "")
         {
-            $sql = "UPDATE user SET name='$name', surname='$surname1', surname2='$surname2', phone='$phone', email='$email', pass='$hash', bday='$bday', gender='$gender', path='$path' WHERE id=$id;"; // Preparo la Consulta Modificando Todo.
+            $sql = "UPDATE user SET name='$name', surname='$surname1', surname2='$surname2', dni='$dni', phone='$phone', email='$email', pass='$hash', bday='$bday', gender='$gender', path='users/$path' WHERE id=$id;"; // Preparo la Consulta Modificando Todo.
         }
         else
         {
-            $sql = "UPDATE user SET name='$name', surname='$surname1', surname2='$surname2', phone='$phone', email='$email', bday='$bday', gender='$gender', path='$path' WHERE id=$id;"; // Preparo la Consulta Modificando todo Excepto la Contraseña.
+            $sql = "UPDATE user SET name='$name', surname='$surname1', surname2='$surname2', dni='$dni', phone='$phone', email='$email', bday='$bday', gender='$gender', path='users/$path' WHERE id=$id;"; // Preparo la Consulta Modificando todo Excepto la Contraseña.
         }
 
         $stmt = $conn->prepare($sql);

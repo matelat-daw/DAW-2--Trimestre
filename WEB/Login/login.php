@@ -32,26 +32,25 @@ if (isset($_SESSION["id"]))
     include "functions/getProfile.php";
     $title = "Bienvenido " . $row->name;
     include "includes/header.php";
+    include "includes/modal.html";
     include "includes/nav-user.php";
-
 echo '<section class="container-fluid pt-3">
     <div class="row">
         <div class="col-md-1"></div>
             <div class="col-md-10">
                 <div id="view1">
-                <br><br><br><br><br><br>';
-                echo '<div id="modify">';
-                    include "includes/modify.php";
+                <br><br><br><br><br><br>
+                <div id="modify">';
+                        include "includes/change.php";
                 echo '</div>
                     <div id="quit">';
-                    include "includes/delete.php";
-                echo '</div>
+                            include "includes/delete.php";
+                    echo '</div>
                 </div>
             </div>
         <div class="col-md-1"></div>
     </div>
 </section>';
-
 }
 else
 {
