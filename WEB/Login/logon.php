@@ -82,7 +82,7 @@ if ($ok)
     {
         echo "<script>toast(2, 'ERROR:', 'Error al Enviar el Mensaje si Vuelves a Intentarlo y Sigue Dando Error, por Favor Escribe a matelat@gmail.com.');</script>";
     }
-    echo "<script>toast(0, 'Ya Estás Dado de Alta', 'Consulta la Bandeja de Entrada de la Dirección Correo Electrónico que Usaste para Registrarte para confirmar tu Inscripción. Ten en Cuenta que el Mensaje Podría Estar en la Bandeja de Spam o Correo no Deseado.');</script>";
+    echo "<script>toast(0, 'Ya Estás Dado de Alta', 'Consulta la Bandeja de Entrada de la Dirección de Correo Electrónico que Usaste para Registrarte para confirmar tu Inscripción. Ten en Cuenta que el Mensaje Podría Estar en la Bandeja de Spam o Correo no Deseado.');</script>";
     include "includes/footer.html";
 }
 else

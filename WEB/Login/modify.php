@@ -8,26 +8,26 @@ if (isset($_POST["username"])) // Si llegan datos por post.
 {
     $ok = true; // Uso la variable $ok para verificar que no se repita el DNI ni el E-mail.
     $id = $_SESSION["id"]; // Asigno a la variable $id el valor de la sesión id.
-    $name = htmlspecialchars($_POST["username"]); // Asigno a variables lo recibido por post.
-    $surname1 = htmlspecialchars($_POST["surname"]);
-    $surname2 = htmlspecialchars($_POST["surname2"]);
-    if ($surname2 = "")
+    $name = $_POST["username"]; // Asigno a variables lo recibido por post.
+    $surname1 = $_POST["surname"];
+    $surname2 = $_POST["surname2"];
+    if ($surname2 == "")
     {
         $surname2 = null;
     }
     $dni = $_POST["dni"];
-    $phone = htmlspecialchars($_POST["phone"]);
-    $email = htmlspecialchars($_POST["email"]);
-    $pass = htmlspecialchars($_POST["pass"]);
+    $phone = $_POST["phone"];
+    $email = $_POST["email"];
+    $pass = $_POST["pass"];
     if ($pass != "")
     {
         $hash = password_hash($pass, PASSWORD_DEFAULT);
     }
-    $bday = htmlspecialchars($_POST["bday"]);
-    $gender = htmlspecialchars($_POST["gender"]);
+    $bday = $_POST["bday"];
+    $gender = $_POST["gender"];
     $path = $_POST["path"];
-    $img = htmlspecialchars($_FILES["profile"]["name"]);
-    $tmp = htmlspecialchars($_FILES["profile"]["tmp_name"]);
+    $img = $_FILES["profile"]["name"];
+    $tmp = $_FILES["profile"]["tmp_name"];
 
     $sql = "SELECT id, dni, email, phone FROM user"; // Preparo la consulta de la ID, Teléfono y E-mail de toda la tabla clients.
     $stmt = $conn->prepare($sql);
