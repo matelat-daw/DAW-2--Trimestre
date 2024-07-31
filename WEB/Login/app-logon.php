@@ -8,9 +8,9 @@ if (isset($_POST["user"])) // Verifico si ha llegado algo por POST en el array $
 {
 	// $id = $_POST["id"]; // Si hay datos, asigna a la variable $user el contenido del array $_POST["user"].
 	$id = $_POST["user"]; // Hace lo mismo con el contenido de $_POST["pass"] en la variable $pass.
-    $dni = $_POST["dni"];
     $surname = $_POST["surname"];
     $surname2 = $_POST["surname2"];
+    $dni = $_POST["dni"];
     $phone = $_POST["phone"];
     $email = $_POST["email"];
     $pass = $_POST["pass"];
@@ -21,11 +21,11 @@ if (isset($_POST["user"])) // Verifico si ha llegado algo por POST en el array $
 	$file = fopen($name, "w") or die("Unable to open file!"); // Craa un archivo para escribir en Él, con el nombre del contenido de la variable $name.
 	fwrite($file, $id); // Escribe el contenido de la variable $user.
 	fwrite($file, "¡"); // Escribe : en el archivo a continuación del nombre de usuario, se separa por los : para poder hacer un split posteriormente.
-	fwrite($file, $dni); // Escribe la contraseña en el archivo a continuación.
-    fwrite($file, "¡"); // Escribe : en el archivo a continuación del nombre de usuario, se separa por los : para poder hacer un split posteriormente.
     fwrite($file, $surname); // Escribe la contraseña en el archivo a continuación.
     fwrite($file, "¡"); // Escribe : en el archivo a continuación del nombre de usuario, se separa por los : para poder hacer un split posteriormente.
     fwrite($file, $surname2); // Escribe la contraseña en el archivo a continuación.
+    fwrite($file, "¡"); // Escribe : en el archivo a continuación del nombre de usuario, se separa por los : para poder hacer un split posteriormente.
+    fwrite($file, $dni); // Escribe la contraseña en el archivo a continuación.
     fwrite($file, "¡"); // Escribe : en el archivo a continuación del nombre de usuario, se separa por los : para poder hacer un split posteriormente.
 	fwrite($file, $phone); // Escribe la contraseña en el archivo a continuación.
     fwrite($file, "¡"); // Escribe : en el archivo a continuación del nombre de usuario, se separa por los : para poder hacer un split posteriormente.
@@ -49,9 +49,9 @@ while ($n < count($files)) // Mientras $n sea menor que la cantidad de archivos 
 	fclose($file); // Se cierra el archivo de lectura.
 	echo '<form name="data' . $n . '" method="post" action="register.php">'; // Crea un formulario html con el nombre data y le concatena el número de archivos que hay $n, con el method="post" y llama al archivo login.php con action="login.php".
 	echo '<input type="hidden" name="username" value="' . $array[$n][0] . '">'; // crea un input type="hidden", oculto y le pone el valor del nombre de usuario que está en la primera posición del array $array en la posición $n.
-    echo '<input type="hidden" name="dni" value="' . $array[$n][1] . '">';
-    echo '<input type="hidden" name="surname" value="' . $array[$n][2] . '">';
-    echo '<input type="hidden" name="surname2" value="' . $array[$n][3] . '">';
+    echo '<input type="hidden" name="surname" value="' . $array[$n][1] . '">';
+    echo '<input type="hidden" name="surname2" value="' . $array[$n][2] . '">';
+    echo '<input type="hidden" name="dni" value="' . $array[$n][3] . '">';
     echo '<input type="hidden" name="phone" value="' . $array[$n][4] . '">';
     echo '<input type="hidden" name="email" value="' . $array[$n][5] . '">';
 	echo '<input type="hidden" name="pass" value="' . $array[$n][6] . '">'; // Lo mismo con la contraseña.

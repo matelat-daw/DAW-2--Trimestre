@@ -1,14 +1,23 @@
 function show(what) // Función que muestra la pantalla de login o la de logon según seleccione el usuario.
 {
-    if (what == "logon") // Si llega logon.
+    switch (what)
     {
-        login.style.display = "none"; // Oculta login.
-        logon.style.display = "block"; // Muestra logon.
-    }
-    else // Si No.
-    {
-        logon.style.display = "none"; // Oculta logon.
-        login.style.display = "block"; // Muestra login.
+        case "logon": // Si llega logon.
+            login.style.display = "none"; // Oculta login.
+            logon.style.display = "block"; // Muestra logon.
+            break;
+        case "login":
+            logon.style.display = "none"; // Oculta logon.
+            login.style.display = "block"; // Muestra login.
+            break;
+        case "quit":
+            modify.style.display = "none"; // Oculta modify.
+            quit.style.display = "block"; // Muestra delete.
+            break;
+        default:
+            quit.style.display = "none"; // Oculta delete.
+            modify.style.display = "block"; // Muestra modify.
+            break;
     }
 }
 
