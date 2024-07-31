@@ -1,6 +1,4 @@
 <?php
-session_start();
-session_destroy();
 $title = "Bienvenido Registarte para Usar el Sitio";
 include "includes/header.php";
 include "includes/modal.html";
