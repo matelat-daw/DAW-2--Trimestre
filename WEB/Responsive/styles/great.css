@@ -30,3 +30,8 @@ header, footer, #wrapper
 	width: 80%;
 	max-width: 1200px;
 }
+
+#logon
+{
+    margin-bottom: 10%;
+}
