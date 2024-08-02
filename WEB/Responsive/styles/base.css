@@ -1,0 +1,30 @@
+.display-great
+{
+	display:none;
+}
+
+.display-medium
+{
+	display:none;
+}
+
+.display-mini
+{
+	display:none;
+}
+
+.menu
+{
+	padding-left: 0;
+}
+
+.menu li
+{
+	display: inline;
+	list-style-type: none;
+}
+
+.margen
+{
+    margin-left: 5%;
+}

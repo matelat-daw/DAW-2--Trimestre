@@ -1,0 +1,32 @@
+.display-great
+{
+	display: inherit !Important;
+}
+
+h1, h2
+{
+	text-align:center;
+}
+
+header, footer, #wrapper
+{
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	width: 100%;
+	max-width: 1500px;
+}
+
+#main-nav
+{
+	float:left;
+	width: 20%;
+	max-width: 300px;
+}
+
+#main-section
+{
+	margin-left: 20%;
+	width: 80%;
+	max-width: 1200px;
+}

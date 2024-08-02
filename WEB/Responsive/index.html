@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width; inicitial-scale = 1.0">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Responsive design</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="styles/colors.css" rel="stylesheet" type="text/css">
+<link href="styles/base.css" rel="stylesheet" type="text/css">
+<link href="styles/great.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)">
+<link href="styles/medium.css" rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 1024px)">
+<link href="styles/mini.css" rel="stylesheet" type="text/css" media="screen and (max-width: 480px)">
+</head>
+
+<body>
+<header>
+    <h1>Titulo de la web</h1>
+    <h2 class="display-great">Grande</h2>
+    <h2 class="display-medium">Mediano</h2>
+    <h2 class="display-mini">Mini</h2>
+</header>
+<div id="wrapper">
+    <nav id="main-nav">
+        <h2>Mi Menú</h2>
+        <ul class="menu display-great display-medium" >
+            <li> <a href="">Uno</a></li>
+            <li> <a href="">Dos</a></li>
+            <li> <a href="">Tres</a></li>
+        </ul>
+        <select class="display-mini">
+        <option>Uno</option>
+        <option>Dos</option>
+        <option>Tres</option>
+        </select>
+    </nav>
+    <section id="main-section">
+        <h2>Mi Contenido</h2>
+        <article>
+        <h3><a href="">Entrada 1</a></h3>
+        <p class="display-great display-medium">Acá va eso que ponen en latín</p>
+        </article>
+        <article>
+        <h3><a href="">Entrada 2</a></h3>
+        <p class="display-great display-medium">Acá va eso que ponen en latín</p>
+        </article>
+        <article>
+        <h3><a href="">Entrada 3</a></h3>
+        <p class="display-great display-medium">Acá va eso que ponen en latín</p>
+        </article>
+        <br>
+        <h1 class="display-great display-medium">Formulario de Login de Usuario</h1>
+        <h3 class="display-mini">Formulario de Login de Usuario</h3>
+        <form class="margen" action="login.php" method="post">
+            <fieldset>
+                <legend>Formulario de Entrada</legend>
+                <label><input type="email" name="email"> E-mail</label>
+                <br><br>
+                <label><input type="password" name="pass"> Contraseña</label>
+                <br><br>
+                <input type="submit" value="Log Me In">
+            </fieldset>
+        </form>
+        <br>
+        <h1 class="display-great display-medium">Formulario de Logon de Usuario</h1>
+        <h3 class="display-mini">Formulario de Logon de Usuario</h3>
+        <form class="margen" action="logon.php" method="post">
+            <fieldset>
+                <legend>Formulario de Registro</legend>
+                <label><input type="text" name="username"> Nombre</label>
+                <br><br>
+                <label><input type="text" name="surname1"> Apellido 1</label>
+                <br><br>
+                <label><input type="text" name="surname2"> Apellido 2</label>
+                <br><br>
+                <label><input type="email" name="email"> E-mail</label>
+                <br><br>
+                <label><input type="password" name="pass"> Contraseña</label>
+                <br><br>
+                <label><input type="password" name="pass2"> Repite Contraseña</label>
+                <br><br>
+                <input type="submit" value="Log Me On">
+            </fieldset>
+        </form>
+    </section>
+</div>
+<footer class="text-center text-lg-start bg-light text-muted footer fixed-bottom"> <!-- Un Footer que se queda fijo en la parte de abajo de la pantalla. -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="text-left p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                WEB Design © 2023 César Osvaldo Matelat Borneo.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <span>Whatsapp me Here</span>
+            <img src="imgs/cesar.png" alt="Whatsapp" width="128">
+            <span>or Web Whatsapp me</span>
+            <a href="https://wa.me/+34664774821?text=Por Favor contactame">Click Here</a>
+            <span>Complete the Mesage at your Needs</span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
