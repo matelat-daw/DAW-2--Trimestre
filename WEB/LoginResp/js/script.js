@@ -14,13 +14,13 @@ function show(what) // Función que muestra la pantalla de login o la de logon s
             modify.style.display = "none"; // Oculta modify.
             quit.style.display = "block"; // Muestra delete.
             break;
-        case what.currentTarget.param:
-            login.style.display = "none"; // Oculta login.
-            logon.style.display = "block"; // Muestra logon.
-            break;
-        default:
+        case "modify":
             quit.style.display = "none"; // Oculta delete.
             modify.style.display = "block"; // Muestra modify.
+            break;
+        default:
+            login.style.display = "none"; // Oculta login.
+            logon.style.display = "block"; // Muestra logon.
             break;
     }
 }

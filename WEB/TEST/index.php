@@ -8,6 +8,7 @@ include "includes/conn.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing Things</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <?php
@@ -20,6 +21,8 @@ include "includes/conn.php";
         <span class="med">123456</span>
         <span class="large">7890</span>
         <span class="xlarge">Ñandú</span>
+        <h3 id="h3">HOLA</h3>
+        <button id="btn" onclick="change('CHAU')">Cambia el Saludo</button>
     </div>
 </body>
 </html>
