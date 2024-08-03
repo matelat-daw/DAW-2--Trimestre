@@ -1,0 +1,17 @@
+<h3>Entrada de Usuarios</h3>
+<br>
+<form action="login.php" method="post">
+    <fieldset>
+        <legend>Formulario de Entrada</legend>
+        <label><input type="email" name="email" required> E-mail</label>
+        <br><br>
+        <label><input type="password" name="pass" id="pass3" onkeypress="showEye(3)" required> Contraseña</label>
+        <i onclick="spy(3)" class="far fa-eye" id="togglePassword3" style="margin-left: -140px; cursor: pointer; visibility: hidden;"></i>
+        <br><br>
+        <input type="submit" value="Login" class="btn btn-success btn-lg center">
+    </fieldset>
+</form>
+<br>
+<a href="recover.php"><small>¿Olvidaste tu Contraseña?</small></a>
+<br>
+<button id="btn" onclick="show('logon')" class="btn btn-link btn-lg">Quiero Registrarme</button>
