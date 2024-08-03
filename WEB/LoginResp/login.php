@@ -39,13 +39,21 @@ echo '<section class="container-fluid pt-3">
         <div class="col-md-1"></div>
             <div class="col-md-10">
                 <div id="view1">
-                <br><br><br><br><br><br>
-                <div id="modify">';
-                        include "includes/change.php";
-                echo '</div>
-                    <div id="quit">';
+                    <br><br><br><br><br><br>
+                    <div class="medium great">
+                        <div id="modify">';
+                            include "includes/change.php";
+                        echo '</div>
+                            <div id="quit">';
+                                include "includes/delete.php";
+                            echo '</div></div>
+                    <div class="mini">
+                        <div id="modify">';
+                            include "includes/change.php";
+                        echo '</div>
+                        <div id="quit">';
                             include "includes/delete.php";
-                    echo '</div>
+                    echo '</div></div>
                 </div>
             </div>
         <div class="col-md-1"></div>

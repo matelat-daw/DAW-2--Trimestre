@@ -1,7 +1,7 @@
 function change(data)
 {
     h3.innerHTML = data;
-    btn.addEventListener("click", help);
+    // btn.addEventListener("click", help);
 }
 
 let changer = true;

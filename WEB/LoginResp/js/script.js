@@ -1,5 +1,10 @@
 function show(what) // Función que muestra la pantalla de login o la de logon según seleccione el usuario.
 {
+    let login = document.getElementById("login");
+    let logon = document.getElementById("logon");
+    let modify = document.getElementById("modify");
+    let quit = document.getElementById("quit");
+
     switch (what)
     {
         case "logon": // Si llega logon.
@@ -14,13 +19,9 @@ function show(what) // Función que muestra la pantalla de login o la de logon s
             modify.style.display = "none"; // Oculta modify.
             quit.style.display = "block"; // Muestra delete.
             break;
-        case "modify":
+        default:
             quit.style.display = "none"; // Oculta delete.
             modify.style.display = "block"; // Muestra modify.
-            break;
-        default:
-            login.style.display = "none"; // Oculta login.
-            logon.style.display = "block"; // Muestra logon.
             break;
     }
 }

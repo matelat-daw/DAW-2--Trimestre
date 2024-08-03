@@ -14,7 +14,22 @@ select.mini
 	width: 100%;
 }
 
-/* #logon
+#loginbtn, #logonbtn, #modifybtn, #quitbtn
 {
-    margin-bottom: 30%;
-} */
+    display: none;
+}
+
+#logon, #quit
+{
+    display: block;
+}
+
+#modify
+{
+    margin-top: 10%;
+}
+
+#quit
+{
+    margin-bottom: 60%;
+}

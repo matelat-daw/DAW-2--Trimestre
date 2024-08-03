@@ -49,6 +49,6 @@ echo '</fieldset><br>
 </fieldset>
 </form>
 <br>
-<button onclick="show(\'quit\')" class="btn btn-link btn-lg">Quiero Eliminar Mi Perfil</button>
-<br><br><br><br><br><br>';
+<button id="modifybtn" onclick="show(\'quit\')" class="btn btn-link btn-lg">Quiero Eliminar Mi Perfil</button>
+<br><br>';
 ?>

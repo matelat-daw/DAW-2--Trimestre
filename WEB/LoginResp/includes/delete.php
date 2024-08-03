@@ -6,5 +6,5 @@ echo '<h3>Aquí Puedes Eliminar Tu Perfil</h3>
     <input type="submit" class="btn btn-danger btn-lg" value="Elimino mi Perfil">
 </form>
 <br>
-<button onclick="show(\'modify\')" class="btn btn-link btn-lg">Voy a Modificar Mi Perfil</button>';
+<button id="quitbtn" onclick="show(\'modify\')" class="btn btn-link btn-lg">Voy a Modificar Mi Perfil</button>';
 ?>

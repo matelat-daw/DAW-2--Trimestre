@@ -8,17 +8,16 @@ include "includes/modal.html";
         <div class="col-md-1"></div>
             <div class="col-md-10">
                 <div id="view1">
+                <h2>Te Damos la Bienvenida al Sitio</h2>
+                <br>
                     <div class="medium great">
                         <div id="login"><?php include "includes/login.html"; ?></div> <!-- Contiene el html login.html. -->
                         <div id="logon"><?php include "includes/logon.html"; ?></div> <!-- Contiene el html logon.html, es invisible al abrir la página. -->
                     </div>
                     <div class="mini">
                         <div id="login"><?php include "includes/login.html"; ?></div> <!-- Contiene el html login.html. -->
+                        <br><br>
                         <div id="logon"><?php include "includes/logon.html"; ?></div> <!-- Contiene el html logon.html, es invisible al abrir la página. -->
-                        <script>let btn = document.getElementById("btn");
-                            btn.addEventListener("click", show);
-                            btn.param = "logon";
-                        </script>
                     </div>
                 </div>
             </div>

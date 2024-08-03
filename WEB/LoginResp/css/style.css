@@ -3,7 +3,7 @@ label, input
     font-size: 1.25rem; /* Establece el tamaño de la funete un 25% más grande para las etiquetas(label) y los input. */
 }
 
-#logon, #quit /* ID del contenedor del html logon.html */
+#logon, #quit /* ID del contenedor del html logon.html y del div con ID quit en login.html */
 {
     display: none; /* Lo hace invisible. */
 }
