@@ -1,4 +1,4 @@
-<nav class="madium great navbar fixed-top bg-white">
+<nav class="madium great navbar fixed-top bg-white"> <!-- Menú de Usuario de PC o Tablet. -->
     <div class="row">
         <div class="col-md-6"> <!-- Columnas con el menú de navegación. -->
             <div class="nav nav-tabs" id="nav-tab" role="tablist" style="margin-top: 80px;">

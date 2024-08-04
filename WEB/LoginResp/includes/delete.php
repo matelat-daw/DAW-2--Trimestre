@@ -1,4 +1,4 @@
-<?php
+<?php // Script con el formulario para eliminar el perfil del usuario, luego de enviarlo, solicita confirmación para eliminar.
 echo '<h3>Aquí Puedes Eliminar Tu Perfil</h3>
 <br><br>
 <form action="delete.php" method="post">

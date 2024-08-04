@@ -1,6 +1,6 @@
 <?php
 session_start();
-session_destroy();
+session_destroy(); // Destruye la sesión de usuario, muestra un mensaje que se ha cerrado la sesión y vuelve a index.php.
 $title = "Cerrando Sesión.";
 include "includes/header.php";
 include "includes/modal-index.html";

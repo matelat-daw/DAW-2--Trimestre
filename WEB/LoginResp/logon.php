@@ -1,7 +1,7 @@
 <?php // Script de registro de usuario con confirmación por E-mail.
 include "includes/conn.php";
 
-if (isset($_POST["username"]))
+if (isset($_POST["username"])) // Si llegaron datos por POST, se almacenan los datos en variables.
 {
     $ok = false;
     $user = $_POST["username"];
@@ -41,7 +41,7 @@ if (isset($_POST["username"]))
         $ok = true;
     }
 }
-if ($ok)
+if ($ok) // Si todos los datos están correctos.
 {
     $title = "Registro de Usuario";
     include "includes/header.php";
@@ -58,36 +58,37 @@ if ($ok)
     $headers  = "From: $server_email\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=UTF-8\r\n";
+    /* La Variable $message contiene el mensaje que se enviará por E-mail e incluye la dirección de la página a visitar cuando se hace click en el enlace del correo Electrónico, el elemento <a> contiene el enlace en el href. OJO: Verificar bien la ruta. */
 
-    if(mail($email, $subject, $message, $headers))
+    if(mail($email, $subject, $message, $headers)) // Si el envío del mensaje tiene exito.
     {
-        if (!file_exists("users"))
+        if (!file_exists("users")) // Verifica si no existe el directorio users
         {
-            mkdir("users", 0777, true);
+            mkdir("users", 0777, true); // Lo crea.
         }
-        chdir ("users");
-        if ($img != "")
+        chdir ("users"); // Cmabia al directorio users.
+        if ($img != "") // Si se envió una Imagen de perfil, $img contiene datos.
         {
-            if (!file_exists($id))
+            if (!file_exists($id)) // Verifica si no existe el directorio de la ID del usuario.
             {
-                mkdir($id . "/pic", 0777, true);
+                mkdir($id . "/pic", 0777, true); // Lo crea y dentro crea el directorio pic.
             }
-            $path = $id . "/pic/" . basename($img);
-            move_uploaded_file($tmp, $path);
+            $path = $id . "/pic/" . basename($img); // Asigna a $path la ruta con el nombre del fichero de imagen.
+            move_uploaded_file($tmp, $path); // Mueve el fichero del directorio temporal del servidor a la ruta creada.
             $stmt = $conn->prepare("UPDATE user SET path='users/$path' WHERE id=$id;"); // Preparo una consulta para Actualizar la tabla.
             $stmt->execute(); // La Ejecuto.
         }
     }
-    else
+    else // Si Fallo el envío del mensaje de correo electrónico, se muestra un mensaje de error y vuelve al index.php.
     {
         echo "<script>toast(2, 'ERROR:', 'Error al Enviar el Mensaje si Vuelves a Intentarlo y Sigue Dando Error, por Favor Escribe a matelat@gmail.com.');</script>";
     }
-    echo "<script>toast(0, 'Ya Estás Dado de Alta', 'Consulta la Bandeja de Entrada de la Dirección de Correo Electrónico que Usaste para Registrarte para confirmar tu Inscripción. Ten en Cuenta que el Mensaje Podría Estar en la Bandeja de Spam o Correo no Deseado.');</script>";
+    echo "<script>toast(0, 'Ya Estás Dado de Alta', 'Consulta la Bandeja de Entrada de la Dirección de Correo Electrónico que Usaste para Registrarte para confirmar tu Inscripción. Ten en Cuenta que el Mensaje Podría Estar en la Bandeja de Spam o Correo no Deseado.');</script>"; // Si todo ha ido bien se muestra un mensaje para activar la cuenta desde el E-mail de confirmación.
     include "includes/footer.html";
 }
-else
+else // Si No.
 {
-    $title = "Datos Ya Registrados";
+    $title = "Datos Ya Registrados"; // Datos ya registrados.
     include "includes/header.php";
     include "includes/modal-index.html";
     echo "<script>toast(1, 'Ya Registrado', 'Tus Datos ya Están Registrados en este Sitio, Por Favor Accede con tus Credenciales Desde el Formulario de Login. Si has Olvidado la Contraseña Puedes Recuperarla Desde el Enlace Olvidé mi Contraseña en el Formulario de Login.');</script>";

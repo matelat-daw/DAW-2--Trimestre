@@ -1,4 +1,4 @@
-<?php
+<?php // Este script recibe los datos del script change.php cuando el usuario modifica algún dato en su perfil.
 include "includes/conn.php";
 $title = "Modificando los datos del Usuario";
 include "includes/header.php";
@@ -46,6 +46,10 @@ if (isset($_POST["username"])) // Si llegan datos por post.
     {
         if ($img != "")
         {
+            if (!file_exists("users"))
+            {
+                mkdir("users", 0777, true);
+            }
             chdir("users");
             if (!file_exists($id))
             {
@@ -55,11 +59,11 @@ if (isset($_POST["username"])) // Si llegan datos por post.
             move_uploaded_file($tmp, $path);
             $path = "users/" . $path;
         }
-        if ($pass != "")
+        if ($pass != "") // Si se modificó la contraseña.
         {
             $sql = "UPDATE user SET name='$name', surname='$surname1', surname2='$surname2', dni='$dni', phone='$phone', email='$email', pass='$hash', bday='$bday', gender='$gender', path='$path' WHERE id=$id;"; // Preparo la Consulta Modificando Todo.
         }
-        else
+        else // Si no se modificó la contraseña.
         {
             $sql = "UPDATE user SET name='$name', surname='$surname1', surname2='$surname2', dni='$dni', phone='$phone', email='$email', bday='$bday', gender='$gender', path='$path' WHERE id=$id;"; // Preparo la Consulta Modificando todo Excepto la Contraseña.
         }
@@ -68,17 +72,17 @@ if (isset($_POST["username"])) // Si llegan datos por post.
         $stmt->execute();
         if ($stmt->rowCount() > 0) // Ejecuto la consulta y compruebo si se modifico el campo.
         {
-            session_destroy();
+            session_destroy(); // Destruye la sesión de usuario y muestra un mensaje.
             echo "<script>toast(0, 'Todo ha ido Bien', 'Se han Modificado tus Datos $name, Vuelve a Iniciar Sesión con tus Nuevos Datos.');</script>";
             // Muestro el aviso que todo ha ido bien.
         }
         else // Si hubo algún error.
         {
             echo "<script>toast(1, 'Algo Ha Fallado', 'No se Han Podido Modificar tus Datos $name.');</script>";
-            // Muestro el error de mysql, algo ha fallado
+            // Muestro un error, algo ha fallado
         }
     }
-    else
+    else // Si No, es que el E-mail, el teléfono o el DNI están repetidos.
     {
         echo "<script>toast(1, 'Ya Registrado:', 'El E-mail $email, el Teléfono $phone o el D.N.I. $dni, ya Están Registrados en Este Sitio. No puedes usar esos datos.');</script>"; // Muestro el error, el E-mail, etc. ya están registrados.
     }

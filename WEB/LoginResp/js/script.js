@@ -1,11 +1,11 @@
-function show(what) // Función que muestra la pantalla de login o la de logon según seleccione el usuario.
+function show(what) // Función que muestra la pantalla de login o la de logon y la de modificar o eliminar según seleccione el usuario, recibe un identificador.
 {
-    let login = document.getElementById("login");
+    let login = document.getElementById("login");  // Para el navegador Edge hace falta asignar en una variable las ID de los Elementos.
     let logon = document.getElementById("logon");
     let modify = document.getElementById("modify");
     let quit = document.getElementById("quit");
 
-    switch (what)
+    switch (what) // Hace un switch al identificador.
     {
         case "logon": // Si llega logon.
             login.style.display = "none"; // Oculta login.

@@ -1,4 +1,4 @@
-<?php
+<?php // Script con un formulario con los datos del usuario, para modificar su perfil.
 echo '<h3>Aquí Puedes Modificar Tus Datos</h3>
 <br>
 <form action="modify.php" method="post" enctype="multipart/form-data" onsubmit="return verify()">

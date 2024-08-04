@@ -1,4 +1,4 @@
-<?php // Script de confirmación de Eliminación del perfil del usuario.
+<?php // Script de confirmación de Eliminación del perfil del Usuario, Pide confirmación al Usuario para Eliminar el perfil.
 if (isset($_POST["id"]))
 {
     $id = $_POST["id"];
