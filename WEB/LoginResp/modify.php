@@ -53,14 +53,15 @@ if (isset($_POST["username"])) // Si llegan datos por post.
             }
             $path = $id . "/pic/" . basename($img);
             move_uploaded_file($tmp, $path);
+            $path = "users/" . $path;
         }
         if ($pass != "")
         {
-            $sql = "UPDATE user SET name='$name', surname='$surname1', surname2='$surname2', dni='$dni', phone='$phone', email='$email', pass='$hash', bday='$bday', gender='$gender', path='users/$path' WHERE id=$id;"; // Preparo la Consulta Modificando Todo.
+            $sql = "UPDATE user SET name='$name', surname='$surname1', surname2='$surname2', dni='$dni', phone='$phone', email='$email', pass='$hash', bday='$bday', gender='$gender', path='$path' WHERE id=$id;"; // Preparo la Consulta Modificando Todo.
         }
         else
         {
-            $sql = "UPDATE user SET name='$name', surname='$surname1', surname2='$surname2', dni='$dni', phone='$phone', email='$email', bday='$bday', gender='$gender', path='users/$path' WHERE id=$id;"; // Preparo la Consulta Modificando todo Excepto la Contraseña.
+            $sql = "UPDATE user SET name='$name', surname='$surname1', surname2='$surname2', dni='$dni', phone='$phone', email='$email', bday='$bday', gender='$gender', path='$path' WHERE id=$id;"; // Preparo la Consulta Modificando todo Excepto la Contraseña.
         }
 
         $stmt = $conn->prepare($sql);

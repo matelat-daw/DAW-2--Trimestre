@@ -33,13 +33,14 @@ if (isset($_SESSION["id"]))
     $title = "Bienvenido " . $row->name;
     include "includes/header.php";
     include "includes/modal.html";
-    include "includes/nav-user.php";
+    include "includes/nav-pc-user.php";
+    include "includes/nav-mob-user.html";
 echo '<section class="container-fluid pt-3">
     <div class="row">
         <div class="col-md-1"></div>
             <div class="col-md-10">
                 <div id="view1">
-                    <br><br><br><br><br><br>
+                    <br><br><br><br>
                     <div class="medium great">
                         <div id="modify">';
                             include "includes/change.php";
@@ -58,7 +59,7 @@ echo '<section class="container-fluid pt-3">
             </div>
         <div class="col-md-1"></div>
     </div>
-</section>';
+</section><br><br>';
 }
 else
 {

@@ -7,30 +7,35 @@ include "includes/modal-index.html";
 if (isset($_POST["email"]))
 {
     $email = htmlspecialchars($_POST["email"]);
-    $hash = substr(md5(uniqid($email, true)), 8, 8);
-    $pass = password_hash($hash, PASSWORD_DEFAULT);
-    $ok = false;
-    $sql = "SELECT email FROM user;"; // Preparo una consulta de todos los E-mail de espectadores de la base de datos.
+
+    $sql = "SELECT email FROM user WHERE email='$email';"; // Preparo una consulta de todos los E-mail de espectadores de la base de datos.
     $stmt = $conn->prepare($sql);
     $stmt->execute();
-    while($row = $stmt->fetch(PDO::FETCH_OBJ)) // Asigno a la variable $row el contenido de la consulta.
+    if ($stmt->rowCount() > 0) // Si el E-mail está en la base de datos.
     {
-        if ($row->email == $email) // Si el E-mail está en la base de datos.
+        $hash = substr(md5(uniqid($email, true)), 8, 8);
+        $pass = password_hash($hash, PASSWORD_DEFAULT);
+        $subject = "Solicitaste Modificar tu Contraseña";
+        $message = "<h3>Contraseña Cambiada:</h3><p>Has Pedido Cambiar tu Contraseña, se ha Generado una al Azar, por Favor Entra al Sitio, Logueate con la Nueva Contraseña y Cambiala por una que te sea Familiar.<br>Tu Nueva Contraseña es: " . $hash . "</p><a href='http://" . $_SERVER['SERVER_NAME'] . "/web/Login/index.php'><div style='background-color:aquamarine; border:thin; width:120px; height:60px; text-align:center;'>Entro en mi Perfil</div></a><br><br><small>Copyright © 2024 César Matelat <a href='mailto:matelat@gmail.com'>matelat@gmail.com</a></small>";
+        $server_email = "matelat@gmail.com";
+        $headers  = "From: $server_email\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-type: text/html; charset=UTF-8\r\n";
+
+        if(mail($email, $subject, $message, $headers))
         {
-            $ok = true; // $ok es true.
-            break; // Rompo el bucle, si se encuentra el E-mail en los primeros resultados no hace falta seguir buscando, el E-mail es clave unica.
+            $stmt = $conn->prepare("UPDATE user SET pass='$pass' WHERE email='$email';"); // Preparo una consulta para Actualizar la tabla.
+            $stmt->execute(); // La Ejecuto.
         }
+        else
+        {
+            echo "<script>toast(2, 'ERROR:', 'Error al Enviar el Mensaje si Vuelves a Intentarlo y Sigue Dando Error, por Favor Escribe a matelat@gmail.com.');</script>";
+        }
+        echo "<script>toast(0, 'Contraseña Cambiada:', 'Te Hemos Enviado un E-mail a tu Dirección de Correo Electrónico con la Nueva Contraseña.<br>Recuerda Entrar en tu Perfil y Modificarla  por una que te sea Familiar. Gracias por Usar el Sitio.');</script>";
     }
-    if (!$ok) // Si $ok es false.
+    else
     {
-        echo "<script>toast(2, 'Hay un Error', 'Lo Siento no Existe Ningún Cliente con E-mail: $email, Vuelve a Intentarlo con la Dirección con la que te Registrate.');</script>"; // Error.
-    }
-    else // Si el E-mail está en la base de datos.
-    {
-        $sql = "UPDATE user SET pass='$pass' WHERE email='$email';"; // Hago un update de la contraseña de ese E-mail.
-        $stmt = $conn->prepare($sql);
-        $stmt->execute();
-        echo "<script>toast(0, 'Todo ha Ido Bien', 'Se ha cambiado tu Contraseña a: $hash, Selecciónala y Cópiala, Después Vuelve a Iniciar Sesión con los Nuevos Datos. Te Recomendamos que Cambies la Contraseña.');</script>";
+        echo "<script>toast(2, 'Hay un Error', 'Lo Siento no Existe Ningún Usuario con E-mail: $email, Vuelve a Intentarlo con la Dirección con la que te Registrate.');</script>"; // Error.
     }
 }
 ?>
@@ -44,7 +49,7 @@ if (isset($_POST["email"]))
                     <br><br>
                     <h2>Por Favor Después de Loguearte Modifícala Entrando en tu Perfil</h2>
                     <br><br>
-                    <form action="" method="post">
+                    <form method="post">
                         <label><input type="text" name="email"> Danos el E-mail con el que te Registraste</label>
                         <br><br>
                         <input type="submit" value="Modifico mi Contraseña">
