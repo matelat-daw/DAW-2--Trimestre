@@ -136,8 +136,17 @@ function spy(which) // Función para el ojo de las Contraseñas al hacer click e
     const togglePassword = document.querySelector('#togglePassword' + which); // Asigno a la constante togglePassword el input con ID togglePassword + which.
     const password = document.querySelector('#pass' + which); // Asigno a password la ID del input con ID pass + which.
     
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password'; // Asigno a type el resultado de un operador ternario, si presiono el ojito y el tipo del input es password
-    // lo cambia a text, si es text lo cambia a password.
-    password.setAttribute('type', type); // Le asigno el atributo al input password.
-    togglePassword.classList.toggle('fa-eye-slash'); // Cambia el aspecto del ojo, al cambiar el input a tipo texto, el ojo aparece con una raya.
+    let type = password.getAttribute('type');
+    if (type === "password")
+    {
+        password.setAttribute("type", "text");
+        togglePassword.classList.remove('fa-eye');
+        togglePassword.classList.toggle('fa-eye-slash');
+    }
+    else
+    {
+        password.setAttribute("type", "password");
+        togglePassword.classList.remove('fa-eye-slash');
+        togglePassword.classList.toggle('fa-eye');
+    }
 }
