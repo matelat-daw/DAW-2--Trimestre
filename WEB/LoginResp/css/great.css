@@ -3,14 +3,14 @@
 	display: inherit !Important;
 }
 
-header, footer, #wrapper
+/* header, footer, #wrapper
 {
 	margin-left: auto;
 	margin-right: auto;
 	clear: both;
 	width: 100%;
 	max-width: 1800px;
-}
+} */
 
 #modify
 {
@@ -20,4 +20,24 @@ header, footer, #wrapper
 #nav-tab
 {
     margin-top: 80px;
+}
+
+label, input
+{
+    font-size: 1.25rem; /* Establece el tamaño de la funete un 25% más grande para las etiquetas(label) y los input. */
+}
+
+#logon, #quit /* ID del contenedor del html logon.html y del div con ID quit en login.html */
+{
+    display: none; /* Lo hace invisible. */
+}
+
+fieldset, legend
+{
+    all: revert;
+}
+
+.center
+{
+    margin-left: 30%;
 }

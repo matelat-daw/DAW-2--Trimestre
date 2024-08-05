@@ -9,16 +9,16 @@ body
     font-size: .66rem;
 }
 
-label,h3
+label, h3
 {
     font-size: 1rem;
 }
 
-select.mini
+/* select.mini
 {
 	font-size: 1.2em;
 	width: 100%;
-}
+} */
 
 #loginbtn, #logonbtn, #modifybtn, #quitbtn
 {
