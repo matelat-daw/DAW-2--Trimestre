@@ -6,6 +6,12 @@
 body
 {
 	font-family:Arial, Helvetica, sans-serif;
+    font-size: .66rem;
+}
+
+label,h3
+{
+    font-size: 1rem;
 }
 
 select.mini
@@ -32,4 +38,15 @@ select.mini
 #quit
 {
     margin-bottom: 60%;
+}
+
+#logon
+{
+    margin-bottom: 5%;
+}
+
+img
+{
+    width: 64px;
+    height: 60px;
 }

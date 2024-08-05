@@ -6,9 +6,31 @@
 body
 {
 	font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: .8rem;
 }
 
-/* #logon
+label, h3
 {
-    margin-bottom: 15%;
-} */
+    font-size: 1rem;
+}
+
+img
+{
+    width: 64px;
+    height: 60px;
+}
+
+#modify
+{
+    margin-bottom: 5%;
+}
+
+#data
+{
+    padding-top: .75%;
+}
+
+#nav-tab
+{
+    margin-top: 32px;
+}

@@ -34,7 +34,7 @@ if (isset($_SESSION["id"])) // Si la sesión está iniciada, Muestra el perfil d
     include "includes/header.php";
     include "includes/modal.html";
     include "includes/nav-pc-user.php";
-    include "includes/nav-mob-user.html";
+    include "includes/nav-mob-user.php";
 echo '<section class="container-fluid pt-3">
     <div class="row">
         <div class="col-md-1"></div>

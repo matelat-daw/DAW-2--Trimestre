@@ -12,21 +12,12 @@ header, footer, #wrapper
 	max-width: 1800px;
 }
 
-/* #main-nav
+#modify
 {
-	float:left;
-	width: 20%;
-	max-width: 300px;
+    margin-bottom: 5%;
 }
 
-#main-section
+#nav-tab
 {
-	margin-left: 20%;
-	width: 80%;
-	max-width: 1200px;
-} */
-
-/* #logon
-{
-    margin-bottom: 10%;
-} */
+    margin-top: 80px;
+}
