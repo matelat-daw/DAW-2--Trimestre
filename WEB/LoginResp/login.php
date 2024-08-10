@@ -41,20 +41,13 @@ echo '<section class="container-fluid pt-3">
             <div class="col-md-10">
                 <div id="view1">
                     <br><br><br><br>
-                    <div class="medium great">
+                    <div class="great medium mini">
                         <div id="modify">'; // Contenedor del script para modificar el perfil del usuario, el contenedor anterior es de la clase medium y great, PC y Tablet.
                             include "includes/change.php";
                         echo '</div>
                             <div id="quit">'; // Contenedor del script para Eliminar el perfil del usuario, es invisible al abrir la página.
                                 include "includes/delete.php";
-                            echo '</div></div>
-                    <div class="mini">
-                        <div id="modify">'; // Contenedor del script para modificar el perfil del usuario, el contenedor anterior es de la clase mini, Móvil.
-                            include "includes/change.php";
-                        echo '</div>
-                        <div id="quit">'; // Contenedor del script para Eliminar el perfil del usuario, en esta resolución ambos formulario están visibles uno a continuación del otro.
-                            include "includes/delete.php";
-                    echo '</div></div>
+                        echo '</div></div>
                 </div>
             </div>
         <div class="col-md-1"></div>

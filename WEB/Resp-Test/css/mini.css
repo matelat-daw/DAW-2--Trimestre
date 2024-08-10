@@ -14,24 +14,14 @@ label, h3
     font-size: 1rem;
 }
 
-#loginbtn, #logonbtn, #modifybtn, #quitbtn
+#loginbtn, #logonbtn
 {
     display: none;
 }
 
-#logon, #login, #quit, #modify
+#logon, #login
 {
     display: block;
-}
-
-#modify
-{
-    margin-top: 10%;
-}
-
-#quit
-{
-    margin-bottom: 60%;
 }
 
 #logon
@@ -41,6 +31,6 @@ label, h3
 
 img
 {
-    width: 64px;
-    height: 60px;
+    width: 400px;
+    height: 320px;
 }

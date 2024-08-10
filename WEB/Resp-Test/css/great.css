@@ -1,0 +1,40 @@
+.great
+{
+	display: inherit !Important;
+}
+
+#modify
+{
+    margin-bottom: 5%;
+}
+
+#nav-tab
+{
+    margin-top: 80px;
+}
+
+label, input
+{
+    font-size: 1.25rem; /* Establece el tamaño de la funete un 25% más grande para las etiquetas(label) y los input. */
+}
+
+#logon /* ID del contenedor del html logon.html y del div con ID quit en login.html */
+{
+    display: none; /* Lo hace invisible. */
+}
+
+fieldset, legend
+{
+    all: revert;
+}
+
+.center
+{
+    margin-left: 30%;
+}
+
+img
+{
+    width: 1024px;
+    height: 768px;
+}
