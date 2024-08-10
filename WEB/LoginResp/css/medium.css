@@ -39,3 +39,8 @@ img
 {
     display: none; /* Lo hace invisible. */
 }
+
+#login, #modify
+{
+    display: block;
+}

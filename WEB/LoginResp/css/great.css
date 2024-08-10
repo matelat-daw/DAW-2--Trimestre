@@ -3,8 +3,14 @@
 	display: inherit !Important;
 }
 
+#login
+{
+    display: block;
+}
+
 #modify
 {
+    display: block;
     margin-bottom: 5%;
 }
 
