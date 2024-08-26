@@ -1,7 +1,9 @@
 .grid {
   position: absolute;
-  width: 560px;
-  height: 300px;
+  top: -50px;
+  left: 500px;
+  width: 1024px;
+  height: 768px;
   border: solid 1px black;
   margin-top: 100px;
 }
@@ -10,6 +12,7 @@
   position: absolute;
   width: 100px;
   height: 20px;
+  border-radius: 25%;
   background-color: blueviolet;
 }
 
