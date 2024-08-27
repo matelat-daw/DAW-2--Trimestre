@@ -20,10 +20,10 @@ let score = 0
 //my block
 class Block {
     constructor(xAxis, yAxis) {
-        this.bottomLeft = [xAxis, yAxis]
-        this.bottomRight = [xAxis + blockWidth, yAxis]
-        this.topRight = [xAxis + blockWidth, yAxis + blockHeight]
-        this.topLeft = [xAxis, yAxis + blockHeight]
+        this.bottomLeft = [xAxis, yAxis];
+        this.bottomRight = [xAxis + blockWidth, yAxis];
+        this.topRight = [xAxis + blockWidth, yAxis + blockHeight];
+        this.topLeft = [xAxis, yAxis + blockHeight];
     }
 }
 
@@ -120,14 +120,14 @@ function moveUser(e) {
         case 'ArrowLeft':
             if (currentPosition[0] > 0) {
                 currentPosition[0] -= 10
-                console.log(currentPosition[0] > 0)
+                // console.log(currentPosition[0] > 0)
                 drawUser()
             }
             break
         case 'ArrowRight':
             if (currentPosition[0] < (boardWidth - blockWidth)) {
                 currentPosition[0] += 10
-                console.log(currentPosition[0])
+                // console.log(currentPosition[0])
                 drawUser()
             }
             break
