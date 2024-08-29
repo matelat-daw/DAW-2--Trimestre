@@ -68,7 +68,7 @@ include "includes/modal-invoice.html";
                     // $stmt->execute();
                     // $row = $stmt->fetch(PDO::FETCH_OBJ);
                     // $invoice_id = $row->id;
-                    $invloice_id = $conn->lastInsertedID();
+                    $invoice_id = $conn->lastInsertId();
 
                     $sql = "INSERT INTO sold VALUES(:id, :invoice_id, :food_id, :qtty);";
                     $stmt = $conn->prepare($sql);

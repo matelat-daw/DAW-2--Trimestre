@@ -10,8 +10,8 @@ include "includes/header.php";
             <div class="col-md-10">
                 <div id="view1">
                     <br><br><br>
-					<button name="mesa1" onclick="window.open('mesa.php?table=Entrada 1')" class="table">Entrada 1</button>
-					<button name="mesa2" onclick="window.open('mesa.php?table=Entrada 2')" class="table">Entrada 2</button>
+					<button name="mesa1" onclick="window.open('mesa.php?table=Mesa-1')" class="table">Entrada 1</button>
+					<button name="mesa2" onclick="window.open('mesa.php?table=Mesa-2')" class="table">Entrada 2</button>
 					<button name="mesa3" onclick="window.open('mesa.php?table=Entrada 3')" class="table">Entrada 3</button>
 					<button name="mesa4" onclick="window.open('mesa.php?table=Entrada 4')" class="table">Entrada 4</button>
 					<button name="mesa5" onclick="window.open('mesa.php?table=Barra 1')" class="table">Barra 1</button>

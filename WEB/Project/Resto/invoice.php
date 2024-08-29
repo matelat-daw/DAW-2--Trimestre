@@ -12,7 +12,7 @@ $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_OBJ);
 $id = $row->id;
 $client = $row->client_id;
-$wait = $row->wait_id;
+$waiter = $row->waiter_id;
 $table = getTable($conn, $row->table_id);
 $product = "";
 $price = "";

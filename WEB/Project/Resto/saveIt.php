@@ -15,7 +15,6 @@ if (isset($_REQUEST["id"]))
 	$stmt->execute();
 
     $sql = ("SELECT *, DATE_FORMAT(inv_date,'%d %M %Y') as date FROM invoice WHERE id=$id");
-	
 	$stmt = $conn->prepare($sql);
 	$stmt->execute();
 	$row = $stmt->fetch(PDO::FETCH_OBJ);
