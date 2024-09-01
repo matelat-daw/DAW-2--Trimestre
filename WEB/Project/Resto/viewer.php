@@ -1,4 +1,5 @@
 <?php
+include "includes/conn.php";
 include "includes/modal.html";
 $title = "Ver Facturas por Mesas";
 include "includes/header.php";
@@ -52,36 +53,18 @@ include "includes/header.php";
 					<br>
 					<label><select id="table" name="table">
                         <option value="">Selecciona una Mesa</option>
-						<option value="Entrada 1">Entrada 1</option>
-						<option value="Entrada 2">Entrada 2</option>
-						<option value="Entrada 3">Entrada 3</option>
-						<option value="Entrada 4">Entrada 4</option>
-						<option value="Barra 1">Barra 1</option>
-						<option value="Barra 2">Barra 2</option>
-						<option value="Barra 3">Barra 3</option>
-						<option value="Patio 1">Patio 1</option>
-						<option value="Patio 2">Patio 2</option>
-						<option value="Patio 3">Patio 3</option>
-						<option value="Patio 4">Patio 4</option>
-						<option value="Patio 5">Patio 5</option>
-						<option value="Vereda 1">Vereda 1</option>
-						<option value="Vereda 2">Vereda 2</option>
-						<option value="Vereda 3">Vereda 3</option>
-						<option value="Mesa 1">Mesa 1</option>
-						<option value="Mesa 2">Mesa 2</option>
-						<option value="Mesa 3">Mesa 3</option>
-						<option value="Mesa 4">Mesa 4</option>
-						<option value="Mesa 5">Mesa 5</option>
-						<option value="Mesa 6">Mesa 6</option>
-						<option value="Mesa 7">Mesa 7</option>
-						<option value="Mesa 8">Mesa 8</option>
-						<option value="Tablón 1">Tablón 1</option>
-						<option value="Tablón 2">Tablón 2</option>
-						<option value="Mesa 9">Mesa 9</option>
-						<option value="Mesa 10">Mesa 10</option>
-						<option value="Mesa 11">Mesa 11</option>
-						<option value="Mesa 12">Mesa 12</option>
-						<option value="Mesa 13">Mesa 13</option>
+                        <?php
+                        $sql = "SELECT * FROM mesa;";
+                        $stmt = $conn->prepare($sql);
+                        $stmt->execute();
+                        if ($stmt->rowCount() > 0)
+                        {
+                            while ($row = $stmt->fetch(PDO::FETCH_OBJ))
+                            {
+                                echo '<option value="' . $row->id . '">' . $row->name . '</option>';
+                            }
+                        }
+                        ?>
 					<select> Selecciona la Mesa</label>
 					<br><br>
 					<input class="btn btn-primary" type="submit" value="Ver Facturas" style="width:128px; height:64px;">
