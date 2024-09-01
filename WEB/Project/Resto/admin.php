@@ -95,7 +95,7 @@ include "includes/conn.php";
 								</select> Selecciona el Trimestre a consultar
 							</label>
 							<br><br>
-							<label><input type="number" id="year" name="year" min="2022" max="3000" step="1"> Selecciona el Año</label>
+							<label><input type="number" id="year" name="year" min="2024" max="3000" step="1"> Selecciona el Año</label>
 							<br><br>
 							<input type="submit" value="Ver Informe" class="btn btn-info btn-lg">
 						</form>

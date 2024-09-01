@@ -27,9 +27,9 @@ include "includes/header.php";
                         <br><br>
                         <label><input type="email" name="email" required> E-mail</label>
                         <br><br>
-                        <label><input id="pass" type="password" name="pass"> Contraseña</label>
+                        <label><input id="pass" type="password" name="pass" required> Contraseña</label>
                         <br><br>
-                        <label><input id="pass2" type="password" name="pass2"> Repite Contraseña</label>
+                        <label><input id="pass2" type="password" name="pass2" required> Repite Contraseña</label>
                         <br><br>
                         <label><input type="text" name="phone" required> Teléfono</label>
                         <br><br>

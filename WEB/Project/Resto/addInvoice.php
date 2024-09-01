@@ -43,7 +43,7 @@ if (isset($_POST["table"]))
 function getTableId($conn, $table)
 {
     $sql = "SELECT id FROM mesa WHERE name='$table';";
-    echo "<h3>$table</h3>";
+    // echo "<h3>$table</h3>";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $row = $stmt->fetch(PDO::FETCH_OBJ);

@@ -16,7 +16,6 @@ $hash = password_hash($pass, PASSWORD_DEFAULT);
 $email = htmlspecialchars($_POST['email']);
 $phone = htmlspecialchars($_POST['phone']);
 $address = htmlspecialchars($_POST['address']);
-$ok = false;
 
 $sql = "SELECT id FROM client WHERE phone='$phone' OR email='$email' OR dni='$dni';";
 $stmt = $conn->prepare($sql);
@@ -26,11 +25,6 @@ if ($stmt->rowCount() > 0)
     echo "<script>toast ('1', 'Cliente ya Registrado', 'El Teléfono, E-mail o D.N.I. ya Están Registrados en la Base de Datos. Si Hay Algúna Modificación en los Datos Usa Modificar o Eliminar Clientes.');</script>";
 }
 else
-{
-    $ok = true;
-}
-
-if ($ok)
 {
     $stmt = $conn->prepare('INSERT INTO client VALUES(:id, :name, :surname, :surname2, :dni, :email, :pass, :phone, :address)');
     if ($dni != "")
