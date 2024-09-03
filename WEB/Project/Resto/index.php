@@ -5,9 +5,13 @@ if (json_decode(file_get_contents('php://input'), true))
 }
 if (isset($_POST["id"]))
 {
-    if (isset($_POST["wait"]))
+    if (isset($_POST["waiter"]))
     {
-        $waiter = $_POST["wait"];
+        $waiter = $_POST["waiter"];
+        if ($waiter == null)
+        {
+            $waiter = "Restaurante";
+        }
     }
     else
     {
