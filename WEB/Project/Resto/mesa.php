@@ -14,28 +14,40 @@ if (isset($_POST['invoice']))
 		{
 			case 2:
 			$mesa10 = $record[0] . ';' . $record[1];
+            echo '<script>addData("' . $mesa10 . '")</script>';
 			break;
 			case 4:
 			$mesa11 = $record[2] . ';' . $record[3];
+            echo '<script>addData("' . $mesa11 . '")</script>';
 			break;
 			case 6:
 			$mesa12 = $record[4] . ';' . $record[5];
+            echo '<script>addData("' . $mesa12 . '")</script>';
 			break;
 			case 8:
 			$mesa13 = $record[6] . ';' . $record[7];
+            echo '<script>addData("' . $mesa13 . '")</script>';
 			break;
 			case 10:
 			$mesa14 = $record[8] . ';' . $record[9];
+            echo '<script>addData("' . $mesa14 . '")</script>';
 			break;
 			case 12:
 			$mesa15 = $record[10] . ';' . $record[11];
+            echo '<script>addData("' . $mesa15 . '")</script>';
 			break;
 			case 14:
 			$mesa16 = $record[12] . ';' . $record[13];
+            echo '<script>addData("' . $mesa16 . '")</script>';
 			break;
 			case 16:
 			$mesa17 = $record[14] . ';' . $record[15];
+            echo '<script>addData("' . $mesa17 . '")</script>';
 			break;
+            case 18:
+                $mesa18 = $record[16] . ';' . $record[16];
+                echo '<script>addData("' . $mesa18 . '")</script>';
+                break;
 		}
 	}
 }
@@ -143,7 +155,7 @@ include "includes/header.php";
 <div class="row">
 	<div class="col-md-1"></div>
 		<div class="col-md-8">
-			<label><select class="name" class="name" name="wine" id="wine">
+			<label><select class="name" name="wine" id="wine">
             <option value="">Selecciona un Vino</option>
 			<?php
 			$stmt = $conn->prepare('SELECT * FROM food WHERE kind=4;');
@@ -167,7 +179,7 @@ include "includes/header.php";
     <label><select name="client" style="width: 600px;">
             <option value="">Consumidor Final</option>
             <?php
-            $sql = "SELECT id, name from client";
+            $sql = "SELECT id, name from client;";
             $stmt = $conn->prepare($sql);
             $stmt->execute();
             if ($stmt->rowCount() > 0)
@@ -192,44 +204,6 @@ include "includes/header.php";
 </div>
 </section>
 <?php
-if (isset($_POST['invoice']))
-{
-	for ($i = 2; $i <= count($record); $i+=2)
-	{
-		switch($i)
-		{
-			case 2:
-			echo '<script>addData("' . $mesa10 . '")</script>';
-			break;
-			case 4:
-			echo '<script>addData("' . $mesa11 . '")</script>';
-			break;
-			case 6:
-			echo '<script>addData("' . $mesa12 . '")</script>';
-			break;
-			case 8:
-			echo '<script>addData("' . $mesa13 . '")</script>';
-			break;
-			case 10:
-			echo '<script>addData("' . $mesa14 . '")</script>';
-			break;
-			case 12:
-			echo '<script>addData("' . $mesa15 . '")</script>';
-			break;
-			case 14:
-			echo '<script>addData("' . $mesa16 . '")</script>';
-			break;
-			case 16:
-			echo '<script>addData("' . $mesa17 . '")</script>';
-			break;
-			case 18:
-			echo '<script>addData("' . $mesa18 . '")</script>';
-			break;	
-		}
-	}
-}
 echo "<button style='float:right; width:128px; height:64px;' onclick='deleting(" . '"' . $table . '"' . ")'  class='btn btn-danger'>Anular Factura</button><br><br><br>";
-?>
-<?php
 include "includes/footer.html";
 ?>

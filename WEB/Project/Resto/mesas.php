@@ -11,11 +11,11 @@ include "includes/header.php";
             <div class="col-md-10">
                 <div id="view1">
                     <br><br><br>
-                    <form action="mesa.php" methos="post">
-                        <lable><select name="table">
+                    <form action="mesa.php" method="post">
+                        <lable><select name="table" required>
                             <option value="">Selecciona la Mesa a Facturar</option>
                             <?php
-                            $sql = "SELECT * FROM mesa;";
+                            $sql = "SELECT name FROM mesa;";
                             $stmt = $conn->prepare($sql);
                             $stmt->execute();
                             while ($row = $stmt->fetch(PDO::FETCH_OBJ))
