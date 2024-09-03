@@ -35,7 +35,7 @@ else
     {
         $stmt->execute(array(':id' => null, ':name' => $name, ':surname' => $surname, ':surname2' => $surname2, ':dni' => null, ':email' => $email, ':pass' => $hash, ':phone' => $phone, ':address' => $address));
     }
-    echo "<script>toast ('0', 'Cliente : " . $name . " Agregado Correctamente.', 'Se a Agregado el Cliente Para Hacer Pedidos a Domicilio.');</script>";
+    echo "<script>toast ('0', 'Cliente : " . $name . " Agregado Correctamente.', 'Se ha Agregado el Cliente Para Hacer Pedidos a Domicilio.');</script>";
 }
 ?>
 <section class="container-fluid pt-3">
