@@ -1,147 +1,3 @@
-var invoices = "";
-var kitchen = "";
-var array = [];
-var array2 = [];
-
-let plate = document.getElementById("plate");
-let platos = document.getElementById("platos");
-let invoice = document.getElementById("invoice");
-
-function add_plate()
-{
-    let meal = document.getElementById("meal");
-    let qtty = document.getElementById("qtty");
-    console.log("En meal tengo: " + meal.value);
-
-	if (meal.value !== "")
-	{
-		invoices += meal.value + "," + qtty.value + ",";
-		kitchen += meal.value + " Cantidad : " + qtty.value + ", ";
-        meal.value = "";
-        qtty.value = 1;
-		window.plate.innerHTML = invoices;
-		window.platos.innerHTML = kitchen;
-		window.invoice.value = invoices;
-	}
-}
-
-function add_bebida()
-{
-    let beverage = document.getElementById("bev");
-    let qtty2 = document.getElementById("qtty2");
-
-	if (beverage.value !== "")
-	{
-		invoices += beverage.value + "," + qtty2.value + ",";
-        beverage.value = "";
-        qtty2.value = 1;
-		window.plate.innerHTML = invoices;
-		window.invoice.value = invoices;
-	}
-}
-
-function add_postre()
-{
-    let dessert = document.getElementById("dess");
-    let qtty3 = document.getElementById("qtty3");
-
-	if (dessert.value !== "")
-	{
-		invoices += dessert.value + "," + qtty3.value + ",";
-        kitchen += dessert.value + " Cantidad : " + qtty3.value + ", ";
-        dessert.value = "";
-        qtty3.value = 1;
-		window.plate.innerHTML = invoices;
-        window.platos.innerHTML = kitchen;
-		window.invoice.value = invoices;
-	}
-}
-
-function add_coffe()
-{
-    let coffe = document.getElementById("coffe");
-    let qtty4 = document.getElementById("qtty4");
-
-	if (coffe.value !== "")
-	{
-		invoices += coffe.value + "," + qtty4.value + ",";
-        kitchen += coffe.value + " Cantidad : " + qtty4.value + ", ";
-        coffe.value = "";
-        qtty4.value = 1;
-		window.plate.innerHTML = invoices;
-        window.platos.innerHTML = kitchen;
-		window.invoice.value = invoices;
-	}
-}
-
-function add_wine()
-{
-    let wine = document.getElementById("wine");
-    let qtty5 = document.getElementById("qtty5");
-
-	if (wine.value !== "")
-	{
-		invoices += wine.value + "," + qtty5.value + ",";
-        kitchen += wine.value + " Cantidad : " + qtty5.value + ", ";
-        wine.value = "";
-        qtty5.value = 1;
-		window.plate.innerHTML = invoices;
-        window.platos.innerHTML = kitchen;
-		window.invoice.value = invoices;
-	}
-}
-
-function addData(data)
-{
-	array = data.split(';');
-
-    switch (array[0])
-    {
-        case "0":
-            inside = array[1].split(",");
-            for (i = 0; i < inside.length; i+=4)
-            {
-                invoices += inside[i] + "," + inside[i + 1] + "," + inside[i + 2] + "," + inside[i + 3] + ",";
-            }
-            break;
-        case "1":
-            inside = array[1].split(",");
-            for (i = 0; i < inside.length; i+=4)
-            {
-                invoices += inside[i] + "," + inside[i + 1] + "," + inside[i + 2] + "," + inside[i + 3] + ",";
-            }
-            break;
-        default:
-            inside = array[1].split(",");
-            for (i = 0; i < inside.length; i+=4)
-            {
-                invoices += inside[i] + "," + inside[i + 1] + "," + inside[i + 2] + "," + inside[i + 3] + ",";
-            }
-    }
-
-	if (array[0] != 1)
-	{
-        array2 = array[1].split(',');
-		for (i = 0; i < array2.length; i+=4)
-		{
-			kitchen += array2[i + 1] + " Cantidad : " + array2[i + 3] + " ";
-		}
-		window.platos.innerHTML = kitchen;
-		window.plate.innerHTML = invoices;
-		window.invoice.value = invoices;
-	}
-    else
-    {
-		window.plate.innerHTML = invoices;
-		window.invoice.value = invoices;
-    }
-}
-
-function deleting(number)
-{
-	window.open("delete.php?table=" + number, "_self");
-}
-
 function verify()
 {
     const pass = document.getElementById("pass");
@@ -171,29 +27,6 @@ function verify()
         {
             return true;
         }
-    }
-}
-
-function verifyShow()
-{
-    let table = document.getElementById("table");
-    let date = document.getElementById("date");
-
-    if (table.value == "")
-    {
-        if (date.value == "")
-        {
-            toast(1, "Ambos Campos en Blanco", "Debes Seleccionar al Menos una Fecha o una Mesa.");
-            return false;
-        }
-        else
-        {
-            return true;
-        }
-    }
-    else
-    {
-        return true;
     }
 }
 
@@ -237,23 +70,6 @@ function screen() // Establece el tamaño de las vistas en la pantalla.
     else // Si la vista 2 no existe.
     {
         view1.style.height = height - 80 + "px"; // Le asigno a la vista 1 el tamaño de todo el contenido de la pantalla menos 80 pixels.
-    }
-}
-
-function resolution() // Esta función comprueba si el ancho de la pantalla es de Ordenador o de Móvil.
-{
-    let mobile = document.getElementById("mobile");
-    let pc = document.getElementById("pc");
-    let width = innerWidth;
-    if (width < 965) // Si el ancho es inferior a 965.
-    {
-        pc.style.visibility = "hidden"; // Oculta el menú de Ordenador
-        mobile.style.visibility = "visible"; // Muestra el menú de Teléfono.
-    }
-    else // Si es mayor o igual a 965;
-    {
-        pc.style.visibility = "visible"; // Muestra el menú para Ordenador
-        mobile.style.visibility = "hidden"; // Oculta el menú para Teléfono.
     }
 }
 
@@ -321,4 +137,16 @@ function pdfDown(number)
     var doc = new jsPDF();
     doc.addImage(image, 'png', 10, 10, 240, 120, '', 'FAST');
     doc.save();
+}
+
+function show(what)
+{
+    if (what == "client")
+    {
+        
+    }
+    else
+    {
+
+    }
 }

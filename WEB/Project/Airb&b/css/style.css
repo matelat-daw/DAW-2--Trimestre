@@ -136,8 +136,17 @@ input[type='number']
     width: 120px;
 }
 
-.menu
+.inline
 {
-    display: inline;
-    vertical-align: middle;
+    display: inline-block;
+}
+
+.height
+{
+    height: 15px;
+}
+
+#client, #owner
+{
+    display: none;
 }
