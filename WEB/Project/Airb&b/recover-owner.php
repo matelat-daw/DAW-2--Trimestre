@@ -1,4 +1,4 @@
-<?php // Script para recuperar la contraseña, se genera una contraseña aleatoria de 8 caracteres, tengo que modificar el script para que envíe un E-mail con la nueva contraseña al intreresado.
+<?php // Script para recuperar la contraseña, se genera una contraseña aleatoria de 8 caracteres, y se envía por E-mail para mayor seguridad.
 include "includes/conn.php";
 $title = "Recupera tu Contraseña";
 include "includes/header.php";
@@ -7,33 +7,39 @@ include "includes/modal-index.html";
 if (isset($_POST["email"]))
 {
     $email = htmlspecialchars($_POST["email"]);
-    $hash = substr(md5(uniqid($email, true)), 8, 8);
-    $pass = password_hash($hash, PASSWORD_DEFAULT);
-    $ok = false;
-    $sql = "SELECT owner_email FROM owner;"; // Preparo una consulta de todos los E-mail de espectadores de la base de datos.
+
+    $sql = "SELECT owner_email FROM owner WHERE owner_email='$email';"; // Preparo una consulta del E-mail del usuario.
     $stmt = $conn->prepare($sql);
     $stmt->execute();
-    while($row = $stmt->fetch(PDO::FETCH_OBJ)) // Asigno a la variable $row el contenido de la consulta.
+    if ($stmt->rowCount() > 0) // Si el E-mail está en la base de datos, se prepara y se envía la contraseña por E-mail.
     {
-        if ($row->owner_email == $email) // Si el E-mail está en la base de datos.
+        $hash = substr(md5(uniqid($email, true)), 8, 8);
+        $pass = password_hash($hash, PASSWORD_DEFAULT);
+        $subject = "Solicitaste Modificar tu Contraseña";
+        $message = "<h3>Contraseña Cambiada:</h3><p>Has Pedido Cambiar tu Contraseña, se ha Generado una al Azar, por Favor Entra al Sitio, Logueate con la Nueva Contraseña y Cambiala por una que te sea Familiar.<br>Tu Nueva Contraseña es: " . $hash . "</p><a href='http://" . $_SERVER['SERVER_NAME'] . "/web/Project/Airb&b/index.php'><div style='background-color:aquamarine; border:thin; width:120px; height:60px; text-align:center;'>Entro en mi Perfil</div></a><br><br><small>Copyright © 2024 César Matelat <a href='mailto:matelat@gmail.com'>matelat@gmail.com</a></small>";
+        $server_email = "matelat@gmail.com";
+        $headers  = "From: $server_email\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-type: text/html; charset=UTF-8\r\n";
+
+        if(mail($email, $subject, $message, $headers)) // Si el mensaje se envía con exito.
         {
-            $ok = true; // $ok es true.
-            break; // Rompo el bucle, si se encuentra el E-mail en los primeros resultados no hace falta seguir buscando, el E-mail es clave unica.
+            $stmt = $conn->prepare("UPDATE owner SET owner_pass='$pass' WHERE owner_email='$email';"); // Preparo una consulta para Actualizar la tabla.
+            $stmt->execute(); // La Ejecuto.
         }
+        else // Si No
+        {
+            echo "<script>toast(2, 'ERROR:', 'Error al Enviar el Mensaje si Vuelves a Intentarlo y Sigue Dando Error, por Favor Escribe a matelat@gmail.com.');</script>"; // Error y vuelve a index.php.
+        }
+        echo "<script>toast(0, 'Contraseña Cambiada:', 'Te Hemos Enviado un E-mail a tu Dirección de Correo Electrónico con la Nueva Contraseña.<br>Recuerda Entrar en tu Perfil y Modificarla  por una que te sea Familiar. Gracias por Usar el Sitio.');</script>"; // Muestro un aviso que se ha enviado la contraseña por E-mail.
     }
-    if (!$ok) // Si $ok es false.
+    else // Si la dirección de E-mail no está en la base de datos.
     {
-        echo "<script>toast(2, 'Hay un Error', 'Lo Siento no Existe Ningún Cliente con E-mail: $email, Vuelve a Intentarlo con la Dirección con la que te Registrate.');</script>"; // Error.
-    }
-    else // Si el E-mail está en la base de datos.
-    {
-        $sql = "UPDATE owner SET owner_pass='$pass' WHERE owner_email='$email';"; // Hago un update de la contraseña de ese E-mail.
-        $stmt = $conn->prepare($sql);
-        $stmt->execute();
-        echo "<script>toast(0, 'Todo ha Ido Bien', 'Se ha cambiado tu Contraseña a: $hash, Selecciónala y Cópiala, Después Vuelve a Iniciar Sesión con los Nuevos Datos. Te Recomendamos que Cambies la Contraseña.');</script>";
+        echo "<script>toast(2, 'Hay un Error', 'Lo Siento no Existe Ningún Usuario con E-mail: $email, Vuelve a Intentarlo con la Dirección con la que te Registrate.');</script>"; // Error.
     }
 }
 ?>
+<!-- Entra en la página y muestra este script html. -->
 <section class="container-fluid pt-3">
     <div class="row">
         <div class="col-md-1"></div>
@@ -44,10 +50,10 @@ if (isset($_POST["email"]))
                     <br><br>
                     <h2>Por Favor Después de Loguearte Modifícala Entrando en tu Perfil</h2>
                     <br><br>
-                    <form action="" method="post">
+                    <form method="post">
                         <label><input type="text" name="email"> Danos el E-mail con el que te Registraste</label>
                         <br><br>
-                        <input type="submit" value="Modifico mi Contraseña">
+                        <input type="submit" value="Modifico mi Contraseña" class="btn btn-secondary btn-lg">
                     </form>
                 </div>
             </div>
