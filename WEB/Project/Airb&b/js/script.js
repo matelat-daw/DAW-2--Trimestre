@@ -101,8 +101,8 @@ function screen() // Establece el tamaño de las vistas en la pantalla.
     let view3 = document.getElementById("view3");
     let view4 = document.getElementById("view4");
     let screen = window.innerHeight; // Obtiene el tamaño vertical de la pantalla.
-    var body = document.body, html2 = document.documentElement; // Asigno a la variable body el body y a html2 el contenido.
-    var height = Math.max(body.scrollHeight, body.offsetHeight, html2.clientHeight, html2.scrollHeight, html2.offsetHeight); // Asigno a la variable height el valor máximo de la pantalla con todo el contenido.
+    // var body = document.body, html2 = document.documentElement; // Asigno a la variable body el body y a html2 el contenido.
+    // var height = Math.max(body.scrollHeight, body.offsetHeight, html2.clientHeight, html2.scrollHeight, html2.offsetHeight); // Asigno a la variable height el valor máximo de la pantalla con todo el contenido.
 
     if (view1.offsetHeight < screen) // Si el tamaño vertical de la vista es menor que el tamaño vertical de la pantalla.
     {
@@ -205,6 +205,17 @@ function pdfDown(number)
 
 function show(what)
 {
+    let client_in = document.getElementById("client_in");
+    let client_on = document.getElementById("client_on");
+    let owner_in = document.getElementById("owner_in");
+    let owner_on = document.getElementById("owner_on");
+    let modify_client = document.getElementById("modify_client");
+    let quit_client = document.getElementById("quit_client");
+    let modify_owner = document.getElementById("modify_owner");
+    let quit_owner = document.getElementById("quit_owner");
+    let client = document.getElementById("client");
+    let owner = document.getElementById("owner");
+
     switch (what)
     {
         case "client_login":
@@ -213,6 +224,7 @@ function show(what)
             client_on.style.display = "none";
             client_in.style.display = "block";
             document.location.hash = "#view2";
+            
 
             break;
         case "client_logon":
@@ -253,6 +265,8 @@ function show(what)
             modify_owner.style.display = "block";
             break;
     }
+    client.selectedIndex = 0;
+    owner.selectedIndex = 0;
 }
 
 function language(lang)
