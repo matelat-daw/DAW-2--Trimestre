@@ -151,7 +151,7 @@ input[type='number']
     height: 15px;
 }
 
-#client_on, #owner_on, #client_in, #owner_in
+#client_on, #owner_on, #client_in, #owner_in, #quit_client, #quit_owner
 {
     display: none;
 }

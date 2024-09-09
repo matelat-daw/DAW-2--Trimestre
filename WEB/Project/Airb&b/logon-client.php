@@ -29,7 +29,7 @@ if (isset($_POST["username"]))
     $hash = hash("crc32", $email, false);
     $img = htmlspecialchars($_FILES["profile"]["name"]);
     $tmp = htmlspecialchars($_FILES["profile"]["tmp_name"]);
-    $sql = "SELECT dni, phone, email FROM user WHERE phone='$phone' OR email='$email' OR dni='$dni'";
+    $sql = "SELECT client_dni, client_phone, client_email FROM client WHERE client_phone='$phone' OR client_email='$email' OR client_dni='$dni'";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     if ($stmt->rowCount() > 0)
@@ -52,7 +52,7 @@ if ($ok)
     $stmt->execute(array(':client_dni' => $dni, ':client_name' => $user, ':client_surname' => $surname1, ':client_surname2' => $surname2, ':client_phone' => $phone, ':client_email' => $email, ':client_pass' => $encrypted, ':client_bday' => $bday, ':client_gender' => $gender, ':client_path' => $path, ':client_hash' => $hash, ':client_active' => 0));
 
     $subject = "Por Favor Contactame en Esta Dirección";
-    $message = "<h3>Gracias por registrarte</h3><p>Por Favor haz Click en el Botón Activar mi Cuenta para Empezar a Usar el Sitio.</p><a href='http://" . $_SERVER['SERVER_NAME'] . "/web/Login/activate.php?hash=" . $hash . "&id=" . $id . "'><div style='background-color:aquamarine; border:thin; width:120px; height:60px; text-align:center;'>Quiero Activar mi Cuenta</div></a><br><br><small>Copyright © 2024 César Matelat <a href='mailto:matelat@gmail.com'>matelat@gmail.com</a></small>";
+    $message = "<h3>Gracias por registrarte</h3><p>Por Favor haz Click en el Botón Activar mi Cuenta para Empezar a Usar el Sitio.</p><a href='http://" . $_SERVER['SERVER_NAME'] . "/web/Project/Airb&b/activate-client.php?hash=" . $hash . "&id=" . $dni . "'><div style='background-color:aquamarine; border:thin; width:120px; height:60px; text-align:center;'>Quiero Activar mi Cuenta</div></a><br><br><small>Copyright © 2024 César Matelat <a href='mailto:matelat@gmail.com'>matelat@gmail.com</a></small>";
     $server_email = "matelat@gmail.com";
     $headers  = "From: $server_email\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
@@ -67,13 +67,13 @@ if ($ok)
         chdir ("client");
         if ($img != "")
         {
-            if (!file_exists($id))
+            if (!file_exists($dni))
             {
-                mkdir($id . "/pic", 0777, true);
+                mkdir($dni . "/pic", 0777, true);
             }
-            $path = $id . "/pic/" . basename($img);
+            $path = $dni . "/pic/" . basename($img);
             move_uploaded_file($tmp, $path);
-            $stmt = $conn->prepare("UPDATE client SET path='client/$path' WHERE client_dni=$dni;"); // Preparo una consulta para Actualizar la tabla.
+            $stmt = $conn->prepare("UPDATE client SET client_path='client/$path' WHERE client_dni='$dni';"); // Preparo una consulta para Actualizar la tabla.
             $stmt->execute(); // La Ejecuto.
         }
     }

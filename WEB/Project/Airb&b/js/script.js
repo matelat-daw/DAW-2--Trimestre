@@ -1,33 +1,97 @@
-function verify()
+function verify() // Función para validar las contraseñas, también valida el D.N.I o N.I.E.
 {
-    const pass = document.getElementById("pass");
-    const pass2 = document.getElementById("pass2");
-    const res = document.getElementById("res");
+    let dnielement = document.getElementById("dni");
+    let dnio = document.getElementById("dnio");
+    let dni = dnielement.value;
+    let dni_o = dnio.value;
+    var numero1, numero2, letra1, letra2, letras1, letras2;
+    var expresion_regular_dni = /^[XYZ]?\d{1,9}[A-Z]$/;
+    var pass = document.getElementById("pass1"); // pass es la ID del input pass0.
+    var pass2 = document.getElementById("pass2"); // pass2 es la ID del input pass1.
+    var pass3 = document.getElementById("pass1o"); // pass es la ID del input pass0.
+    var pass4 = document.getElementById("pass2o"); // pass2 es la ID del input pass1.
 
-	if (pass.value != pass2.value)
-	{
-    	toast('1', 'Error en las Contraseñas:', `Las contraseñas no coinciden, por favor escríbelas nuevamente. ${pass.value} y ${pass2.value}`);
-        return false;
+    if(expresion_regular_dni.test(dni) === true)
+    {
+        numero1 = dni.substr(0, dni.length - 1);
+        numero1 = numero1.replace('X', 0);
+        numero1 = numero1.replace('Y', 1);
+        numero1 = numero1.replace('Z', 2);
+        letra1 = dni.substr(dni.length - 1, 1);
+        numero1 = numero1 % 23;
+        letras1 = 'TRWAGMYFPDXBNJZSQVHLCKE';
+        letras1 = letras1.substring(numero1, numero1 + 1);
+        if (letras1 != letra1.toUpperCase())
+        {
+            toast(2, 'El D.N.I. o N.I.E. es Incorrecto', 'Verifica que los Números y la Letra o Letras Estén Bien.');
+            return false;
+        }
+        else
+        {
+            if (pass.value != pass2.value) // Verifico si los valores en los input pass y pass2 no coinciden.
+            {
+                toast(1, "Hay un Error", "Las contraseñas no coinciden, has escrito: " + pass.value + " y " + pass2.value); // Si no coinciden muestro error.
+                return false; // devulvo false, el formulario no se envía.
+            }
+            else // Si son iguales.
+            {
+                return true; // Devuelvo true, envía el formulario.
+            }
+        }
     }
     else
     {
-        if (res.checked)
+        if (expresion_regular_dni.test(dni_o) === true)
         {
-            if (cuit.value != "")
+            numero2 = dni_o.substr(0, dni_o.length - 1);
+            numero2 = numero2.replace('X', 0);
+            numero2 = numero2.replace('Y', 1);
+            numero2 = numero2.replace('Z', 2);
+            letra2 = dni_o.substr(dni_o.length - 1, 1);
+            numero2 = numero2 % 23;
+            letras2 = 'TRWAGMYFPDXBNJZSQVHLCKE';
+            letras2 = letras2.substring(numero2, numero2 + 1);
+            if (letras2 != letra2.toUpperCase())
             {
-                return true;
+                toast(2, 'El D.N.I. o N.I.E. es Incorrecto', 'Verifica que los Números y la Letra o Letras Estén Bien.');
+                return false;
             }
             else
             {
-                toast ("1", "Falta el Número de C.U.I.T.", "Haz Seleccionado Responsable Inscripto, Debes Introducir el Número de C.U.I.T., ¿O Tal Vez el Cliente Sea Consumidor Final?");
-                return false;
+                if (pass3.value != pass4.value) // Verifico si los valores en los input pass y pass2 no coinciden.
+                {
+                    toast(1, "Hay un Error", "Las contraseñas no coinciden, has escrito: " + pass3.value + " y " + pass4.value); // Si no coinciden muestro error.
+                    return false; // devulvo false, el formulario no se envía.
+                }
+                else // Si son iguales.
+                {
+                    return true; // Devuelvo true, envía el formulario.
+                }
             }
         }
         else
         {
-            return true;
+            toast(2, 'El D.N.I. o N.I.E. es Incorrecto', 'Verifica que los Números y la Letra o Letras Estén Bien.');
+            return false;
         }
     }
+}
+
+function showEye(which) // Función para mostrar el ojo de los input de las contraseñas, recibe el número del elemento que contiene el ojo.
+{
+    let eye = document.getElementById("togglePassword" + which); // Asigno a eye la id del elemento que contiene el ojo.
+    eye.style.visibility = "visible"; // Hago visible el elemento, el ojo.
+}
+
+function spy(which) // Función para el ojo de las Contraseñas al hacer click en el ojo, recibe el número de la ID del input de la password.
+{
+    const togglePassword = document.querySelector('#togglePassword' + which); // Asigno a la constante togglePassword el input con ID togglePassword + which.
+    const password = document.querySelector('#pass' + which); // Asigno a password la ID del input con ID pass + which.
+    
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password'; // Asigno a type el resultado de un operador ternario, si presiono el ojito y el tipo del input es password
+    // lo cambia a text, si es text lo cambia a password.
+    password.setAttribute('type', type); // Le asigno el atributo al input password.
+    togglePassword.classList.toggle('fa-eye-slash'); // Cambia el aspecto del ojo, al cambiar el input a tipo texto, el ojo aparece con una raya.
 }
 
 function screen() // Establece el tamaño de las vistas en la pantalla.
@@ -171,6 +235,22 @@ function show(what)
             client_on.style.display = "none";
             owner_on.style.display = "block";
             document.location.hash = "#view2";
+            break;
+        case "quit_client":
+            modify_client.style.display = "none";
+            quit_client.style.display = "block";
+            break;
+        case "modify_client":
+            quit_client.style.display = "none";
+            modify_client.style.display = "block";
+            break;
+        case "quit_owner":
+            modify_owner.style.display = "none";
+            quit_owner.style.display = "block";
+            break;
+        case "modify_owner":
+            quit_owner.style.display = "none";
+            modify_owner.style.display = "block";
             break;
     }
 }

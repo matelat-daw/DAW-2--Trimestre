@@ -2,7 +2,7 @@
 include "includes/conn.php";
 $title = "Alquileres Vacacionales - Principal";
 include "includes/header.php";
-include "includes/modal-index.html";
+include "includes/modal-dismiss.html";
 include "includes/nav-index.html";
 ?>
 <section class="container-fluid pt-3">
@@ -37,10 +37,10 @@ include "includes/nav-index.html";
                 </div>
                 <div id="view2">
                     <br><br>
-                    <div id="client_on"><?php include "includes/client_logon.html"; ?></div>
-                    <div id="owner_on"><?php include "includes/owner_logon.html"; ?></div>
-                    <div id="client_in"><?php include "includes/client_login.html"; ?></div>
-                    <div id="owner_in"><?php include "includes/owner_login.html"; ?></div>
+                    <div id="client_on"><?php include "includes/client-logon.html"; ?></div>
+                    <div id="owner_on"><?php include "includes/owner-logon.html"; ?></div>
+                    <div id="client_in"><?php include "includes/client-login.html"; ?></div>
+                    <div id="owner_in"><?php include "includes/owner-login.html"; ?></div>
                 </div>
             </div>
         <div class="col-md-1"></div>
