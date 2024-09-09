@@ -143,10 +143,12 @@ function show(what)
 {
     if (what == "client")
     {
-        
+        owner.style.display = "none";
+        client.style.display = "block";
     }
     else
     {
-
+        client.style.display = "none";
+        owner.style.display = "block";
     }
 }
