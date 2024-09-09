@@ -141,12 +141,17 @@ input[type='number']
     display: inline-block;
 }
 
+.separator
+{
+    width: 100px;
+}
+
 .height
 {
     height: 15px;
 }
 
-#client, #owner
+#client_on, #owner_on, #client_in, #owner_in
 {
     display: none;
 }

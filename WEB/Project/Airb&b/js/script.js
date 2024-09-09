@@ -141,14 +141,54 @@ function pdfDown(number)
 
 function show(what)
 {
-    if (what == "client")
+    switch (what)
     {
-        owner.style.display = "none";
-        client.style.display = "block";
+        case "client_login":
+            owner_on.style.display = "none";
+            owner_in.style.display = "none";
+            client_on.style.display = "none";
+            client_in.style.display = "block";
+            document.location.hash = "#view2";
+
+            break;
+        case "client_logon":
+            owner_on.style.display = "none";
+            owner_in.style.display = "none";
+            client_in.style.display = "none";
+            client_on.style.display = "block";
+            document.location.hash = "#view2";
+            break;
+        case "owner_login":
+            owner_on.style.display = "none";
+            client_in.style.display = "none";
+            client_on.style.display = "none";
+            owner_in.style.display = "block";
+            document.location.hash = "#view2";
+            break;
+        case "owner_logon":
+            owner_in.style.display = "none";
+            client_in.style.display = "none";
+            client_on.style.display = "none";
+            owner_on.style.display = "block";
+            document.location.hash = "#view2";
+            break;
     }
-    else
+}
+
+function language(lang)
+{
+    let language = document.getElementById("language");
+
+    switch (lang)
     {
-        client.style.display = "none";
-        owner.style.display = "block";
+        case "spanish":
+            language.src = "img/esp.png";
+            break;
+        case "english":
+            language.src = "img/eng.png";
+            break;
+        case "portuguese":
+            language.src = "img/ptg.png";
+            break;
     }
 }

@@ -37,8 +37,10 @@ include "includes/nav-index.html";
                 </div>
                 <div id="view2">
                     <br><br>
-                    <div id="client"><?php include "includes/client.html"; ?></div>
-                    <div id="owner"><?php include "includes/owner.html"; ?></div>
+                    <div id="client_on"><?php include "includes/client_logon.html"; ?></div>
+                    <div id="owner_on"><?php include "includes/owner_logon.html"; ?></div>
+                    <div id="client_in"><?php include "includes/client_login.html"; ?></div>
+                    <div id="owner_in"><?php include "includes/owner_login.html"; ?></div>
                 </div>
             </div>
         <div class="col-md-1"></div>
