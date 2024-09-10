@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "xslt3": "^2.6.0"
+  },
+  "dependencies": {
+    "lenguajes-de-marcas": "file:"
   }
 }
