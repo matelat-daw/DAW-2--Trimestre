@@ -4,7 +4,6 @@ echo '<h3>Aquí Puedes Modificar Tus Datos</h3>
 <form action="modify-client.php" method="post" enctype="multipart/form-data" onsubmit="return verify()">
 <fieldset>
 <legend>Formulario Para Modificar Datos</legend>
-<input type="hidden" name="id" value="' . $_SESSION["id"] . '">
 <label><input type="text" name="username" value="' . $row->client_name . '" required> Nombre</label>
 <br><br>
 <label><input type="text" name="surname" value="' . $row->client_surname . '" required> Primer Apellido</label>

@@ -215,6 +215,7 @@ function show(what)
     let quit_owner = document.getElementById("quit_owner");
     let client = document.getElementById("client");
     let owner = document.getElementById("owner");
+    let contact = document.getElementById("contact");
 
     switch (what)
     {
@@ -264,9 +265,17 @@ function show(what)
             quit_owner.style.display = "none";
             modify_owner.style.display = "block";
             break;
+        case "email":
+            window.location.href = "mailto:matelat@gmail.com";
+            break;
+        case "whatsapp":
+            let num = 664774821;
+            var win = window.open('https://wa.me/' + num + '?text=Por Favor contactame por: WhatsApp a este Número, Mi nombre es: ', '_blank');
+            break;
     }
     client.selectedIndex = 0;
     owner.selectedIndex = 0;
+    contact.selectedIndex = 0;
 }
 
 function language(lang)

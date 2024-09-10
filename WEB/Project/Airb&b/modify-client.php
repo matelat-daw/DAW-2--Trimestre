@@ -18,10 +18,6 @@ if (isset($_POST["username"])) // Si llegan datos por post.
     $phone = $_POST["phone"];
     $email = $_POST["email"];
     $pass = $_POST["pass"];
-    if ($pass != "")
-    {
-        $hash = password_hash($pass, PASSWORD_DEFAULT);
-    }
     $bday = $_POST["bday"];
     $gender = $_POST["gender"];
     $path = $_POST["path"];
@@ -52,14 +48,27 @@ if (isset($_POST["username"])) // Si llegan datos por post.
             }
             $path = $dni . "/pic/" . basename($img);
             move_uploaded_file($tmp, $path);
-        }
-        if ($pass != "")
-        {
-            $sql = "UPDATE client SET client_dni='$dni', client_name='$name', client_surname='$surname1', client_surname2='$surname2', client_phone='$phone', client_email='$email', client_pass='$hash', client_bday='$bday', client_gender='$gender', client_path='client/$path' WHERE client_dni='$dni';"; // Preparo la Consulta Modificando Todo.
+            if ($pass != "")
+            {
+                $hash = password_hash($pass, PASSWORD_DEFAULT);
+                $sql = "UPDATE client SET client_dni='$dni', client_name='$name', client_surname='$surname1', client_surname2='$surname2', client_phone='$phone', client_email='$email', client_pass='$hash', client_bday='$bday', client_gender='$gender', client_path='client/$path' WHERE client_dni='$dni';"; // Preparo la Consulta Modificando Todo.
+            }
+            else
+            {
+                $sql = "UPDATE client SET client_dni='$dni', client_name='$name', client_surname='$surname1', client_surname2='$surname2', client_phone='$phone', client_email='$email', client_pass='$hash', client_bday='$bday', client_gender='$gender', client_path='client/$path' WHERE client_dni='$dni';"; // Preparo la Consulta Modificando Todo.
+            }
         }
         else
         {
-            $sql = "UPDATE client SET client_dni='$dni', client_name='$name', client_surname='$surname1', client_surname2='$surname2', client_phone='$phone', client_email='$email', client_bday='$bday', client_gender='$gender', client_path='users/$path' WHERE client_dni='$dni';"; // Preparo la Consulta Modificando todo Excepto la Contraseña.
+            if ($pass != "")
+            {
+                $hash = password_hash($pass, PASSWORD_DEFAULT);
+                $sql = "UPDATE client SET client_dni='$dni', client_name='$name', client_surname='$surname1', client_surname2='$surname2', client_phone='$phone', client_email='$email', client_pass='$hash', client_bday='$bday', client_gender='$gender', client_path='$path' WHERE client_dni='$dni';"; // Preparo la Consulta Modificando Todo.
+            }
+            else
+            {
+                $sql = "UPDATE client SET client_dni='$dni', client_name='$name', client_surname='$surname1', client_surname2='$surname2', client_phone='$phone', client_email='$email', client_bday='$bday', client_gender='$gender', client_path='$path' WHERE client_dni='$dni';"; // Preparo la Consulta Modificando todo Excepto la Contraseña.
+            }
         }
 
         $stmt = $conn->prepare($sql);

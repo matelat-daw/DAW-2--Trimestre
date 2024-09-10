@@ -34,7 +34,8 @@ if (isset($_SESSION["id"]))
     include "includes/header.php";
     include "includes/modal.html";
     include "includes/nav-client.php";
-echo '<section class="container-fluid pt-3">
+    
+    echo '<section class="container-fluid pt-3">
     <div class="row">
         <div class="col-md-1"></div>
             <div class="col-md-10">

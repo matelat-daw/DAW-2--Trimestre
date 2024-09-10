@@ -18,10 +18,6 @@ if (isset($_POST["username"])) // Si llegan datos por post.
     $phone = $_POST["phone"];
     $email = $_POST["email"];
     $pass = $_POST["pass"];
-    if ($pass != "")
-    {
-        $hash = password_hash($pass, PASSWORD_DEFAULT);
-    }
     $bday = $_POST["bday"];
     $gender = $_POST["gender"];
     $path = $_POST["path"];
@@ -52,14 +48,27 @@ if (isset($_POST["username"])) // Si llegan datos por post.
             }
             $path = $dni . "/pic/" . basename($img);
             move_uploaded_file($tmp, $path);
-        }
-        if ($pass != "")
-        {
-            $sql = "UPDATE owner SET owner_dni='$dni', owner_name='$name', owner_surname='$surname1', owner_surname2='$surname2', owner_phone='$phone', owner_email='$email', owner_pass='$hash', owner_bday='$bday', owner_gender='$gender', owner_path='owner/$path' WHERE owner_dni='$dni';"; // Preparo la Consulta Modificando Todo.
+            if ($pass != "")
+            {
+                $hash = password_hash($pass, PASSWORD_DEFAULT);
+                $sql = "UPDATE owner SET owner_dni='$dni', owner_name='$name', owner_surname='$surname1', owner_surname2='$surname2', owner_phone='$phone', owner_email='$email', owner_pass='$hash', owner_bday='$bday', owner_gender='$gender', owner_path='owner/$path' WHERE owner_dni='$dni';"; // Preparo la Consulta Modificando Todo.
+            }
+            else
+            {
+                $sql = "UPDATE owner SET owner_dni='$dni', owner_name='$name', owner_surname='$surname1', owner_surname2='$surname2', owner_phone='$phone', owner_email='$email', owner_bday='$bday', owner_gender='$gender', owner_path='owner/$path' WHERE owner_dni='$dni';"; // Preparo la Consulta Modificando todo Excepto la Contraseña.
+            }
         }
         else
         {
-            $sql = "UPDATE owner SET owner_dni='$dni', owner_name='$name', owner_surname='$surname1', owner_surname2='$surname2', owner_phone='$phone', owner_email='$email', owner_bday='$bday', owner_gender='$gender', owner_path='owner/$path' WHERE owner_dni='$dni';"; // Preparo la Consulta Modificando todo Excepto la Contraseña.
+            if ($pass != "")
+            {
+                $hash = password_hash($pass, PASSWORD_DEFAULT);
+                $sql = "UPDATE owner SET owner_dni='$dni', owner_name='$name', owner_surname='$surname1', owner_surname2='$surname2', owner_phone='$phone', owner_email='$email', owner_pass='$hash', owner_bday='$bday', owner_gender='$gender', owner_path='$path' WHERE owner_dni='$dni';"; // Preparo la Consulta Modificando Todo.
+            }
+            else
+            {
+                $sql = "UPDATE owner SET owner_dni='$dni', owner_name='$name', owner_surname='$surname1', owner_surname2='$surname2', owner_phone='$phone', owner_email='$email', owner_bday='$bday', owner_gender='$gender', owner_path='$path' WHERE owner_dni='$dni';"; // Preparo la Consulta Modificando todo Excepto la Contraseña.
+            }
         }
 
         $stmt = $conn->prepare($sql);
