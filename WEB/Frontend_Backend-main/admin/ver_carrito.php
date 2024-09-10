@@ -65,7 +65,7 @@ if (count($productos) <= 0) {
                     </tr>
                 </tfoot>
             </table>
-            <a href="terminar_compra.php" class="button is-success is-large"><i class="fa fa-check"></i>&nbsp;Terminar compra</a>
+            <a href="../terminar_compra.php" class="button is-success is-large"><i class="fa fa-check"></i>&nbsp;Terminar compra</a>
         </div>
     </div>
 <?php } ?>

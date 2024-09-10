@@ -26,28 +26,29 @@ if (isset($_POST["registrar"])) { // esperando al botón
     include'includes/conexion.php';
 
     // sql para insertar un registro
-    $sql = "INSERT INTO `vendedor` VALUES (null,'$nombre','$apellido1','$apellido2','$telefono','$email','$pass', '$fecha', '$path');";
+    $sql = "INSERT INTO vendedor VALUES (null,'$nombre','$apellido1','$apellido2','$telefono','$email','$pass', '$fecha', '$path');";
     echo $sql;
     if (mysqli_query($conexion, $sql)) {
 
         if ($img != "") // Si se sube una imagen, $img será distinto de texto vacio.
         {
-            if (!is_dir("alumno/" . $email . "/pic")) // Si no existe la carpeta alumno + ID del alumno + pic.
+            $id = mysqli_insert_id($conexion);
+            chdir("../"); // Vuelvo un directorio atrás ya que estoy en el directorio includes.
+            if (!is_dir("alumno/" . $id . "/pic")) // Si no existe la carpeta alumno + ID del alumno + pic.
             {
-                mkdir("alumno/" . $email . "/pic", 0777, true); // La creo con permiso de acceso total.
+                mkdir("alumno/" . $id . "/pic", 0777, true); // La creo con permiso de acceso total.
             }
-            $path = "alumno/" . $email . "/pic/" . basename($img); // Asigno a $path la ruta a la imagen del alumno.
+            $path = "alumno/" . $id . "/pic/" . basename($img); // Asigno a $path la ruta a la imagen del alumno.
             move_uploaded_file($tmp, $path); // Mueve la imagen de la carpeta temporal($tmp), a la ruta $path, con el nombre original de la imagen.
         }
         else // Si no, no se sube una imagen
         {
-            $path = "img/male.jpg"; // Imagen de mujer.
+            $path = "img/male.jpg"; // Imagen de Varón.
         }
-        $id = mysqli_insert_id($conexion);
         $sql = "UPDATE vendedor SET path='$path' WHERE id=$id;";
 
         if (mysqli_query($conexion, $sql)) {
-            mysqli_close($conexion);
+            mysqli_close($conexion); // Actualiza la ruta de la imagen y cierra la conexión.
         }
         echo '<script>
             toast(0, "Registro Usuario", "Muchacho");
