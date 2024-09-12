@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\WEB\\Blazor-Agenda-Empleados-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{667E7498-6106-4633-A567-8A10CAAA3D20}|BlazorCrud.Server\\BlazorCrud.Server.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\web\\blazor-agenda-empleados-main\\blazorcrud.server\\controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{667E7498-6106-4633-A567-8A10CAAA3D20}|BlazorCrud.Server\\BlazorCrud.Server.csproj|solutionrelative:blazorcrud.server\\controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{667E7498-6106-4633-A567-8A10CAAA3D20}|BlazorCrud.Server\\BlazorCrud.Server.csproj|c:\\users\\orion\\documents\\c\u00E9sar manrique\\daw-2\u00BA-trimestre\\daw-2--trimestre\\web\\blazor-agenda-empleados-main\\blazorcrud.server\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{667E7498-6106-4633-A567-8A10CAAA3D20}|BlazorCrud.Server\\BlazorCrud.Server.csproj|solutionrelative:blazorcrud.server\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartamentoController.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\WEB\\Blazor-Agenda-Empleados-main\\BlazorCrud.Server\\Controllers\\DepartamentoController.cs",
+              "RelativeDocumentMoniker": "BlazorCrud.Server\\Controllers\\DepartamentoController.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\WEB\\Blazor-Agenda-Empleados-main\\BlazorCrud.Server\\Controllers\\DepartamentoController.cs",
+              "RelativeToolTip": "BlazorCrud.Server\\Controllers\\DepartamentoController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T11:06:56.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmpleadoController.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\WEB\\Blazor-Agenda-Empleados-main\\BlazorCrud.Server\\Controllers\\EmpleadoController.cs",
+              "RelativeDocumentMoniker": "BlazorCrud.Server\\Controllers\\EmpleadoController.cs",
+              "ToolTip": "C:\\Users\\Orion\\Documents\\C\u00E9sar Manrique\\Daw-2\u00BA-Trimestre\\DAW-2--Trimestre\\WEB\\Blazor-Agenda-Empleados-main\\BlazorCrud.Server\\Controllers\\EmpleadoController.cs",
+              "RelativeToolTip": "BlazorCrud.Server\\Controllers\\EmpleadoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T18:09:19.293Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

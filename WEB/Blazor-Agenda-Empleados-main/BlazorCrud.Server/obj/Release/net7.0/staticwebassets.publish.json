@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "R5Bo4kI+WRaR5spIlISTo2xJ3USchJJ6VT91uB4nlnI=",
+  "Source": "BlazorCrud.Server",
+  "BasePath": "_content/BlazorCrud.Server",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
