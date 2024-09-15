@@ -4,24 +4,24 @@ function verify() // Función para validar las contraseñas, también valida el 
     let dnio = document.getElementById("dnio");
     let dni = dnielement.value;
     let dni_o = dnio.value;
-    var numero1, numero2, letra1, letra2, letras1, letras2;
+    var dni_client, dni_owner, dni_letra, dni_letra_owner, letras1, letras2;
     var expresion_regular_dni = /^[XYZ]?\d{1,9}[A-Z]$/;
     var pass = document.getElementById("pass1"); // pass es la ID del input pass0.
     var pass2 = document.getElementById("pass2"); // pass2 es la ID del input pass1.
     var pass3 = document.getElementById("pass1o"); // pass es la ID del input pass0.
     var pass4 = document.getElementById("pass2o"); // pass2 es la ID del input pass1.
+    let letras = 'TRWAGMYFPDXBNJZSQVHLCKE';
 
     if(expresion_regular_dni.test(dni) === true)
     {
-        numero1 = dni.substr(0, dni.length - 1);
-        numero1 = numero1.replace('X', 0);
-        numero1 = numero1.replace('Y', 1);
-        numero1 = numero1.replace('Z', 2);
-        letra1 = dni.substr(dni.length - 1, 1);
-        numero1 = numero1 % 23;
-        letras1 = 'TRWAGMYFPDXBNJZSQVHLCKE';
-        letras1 = letras1.substring(numero1, numero1 + 1);
-        if (letras1 != letra1.toUpperCase())
+        dni_client = dni.substr(0, dni.length - 1);
+        dni_client = dni_client.replace('X', 0);
+        dni_client = dni_client.replace('Y', 1);
+        dni_client = dni_client.replace('Z', 2);
+        dni_letra_client = dni.substr(dni.length - 1, 1);
+        dni_client = dni_client % 23;
+        letras = letras.substring(dni_client, dni_client + 1);
+        if (letras != dni_letra_client.toUpperCase())
         {
             toast(2, 'El D.N.I. o N.I.E. es Incorrecto', 'Verifica que los Números y la Letra o Letras Estén Bien.');
             return false;
@@ -43,15 +43,14 @@ function verify() // Función para validar las contraseñas, también valida el 
     {
         if (expresion_regular_dni.test(dni_o) === true)
         {
-            numero2 = dni_o.substr(0, dni_o.length - 1);
-            numero2 = numero2.replace('X', 0);
-            numero2 = numero2.replace('Y', 1);
-            numero2 = numero2.replace('Z', 2);
-            letra2 = dni_o.substr(dni_o.length - 1, 1);
-            numero2 = numero2 % 23;
-            letras2 = 'TRWAGMYFPDXBNJZSQVHLCKE';
-            letras2 = letras2.substring(numero2, numero2 + 1);
-            if (letras2 != letra2.toUpperCase())
+            dni_owner = dni_o.substr(0, dni_o.length - 1);
+            dni_owner = dni_owner.replace('X', 0);
+            dni_owner = dni_owner.replace('Y', 1);
+            dni_owner = dni_owner.replace('Z', 2);
+            dni_letra_owner = dni_o.substr(dni_o.length - 1, 1);
+            dni_owner = dni_owner % 23;
+            letras = letras.substring(dni_owner, dni_owner + 1);
+            if (letras != dni_letra_owner.toUpperCase())
             {
                 toast(2, 'El D.N.I. o N.I.E. es Incorrecto', 'Verifica que los Números y la Letra o Letras Estén Bien.');
                 return false;
