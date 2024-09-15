@@ -1,4 +1,0 @@
-<?php exit; ?>
-MYSQL_DATABASE_NAME = "dweb"
-MYSQL_USER = "root"
-MYSQL_PASSWORD = "01051977"
