@@ -1,0 +1,51 @@
+a
+{
+    text-decoration: none;
+}
+
+.inline
+{
+    display: inline-block;
+    height: 68px;
+    padding-right: 10px;
+}
+
+.justinline
+{
+    display: inline;
+}
+
+.vertical
+{
+    vertical-align: middle;
+}
+
+.bottom
+{
+    vertical-align: top;
+}
+
+.bright
+{
+    border-right: 1px solid black;
+}
+
+.btn
+{
+    border: 1px solid gray;
+    border-radius: 25px;
+    width: 156px;
+    height: 48px;
+}
+
+.red
+{
+    background-color: red;
+}
+
+.big
+{
+    margin-left: 150px;
+    margin-right: 50px;
+    font-size: large;
+}
