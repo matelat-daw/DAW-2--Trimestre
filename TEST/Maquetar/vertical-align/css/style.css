@@ -44,3 +44,11 @@ a
     margin-right: 50px;
     font-size: large;
 }
+
+.height
+{
+    background-color: lightgray;
+    text-align: center;
+    margin-top: 25px;
+    height: 120px;
+}
