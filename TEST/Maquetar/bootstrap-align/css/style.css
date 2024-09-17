@@ -6,7 +6,6 @@ a
 .inline
 {
     display: inline-block;
-    height: 68px;
     padding-right: 10px;
 }
 
@@ -45,8 +44,8 @@ a
 
 .big
 {
-    margin-left: 150px;
-    margin-right: 50px;
+    /* margin-left: 150px;
+    margin-right: 50px; */
     font-size: large;
 }
 
@@ -86,4 +85,30 @@ a
 .gray
 {
     background-color: lightgray;
+    margin-bottom: 10px;
+}
+
+.marginTop
+{
+    margin-top: 32px;
+}
+
+.marginTop2
+{
+    margin-top: 172px;
+}
+
+.marginTop3
+{
+    margin-top: 209px;
+}
+
+body
+{
+    padding-top: 240px;
+}
+
+.top
+{
+    padding-top: 300px;
 }

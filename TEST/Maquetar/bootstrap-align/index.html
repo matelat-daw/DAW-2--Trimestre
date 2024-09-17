@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-    <title>Alineado Vertical de Elementos en Línea</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 1 Maquetación</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js" integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js" integrity="sha512-ToRWKKOvhBSS8EtqSflysM/S7v9bB9V0X3B1+E7xo7XZBEZCPL3VX5SFIp8zxY19r7Sz0svqQVbAOx+QcLQSAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/script.js"></script>
+    </head>
 <body>
-    <section id="header">
-        <a href="#tenerife">Tenerife / </a><a href="#hierro">El Hierro / </a><a href="#gomera">La Gomera / </a><a href="#palma">La Palma / </a><a href="#canaria">Gran Canaria / </a><a href="#fuerte">Fuerte Ventura / </a><a href="#lanazarote">Lanzarote / </a><a href="#graciosa">La Graciosa</a><br>
+<section id="header">
+    <nav class="navbar fixed-top bg-white">
+        <a href="#tenerife">Tenerife / </a><a href="#hierro">El Hierro / </a><a href="#gomera">La Gomera / </a><a href="#palma">La Palma / </a><a href="#canaria">Gran Canaria / </a><a href="#fuerte">Fuerte Ventura / </a><a href="#lanazarote">Lanzarote / </a><a href="#graciosa">La Graciosa</a></nav>
+    <nav class="navbar fixed-top bg-white marginTop">
         <div class="inline bright"><a href="index.html"><img src="img/one.png" alt="Pagina Principal" class="vertical" width="64">Página Principal</a></div><div class="inline bright"><a href="http://radio.garden/visit/santa-cruz-de-tenerife/BAybPmHT" target="_blank"><img src="img/two.png" alt="Radio" class="vertical" width="64">Escuchanos en la Radio</a></div><div class="inline"><a href="https://www3.gobiernodecanarias.org/sanidad/scs/tematica.jsp?idCarpeta=8f94f980-d052-11e7-836b-953b40afb30b" target="_blank"><img src="img/three.png" alt="Cuidados" class="vertical" width="64">Te Cuidamos</a></div><img src="img/logo.png" alt="Logo de la Empresa" width="400" class="vertical">
-        <select class="inline" onchange="language(this.value)">
+        <select id="selectLanguage" class="inline" onchange="language(this.value)">
             <option value="">Selecciona tu Idioma</option>
             <option value="es" selected>ES</option>
             <option value="en">EN</option>
@@ -19,16 +25,18 @@
         </select><img id="language" src="img/esp.png" alt="Bandera del Idioma" width="64" class="vertical">
         <button class="btn red">Suscribete</button>
         <button class="btn">Registrate</button>
+    </nav>
         <br>
+    <nav class="navbar fixed-top bg-white marginTop2">
         <div class="menu red">
-            <select class="inline red font">
+            <select id="selector" class="inline red font" onchange="goBack()">
                 <option value="">Tenerife</option>
                 <option value="flora">Flora de la Isla</option>
                 <option value="fauna">Fauna de la Isla</option>
                 <option value="guachinches">Donde Comer</option>
                 <option value="rutas">Rutas Fantásticas</option>
             </select>
-            <select class="inline red font">
+            <select id="selector2" class="inline red font" onchange="goBack()">
                 <option value="">El Hierro</option>
                 <option value="flora">Flora de la Isla</option>
                 <option value="fauna">Fauna de la Isla</option>
@@ -36,14 +44,19 @@
                 <option value="rutas">Rutas Fantásticas</option>
             </select>
         </div>
+    </nav>
+    <nav class="navbar fixed-top bg-white marginTop3">
         <div class="gray">
             <img src="img/shilds.png" alt="Escudos de las Islas" width="1000">
         </div>
-    </section>
-    <br><br>
-    <section id="content">
-        <article id="tenerife">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1YOdqcC2-q8?si=4VoGCixJfWgP9cQp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="big"></iframe><br>
+    </nav>
+</section>
+<section class="container-fluid pt-3">
+    <div class="row">
+        <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <article id="tenerife" class="top">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1YOdqcC2-q8?si=4VoGCixJfWgP9cQp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="big"></iframe><br>
             <pre class="inline big"><span class="red2">Nuestra Isla</span>
         La Isla de Tenerife es la más grande de la Islas Canarias:
     Tiene gran variedad de flora autoctona y fauna terrestre y marina.
@@ -62,30 +75,36 @@
     5 de reptiles, 2 de anfibios, 13 de mamíferos terrestres y varios miles de invertebrados,
     además de algunas especies de tortugas marinas y cetáceos.
             </pre>
-            <div class="position">
-                <pre class="inline">
-<span class="red2">Lorem Ipsum etc.</span>
-Acá va la descripción de la Flora en las
-distintas alturas sobre el nivel del mar.
-Más Líneas de Texto dan mejor apariencia
-al maquetado. Más Líneas de Texto dan mejor
-apariencia al maquetado.
-                </pre>
-                <img src="img/flora.jpg" alt="Flora de Teneife" width="180" height="120">
             </div>
-            <div class="position2">
-                <img src="img/fauna.jpg" alt="Fauna de Teneife" width="180" height="120">
-                <pre class="inline">
-<span class="red2">Lorem Ipsum etc.</span>
-Acá va la descripción de la fauna terrestre
-y marítima de la Isla. Más Líneas de Texto
-dan mejor apariencia al maquetado. Más Líneas
-de Texto dan mejor apariencia al maquetado.
-                </pre>
+            <div class="col-md-5 top">
+                <div class="gray">
+                    <pre class="inline">
+    <span class="red2">Lorem Ipsum etc.</span>
+    Acá va la descripción de la Flora en las
+    distintas alturas sobre el nivel del mar.
+    Más Líneas de Texto dan mejor apariencia
+    al maquetado. Más Líneas de Texto dan mejor
+    apariencia al maquetado.
+                    </pre>
+                    <img src="img/flora.jpg" alt="Flora de Teneife" width="180" height="120" class="bottom">
+                </div>
+                <div class="gray">
+                    <img src="img/fauna.jpg" alt="Fauna de Teneife" width="180" height="120" class="bottom">
+                    <pre class="inline">
+    <span class="red2">Lorem Ipsum etc.</span>
+    Acá va la descripción de la fauna terrestre
+    y marítima de la Isla. Más Líneas de Texto
+    dan mejor apariencia al maquetado. Más Líneas
+    de Texto dan mejor apariencia al maquetado.
+                    </pre>
+                </div>
+            </article>
+                <div class="col-md-1"></div>
             </div>
-        </article>
-        <br><br><hr><br><br>
-        <article id="hierro">
+            <br><br><hr><br><br>
+            <div class="col-md-1"></div>
+                <div class="col-md-10">
+        <article id="hierro" class="top">
             <img src="img/hierro.jpg" alt="Isla de Tenerife" class="bottom"><pre class="inline big" width="500"><span class="red2">La Más Pequeña</span>
         La Isla de El Hierro es la menor y más pequeña de la Islas Canarias:
     Tiene gran variedad de flora autoctona y fauna terrestre y marina.
@@ -106,7 +125,7 @@ de Texto dan mejor apariencia al maquetado.
             </pre>
     </article>
     <br><br><hr><br><br>
-    <article id="gomera">
+    <article id="gomera" class="top">
         <pre class="inline big"><span class="red2">La Gomera</span>
         La Isla de La Gomera es mayor que El Hierro de la Islas Canarias:
     Tiene gran variedad de flora autoctona y fauna terrestre y marina.
@@ -127,7 +146,7 @@ de Texto dan mejor apariencia al maquetado.
         </pre><img src="img/gomera.jpg" alt="Isla de La Gomera" class="bottom" width="500">
     </article>
     <br><br><hr><br><br>
-    <article id="palma">
+    <article id="palma" class="top">
     <img src="img/palma.jpg" alt="Isla de La Palma" class="bottom" width="500"><pre class="inline big"><span class="red2">La Palma</span>
         La Isla de La Palma es mayor que el Hierro de la Islas Canarias:
     Tiene gran variedad de flora autoctona y fauna terrestre y marina.
@@ -147,11 +166,14 @@ de Texto dan mejor apariencia al maquetado.
     además de algunas especies de tortugas marinas y cetáceos.
     </pre>
     </article>
+    </div>
+    <div class="col-md-1"></div>
 </section>
 <section id="footer">
     <footer class="height">
         <small>(C) and TM By César Matelat 2024</small><a href="mailto:cesarmatelat@gmail.com">Escríbeme Aquí</a>
     </footer>
 </section>
+<script>tenerife.scrollIntoView()</script>
 </body>
 </html>
